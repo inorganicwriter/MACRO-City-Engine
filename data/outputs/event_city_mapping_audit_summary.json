@@ -1,0 +1,70 @@
+{
+  "status": "ok",
+  "policy_assignment_scope": "country_registry",
+  "city_rollout_rule": "country_common_shock_no_within_country_rollout_for_iso_level_registry",
+  "causal_unit_recommended": "iso3_year",
+  "direct_core_event_rows": 721,
+  "direct_core_explicit_event_rows": 720,
+  "direct_core_regional_support_rows": 119,
+  "direct_core_treated_country_count": 90,
+  "audit_event_rows": 1349,
+  "summary_rows": [
+    {
+      "treatment_track": "Direct-core (all buckets)",
+      "pipeline_design_rows": 721,
+      "cohort_defining_event_rows": 720,
+      "regional_support_rows": 119,
+      "treated_countries": 90,
+      "treated_country_years": 990,
+      "mapped_cities": 169,
+      "mapped_city_years": 1859,
+      "assignment_scope": "country_registry",
+      "city_rollout_rule": "country_common_shock_no_within_country_rollout_for_iso_level_registry",
+      "direct_core_rule": "intensity>=0.7; grade=A; source=external_direct; year<=2023",
+      "note": "Main treatment in the paper. Explicit country-level events define the cohort, which is then replicated to all in-sample cities within treated countries. Regional rows under the same thresholds are retained as corroborative support rather than as separate within-country rollout. The pipeline design summary records 721 direct-core rows; the persisted enriched registry reproduces 720 explicit cohort-defining rows plus 119 regional support rows under the same thresholds."
+    },
+    {
+      "treatment_track": "Direct-core infrastructure",
+      "pipeline_design_rows": "",
+      "cohort_defining_event_rows": 408,
+      "regional_support_rows": 63,
+      "treated_countries": 83,
+      "treated_country_years": 913,
+      "mapped_cities": 162,
+      "mapped_city_years": 1782,
+      "assignment_scope": "country_registry",
+      "city_rollout_rule": "country_common_shock_no_within_country_rollout_for_iso_level_registry",
+      "direct_core_rule": "intensity>=0.7; grade=A; source=external_direct; year<=2023",
+      "note": "Captures mobility, transport, and urban-services interventions under the same country-year common-shock rollout rule."
+    },
+    {
+      "treatment_track": "Direct-core digital",
+      "pipeline_design_rows": "",
+      "cohort_defining_event_rows": 49,
+      "regional_support_rows": 32,
+      "treated_countries": 33,
+      "treated_country_years": 363,
+      "mapped_cities": 75,
+      "mapped_city_years": 825,
+      "assignment_scope": "country_registry",
+      "city_rollout_rule": "country_common_shock_no_within_country_rollout_for_iso_level_registry",
+      "direct_core_rule": "intensity>=0.7; grade=A; source=external_direct; year<=2023",
+      "note": "Digital connectivity and innovation/industry events; city treatment still inherits the country-year cohort rather than a city-specific rollout date."
+    },
+    {
+      "treatment_track": "Direct-core environmental / regulatory",
+      "pipeline_design_rows": "",
+      "cohort_defining_event_rows": 263,
+      "regional_support_rows": 24,
+      "treated_countries": 72,
+      "treated_country_years": 792,
+      "mapped_cities": 139,
+      "mapped_city_years": 1529,
+      "assignment_scope": "country_registry",
+      "city_rollout_rule": "country_common_shock_no_within_country_rollout_for_iso_level_registry",
+      "direct_core_rule": "intensity>=0.7; grade=A; source=external_direct; year<=2023",
+      "note": "Institutional reform, energy transition, and climate-resilience events; anticipation patterns should be read against country-year timing rather than city-specific adoption."
+    }
+  ],
+  "detail_rows": 1255
+}

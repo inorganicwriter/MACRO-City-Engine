@@ -1,0 +1,10 @@
+{
+  "status": "ok",
+  "ready": true,
+  "gate_pass_rate": 1.0,
+  "failed_gate_count": 0,
+  "artifacts": {
+    "gate_checks_csv": "/mnt/d/user/desktop/cc/data/outputs/robustness_gate_checks.csv",
+    "snapshot_csv": "/mnt/d/user/desktop/cc/data/outputs/robustness_diagnostic_snapshot.csv"
+  }
+}

@@ -1,0 +1,174 @@
+{
+  "status": "ok",
+  "observed_ppp_rows": 749,
+  "observed_ppp_cities": 89,
+  "consecutive_pairs": 660,
+  "future_slowdown_threshold_q20": 0.003239734457137546,
+  "future_slowdown_event_rate": 0.2,
+  "rolling_metrics": [
+    {
+      "test_year": 2020,
+      "model": "static_size",
+      "n_test": 89,
+      "auc": 0.40909090909090906,
+      "brier": 0.07013719815724549
+    },
+    {
+      "test_year": 2020,
+      "model": "risk_only",
+      "n_test": 89,
+      "auc": 0.7386363636363636,
+      "brier": 0.06997635525685898
+    },
+    {
+      "test_year": 2020,
+      "model": "accel_only",
+      "n_test": 89,
+      "auc": 0.9318181818181819,
+      "brier": 0.1275773810372953
+    },
+    {
+      "test_year": 2020,
+      "model": "volatility_only",
+      "n_test": 89,
+      "auc": 0.4772727272727273,
+      "brier": 0.07003301699420601
+    },
+    {
+      "test_year": 2020,
+      "model": "fragile_flag",
+      "n_test": 89,
+      "auc": 0.8579545454545454,
+      "brier": 0.06983066748977095
+    },
+    {
+      "test_year": 2020,
+      "model": "risk_plus_accel",
+      "n_test": 89,
+      "auc": 0.8863636363636364,
+      "brier": 0.133409043585112
+    },
+    {
+      "test_year": 2021,
+      "model": "static_size",
+      "n_test": 82,
+      "auc": 0.6993243243243243,
+      "brier": 0.10069618376769768
+    },
+    {
+      "test_year": 2021,
+      "model": "risk_only",
+      "n_test": 82,
+      "auc": 0.543918918918919,
+      "brier": 0.10110105517362795
+    },
+    {
+      "test_year": 2021,
+      "model": "accel_only",
+      "n_test": 82,
+      "auc": 0.47466216216216217,
+      "brier": 0.10467010692328181
+    },
+    {
+      "test_year": 2021,
+      "model": "volatility_only",
+      "n_test": 82,
+      "auc": 0.4983108108108108,
+      "brier": 0.10148924567149098
+    },
+    {
+      "test_year": 2021,
+      "model": "fragile_flag",
+      "n_test": 82,
+      "auc": 0.46114864864864863,
+      "brier": 0.10138943819844942
+    },
+    {
+      "test_year": 2021,
+      "model": "risk_plus_accel",
+      "n_test": 82,
+      "auc": 0.5067567567567568,
+      "brier": 0.10406049445276822
+    },
+    {
+      "test_year": 2022,
+      "model": "static_size",
+      "n_test": 44,
+      "auc": 0.24117647058823527,
+      "brier": 0.18077082444614717
+    },
+    {
+      "test_year": 2022,
+      "model": "risk_only",
+      "n_test": 44,
+      "auc": 0.638235294117647,
+      "brier": 0.17526597083015658
+    },
+    {
+      "test_year": 2022,
+      "model": "accel_only",
+      "n_test": 44,
+      "auc": 0.5941176470588236,
+      "brier": 0.1736421125648393
+    },
+    {
+      "test_year": 2022,
+      "model": "volatility_only",
+      "n_test": 44,
+      "auc": 0.44999999999999996,
+      "brier": 0.17647629997943642
+    },
+    {
+      "test_year": 2022,
+      "model": "fragile_flag",
+      "n_test": 44,
+      "auc": 0.6176470588235294,
+      "brier": 0.1750069277574949
+    },
+    {
+      "test_year": 2022,
+      "model": "risk_plus_accel",
+      "n_test": 44,
+      "auc": 0.611764705882353,
+      "brier": 0.1718428852759977
+    }
+  ],
+  "model_summary": [
+    {
+      "model": "risk_plus_accel",
+      "mean_auc": 0.6682950330009154,
+      "mean_brier": 0.1364374744379593,
+      "mean_n_test": 71.66666666666667
+    },
+    {
+      "model": "accel_only",
+      "mean_auc": 0.6668659970130558,
+      "mean_brier": 0.13529653350847212,
+      "mean_n_test": 71.66666666666667
+    },
+    {
+      "model": "fragile_flag",
+      "mean_auc": 0.6455834176422411,
+      "mean_brier": 0.11540901114857176,
+      "mean_n_test": 71.66666666666667
+    },
+    {
+      "model": "risk_only",
+      "mean_auc": 0.6402635255576432,
+      "mean_brier": 0.11544779375354784,
+      "mean_n_test": 71.66666666666667
+    },
+    {
+      "model": "volatility_only",
+      "mean_auc": 0.4751945126945127,
+      "mean_brier": 0.11599952088171113,
+      "mean_n_test": 71.66666666666667
+    },
+    {
+      "model": "static_size",
+      "mean_auc": 0.44986390133448956,
+      "mean_brier": 0.11720140212369679,
+      "mean_n_test": 71.66666666666667
+    }
+  ]
+}

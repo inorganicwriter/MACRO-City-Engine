@@ -1,0 +1,189 @@
+city_id,continent,state,start_year,end_year,duration,exit_observed
+abu_dhabi_ae,Asia,stall_trap,2021,2021,1,1
+addis_ababa_et,Africa,stall_trap,2015,2015,1,1
+adelaide_au,Oceania,stall_trap,2018,2018,1,1
+alexandria_eg,Africa,stall_trap,2023,2023,1,1
+algiers_dz,Africa,stall_trap,2015,2015,1,1
+almaty_kz,Asia,stall_trap,2015,2015,1,1
+amsterdam_nl,Europe,stall_trap,2015,2015,1,1
+antananarivo_mg,Africa,stall_trap,2015,2015,1,1
+antwerp_be,Europe,stall_trap,2015,2015,1,1
+antwerp_be,Europe,stall_trap,2019,2019,1,1
+arequipa_pe,South America,stall_trap,2019,2019,1,1
+arequipa_pe,South America,stall_trap,2022,2022,1,1
+ashgabat_tm,Asia,stall_trap,2024,2024,1,1
+asuncion_py,South America,stall_trap,2021,2021,1,1
+asuncion_py,South America,stall_trap,2025,2025,1,0
+athens_gr,Europe,stall_trap,2015,2015,1,1
+atlanta_us,North America,stall_trap,2015,2015,1,1
+auckland_nz,Oceania,stall_trap,2020,2020,1,1
+bangkok_th,Asia,stall_trap,2025,2025,1,0
+barcelona_es,Europe,stall_trap,2015,2015,1,1
+barcelona_es,Europe,stall_trap,2022,2022,1,1
+basel_ch,Europe,stall_trap,2015,2015,1,1
+beirut_lb,Asia,stall_trap,2015,2015,1,1
+belem_br,South America,stall_trap,2020,2020,1,1
+belgrade_rs,Europe,stall_trap,2023,2023,1,1
+bengaluru_in,Asia,stall_trap,2024,2024,1,1
+berlin_de,Europe,stall_trap,2019,2019,1,1
+bilbao_es,Europe,stall_trap,2015,2015,1,1
+bishkek_kg,Asia,stall_trap,2015,2015,1,1
+bishkek_kg,Asia,stall_trap,2024,2024,1,1
+bogota_co,South America,stall_trap,2015,2015,1,1
+brazzaville_cg,Africa,stall_trap,2015,2015,1,1
+brazzaville_cg,Africa,stall_trap,2022,2022,1,1
+brisbane_au,Oceania,stall_trap,2024,2024,1,1
+brussels_be,Europe,stall_trap,2023,2023,1,1
+bucharest_ro,Europe,stall_trap,2015,2015,1,1
+bucharest_ro,Europe,stall_trap,2023,2023,1,1
+bujumbura_bi,Africa,stall_trap,2023,2024,2,1
+busan_kr,Asia,stall_trap,2015,2015,1,1
+busan_kr,Asia,stall_trap,2018,2018,1,1
+cali_co,South America,stall_trap,2015,2015,1,1
+caracas_ve,South America,stall_trap,2015,2015,1,1
+caracas_ve,South America,stall_trap,2025,2025,1,0
+cartagena_co,South America,stall_trap,2015,2015,1,1
+casablanca_ma,Africa,stall_trap,2015,2015,1,1
+charlotte_us,North America,stall_trap,2015,2015,1,1
+chengdu_cn,Asia,stall_trap,2015,2015,1,1
+cologne_de,Europe,stall_trap,2015,2015,1,1
+colombo_lk,Asia,stall_trap,2025,2025,1,0
+conakry_gn,Africa,stall_trap,2015,2015,1,1
+copenhagen_dk,Europe,stall_trap,2015,2015,1,1
+cusco_pe,South America,stall_trap,2015,2015,1,1
+dar_es_salaam_tz,Africa,stall_trap,2015,2015,1,1
+denver_us,North America,stall_trap,2025,2025,1,0
+detroit_us,North America,stall_trap,2024,2024,1,1
+djibouti_city_dj,Africa,stall_trap,2015,2015,1,1
+dunedin_nz,Oceania,stall_trap,2015,2015,1,1
+dusseldorf_de,Europe,stall_trap,2015,2015,1,1
+dusseldorf_de,Europe,stall_trap,2019,2019,1,1
+frankfurt_de,Europe,stall_trap,2015,2015,1,1
+freetown_sl,Africa,stall_trap,2015,2015,1,1
+fukuoka_jp,Asia,stall_trap,2015,2015,1,1
+fukuoka_jp,Asia,stall_trap,2018,2018,1,1
+fukuoka_jp,Asia,stall_trap,2023,2023,1,1
+gaborone_bw,Africa,stall_trap,2015,2015,1,1
+geelong_au,Oceania,stall_trap,2015,2015,1,1
+geneva_ch,Europe,stall_trap,2015,2015,1,1
+geneva_ch,Europe,stall_trap,2021,2021,1,1
+geneva_ch,Europe,stall_trap,2023,2023,1,1
+genoa_it,Europe,stall_trap,2015,2015,1,1
+genoa_it,Europe,stall_trap,2023,2023,1,1
+guangzhou_cn,Asia,stall_trap,2021,2021,1,1
+harare_zw,Africa,stall_trap,2015,2015,1,1
+harare_zw,Africa,stall_trap,2025,2025,1,0
+ho_chi_minh_city_vn,Asia,stall_trap,2015,2015,1,1
+hobart_au,Oceania,stall_trap,2015,2015,1,1
+hong_kong_hk,Asia,stall_trap,2015,2015,1,1
+hong_kong_hk,Asia,stall_trap,2021,2021,1,1
+incheon_kr,Asia,stall_trap,2015,2015,1,1
+irkutsk_ru,Asia,stall_trap,2015,2015,1,1
+istanbul_tr,Europe,stall_trap,2015,2015,1,1
+istanbul_tr,Europe,stall_trap,2019,2019,1,1
+jeddah_sa,Asia,stall_trap,2025,2025,1,0
+kampala_ug,Africa,stall_trap,2015,2015,1,1
+kampala_ug,Africa,stall_trap,2025,2025,1,0
+kaohsiung_tw,Asia,stall_trap,2015,2015,1,1
+karachi_pk,Asia,stall_trap,2021,2021,1,1
+khabarovsk_ru,Asia,stall_trap,2015,2015,1,1
+kigali_rw,Africa,stall_trap,2024,2024,1,1
+kinshasa_cd,Africa,stall_trap,2015,2015,1,1
+kinshasa_cd,Africa,stall_trap,2022,2022,1,1
+kisumu_ke,Africa,stall_trap,2015,2015,1,1
+kisumu_ke,Africa,stall_trap,2021,2021,1,1
+kolkata_in,Asia,stall_trap,2019,2019,1,1
+krasnoyarsk_ru,Asia,stall_trap,2015,2015,1,1
+kuala_lumpur_my,Asia,stall_trap,2024,2024,1,1
+la_paz_bo,South America,stall_trap,2018,2018,1,1
+la_paz_bo,South America,stall_trap,2025,2025,1,0
+lae_pg,Oceania,stall_trap,2022,2022,1,1
+lilongwe_mw,Africa,stall_trap,2015,2015,1,1
+lima_pe,South America,stall_trap,2018,2018,1,1
+lisbon_pt,Europe,stall_trap,2015,2015,1,1
+lisbon_pt,Europe,stall_trap,2024,2024,1,1
+los_angeles_us,North America,stall_trap,2021,2021,1,1
+los_angeles_us,North America,stall_trap,2025,2025,1,0
+luanda_ao,Africa,stall_trap,2018,2018,1,1
+lyon_fr,Europe,stall_trap,2015,2015,1,1
+lyon_fr,Europe,stall_trap,2023,2023,1,1
+madrid_es,Europe,stall_trap,2015,2015,1,1
+malaga_es,Europe,stall_trap,2015,2015,1,1
+managua_ni,North America,stall_trap,2015,2015,1,1
+marseille_fr,Europe,stall_trap,2015,2015,1,1
+mashhad_ir,Asia,stall_trap,2022,2022,1,1
+medellin_co,South America,stall_trap,2015,2015,1,1
+medellin_co,South America,stall_trap,2020,2020,1,1
+milan_it,Europe,stall_trap,2023,2023,1,1
+mogadishu_so,Africa,stall_trap,2015,2015,1,1
+mombasa_ke,Africa,stall_trap,2015,2015,1,1
+montevideo_uy,South America,stall_trap,2018,2018,1,1
+mumbai_in,Asia,stall_trap,2015,2015,1,1
+nairobi_ke,Africa,stall_trap,2015,2015,1,1
+naples_it,Europe,stall_trap,2015,2015,1,1
+naples_it,Europe,stall_trap,2025,2025,1,0
+newcastle_au,Oceania,stall_trap,2022,2022,1,1
+nice_fr,Europe,stall_trap,2015,2015,1,1
+osaka_jp,Asia,stall_trap,2015,2015,1,1
+ouagadougou_bf,Africa,stall_trap,2015,2015,1,1
+panama_city_pa,North America,stall_trap,2015,2015,1,1
+paramaribo_sr,South America,stall_trap,2018,2018,1,1
+perth_au,Oceania,stall_trap,2015,2015,1,1
+philadelphia_us,North America,stall_trap,2015,2015,1,1
+philadelphia_us,North America,stall_trap,2020,2020,1,1
+phnom_penh_kh,Asia,stall_trap,2015,2015,1,1
+port_au_prince_ht,North America,stall_trap,2015,2015,1,1
+port_harcourt_ng,Africa,stall_trap,2023,2023,1,1
+port_moresby_pg,Oceania,stall_trap,2015,2015,1,1
+porto_pt,Europe,stall_trap,2015,2015,1,1
+quito_ec,South America,stall_trap,2015,2015,1,1
+riga_lv,Europe,stall_trap,2015,2015,1,1
+rio_de_janeiro_br,South America,stall_trap,2022,2022,1,1
+rome_it,Europe,stall_trap,2015,2015,1,1
+rome_it,Europe,stall_trap,2023,2023,1,1
+rome_it,Europe,stall_trap,2025,2025,1,0
+rotterdam_nl,Europe,stall_trap,2015,2015,1,1
+saint_petersburg_ru,Europe,stall_trap,2019,2019,1,1
+saint_petersburg_ru,Europe,stall_trap,2025,2025,1,0
+salvador_br,South America,stall_trap,2015,2015,1,1
+san_salvador_sv,North America,stall_trap,2015,2015,1,1
+santo_domingo_do,North America,stall_trap,2018,2018,1,1
+sapporo_jp,Asia,stall_trap,2015,2015,1,1
+sapporo_jp,Asia,stall_trap,2020,2020,1,1
+sarajevo_ba,Europe,stall_trap,2023,2023,1,1
+seoul_kr,Asia,stall_trap,2015,2015,1,1
+seville_es,Europe,stall_trap,2015,2015,1,1
+shanghai_cn,Asia,stall_trap,2023,2023,1,1
+singapore_sg,Asia,stall_trap,2015,2015,1,1
+sofia_bg,Europe,stall_trap,2025,2025,1,0
+stockholm_se,Europe,stall_trap,2015,2015,1,1
+stockholm_se,Europe,stall_trap,2025,2025,1,0
+stuttgart_de,Europe,stall_trap,2015,2015,1,1
+suva_fj,Oceania,stall_trap,2015,2015,1,1
+sydney_au,Oceania,stall_trap,2024,2024,1,1
+taipei_tw,Asia,stall_trap,2024,2024,1,1
+tbilisi_ge,Asia,stall_trap,2015,2015,1,1
+tbilisi_ge,Asia,stall_trap,2018,2018,1,1
+tegucigalpa_hn,North America,stall_trap,2015,2015,1,1
+tehran_ir,Asia,stall_trap,2018,2018,1,1
+tel_aviv_il,Asia,stall_trap,2015,2015,1,1
+thessaloniki_gr,Europe,stall_trap,2015,2015,1,1
+thessaloniki_gr,Europe,stall_trap,2025,2025,1,0
+tijuana_mx,North America,stall_trap,2015,2015,1,1
+tokyo_jp,Asia,stall_trap,2024,2024,1,1
+toulouse_fr,Europe,stall_trap,2015,2015,1,1
+trujillo_pe,South America,stall_trap,2022,2022,1,1
+valencia_es,Europe,stall_trap,2015,2015,1,1
+valencia_es,Europe,stall_trap,2024,2024,1,1
+vientiane_la,Asia,stall_trap,2015,2015,1,1
+vladivostok_ru,Asia,stall_trap,2015,2015,1,1
+washington_dc_us,North America,stall_trap,2015,2015,1,1
+washington_dc_us,North America,stall_trap,2022,2022,1,1
+wellington_nz,Oceania,stall_trap,2015,2015,1,1
+windhoek_na,Africa,stall_trap,2015,2015,1,1
+winnipeg_ca,North America,stall_trap,2024,2024,1,1
+wuhan_cn,Asia,stall_trap,2015,2015,1,1
+wuhan_cn,Asia,stall_trap,2022,2022,1,1
+yakutsk_ru,Asia,stall_trap,2015,2015,1,1
+yaounde_cm,Africa,stall_trap,2015,2015,1,1
+yekaterinburg_ru,Asia,stall_trap,2015,2015,1,1

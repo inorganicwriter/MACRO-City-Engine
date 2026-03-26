@@ -1,0 +1,137 @@
+{
+  "status": "ok",
+  "rows": [
+    {
+      "variable": "log_viirs_ntl",
+      "role": "Primary slow outcome",
+      "resolution": "city-year polygon satellite",
+      "city_observed": "yes",
+      "coverage_share": 1.0,
+      "main_prediction": "yes",
+      "main_causal": "yes",
+      "validation_only": "no",
+      "context_only": "no",
+      "notes": "Annual VIIRS, full 2015-2025 panel coverage."
+    },
+    {
+      "variable": "no2_trop_anomaly_mean",
+      "role": "Primary fast outcome",
+      "resolution": "city-year polygon satellite",
+      "city_observed": "yes",
+      "coverage_share": 0.727,
+      "main_prediction": "no",
+      "main_causal": "yes",
+      "validation_only": "no",
+      "context_only": "no",
+      "notes": "Observed 2018-2025 only; backcasted version enters benchmark modules only."
+    },
+    {
+      "variable": "physical_built_expansion_primary",
+      "role": "Slow structural proxy",
+      "resolution": "city-year polygon satellite",
+      "city_observed": "yes",
+      "coverage_share": 1.0,
+      "main_prediction": "no",
+      "main_causal": "no",
+      "validation_only": "no",
+      "context_only": "no",
+      "notes": "Used in mechanism decomposition and appendix proxy checks."
+    },
+    {
+      "variable": "road_growth_intensity",
+      "role": "Local transport/friction proxy",
+      "resolution": "city-year OSM-derived",
+      "city_observed": "yes",
+      "coverage_share": 1.0,
+      "main_prediction": "yes",
+      "main_causal": "no",
+      "validation_only": "no",
+      "context_only": "no",
+      "notes": "Used in dynamic features and supplementary mechanism proxy tests."
+    },
+    {
+      "variable": "poi_total_yoy",
+      "role": "Middle-speed activity proxy",
+      "resolution": "city-year OSM-derived",
+      "city_observed": "yes",
+      "coverage_share": 0.909,
+      "main_prediction": "yes",
+      "main_causal": "no",
+      "validation_only": "no",
+      "context_only": "no",
+      "notes": "Supplementary activity proxy; coverage starts after first within-city year."
+    },
+    {
+      "variable": "temperature_mean + precipitation_sum",
+      "role": "Climate controls",
+      "resolution": "city-year weather",
+      "city_observed": "yes",
+      "coverage_share": 1.0,
+      "main_prediction": "yes",
+      "main_causal": "yes",
+      "validation_only": "no",
+      "context_only": "yes",
+      "notes": "Observed city-year controls, not interpreted as direct growth outcomes."
+    },
+    {
+      "variable": "baseline_population_log",
+      "role": "Baseline scale control",
+      "resolution": "mixed / baseline-derived",
+      "city_observed": "mixed",
+      "coverage_share": 1.0,
+      "main_prediction": "yes",
+      "main_causal": "yes",
+      "validation_only": "no",
+      "context_only": "yes",
+      "notes": "Derived baseline control; retained for adjustment, not as a city-observed outcome."
+    },
+    {
+      "variable": "knowledge_capital_raw",
+      "role": "Innovation-side mechanism proxy",
+      "resolution": "mixed / macro-derived composite",
+      "city_observed": "no",
+      "coverage_share": 1.0,
+      "main_prediction": "yes",
+      "main_causal": "no",
+      "validation_only": "no",
+      "context_only": "no",
+      "notes": "Used in theory fit and mechanism decomposition, not as the primary policy outcome."
+    },
+    {
+      "variable": "country-year macro context block",
+      "role": "Contextual macro controls",
+      "resolution": "country-year",
+      "city_observed": "no",
+      "coverage_share": 1.0,
+      "main_prediction": "yes",
+      "main_causal": "yes",
+      "validation_only": "no",
+      "context_only": "yes",
+      "notes": "Retained as background context only; never interpreted as direct city-level measurement."
+    },
+    {
+      "variable": "gdp_total_ppp_observed",
+      "role": "External validation anchor",
+      "resolution": "city/metro-year observed",
+      "city_observed": "partial",
+      "coverage_share": 0.231,
+      "main_prediction": "no",
+      "main_causal": "no",
+      "validation_only": "yes",
+      "context_only": "no",
+      "notes": "Used for calibration and future-slowdown validation in the observed-GDP subset."
+    },
+    {
+      "variable": "gdp_total_local_observed",
+      "role": "Observed GDP robustness anchor",
+      "resolution": "city/metro-year observed",
+      "city_observed": "partial",
+      "coverage_share": 0.09,
+      "main_prediction": "no",
+      "main_causal": "no",
+      "validation_only": "yes",
+      "context_only": "no",
+      "notes": "Local-currency robustness anchor; used as supplementary external evidence only."
+    }
+  ]
+}

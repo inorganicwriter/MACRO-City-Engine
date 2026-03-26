@@ -1,0 +1,2 @@
+n_splits,did_mean,did_std,did_cv,did_min,did_max,did_range,sign_switch_count_vs_main,causal_att_mean,causal_att_std
+6,-0.2956142028686606,0.032295744143394,0.1092492667156321,-0.3428877818799044,-0.2331274122817011,0.1097603695982032,6,,

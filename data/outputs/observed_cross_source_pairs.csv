@@ -1,0 +1,16 @@
+signal_a,signal_b,n_overlap,corr,sign_agreement
+road_growth_intensity,viirs_ntl_yoy,2950,0.0012760746018840403,0.5379661016949152
+road_growth_intensity,viirs_recent_drop,3245,0.011313519178839462,0.8268104776579352
+road_growth_intensity,ghsl_built_surface_yoy,2950,0.03513712246059416,0.9705084745762712
+road_growth_intensity,osm_hist_road_yoy,3245,0.8514958964573233,1.0
+road_growth_intensity,osm_hist_poi_yoy,3245,0.16199212382643963,0.9617873651771957
+viirs_ntl_yoy,viirs_recent_drop,2950,-0.13617329601218128,0.44745762711864406
+viirs_ntl_yoy,ghsl_built_surface_yoy,2950,-0.01630832278923613,0.5342372881355932
+viirs_ntl_yoy,osm_hist_road_yoy,2950,-0.017635948232845165,0.5379661016949152
+viirs_ntl_yoy,osm_hist_poi_yoy,2950,-0.029890128755355592,0.5294915254237288
+viirs_recent_drop,ghsl_built_surface_yoy,2950,-0.039907985770457725,0.8396610169491525
+viirs_recent_drop,osm_hist_road_yoy,3245,0.025542355817079507,0.8268104776579352
+viirs_recent_drop,osm_hist_poi_yoy,3245,0.04457516182422679,0.8252696456086287
+ghsl_built_surface_yoy,osm_hist_road_yoy,2950,0.01958073792208213,0.9705084745762712
+ghsl_built_surface_yoy,osm_hist_poi_yoy,2950,-0.055211970067829554,0.9694915254237289
+osm_hist_road_yoy,osm_hist_poi_yoy,3245,0.254283570278138,0.9617873651771957

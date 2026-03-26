@@ -1,0 +1,103 @@
+{
+  "policy_design": "event_registry",
+  "registry_file": "D:\\User\\Desktop\\CC\\data\\raw\\policy_events_registry.csv",
+  "registry_event_rows": 1349,
+  "registry_direct_event_rows": 1349,
+  "registry_external_direct_event_rows": 1349,
+  "registry_objective_indicator_event_rows": 0,
+  "registry_objective_macro_event_rows": 0,
+  "registry_ai_inferred_event_rows": 0,
+  "registry_evidence_a_event_rows": 1098,
+  "registry_evidence_ab_event_rows": 1349,
+  "registry_direct_core_event_rows": 721,
+  "registry_policy_types": 7,
+  "registry_unique_sources": 1139,
+  "principal_treatment_track": "direct_core",
+  "policy_assignment_scope": "country_registry",
+  "causal_unit_recommended": "iso3_year",
+  "city_rollout_rule": "country_common_shock_no_within_country_rollout_for_iso_level_registry",
+  "city_rollout_max_lag_years": 0,
+  "city_rollout_score_components": [],
+  "city_rollout_multi_city_treated_country_count": 0,
+  "treated_country_count": 90,
+  "treated_country_count_all_sources": 116,
+  "treated_country_count_direct": 116,
+  "treated_country_count_external_direct": 116,
+  "treated_country_count_intense_external_direct": 52,
+  "treated_country_count_intense_external_peak": 52,
+  "treated_country_count_objective_indicator": 0,
+  "treated_country_count_objective_macro": 0,
+  "treated_country_count_ai_inferred": 0,
+  "treated_country_count_direct_core": 90,
+  "treated_country_count_evidence_a": 95,
+  "treated_country_count_evidence_ab": 116,
+  "treated_city_count": 169,
+  "treated_share": 0.5728813559322034,
+  "treated_share_all_sources": 0.7796610169491526,
+  "treated_share_direct": 0.7796610169491526,
+  "treated_share_external_direct": 0.7796610169491526,
+  "treated_share_intense_external_direct": 0.34576271186440677,
+  "treated_share_intense_external_peak": 0.34576271186440677,
+  "treated_share_objective_indicator": 0.0,
+  "treated_share_objective_macro": 0.0,
+  "treated_share_ai_inferred": 0.0,
+  "treated_share_direct_core": 0.5728813559322034,
+  "treated_share_evidence_a": 0.5898305084745763,
+  "treated_share_evidence_ab": 0.7796610169491526,
+  "direct_core_rule": {
+    "policy_intensity_min": 0.7,
+    "cohort_year_max": 2023,
+    "source_priority": "external_direct_grade_A"
+  },
+  "external_intense_rule": {
+    "source": "external_direct",
+    "intensity_quantile": 0.55,
+    "intensity_threshold": 0.9835220866141395,
+    "cohort_rule_legacy": "first_start_year",
+    "cohort_rule_peak": "year_max_policy_intensity_external_direct"
+  },
+  "cohort_min_year": 2015,
+  "cohort_max_year": 2022,
+  "mean_policy_city_salience_treated": 0.46797312205395647,
+  "mean_policy_city_salience_control": 0.5469249394673124,
+  "mean_policy_intensity_post": 0.6173225186816227,
+  "mean_policy_dose_post": 0.6173225186816227,
+  "mean_policy_dose_external_direct_post": 0.5189343380823659,
+  "mean_policy_event_count_iso_year": 0.9417565485362096,
+  "mean_policy_event_new_count_iso_year": 0.9417565485362096,
+  "mean_policy_news_proxy_score": 1.1995329775495847,
+  "objective_indicator_events": {
+    "status": "disabled",
+    "reason": "main_causal_track_uses_external_direct_only"
+  },
+  "objective_macro_rules": {
+    "status": "disabled",
+    "reason": "main_causal_track_uses_external_direct_only"
+  },
+  "ai_inference": {
+    "status": "disabled",
+    "reason": "main_causal_track_uses_external_direct_only"
+  },
+  "policy_evidence": {
+    "status": "ok",
+    "event_rows": 1349,
+    "event_rows_by_grade": {
+      "A": 1098,
+      "B": 251,
+      "C": 0
+    },
+    "iso3_covered_by_grade": {
+      "A": 95,
+      "B": 42,
+      "C": 0
+    },
+    "iso3_share_by_grade": {
+      "A": 0.6985294117647058,
+      "B": 0.3088235294117647,
+      "C": 0.0
+    },
+    "high_evidence_share_events": 0.8139362490733877,
+    "high_evidence_share_countries": 0.6985294117647058
+  },
+  "registry_audit_status": "ok"
+}

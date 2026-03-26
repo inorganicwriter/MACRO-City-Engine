@@ -1,0 +1,8 @@
+status,reason,rule_name,flag_share,n_flag_1_cities,n_flag_0_cities
+skipped,too_few_cities_in_rule_group,phase_label_fragility_set,0.2271186440677966,0,99
+skipped,too_few_cities_in_rule_group,phase_flow_speed_q60,0.4,0,99
+skipped,too_few_cities_in_rule_group,phase_flow_speed_q67,0.3322033898305084,0,99
+skipped,too_few_cities_in_rule_group,phase_flow_speed_q75,0.2508474576271186,0,99
+skipped,too_few_cities_in_rule_group,phase_vorticity_abs_q67,0.3491525423728813,0,99
+skipped,too_few_cities_in_rule_group,phase_vorticity_abs_q75,0.2508474576271186,0,99
+skipped,too_few_cities_in_rule_group,phase_flow_x_vorticity_q67,0.159322033898305,0,99

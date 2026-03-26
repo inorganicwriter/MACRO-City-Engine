@@ -1,0 +1,62 @@
+{
+  "data": {
+    "rows": 3245,
+    "cities": 295,
+    "year_min": 2015,
+    "year_max": 2025
+  },
+  "features": {
+    "base_feature_count": 29,
+    "augmented_feature_count": 35,
+    "added_dynamic_features": [
+      "osm_hist_poi_food_count",
+      "osm_hist_poi_retail_count",
+      "osm_hist_poi_nightlife_count",
+      "osm_hist_poi_food_yoy",
+      "osm_hist_poi_retail_yoy",
+      "osm_hist_poi_nightlife_yoy"
+    ]
+  },
+  "results": {
+    "first_difference_raw": {
+      "base": {
+        "n_train": 2065,
+        "n_test": 885,
+        "n_features": 29,
+        "linear_r2": -0.04127858224106351,
+        "linear_rmse": 4.051743544366003,
+        "rf_r2": 0.030286501688762124,
+        "rf_rmse": 3.91003100797227
+      },
+      "augmented": {
+        "n_train": 2065,
+        "n_test": 885,
+        "n_features": 35,
+        "linear_r2": -0.0641213876447162,
+        "linear_rmse": 4.0959445354883535,
+        "rf_r2": 0.031482484772535346,
+        "rf_rmse": 3.9076190720174746
+      }
+    },
+    "first_difference_common_shift_adjusted": {
+      "base": {
+        "n_train": 2065,
+        "n_test": 885,
+        "n_features": 29,
+        "linear_r2": 0.27811389165898115,
+        "linear_rmse": 1.7829513439986728,
+        "rf_r2": 0.12846859592183357,
+        "rf_rmse": 1.9590551843057677
+      },
+      "augmented": {
+        "n_train": 2065,
+        "n_test": 885,
+        "n_features": 35,
+        "linear_r2": 0.272873224395873,
+        "linear_rmse": 1.789411474998115,
+        "rf_r2": 0.12722706434982878,
+        "rf_rmse": 1.9604500642066387
+      }
+    }
+  }
+}

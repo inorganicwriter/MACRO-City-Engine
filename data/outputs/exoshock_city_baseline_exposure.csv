@@ -1,0 +1,296 @@
+city_id,baseline_dose,baseline_intensity,city_name,country,iso3,continent,baseline_exposure,exposure_group
+abidjan_ci,0.5727473417592763,0.5727473417592763,Abidjan,Cote d'Ivoire,CIV,Africa,0.5727473417592763,high
+abu_dhabi_ae,0.0,0.0,Abu Dhabi,United Arab Emirates,ARE,Asia,0.0,low
+abuja_ng,0.4803501975083469,0.4803501975083469,Abuja,Nigeria,NGA,Africa,0.48035019750834684,mid
+accra_gh,0.6664047925675375,0.6664047925675375,Accra,Ghana,GHA,Africa,0.6664047925675375,high
+addis_ababa_et,0.6405858781585136,0.6405858781585136,Addis Ababa,Ethiopia,ETH,Africa,0.6405858781585136,high
+adelaide_au,0.0,0.0,Adelaide,Australia,AUS,Oceania,0.0,low
+ahmedabad_in,0.8348938477584612,0.8348938477584612,Ahmedabad,India,IND,Asia,0.8348938477584611,high
+alexandria_eg,0.6897413760377976,0.6897413760377976,Alexandria,Egypt,EGY,Africa,0.6897413760377976,high
+algiers_dz,0.0,0.0,Algiers,Algeria,DZA,Africa,0.0,low
+almaty_kz,0.3026620561796546,0.3026620561796546,Almaty,Kazakhstan,KAZ,Asia,0.3026620561796546,mid
+amman_jo,0.6061247248903314,0.6061247248903314,Amman,Jordan,JOR,Asia,0.6061247248903314,high
+amsterdam_nl,0.09048803121521858,0.09048803121521858,Amsterdam,Netherlands,NLD,Europe,0.09048803121521858,low
+antananarivo_mg,0.8359797937378259,0.8359797937378259,Antananarivo,Madagascar,MDG,Africa,0.8359797937378259,high
+antwerp_be,0.09048803121521858,0.09048803121521858,Antwerp,Belgium,BEL,Europe,0.09048803121521858,low
+arequipa_pe,0.6401152058740374,0.6401152058740374,Arequipa,Peru,PER,South America,0.6401152058740374,high
+ashgabat_tm,0.09048803121521858,0.09048803121521858,Ashgabat,Turkmenistan,TKM,Asia,0.09048803121521858,low
+astana_kz,0.3026620561796546,0.3026620561796546,Astana,Kazakhstan,KAZ,Asia,0.3026620561796546,mid
+asuncion_py,0.0,0.0,Asuncion,Paraguay,PRY,South America,0.0,low
+athens_gr,0.09048803121521858,0.09048803121521858,Athens,Greece,GRC,Europe,0.09048803121521858,low
+atlanta_us,0.0,0.0,Atlanta,United States,USA,North America,0.0,low
+auckland_nz,0.0,0.0,Auckland,New Zealand,NZL,Oceania,0.0,low
+baghdad_iq,0.5391889417058623,0.5391889417058623,Baghdad,Iraq,IRQ,Asia,0.5391889417058623,high
+baku_az,0.26931681875129454,0.26931681875129454,Baku,Azerbaijan,AZE,Asia,0.26931681875129454,mid
+bamako_ml,0.7581575929927676,0.7581575929927676,Bamako,Mali,MLI,Africa,0.7581575929927676,high
+bangkok_th,0.0,0.0,Bangkok,Thailand,THA,Asia,0.0,low
+barcelona_es,0.514251658795428,0.514251658795428,Barcelona,Spain,ESP,Europe,0.514251658795428,mid
+barranquilla_co,0.8037429372862865,0.8037429372862865,Barranquilla,Colombia,COL,South America,0.8037429372862865,high
+basel_ch,0.09048803121521858,0.09048803121521858,Basel,Switzerland,CHE,Europe,0.09048803121521858,low
+beijing_cn,0.8830460941809118,0.8830460941809118,Beijing,China,CHN,Asia,0.883046094180912,high
+beirut_lb,0.47989484304839414,0.47989484304839414,Beirut,Lebanon,LBN,Asia,0.47989484304839414,mid
+belem_br,0.8271170681269024,0.8271170681269024,Belem,Brazil,BRA,South America,0.8271170681269024,high
+belgrade_rs,0.09048803121521858,0.09048803121521858,Belgrade,Serbia,SRB,Europe,0.09048803121521858,low
+belo_horizonte_br,0.8271170681269024,0.8271170681269024,Belo Horizonte,Brazil,BRA,South America,0.8271170681269024,high
+bengaluru_in,0.8348938477584612,0.8348938477584612,Bengaluru,India,IND,Asia,0.8348938477584611,high
+berlin_de,0.09048803121521858,0.09048803121521858,Berlin,Germany,DEU,Europe,0.09048803121521858,low
+bilbao_es,0.514251658795428,0.514251658795428,Bilbao,Spain,ESP,Europe,0.514251658795428,mid
+birmingham_gb,0.09048803121521858,0.09048803121521858,Birmingham,United Kingdom,GBR,Europe,0.09048803121521858,low
+bishkek_kg,0.39193009838613285,0.39193009838613285,Bishkek,Kyrgyzstan,KGZ,Asia,0.39193009838613285,mid
+bobo_dioulasso_bf,0.7725274961972218,0.7725274961972218,Bobo-Dioulasso,Burkina Faso,BFA,Africa,0.7725274961972218,high
+bogota_co,0.8037429372862865,0.8037429372862865,Bogota,Colombia,COL,South America,0.8037429372862865,high
+bologna_it,0.09048803121521858,0.09048803121521858,Bologna,Italy,ITA,Europe,0.09048803121521858,low
+boston_us,0.0,0.0,Boston,United States,USA,North America,0.0,low
+brasilia_br,0.8271170681269024,0.8271170681269024,Brasilia,Brazil,BRA,South America,0.8271170681269024,high
+bratislava_sk,0.09048803121521858,0.09048803121521858,Bratislava,Slovakia,SVK,Europe,0.09048803121521858,low
+brazzaville_cg,0.0,0.0,Brazzaville,Republic of the Congo,COG,Africa,0.0,low
+brisbane_au,0.0,0.0,Brisbane,Australia,AUS,Oceania,0.0,low
+brussels_be,0.09048803121521858,0.09048803121521858,Brussels,Belgium,BEL,Europe,0.09048803121521858,low
+bucharest_ro,0.6360657268943499,0.6360657268943499,Bucharest,Romania,ROU,Europe,0.6360657268943499,high
+budapest_hu,0.09048803121521858,0.09048803121521858,Budapest,Hungary,HUN,Europe,0.09048803121521858,low
+buenos_aires_ar,0.9054117158513213,0.9054117158513213,Buenos Aires,Argentina,ARG,South America,0.9054117158513213,high
+bujumbura_bi,0.1588163424407358,0.1588163424407358,Bujumbura,Burundi,BDI,Africa,0.1588163424407358,mid
+busan_kr,0.0,0.0,Busan,South Korea,KOR,Asia,0.0,low
+cairo_eg,0.6897413760377976,0.6897413760377976,Cairo,Egypt,EGY,Africa,0.6897413760377976,high
+calgary_ca,0.8218657325833897,0.8218657325833897,Calgary,Canada,CAN,North America,0.8218657325833897,high
+cali_co,0.8037429372862865,0.8037429372862865,Cali,Colombia,COL,South America,0.8037429372862865,high
+canberra_au,0.0,0.0,Canberra,Australia,AUS,Oceania,0.0,low
+cape_town_za,0.30727248506995253,0.30727248506995253,Cape Town,South Africa,ZAF,Africa,0.30727248506995253,mid
+caracas_ve,0.0,0.0,Caracas,Venezuela,VEN,South America,0.0,low
+cartagena_co,0.8037429372862865,0.8037429372862865,Cartagena,Colombia,COL,South America,0.8037429372862865,high
+casablanca_ma,0.5193202023581562,0.5193202023581562,Casablanca,Morocco,MAR,Africa,0.5193202023581562,mid
+charlotte_us,0.0,0.0,Charlotte,United States,USA,North America,0.0,low
+chengdu_cn,0.8830460941809118,0.8830460941809118,Chengdu,China,CHN,Asia,0.883046094180912,high
+chennai_in,0.8348938477584612,0.8348938477584612,Chennai,India,IND,Asia,0.8348938477584611,high
+chicago_us,0.0,0.0,Chicago,United States,USA,North America,0.0,low
+christchurch_nz,0.0,0.0,Christchurch,New Zealand,NZL,Oceania,0.0,low
+cologne_de,0.09048803121521858,0.09048803121521858,Cologne,Germany,DEU,Europe,0.09048803121521858,low
+colombo_lk,0.6190478173600583,0.6190478173600583,Colombo,Sri Lanka,LKA,Asia,0.6190478173600583,high
+conakry_gn,0.3908072693718382,0.3908072693718382,Conakry,Guinea,GIN,Africa,0.3908072693718382,mid
+concepcion_cl,0.17705645793317557,0.17705645793317557,Concepcion,Chile,CHL,South America,0.17705645793317557,mid
+copenhagen_dk,0.09048803121521858,0.09048803121521858,Copenhagen,Denmark,DNK,Europe,0.09048803121521858,low
+cordoba_ar,0.9054117158513213,0.9054117158513213,Cordoba,Argentina,ARG,South America,0.9054117158513213,high
+curitiba_br,0.8271170681269024,0.8271170681269024,Curitiba,Brazil,BRA,South America,0.8271170681269024,high
+cusco_pe,0.6401152058740374,0.6401152058740374,Cusco,Peru,PER,South America,0.6401152058740374,high
+dakar_sn,0.6088783605254972,0.6088783605254972,Dakar,Senegal,SEN,Africa,0.6088783605254972,high
+dallas_us,0.0,0.0,Dallas,United States,USA,North America,0.0,low
+dar_es_salaam_tz,0.7820423059284273,0.7820423059284273,Dar es Salaam,Tanzania,TZA,Africa,0.7820423059284273,high
+darwin_au,0.0,0.0,Darwin,Australia,AUS,Oceania,0.0,low
+delhi_in,0.8348938477584612,0.8348938477584612,Delhi,India,IND,Asia,0.8348938477584611,high
+denver_us,0.0,0.0,Denver,United States,USA,North America,0.0,low
+detroit_us,0.0,0.0,Detroit,United States,USA,North America,0.0,low
+dhaka_bd,0.771851011328503,0.771851011328503,Dhaka,Bangladesh,BGD,Asia,0.771851011328503,high
+djibouti_city_dj,0.44973870175783376,0.44973870175783376,Djibouti City,Djibouti,DJI,Africa,0.4497387017578338,mid
+doha_qa,0.0,0.0,Doha,Qatar,QAT,Asia,0.0,low
+douala_cm,0.6721161649403335,0.6721161649403335,Douala,Cameroon,CMR,Africa,0.6721161649403335,high
+dubai_ae,0.0,0.0,Dubai,United Arab Emirates,ARE,Asia,0.0,low
+dublin_ie,0.514251658795428,0.514251658795428,Dublin,Ireland,IRL,Europe,0.514251658795428,mid
+dunedin_nz,0.0,0.0,Dunedin,New Zealand,NZL,Oceania,0.0,low
+durban_za,0.30727248506995253,0.30727248506995253,Durban,South Africa,ZAF,Africa,0.30727248506995253,mid
+dushanbe_tj,0.5003581439044478,0.5003581439044478,Dushanbe,Tajikistan,TJK,Asia,0.5003581439044478,mid
+dusseldorf_de,0.09048803121521858,0.09048803121521858,Dusseldorf,Germany,DEU,Europe,0.09048803121521858,low
+edmonton_ca,0.8218657325833897,0.8218657325833897,Edmonton,Canada,CAN,North America,0.8218657325833897,high
+florence_it,0.09048803121521858,0.09048803121521858,Florence,Italy,ITA,Europe,0.09048803121521858,low
+fortaleza_br,0.8271170681269024,0.8271170681269024,Fortaleza,Brazil,BRA,South America,0.8271170681269024,high
+frankfurt_de,0.09048803121521858,0.09048803121521858,Frankfurt,Germany,DEU,Europe,0.09048803121521858,low
+freetown_sl,0.5702468418457198,0.5702468418457198,Freetown,Sierra Leone,SLE,Africa,0.5702468418457198,high
+fukuoka_jp,0.0,0.0,Fukuoka,Japan,JPN,Asia,0.0,low
+gaborone_bw,0.19580116646800755,0.19580116646800755,Gaborone,Botswana,BWA,Africa,0.19580116646800755,mid
+geelong_au,0.0,0.0,Geelong,Australia,AUS,Oceania,0.0,low
+geneva_ch,0.09048803121521858,0.09048803121521858,Geneva,Switzerland,CHE,Europe,0.09048803121521858,low
+genoa_it,0.09048803121521858,0.09048803121521858,Genoa,Italy,ITA,Europe,0.09048803121521858,low
+georgetown_gy,0.49004103192320736,0.49004103192320736,Georgetown,Guyana,GUY,South America,0.49004103192320736,mid
+glasgow_gb,0.09048803121521858,0.09048803121521858,Glasgow,United Kingdom,GBR,Europe,0.09048803121521858,low
+gold_coast_au,0.0,0.0,Gold Coast,Australia,AUS,Oceania,0.0,low
+guadalajara_mx,0.33826728740704837,0.33826728740704837,Guadalajara,Mexico,MEX,North America,0.33826728740704837,mid
+guangzhou_cn,0.8830460941809118,0.8830460941809118,Guangzhou,China,CHN,Asia,0.883046094180912,high
+guatemala_city_gt,0.3144245334497372,0.3144245334497372,Guatemala City,Guatemala,GTM,North America,0.3144245334497372,mid
+guayaquil_ec,0.47601632752024353,0.47601632752024353,Guayaquil,Ecuador,ECU,South America,0.4760163275202436,mid
+hamburg_de,0.09048803121521858,0.09048803121521858,Hamburg,Germany,DEU,Europe,0.09048803121521858,low
+hamilton_nz,0.0,0.0,Hamilton,New Zealand,NZL,Oceania,0.0,low
+hanoi_vn,0.6964251365752884,0.6964251365752884,Hanoi,Vietnam,VNM,Asia,0.6964251365752884,high
+harare_zw,0.42904119552295794,0.42904119552295794,Harare,Zimbabwe,ZWE,Africa,0.42904119552295794,mid
+havana_cu,0.0,0.0,Havana,Cuba,CUB,North America,0.0,low
+helsinki_fi,0.23006977011952318,0.23006977011952318,Helsinki,Finland,FIN,Europe,0.23006977011952318,mid
+ho_chi_minh_city_vn,0.6964251365752884,0.6964251365752884,Ho Chi Minh City,Vietnam,VNM,Asia,0.6964251365752884,high
+hobart_au,0.0,0.0,Hobart,Australia,AUS,Oceania,0.0,low
+hong_kong_hk,0.0,0.0,Hong Kong,Hong Kong,HKG,Asia,0.0,low
+houston_us,0.0,0.0,Houston,United States,USA,North America,0.0,low
+hyderabad_in,0.8348938477584612,0.8348938477584612,Hyderabad,India,IND,Asia,0.8348938477584611,high
+ibadan_ng,0.4803501975083469,0.4803501975083469,Ibadan,Nigeria,NGA,Africa,0.48035019750834684,mid
+incheon_kr,0.0,0.0,Incheon,South Korea,KOR,Asia,0.0,low
+irkutsk_ru,0.09048803121521858,0.09048803121521858,Irkutsk,Russia,RUS,Asia,0.09048803121521858,low
+istanbul_tr,0.7628240859426343,0.7628240859426343,Istanbul,Turkey,TUR,Europe,0.7628240859426343,high
+jakarta_id,0.8277068721045427,0.8277068721045427,Jakarta,Indonesia,IDN,Asia,0.8277068721045427,high
+jeddah_sa,0.0,0.0,Jeddah,Saudi Arabia,SAU,Asia,0.0,low
+jerusalem_il,0.0,0.0,Jerusalem,Israel,ISR,Asia,0.0,low
+johannesburg_za,0.30727248506995253,0.30727248506995253,Johannesburg,South Africa,ZAF,Africa,0.30727248506995253,mid
+kampala_ug,0.7514283541532656,0.7514283541532656,Kampala,Uganda,UGA,Africa,0.7514283541532656,high
+kano_ng,0.4803501975083469,0.4803501975083469,Kano,Nigeria,NGA,Africa,0.48035019750834684,mid
+kaohsiung_tw,0.0,0.0,Kaohsiung,Taiwan,TWN,Asia,0.0,low
+karachi_pk,0.8138097778745251,0.8138097778745251,Karachi,Pakistan,PAK,Asia,0.8138097778745251,high
+kathmandu_np,0.3162111520990952,0.3162111520990952,Kathmandu,Nepal,NPL,Asia,0.3162111520990952,mid
+khabarovsk_ru,0.09048803121521858,0.09048803121521858,Khabarovsk,Russia,RUS,Asia,0.09048803121521858,low
+khartoum_sd,0.0,0.0,Khartoum,Sudan,SDN,Africa,0.0,low
+kigali_rw,0.47935955291201077,0.47935955291201077,Kigali,Rwanda,RWA,Africa,0.47935955291201077,mid
+kinshasa_cd,0.0,0.0,Kinshasa,Democratic Republic of the Congo,COD,Africa,0.0,low
+kisumu_ke,0.7248163851427447,0.7248163851427447,Kisumu,Kenya,KEN,Africa,0.7248163851427447,high
+kolkata_in,0.8348938477584612,0.8348938477584612,Kolkata,India,IND,Asia,0.8348938477584611,high
+krakow_pl,0.15,0.15,Krakow,Poland,POL,Europe,0.15,mid
+krasnoyarsk_ru,0.09048803121521858,0.09048803121521858,Krasnoyarsk,Russia,RUS,Asia,0.09048803121521858,low
+kuala_lumpur_my,0.0,0.0,Kuala Lumpur,Malaysia,MYS,Asia,0.0,low
+kumasi_gh,0.6664047925675375,0.6664047925675375,Kumasi,Ghana,GHA,Africa,0.6664047925675375,high
+kuwait_city_kw,0.0,0.0,Kuwait City,Kuwait,KWT,Asia,0.0,low
+kyiv_ua,0.5361030106356687,0.5361030106356687,Kyiv,Ukraine,UKR,Europe,0.5361030106356687,high
+la_paz_bo,0.47937898396375306,0.47937898396375306,La Paz,Bolivia,BOL,South America,0.479378983963753,mid
+la_plata_ar,0.9054117158513213,0.9054117158513213,La Plata,Argentina,ARG,South America,0.9054117158513213,high
+lae_pg,0.1858121918408711,0.1858121918408711,Lae,Papua New Guinea,PNG,Oceania,0.1858121918408711,mid
+lagos_ng,0.4803501975083469,0.4803501975083469,Lagos,Nigeria,NGA,Africa,0.48035019750834684,mid
+lahore_pk,0.8138097778745251,0.8138097778745251,Lahore,Pakistan,PAK,Asia,0.8138097778745251,high
+las_vegas_us,0.0,0.0,Las Vegas,United States,USA,North America,0.0,low
+leon_mx,0.33826728740704837,0.33826728740704837,Leon,Mexico,MEX,North America,0.33826728740704837,mid
+lilongwe_mw,0.3175731516575396,0.3175731516575396,Lilongwe,Malawi,MWI,Africa,0.3175731516575396,mid
+lima_pe,0.6401152058740374,0.6401152058740374,Lima,Peru,PER,South America,0.6401152058740374,high
+lisbon_pt,0.09048803121521858,0.09048803121521858,Lisbon,Portugal,PRT,Europe,0.09048803121521858,low
+liverpool_gb,0.09048803121521858,0.09048803121521858,Liverpool,United Kingdom,GBR,Europe,0.09048803121521858,low
+ljubljana_si,0.09048803121521858,0.09048803121521858,Ljubljana,Slovenia,SVN,Europe,0.09048803121521858,low
+london_gb,0.09048803121521858,0.09048803121521858,London,United Kingdom,GBR,Europe,0.09048803121521858,low
+los_angeles_us,0.0,0.0,Los Angeles,United States,USA,North America,0.0,low
+luanda_ao,0.27922873601458004,0.27922873601458004,Luanda,Angola,AGO,Africa,0.27922873601458004,mid
+lusaka_zm,0.4614780057023899,0.4614780057023899,Lusaka,Zambia,ZMB,Africa,0.46147800570238984,mid
+lyon_fr,0.09048803121521858,0.09048803121521858,Lyon,France,FRA,Europe,0.09048803121521858,low
+madrid_es,0.514251658795428,0.514251658795428,Madrid,Spain,ESP,Europe,0.514251658795428,mid
+malaga_es,0.514251658795428,0.514251658795428,Malaga,Spain,ESP,Europe,0.514251658795428,mid
+managua_ni,0.6187523022728982,0.6187523022728982,Managua,Nicaragua,NIC,North America,0.6187523022728982,high
+manaus_br,0.8271170681269024,0.8271170681269024,Manaus,Brazil,BRA,South America,0.8271170681269024,high
+manchester_gb,0.09048803121521858,0.09048803121521858,Manchester,United Kingdom,GBR,Europe,0.09048803121521858,low
+manila_ph,0.7800437898391278,0.7800437898391278,Manila,Philippines,PHL,Asia,0.7800437898391278,high
+maputo_mz,0.3477497462829214,0.3477497462829214,Maputo,Mozambique,MOZ,Africa,0.3477497462829214,mid
+maracaibo_ve,0.0,0.0,Maracaibo,Venezuela,VEN,South America,0.0,low
+marseille_fr,0.09048803121521858,0.09048803121521858,Marseille,France,FRA,Europe,0.09048803121521858,low
+mashhad_ir,0.0,0.0,Mashhad,Iran,IRN,Asia,0.0,low
+medellin_co,0.8037429372862865,0.8037429372862865,Medellin,Colombia,COL,South America,0.8037429372862865,high
+melbourne_au,0.0,0.0,Melbourne,Australia,AUS,Oceania,0.0,low
+mendoza_ar,0.9054117158513213,0.9054117158513213,Mendoza,Argentina,ARG,South America,0.9054117158513213,high
+merida_mx,0.33826728740704837,0.33826728740704837,Merida,Mexico,MEX,North America,0.33826728740704837,mid
+mexico_city_mx,0.33826728740704837,0.33826728740704837,Mexico City,Mexico,MEX,North America,0.33826728740704837,mid
+miami_us,0.0,0.0,Miami,United States,USA,North America,0.0,low
+milan_it,0.09048803121521858,0.09048803121521858,Milan,Italy,ITA,Europe,0.09048803121521858,low
+minneapolis_us,0.0,0.0,Minneapolis,United States,USA,North America,0.0,low
+minsk_by,0.5045376147096132,0.5045376147096132,Minsk,Belarus,BLR,Europe,0.5045376147096132,mid
+mogadishu_so,0.7867475994449847,0.7867475994449847,Mogadishu,Somalia,SOM,Africa,0.7867475994449847,high
+mombasa_ke,0.7248163851427447,0.7248163851427447,Mombasa,Kenya,KEN,Africa,0.7248163851427447,high
+monrovia_lr,0.713038318894049,0.713038318894049,Monrovia,Liberia,LBR,Africa,0.713038318894049,high
+monterrey_mx,0.33826728740704837,0.33826728740704837,Monterrey,Mexico,MEX,North America,0.33826728740704837,mid
+montevideo_uy,0.1254410143298626,0.1254410143298626,Montevideo,Uruguay,URY,South America,0.1254410143298626,mid
+montreal_ca,0.8218657325833897,0.8218657325833897,Montreal,Canada,CAN,North America,0.8218657325833897,high
+moscow_ru,0.09048803121521858,0.09048803121521858,Moscow,Russia,RUS,Europe,0.09048803121521858,low
+mumbai_in,0.8348938477584612,0.8348938477584612,Mumbai,India,IND,Asia,0.8348938477584611,high
+munich_de,0.09048803121521858,0.09048803121521858,Munich,Germany,DEU,Europe,0.09048803121521858,low
+muscat_om,0.0,0.0,Muscat,Oman,OMN,Asia,0.0,low
+mwanza_tz,0.7820423059284273,0.7820423059284273,Mwanza,Tanzania,TZA,Africa,0.7820423059284273,high
+nagoya_jp,0.0,0.0,Nagoya,Japan,JPN,Asia,0.0,low
+nairobi_ke,0.7248163851427447,0.7248163851427447,Nairobi,Kenya,KEN,Africa,0.7248163851427447,high
+naples_it,0.09048803121521858,0.09048803121521858,Naples,Italy,ITA,Europe,0.09048803121521858,low
+new_york_us,0.0,0.0,New York,United States,USA,North America,0.0,low
+newcastle_au,0.0,0.0,Newcastle,Australia,AUS,Oceania,0.0,low
+niamey_ne,0.5178285157468975,0.5178285157468975,Niamey,Niger,NER,Africa,0.5178285157468975,mid
+nice_fr,0.09048803121521858,0.09048803121521858,Nice,France,FRA,Europe,0.09048803121521858,low
+nouakchott_mr,0.2938879862442173,0.2938879862442173,Nouakchott,Mauritania,MRT,Africa,0.2938879862442173,mid
+novosibirsk_ru,0.09048803121521858,0.09048803121521858,Novosibirsk,Russia,RUS,Asia,0.09048803121521858,low
+omsk_ru,0.09048803121521858,0.09048803121521858,Omsk,Russia,RUS,Asia,0.09048803121521858,low
+osaka_jp,0.0,0.0,Osaka,Japan,JPN,Asia,0.0,low
+oslo_no,0.10331269878301544,0.10331269878301544,Oslo,Norway,NOR,Europe,0.10331269878301544,mid
+ottawa_ca,0.8218657325833897,0.8218657325833897,Ottawa,Canada,CAN,North America,0.8218657325833897,high
+ouagadougou_bf,0.7725274961972218,0.7725274961972218,Ouagadougou,Burkina Faso,BFA,Africa,0.7725274961972218,high
+panama_city_pa,0.6309990936695363,0.6309990936695363,Panama City,Panama,PAN,North America,0.6309990936695363,high
+paramaribo_sr,0.2,0.2,Paramaribo,Suriname,SUR,South America,0.2,mid
+paris_fr,0.09048803121521858,0.09048803121521858,Paris,France,FRA,Europe,0.09048803121521858,low
+perth_au,0.0,0.0,Perth,Australia,AUS,Oceania,0.0,low
+philadelphia_us,0.0,0.0,Philadelphia,United States,USA,North America,0.0,low
+phnom_penh_kh,0.7193554332366556,0.7193554332366556,Phnom Penh,Cambodia,KHM,Asia,0.7193554332366556,high
+phoenix_us,0.0,0.0,Phoenix,United States,USA,North America,0.0,low
+port_au_prince_ht,0.3119577918183821,0.3119577918183821,Port-au-Prince,Haiti,HTI,North America,0.3119577918183821,mid
+port_harcourt_ng,0.4803501975083469,0.4803501975083469,Port Harcourt,Nigeria,NGA,Africa,0.48035019750834684,mid
+port_moresby_pg,0.1858121918408711,0.1858121918408711,Port Moresby,Papua New Guinea,PNG,Oceania,0.1858121918408711,mid
+porto_alegre_br,0.8271170681269024,0.8271170681269024,Porto Alegre,Brazil,BRA,South America,0.8271170681269024,high
+porto_pt,0.09048803121521858,0.09048803121521858,Porto,Portugal,PRT,Europe,0.09048803121521858,low
+prague_cz,0.09048803121521858,0.09048803121521858,Prague,Czechia,CZE,Europe,0.09048803121521858,low
+pretoria_za,0.30727248506995253,0.30727248506995253,Pretoria,South Africa,ZAF,Africa,0.30727248506995253,mid
+puebla_mx,0.33826728740704837,0.33826728740704837,Puebla,Mexico,MEX,North America,0.33826728740704837,mid
+pune_in,0.8348938477584612,0.8348938477584612,Pune,India,IND,Asia,0.8348938477584611,high
+quebec_city_ca,0.8218657325833897,0.8218657325833897,Quebec City,Canada,CAN,North America,0.8218657325833897,high
+queretaro_mx,0.33826728740704837,0.33826728740704837,Queretaro,Mexico,MEX,North America,0.33826728740704837,mid
+quito_ec,0.47601632752024353,0.47601632752024353,Quito,Ecuador,ECU,South America,0.4760163275202436,mid
+rabat_ma,0.5193202023581562,0.5193202023581562,Rabat,Morocco,MAR,Africa,0.5193202023581562,mid
+recife_br,0.8271170681269024,0.8271170681269024,Recife,Brazil,BRA,South America,0.8271170681269024,high
+riga_lv,0.09048803121521858,0.09048803121521858,Riga,Latvia,LVA,Europe,0.09048803121521858,low
+rio_de_janeiro_br,0.8271170681269024,0.8271170681269024,Rio de Janeiro,Brazil,BRA,South America,0.8271170681269024,high
+riyadh_sa,0.0,0.0,Riyadh,Saudi Arabia,SAU,Asia,0.0,low
+rome_it,0.09048803121521858,0.09048803121521858,Rome,Italy,ITA,Europe,0.09048803121521858,low
+rosario_ar,0.9054117158513213,0.9054117158513213,Rosario,Argentina,ARG,South America,0.9054117158513213,high
+rotterdam_nl,0.09048803121521858,0.09048803121521858,Rotterdam,Netherlands,NLD,Europe,0.09048803121521858,low
+saint_petersburg_ru,0.09048803121521858,0.09048803121521858,Saint Petersburg,Russia,RUS,Europe,0.09048803121521858,low
+salvador_br,0.8271170681269024,0.8271170681269024,Salvador,Brazil,BRA,South America,0.8271170681269024,high
+san_diego_us,0.0,0.0,San Diego,United States,USA,North America,0.0,low
+san_francisco_us,0.0,0.0,San Francisco,United States,USA,North America,0.0,low
+san_jose_cr,0.0,0.0,San Jose,Costa Rica,CRI,North America,0.0,low
+san_salvador_sv,0.1046784710768415,0.1046784710768415,San Salvador,El Salvador,SLV,North America,0.1046784710768415,mid
+santa_cruz_bo,0.47937898396375306,0.47937898396375306,Santa Cruz,Bolivia,BOL,South America,0.479378983963753,mid
+santiago_cl,0.17705645793317557,0.17705645793317557,Santiago,Chile,CHL,South America,0.17705645793317557,mid
+santo_domingo_do,0.13777782154425083,0.13777782154425083,Santo Domingo,Dominican Republic,DOM,North America,0.13777782154425083,mid
+sao_paulo_br,0.8271170681269024,0.8271170681269024,Sao Paulo,Brazil,BRA,South America,0.8271170681269024,high
+sapporo_jp,0.0,0.0,Sapporo,Japan,JPN,Asia,0.0,low
+sarajevo_ba,0.4809880088551002,0.4809880088551002,Sarajevo,Bosnia and Herzegovina,BIH,Europe,0.4809880088551002,mid
+seattle_us,0.0,0.0,Seattle,United States,USA,North America,0.0,low
+seoul_kr,0.0,0.0,Seoul,South Korea,KOR,Asia,0.0,low
+seville_es,0.514251658795428,0.514251658795428,Seville,Spain,ESP,Europe,0.514251658795428,mid
+shanghai_cn,0.8830460941809118,0.8830460941809118,Shanghai,China,CHN,Asia,0.883046094180912,high
+shenzhen_cn,0.8830460941809118,0.8830460941809118,Shenzhen,China,CHN,Asia,0.883046094180912,high
+singapore_sg,0.0,0.0,Singapore,Singapore,SGP,Asia,0.0,low
+sofia_bg,0.22258193671069354,0.22258193671069354,Sofia,Bulgaria,BGR,Europe,0.22258193671069354,mid
+stockholm_se,0.09048803121521858,0.09048803121521858,Stockholm,Sweden,SWE,Europe,0.09048803121521858,low
+stuttgart_de,0.09048803121521858,0.09048803121521858,Stuttgart,Germany,DEU,Europe,0.09048803121521858,low
+surat_in,0.8348938477584612,0.8348938477584612,Surat,India,IND,Asia,0.8348938477584611,high
+suva_fj,0.36025210775786176,0.36025210775786176,Suva,Fiji,FJI,Oceania,0.36025210775786176,mid
+sydney_au,0.0,0.0,Sydney,Australia,AUS,Oceania,0.0,low
+tabriz_ir,0.0,0.0,Tabriz,Iran,IRN,Asia,0.0,low
+taipei_tw,0.0,0.0,Taipei,Taiwan,TWN,Asia,0.0,low
+tallinn_ee,0.09048803121521858,0.09048803121521858,Tallinn,Estonia,EST,Europe,0.09048803121521858,low
+tashkent_uz,0.5641467408490558,0.5641467408490558,Tashkent,Uzbekistan,UZB,Asia,0.5641467408490558,high
+tbilisi_ge,0.5470281246477943,0.5470281246477943,Tbilisi,Georgia,GEO,Asia,0.5470281246477943,high
+tegucigalpa_hn,0.11808068442192605,0.11808068442192605,Tegucigalpa,Honduras,HND,North America,0.11808068442192605,mid
+tehran_ir,0.0,0.0,Tehran,Iran,IRN,Asia,0.0,low
+tel_aviv_il,0.0,0.0,Tel Aviv,Israel,ISR,Asia,0.0,low
+thessaloniki_gr,0.09048803121521858,0.09048803121521858,Thessaloniki,Greece,GRC,Europe,0.09048803121521858,low
+tijuana_mx,0.33826728740704837,0.33826728740704837,Tijuana,Mexico,MEX,North America,0.33826728740704837,mid
+tirana_al,0.4693932803727944,0.4693932803727944,Tirana,Albania,ALB,Europe,0.4693932803727944,mid
+tokyo_jp,0.0,0.0,Tokyo,Japan,JPN,Asia,0.0,low
+toronto_ca,0.8218657325833897,0.8218657325833897,Toronto,Canada,CAN,North America,0.8218657325833897,high
+toulouse_fr,0.09048803121521858,0.09048803121521858,Toulouse,France,FRA,Europe,0.09048803121521858,low
+tripoli_ly,0.0,0.0,Tripoli,Libya,LBY,Africa,0.0,low
+trujillo_pe,0.6401152058740374,0.6401152058740374,Trujillo,Peru,PER,South America,0.6401152058740374,high
+tunis_tn,0.6257162167593855,0.6257162167593855,Tunis,Tunisia,TUN,Africa,0.6257162167593855,high
+turin_it,0.09048803121521858,0.09048803121521858,Turin,Italy,ITA,Europe,0.09048803121521858,low
+ulaanbaatar_mn,0.4830471451666577,0.4830471451666577,Ulaanbaatar,Mongolia,MNG,Asia,0.4830471451666577,mid
+valencia_es,0.514251658795428,0.514251658795428,Valencia,Spain,ESP,Europe,0.514251658795428,mid
+valencia_ve,0.0,0.0,Valencia,Venezuela,VEN,South America,0.0,low
+valparaiso_cl,0.17705645793317557,0.17705645793317557,Valparaiso,Chile,CHL,South America,0.17705645793317557,mid
+vancouver_ca,0.8218657325833897,0.8218657325833897,Vancouver,Canada,CAN,North America,0.8218657325833897,high
+vienna_at,0.514251658795428,0.514251658795428,Vienna,Austria,AUT,Europe,0.514251658795428,mid
+vientiane_la,0.49735879998645965,0.49735879998645965,Vientiane,Laos,LAO,Asia,0.49735879998645965,mid
+vilnius_lt,0.11410386598813402,0.11410386598813402,Vilnius,Lithuania,LTU,Europe,0.11410386598813402,mid
+vladivostok_ru,0.09048803121521858,0.09048803121521858,Vladivostok,Russia,RUS,Asia,0.09048803121521858,low
+warsaw_pl,0.15,0.15,Warsaw,Poland,POL,Europe,0.15,mid
+washington_dc_us,0.0,0.0,Washington,United States,USA,North America,0.0,low
+wellington_nz,0.0,0.0,Wellington,New Zealand,NZL,Oceania,0.0,low
+windhoek_na,0.0,0.0,Windhoek,Namibia,NAM,Africa,0.0,low
+winnipeg_ca,0.8218657325833897,0.8218657325833897,Winnipeg,Canada,CAN,North America,0.8218657325833897,high
+wuhan_cn,0.8830460941809118,0.8830460941809118,Wuhan,China,CHN,Asia,0.883046094180912,high
+yakutsk_ru,0.09048803121521858,0.09048803121521858,Yakutsk,Russia,RUS,Asia,0.09048803121521858,low
+yaounde_cm,0.6721161649403335,0.6721161649403335,Yaounde,Cameroon,CMR,Africa,0.6721161649403335,high
+yekaterinburg_ru,0.09048803121521858,0.09048803121521858,Yekaterinburg,Russia,RUS,Asia,0.09048803121521858,low
+yerevan_am,0.5032583901622247,0.5032583901622247,Yerevan,Armenia,ARM,Asia,0.5032583901622247,mid
+yokohama_jp,0.0,0.0,Yokohama,Japan,JPN,Asia,0.0,low
+zagreb_hr,0.3797050129737053,0.3797050129737053,Zagreb,Croatia,HRV,Europe,0.3797050129737053,mid
+zurich_ch,0.09048803121521858,0.09048803121521858,Zurich,Switzerland,CHE,Europe,0.09048803121521858,low

@@ -1,0 +1,227 @@
+{
+  "economic_vitality": {
+    "linear": {
+      "mae": 6.58652291287655,
+      "rmse": 8.653018542655705,
+      "r2": 0.7600169782265483
+    },
+    "random_forest": {
+      "mae": 2.0516178862004706,
+      "rmse": 3.22994981001444,
+      "r2": 0.9665622692358957
+    },
+    "gradient_boosting": {
+      "mae": 2.518828915477942,
+      "rmse": 3.354919517228289,
+      "r2": 0.9639247407296248
+    },
+    "hist_gradient_boosting": {
+      "mae": 1.691533194018093,
+      "rmse": 2.5109545439447505,
+      "r2": 0.9797920178229068
+    }
+  },
+  "livability": {
+    "linear": {
+      "mae": 1.668467095819429,
+      "rmse": 2.165640026231422,
+      "r2": 0.9726111197282918
+    },
+    "random_forest": {
+      "mae": 1.3832720078693856,
+      "rmse": 1.85191365935306,
+      "r2": 0.9799717405734866
+    },
+    "gradient_boosting": {
+      "mae": 1.396592068635588,
+      "rmse": 1.8285039072762388,
+      "r2": 0.980474888453852
+    },
+    "hist_gradient_boosting": {
+      "mae": 1.3982675361074122,
+      "rmse": 1.8213856817312004,
+      "r2": 0.9806266120787334
+    }
+  },
+  "innovation": {
+    "linear": {
+      "mae": 4.177161757821788,
+      "rmse": 6.637032032278577,
+      "r2": 0.7058224250616301
+    },
+    "random_forest": {
+      "mae": 0.8152498263700245,
+      "rmse": 2.914237945048032,
+      "r2": 0.9432831955862342
+    },
+    "gradient_boosting": {
+      "mae": 0.6370698425399479,
+      "rmse": 1.222449518235814,
+      "r2": 0.9900201594251837
+    },
+    "hist_gradient_boosting": {
+      "mae": 0.6338910394991468,
+      "rmse": 2.0362103276057,
+      "r2": 0.9723110167961816
+    }
+  },
+  "composite_index": {
+    "linear": {
+      "mae": 3.609662512408901,
+      "rmse": 4.828981285358373,
+      "r2": 0.8378610311113804
+    },
+    "random_forest": {
+      "mae": 1.112177034051267,
+      "rmse": 1.641124995861056,
+      "r2": 0.9812733677189587
+    },
+    "gradient_boosting": {
+      "mae": 1.4610985336616353,
+      "rmse": 1.9431291793805476,
+      "r2": 0.9737469534148823
+    },
+    "hist_gradient_boosting": {
+      "mae": 1.1316477302589665,
+      "rmse": 1.5609368664973804,
+      "r2": 0.9830586880988061
+    }
+  },
+  "train_test_split": {
+    "strategy": "out_of_time_fixed_cutoff",
+    "train_end_year": 2022,
+    "test_start_year": 2023
+  },
+  "no2_backcast": {
+    "status": "ok",
+    "fit_end_year": 2022,
+    "observed_rows_total": 2360,
+    "fit_rows_total": 1475,
+    "predictor_count": 25,
+    "targets": {
+      "no2_trop_mean": {
+        "status": "ok",
+        "train_rows": 1475,
+        "filled_rows": 885
+      },
+      "no2_trop_p90": {
+        "status": "ok",
+        "train_rows": 1475,
+        "filled_rows": 885
+      },
+      "no2_trop_anomaly_mean": {
+        "status": "ok",
+        "train_rows": 1475,
+        "filled_rows": 885
+      },
+      "no2_trop_anomaly_abs_mean": {
+        "status": "ok",
+        "train_rows": 1475,
+        "filled_rows": 885
+      },
+      "no2_recent_spike": {
+        "status": "ok",
+        "train_rows": 1475,
+        "filled_rows": 885
+      }
+    },
+    "filled_rows_total": 885,
+    "filled_feature_non_null_ratio": 1.0,
+    "coverage_file": "D:\\User\\Desktop\\CC\\data\\outputs\\modeling_no2_backcast_coverage.csv",
+    "used_predictors": [
+      "_year_index",
+      "_viirs_log1p",
+      "latitude",
+      "longitude",
+      "temperature_mean",
+      "precipitation_sum",
+      "climate_comfort",
+      "baseline_population_log",
+      "viirs_ntl_yoy",
+      "viirs_recent_drop",
+      "ghsl_built_surface_km2",
+      "ghsl_built_surface_yoy",
+      "ghsl_built_density",
+      "road_length_km_total",
+      "road_growth_intensity",
+      "arterial_share",
+      "intersection_density",
+      "transport_intensity",
+      "commerce_ratio",
+      "flight_connectivity_total",
+      "international_route_share",
+      "gravity_access_viirs",
+      "spatial_lag_log_viirs_ntl_wdist",
+      "policy_intensity_sum_iso_year",
+      "policy_event_count_iso_year"
+    ]
+  },
+  "ai_incrementality_summary": {
+    "status": "ok",
+    "targets_evaluated": 4,
+    "detail_file": "D:\\User\\Desktop\\CC\\data\\outputs\\model_ai_incrementality.csv",
+    "summary_file": "D:\\User\\Desktop\\CC\\data\\outputs\\model_ai_incrementality_summary.csv",
+    "mean_delta_rmse_full_ai_vs_structural": 0.3768401242716445,
+    "share_targets_rmse_improved_full_ai": 0.0,
+    "mean_delta_r2_full_ai_vs_structural": -0.006899164633324573,
+    "share_targets_r2_improved_full_ai": 0.0,
+    "summary": [
+      {
+        "target": "economic_vitality",
+        "structural_rmse": 2.4316426751568896,
+        "structural_plus_engineered_rmse": 2.5144587280369395,
+        "full_plus_pulse_ai_rmse": 2.525646944747332,
+        "delta_rmse_engineered_vs_structural": 0.0828160528800499,
+        "delta_rmse_full_ai_vs_structural": 0.09400426959044239,
+        "structural_r2": 0.9810484488491825,
+        "structural_plus_engineered_r2": 0.9797355756214031,
+        "full_plus_pulse_ai_r2": 0.9795548391659669,
+        "delta_r2_engineered_vs_structural": -0.0013128732277793986,
+        "delta_r2_full_ai_vs_structural": -0.0014936096832156576,
+        "best_set": "structural_only"
+      },
+      {
+        "target": "livability",
+        "structural_rmse": 1.8006333225216427,
+        "structural_plus_engineered_rmse": 1.8209455301840165,
+        "full_plus_pulse_ai_rmse": 1.8185598705114294,
+        "delta_rmse_engineered_vs_structural": 0.02031220766237385,
+        "delta_rmse_full_ai_vs_structural": 0.017926547989786767,
+        "structural_r2": 0.9810655670168476,
+        "structural_plus_engineered_r2": 0.9806359743971254,
+        "full_plus_pulse_ai_r2": 0.9806866796082887,
+        "delta_r2_engineered_vs_structural": -0.00042959261972219664,
+        "delta_r2_full_ai_vs_structural": -0.00037888740855884784,
+        "best_set": "structural_only"
+      },
+      {
+        "target": "innovation",
+        "structural_rmse": 0.6927102364879965,
+        "structural_plus_engineered_rmse": 2.0497858212638906,
+        "full_plus_pulse_ai_rmse": 2.0590298440772554,
+        "delta_rmse_engineered_vs_structural": 1.3570755847758942,
+        "delta_rmse_full_ai_vs_structural": 1.366319607589259,
+        "structural_r2": 0.9967954655331934,
+        "structural_plus_engineered_r2": 0.9719405789756845,
+        "full_plus_pulse_ai_r2": 0.9716869263264339,
+        "delta_r2_engineered_vs_structural": -0.024854886557508893,
+        "delta_r2_full_ai_vs_structural": -0.025108539206759484,
+        "best_set": "structural_only"
+      },
+      {
+        "target": "composite_index",
+        "structural_rmse": 1.506218900500472,
+        "structural_plus_engineered_rmse": 1.5334719877338758,
+        "full_plus_pulse_ai_rmse": 1.5353289724175618,
+        "delta_rmse_engineered_vs_structural": 0.027253087233403805,
+        "delta_rmse_full_ai_vs_structural": 0.029110071917089808,
+        "structural_r2": 0.9842256109375165,
+        "structural_plus_engineered_r2": 0.9836496122548083,
+        "full_plus_pulse_ai_r2": 0.9836099887027522,
+        "delta_r2_engineered_vs_structural": -0.0005759986827081898,
+        "delta_r2_full_ai_vs_structural": -0.0006156222347643014,
+        "best_set": "structural_only"
+      }
+    ]
+  }
+}

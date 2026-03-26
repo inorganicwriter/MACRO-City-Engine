@@ -1,0 +1,29 @@
+{
+  "status": "ok",
+  "rows": 3245,
+  "cities": 295,
+  "year_range": [
+    2015,
+    2025
+  ],
+  "observed_primary_spec_share": 1.0,
+  "macro_context_only_row_ratio": 0.7845916795069338,
+  "city_macro_observed_row_ratio": 0.21540832049306627,
+  "mean_observed_channel_count": 5.233590138674884,
+  "share_rows_observed_channels_ge_3": 1.0,
+  "share_rows_dynamic_channels_ge_2": 1.0,
+  "channel_coverage": {
+    "road": 1.0,
+    "viirs": 1.0,
+    "osm_history": 1.0,
+    "social": 0.01818181818181818,
+    "poi": 1.0,
+    "weather": 1.0,
+    "city_macro": 0.21540832049306627
+  },
+  "measurement_tier_counts": {
+    "high_observed_coverage": 3245
+  },
+  "output_file": "D:\\User\\Desktop\\CC\\data\\outputs\\observed_measurement_audit.csv",
+  "note": "Country-year macro variables act as contextual controls, while the index specification is audited separately for direct city-observed signal dependence."
+}

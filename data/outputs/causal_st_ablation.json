@@ -1,0 +1,69 @@
+{
+  "variants": [
+    {
+      "variant": "full_dr_spatiotemporal",
+      "status": "ok",
+      "att_post": 0.05052144500488823,
+      "t_value": 2.094158636729127,
+      "p_value": 0.1,
+      "se_method": "bootstrap_cross_fit",
+      "att_ci95_low": 0.004230884698712857,
+      "att_ci95_high": 0.08411496827509374,
+      "n_obs": 3245,
+      "feature_count": 29,
+      "spatial_mode": "distance"
+    },
+    {
+      "variant": "no_spatial",
+      "status": "ok",
+      "att_post": 0.043196642091533864,
+      "t_value": 1.7450256411406446,
+      "p_value": 0.1,
+      "se_method": "bootstrap_cross_fit",
+      "att_ci95_low": -0.011997934067500469,
+      "att_ci95_high": 0.0734022079854438,
+      "n_obs": 3245,
+      "feature_count": 28,
+      "spatial_mode": "distance"
+    },
+    {
+      "variant": "no_temporal",
+      "status": "ok",
+      "att_post": 0.046465845537896,
+      "t_value": 0.8173391405437788,
+      "p_value": 0.7,
+      "se_method": "bootstrap_cross_fit",
+      "att_ci95_low": -0.08369464501711614,
+      "att_ci95_high": 0.0967264626127908,
+      "n_obs": 3245,
+      "feature_count": 26,
+      "spatial_mode": "distance"
+    },
+    {
+      "variant": "flight_spatial",
+      "status": "ok",
+      "att_post": 0.03957383723755206,
+      "t_value": 1.636427821801188,
+      "p_value": 0.1,
+      "se_method": "bootstrap_cross_fit",
+      "att_ci95_low": -0.013006520856105788,
+      "att_ci95_high": 0.06550280483114168,
+      "n_obs": 3245,
+      "feature_count": 29,
+      "spatial_mode": "flight"
+    },
+    {
+      "variant": "plugin_no_dr",
+      "status": "ok",
+      "att_post": 0.053951039907126394,
+      "t_value": 2.329414490295266,
+      "p_value": 0.1,
+      "se_method": "bootstrap_cross_fit",
+      "att_ci95_low": 0.005069509595782781,
+      "att_ci95_high": 0.08126208633913795,
+      "n_obs": 3245,
+      "feature_count": 29,
+      "spatial_mode": "distance"
+    }
+  ]
+}

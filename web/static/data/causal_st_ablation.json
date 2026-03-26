@@ -1,0 +1,52 @@
+{
+  "variants": [
+    {
+      "variant": "full_dr_spatiotemporal",
+      "status": "ok",
+      "att_post": 0.04487223071750078,
+      "t_value": 2.102566336208655,
+      "p_value": 0.1,
+      "se_method": "bootstrap_cross_fit",
+      "att_ci95_low": -0.0038044720739142824,
+      "att_ci95_high": 0.07491301420306701,
+      "n_obs": 3245,
+      "feature_count": 21
+    },
+    {
+      "variant": "no_spatial",
+      "status": "ok",
+      "att_post": 0.04058784068482973,
+      "t_value": 1.6091565151316338,
+      "p_value": 0.1,
+      "se_method": "bootstrap_cross_fit",
+      "att_ci95_low": -0.017854416510065352,
+      "att_ci95_high": 0.06795044774348324,
+      "n_obs": 3245,
+      "feature_count": 20
+    },
+    {
+      "variant": "no_temporal",
+      "status": "ok",
+      "att_post": 0.03129751889793852,
+      "t_value": 0.5457505152402207,
+      "p_value": 0.9,
+      "se_method": "bootstrap_cross_fit",
+      "att_ci95_low": -0.08962511358096513,
+      "att_ci95_high": 0.10201409276569469,
+      "n_obs": 3245,
+      "feature_count": 18
+    },
+    {
+      "variant": "plugin_no_dr",
+      "status": "ok",
+      "att_post": 0.048796803326172644,
+      "t_value": 2.057724890214441,
+      "p_value": 0.2,
+      "se_method": "bootstrap_cross_fit",
+      "att_ci95_low": -0.008787448242050841,
+      "att_ci95_high": 0.07552101519019966,
+      "n_obs": 3245,
+      "feature_count": 21
+    }
+  ]
+}

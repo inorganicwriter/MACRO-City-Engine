@@ -1,0 +1,118 @@
+{
+  "status": "ok",
+  "output_file": "/mnt/d/user/desktop/cc/data/outputs/policy_type_no2_backcast_robustness.csv",
+  "backcast_summary": {
+    "status": "ok",
+    "fit_end_year": 2023,
+    "observed_rows_total": 2360,
+    "fit_rows_total": 1770,
+    "predictor_count": 25,
+    "targets": {
+      "no2_trop_mean": {
+        "status": "ok",
+        "train_rows": 1770,
+        "filled_rows": 885
+      },
+      "no2_trop_p90": {
+        "status": "ok",
+        "train_rows": 1770,
+        "filled_rows": 885
+      },
+      "no2_trop_anomaly_mean": {
+        "status": "ok",
+        "train_rows": 1770,
+        "filled_rows": 885
+      },
+      "no2_trop_anomaly_abs_mean": {
+        "status": "ok",
+        "train_rows": 1770,
+        "filled_rows": 885
+      },
+      "no2_recent_spike": {
+        "status": "ok",
+        "train_rows": 1770,
+        "filled_rows": 885
+      }
+    },
+    "filled_rows_total": 885,
+    "filled_feature_non_null_ratio": 1.0,
+    "coverage_file": "/mnt/d/user/desktop/cc/data/outputs/econometrics_appendix_no2_backcast_coverage.csv",
+    "used_predictors": [
+      "_year_index",
+      "_viirs_log1p",
+      "latitude",
+      "longitude",
+      "temperature_mean",
+      "precipitation_sum",
+      "climate_comfort",
+      "baseline_population_log",
+      "viirs_ntl_yoy",
+      "viirs_recent_drop",
+      "ghsl_built_surface_km2",
+      "ghsl_built_surface_yoy",
+      "ghsl_built_density",
+      "road_length_km_total",
+      "road_growth_intensity",
+      "arterial_share",
+      "intersection_density",
+      "transport_intensity",
+      "commerce_ratio",
+      "flight_connectivity_total",
+      "international_route_share",
+      "gravity_access_viirs",
+      "spatial_lag_log_viirs_ntl_wdist",
+      "policy_intensity_sum_iso_year",
+      "policy_event_count_iso_year"
+    ]
+  },
+  "rows": [
+    {
+      "policy_bucket": "infra",
+      "status": "ok",
+      "outcome": "no2_trop_anomaly_mean_filled",
+      "sample_rule": "appendix_backcasted_no2_full_sample_2015_2025",
+      "policy_year": 2020,
+      "n_obs": 3245,
+      "treated_share": 0.5491525423728814,
+      "dml_status": "ok",
+      "dml_coef": 7.571203303906713e-07,
+      "dml_p_value": 0.10325777319108317,
+      "event_status": "ok",
+      "event_pretrend_joint_p_value": 0.2448,
+      "event_mean_post_coef": 4.7083080083945544e-06,
+      "filled_rows_total": 885
+    },
+    {
+      "policy_bucket": "digital",
+      "status": "ok",
+      "outcome": "no2_trop_anomaly_mean_filled",
+      "sample_rule": "appendix_backcasted_no2_full_sample_2015_2025",
+      "policy_year": 2020,
+      "n_obs": 3245,
+      "treated_share": 0.2542372881355932,
+      "dml_status": "ok",
+      "dml_coef": 2.529151155780781e-07,
+      "dml_p_value": 0.586737682049744,
+      "event_status": "ok",
+      "event_pretrend_joint_p_value": 0.4077,
+      "event_mean_post_coef": 2.4534611912031937e-06,
+      "filled_rows_total": 885
+    },
+    {
+      "policy_bucket": "eco_reg",
+      "status": "ok",
+      "outcome": "no2_trop_anomaly_mean_filled",
+      "sample_rule": "appendix_backcasted_no2_full_sample_2015_2025",
+      "policy_year": 2019,
+      "n_obs": 3245,
+      "treated_share": 0.4711864406779661,
+      "dml_status": "ok",
+      "dml_coef": 2.911518757261464e-08,
+      "dml_p_value": 0.9582076237393508,
+      "event_status": "ok",
+      "event_pretrend_joint_p_value": 0.4061,
+      "event_mean_post_coef": -5.194061297742978e-07,
+      "filled_rows_total": 885
+    }
+  ]
+}

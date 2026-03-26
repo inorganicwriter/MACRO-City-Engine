@@ -1,0 +1,20 @@
+{
+  "status": "ok",
+  "global_shock_years": [
+    2020,
+    2022,
+    2023
+  ],
+  "policy_type_count": 6,
+  "policy_type_event_rows": 87,
+  "continent_event_rows": 90,
+  "channel_rows": 60,
+  "top_policy_type_post_effect": "institutional",
+  "artifacts": {
+    "policy_type_year_index_csv": "D:\\User\\Desktop\\CC\\data\\outputs\\exoshock_policy_type_year_index.csv",
+    "policy_type_event_response_csv": "D:\\User\\Desktop\\CC\\data\\outputs\\exoshock_policy_type_event_response.csv",
+    "continent_event_response_csv": "D:\\User\\Desktop\\CC\\data\\outputs\\exoshock_continent_event_response.csv",
+    "channel_decomposition_csv": "D:\\User\\Desktop\\CC\\data\\outputs\\exoshock_channel_decomposition.csv",
+    "channel_summary_csv": "D:\\User\\Desktop\\CC\\data\\outputs\\exoshock_channel_summary.csv"
+  }
+}

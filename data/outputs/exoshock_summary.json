@@ -1,0 +1,39 @@
+{
+  "status": "ok",
+  "registry_rows": 1349,
+  "shock_years": [
+    2020,
+    2022,
+    2023
+  ],
+  "shock_year_count": 3,
+  "pre_period_end_year": 2019,
+  "first_stage_reduced_form": {
+    "status": "ok",
+    "n_obs": 3245,
+    "first_stage": {
+      "coef": -0.06710132326128361,
+      "stderr": 0.020141523905362908,
+      "t_value": -3.3314918760152565,
+      "p_value": 0.0008638182134943495,
+      "f_stat_approx": 11.098838119955653
+    },
+    "reduced_form": {
+      "coef": 0.5741290604186671,
+      "stderr": 0.18304500649693814,
+      "t_value": 3.13654587691946,
+      "p_value": 0.0017095068902031052
+    },
+    "iv_wald_ratio": -8.556151093818002
+  },
+  "event_response_rows": 15,
+  "placebo_rows": 7,
+  "leave_one_rows": 3,
+  "artifacts": {
+    "shock_index_csv": "D:\\User\\Desktop\\CC\\data\\outputs\\exoshock_year_index.csv",
+    "baseline_exposure_csv": "D:\\User\\Desktop\\CC\\data\\outputs\\exoshock_city_baseline_exposure.csv",
+    "event_response_csv": "D:\\User\\Desktop\\CC\\data\\outputs\\exoshock_event_response.csv",
+    "placebo_distribution_csv": "D:\\User\\Desktop\\CC\\data\\outputs\\exoshock_placebo_year_distribution.csv",
+    "leave_one_shock_csv": "D:\\User\\Desktop\\CC\\data\\outputs\\exoshock_leave_one_shock_out.csv"
+  }
+}

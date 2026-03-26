@@ -1,0 +1,187 @@
+state_id,kinetic_state,trajectory_regime,risk_bucket,accel_bucket,visit_count,rl_state_value,rl_best_action
+overheating|stalling_plateau|r_mid|a_high,overheating,stalling plateau,mid,high,1,-40.645361979557464,anti_overheating
+overheating|stalling_plateau|r_high|a_high,overheating,stalling plateau,high,high,1,-47.439596776584345,anti_overheating
+steady_cruise|stalling_plateau|r_mid|a_mid,steady cruise,stalling plateau,mid,mid,2,-50.338319005740196,resilience_upgrade
+steady_cruise|volatile_rebound|r_high|a_high,steady cruise,volatile rebound,high,high,1,-54.81713298397012,innovation_pulse
+deep_cooling|stalling_plateau|r_low|a_high,deep cooling,stalling plateau,low,high,13,-56.92892735144822,resilience_upgrade
+steady_cruise|stalling_plateau|r_low|a_high,steady cruise,stalling plateau,low,high,6,-57.30507731219418,resilience_upgrade
+deep_cooling|stalling_plateau|r_mid|a_high,deep cooling,stalling plateau,mid,high,1,-58.54933490315338,resilience_upgrade
+deep_cooling|volatile_rebound|r_high|a_high,deep cooling,volatile rebound,high,high,1,-59.028628849896265,resilience_upgrade
+overheating|volatile_rebound|r_mid|a_mid,overheating,volatile rebound,mid,mid,3,-59.12607802282648,anti_overheating
+overheating|stalling_plateau|r_mid|a_mid,overheating,stalling plateau,mid,mid,6,-59.29256099556661,anti_overheating
+deep_cooling|stable_mature|r_high|a_low,deep cooling,stable mature,high,low,3,-60.61902133532268,resilience_upgrade
+steady_cruise|stalling_plateau|r_low|a_mid,steady cruise,stalling plateau,low,mid,21,-60.714137210036036,resilience_upgrade
+overheating|stable_mature|r_high|a_mid,overheating,stable mature,high,mid,11,-60.72277967059795,anti_overheating
+overheating|stable_mature|r_high|a_high,overheating,stable mature,high,high,2,-60.822937588163114,anti_overheating
+overheating|stable_mature|r_low|a_mid,overheating,stable mature,low,mid,1,-62.45056613261234,anti_overheating
+deep_cooling|stalling_plateau|r_low|a_mid,deep cooling,stalling plateau,low,mid,46,-62.711761252804465,resilience_upgrade
+mixed_transition|stalling_plateau|r_low|a_high,mixed transition,stalling plateau,low,high,22,-62.83588330182786,resilience_upgrade
+deep_cooling|volatile_rebound|r_high|a_mid,deep cooling,volatile rebound,high,mid,2,-63.20505955693749,resilience_upgrade
+mixed_transition|stalling_plateau|r_mid|a_high,mixed transition,stalling plateau,mid,high,9,-64.3515052820041,resilience_upgrade
+surge_expansion|stalling_plateau|r_high|a_mid,surge expansion,stalling plateau,high,mid,1,-65.53013902841178,resilience_upgrade
+deep_cooling|persistent_accelerator|r_high|a_low,deep cooling,persistent accelerator,high,low,1,-65.54409757754902,resilience_upgrade
+surge_expansion|stalling_plateau|r_high|a_high,surge expansion,stalling plateau,high,high,16,-66.01459529717248,resilience_upgrade
+deep_cooling|stalling_plateau|r_low|a_low,deep cooling,stalling plateau,low,low,101,-66.33633464927458,resilience_upgrade
+overheating|structural_decline|r_mid|a_mid,overheating,structural decline,mid,mid,1,-66.7878768395952,anti_overheating
+surge_expansion|stalling_plateau|r_low|a_mid,surge expansion,stalling plateau,low,mid,11,-67.40192215173276,resilience_upgrade
+overheating|stable_mature|r_mid|a_high,overheating,stable mature,mid,high,4,-67.53226951917246,anti_overheating
+surge_expansion|stalling_plateau|r_mid|a_mid,surge expansion,stalling plateau,mid,mid,8,-68.14148643546932,resilience_upgrade
+mixed_transition|structural_decline|r_low|a_low,mixed transition,structural decline,low,low,2,-68.77341716220755,resilience_upgrade
+mixed_transition|stalling_plateau|r_low|a_mid,mixed transition,stalling plateau,low,mid,121,-69.19553148892479,resilience_upgrade
+steady_cruise|late_takeoff|r_low|a_high,steady cruise,late takeoff,low,high,1,-69.33036117596575,innovation_pulse
+mixed_transition|stalling_plateau|r_mid|a_mid,mixed transition,stalling plateau,mid,mid,25,-69.36823182293533,resilience_upgrade
+overheating|volatile_rebound|r_mid|a_high,overheating,volatile rebound,mid,high,1,-69.74133182611783,anti_overheating
+surge_expansion|stalling_plateau|r_mid|a_high,surge expansion,stalling plateau,mid,high,57,-70.23731145983832,resilience_upgrade
+surge_expansion|stalling_plateau|r_low|a_high,surge expansion,stalling plateau,low,high,37,-70.36165979669161,resilience_upgrade
+overheating|volatile_rebound|r_high|a_high,overheating,volatile rebound,high,high,8,-70.66334427900259,anti_overheating
+mixed_transition|persistent_accelerator|r_low|a_low,mixed transition,persistent accelerator,low,low,64,-71.02016605159415,wait_observe
+overheating|volatile_rebound|r_high|a_mid,overheating,volatile rebound,high,mid,5,-71.15039871192491,anti_overheating
+recovery_rebound|stable_mature|r_low|a_mid,recovery rebound,stable mature,low,mid,2,-71.68665463755937,innovation_pulse
+mixed_transition|stalling_plateau|r_low|a_low,mixed transition,stalling plateau,low,low,54,-71.73506051538618,resilience_upgrade
+recovery_rebound|stable_mature|r_mid|a_high,recovery rebound,stable mature,mid,high,1,-71.8814463659068,innovation_pulse
+mixed_transition|stalling_plateau|r_mid|a_low,mixed transition,stalling plateau,mid,low,3,-72.83944068128892,resilience_upgrade
+deep_cooling|stalling_plateau|r_mid|a_mid,deep cooling,stalling plateau,mid,mid,3,-73.01017906948607,resilience_upgrade
+steady_cruise|stable_mature|r_low|a_high,steady cruise,stable mature,low,high,2,-73.97588828222382,innovation_pulse
+steady_cruise|late_takeoff|r_high|a_low,steady cruise,late takeoff,high,low,292,-75.17601142110918,resilience_upgrade
+overheating|structural_decline|r_high|a_mid,overheating,structural decline,high,mid,8,-75.71094329276077,anti_overheating
+mixed_transition|volatile_rebound|r_mid|a_low,mixed transition,volatile rebound,mid,low,1,-76.1088733032521,resilience_upgrade
+steady_cruise|stable_mature|r_mid|a_high,steady cruise,stable mature,mid,high,3,-76.54034110700024,innovation_pulse
+mixed_transition|volatile_rebound|r_low|a_high,mixed transition,volatile rebound,low,high,3,-76.54524472678196,innovation_pulse
+steady_cruise|volatile_rebound|r_mid|a_high,steady cruise,volatile rebound,mid,high,7,-76.58678052662349,innovation_pulse
+overheating|persistent_accelerator|r_high|a_mid,overheating,persistent accelerator,high,mid,13,-76.9868809439767,anti_overheating
+recovery_rebound|stalling_plateau|r_low|a_mid,recovery rebound,stalling plateau,low,mid,21,-77.40750764540405,resilience_upgrade
+deep_cooling|stable_mature|r_mid|a_high,deep cooling,stable mature,mid,high,3,-77.53806354011424,resilience_upgrade
+deep_cooling|structural_decline|r_mid|a_mid,deep cooling,structural decline,mid,mid,12,-77.57438284807728,resilience_upgrade
+deep_cooling|structural_decline|r_mid|a_low,deep cooling,structural decline,mid,low,25,-77.98983947307363,resilience_upgrade
+overheating|late_takeoff|r_high|a_mid,overheating,late takeoff,high,mid,7,-78.08063746464153,anti_overheating
+overheating|persistent_accelerator|r_mid|a_mid,overheating,persistent accelerator,mid,mid,2,-78.08230675974684,anti_overheating
+surge_expansion|structural_decline|r_high|a_high,surge expansion,structural decline,high,high,57,-78.32569752205508,resilience_upgrade
+overheating|late_takeoff|r_high|a_high,overheating,late takeoff,high,high,4,-78.64340681175003,anti_overheating
+deep_cooling|structural_decline|r_low|a_low,deep cooling,structural decline,low,low,29,-78.89671850936459,resilience_upgrade
+steady_cruise|persistent_accelerator|r_mid|a_high,steady cruise,persistent accelerator,mid,high,1,-79.09409381323823,innovation_pulse
+overheating|persistent_accelerator|r_high|a_high,overheating,persistent accelerator,high,high,6,-79.3228296578631,anti_overheating
+mixed_transition|volatile_rebound|r_mid|a_high,mixed transition,volatile rebound,mid,high,17,-79.61940820803538,innovation_pulse
+deep_cooling|volatile_rebound|r_mid|a_mid,deep cooling,volatile rebound,mid,mid,11,-79.6358815702102,resilience_upgrade
+mixed_transition|stable_mature|r_high|a_high,mixed transition,stable mature,high,high,14,-79.65598210573842,innovation_pulse
+deep_cooling|structural_decline|r_low|a_mid,deep cooling,structural decline,low,mid,3,-80.00994824487607,resilience_upgrade
+surge_expansion|persistent_accelerator|r_mid|a_mid,surge expansion,persistent accelerator,mid,mid,3,-80.18830762778815,innovation_pulse
+overheating|structural_decline|r_high|a_high,overheating,structural decline,high,high,3,-80.23740411294074,anti_overheating
+steady_cruise|persistent_accelerator|r_high|a_high,steady cruise,persistent accelerator,high,high,1,-80.37248618864369,innovation_pulse
+mixed_transition|structural_decline|r_high|a_low,mixed transition,structural decline,high,low,3,-80.9399420702111,resilience_upgrade
+surge_expansion|stable_mature|r_low|a_high,surge expansion,stable mature,low,high,8,-81.30583478553882,innovation_pulse
+mixed_transition|volatile_rebound|r_high|a_high,mixed transition,volatile rebound,high,high,16,-81.37478621533747,innovation_pulse
+surge_expansion|structural_decline|r_high|a_mid,surge expansion,structural decline,high,mid,10,-81.79540541075917,resilience_upgrade
+surge_expansion|structural_decline|r_mid|a_high,surge expansion,structural decline,mid,high,10,-82.22344148742806,resilience_upgrade
+deep_cooling|persistent_accelerator|r_low|a_mid,deep cooling,persistent accelerator,low,mid,11,-82.29553158525697,resilience_upgrade
+overheating|stalling_plateau|r_low|a_high,overheating,stalling plateau,low,high,0,-82.42035070728899,resilience_upgrade
+surge_expansion|volatile_rebound|r_low|a_high,surge expansion,volatile rebound,low,high,0,-82.42035070728899,resilience_upgrade
+mixed_transition|stable_mature|r_low|a_mid,mixed transition,stable mature,low,mid,18,-82.43641820708929,innovation_pulse
+recovery_rebound|structural_decline|r_low|a_low,recovery rebound,structural decline,low,low,3,-82.62736974029838,resilience_upgrade
+steady_cruise|structural_decline|r_mid|a_mid,steady cruise,structural decline,mid,mid,23,-82.79377077036878,resilience_upgrade
+surge_expansion|volatile_rebound|r_high|a_high,surge expansion,volatile rebound,high,high,73,-82.91635337776889,resilience_upgrade
+surge_expansion|stable_mature|r_mid|a_high,surge expansion,stable mature,mid,high,46,-83.15343807942214,innovation_pulse
+surge_expansion|persistent_accelerator|r_mid|a_high,surge expansion,persistent accelerator,mid,high,30,-83.27104975078507,innovation_pulse
+mixed_transition|structural_decline|r_high|a_high,mixed transition,structural decline,high,high,12,-83.38525452517426,resilience_upgrade
+deep_cooling|stable_mature|r_mid|a_mid,deep cooling,stable mature,mid,mid,10,-83.61699231475252,resilience_upgrade
+steady_cruise|stable_mature|r_mid|a_mid,steady cruise,stable mature,mid,mid,15,-83.69052400725943,innovation_pulse
+recovery_rebound|volatile_rebound|r_low|a_low,recovery rebound,volatile rebound,low,low,2,-83.73352992880044,wait_observe
+steady_cruise|late_takeoff|r_low|a_mid,steady cruise,late takeoff,low,mid,10,-83.7956202969327,innovation_pulse
+recovery_rebound|stalling_plateau|r_low|a_low,recovery rebound,stalling plateau,low,low,2,-83.86567118961293,resilience_upgrade
+recovery_rebound|stable_mature|r_low|a_low,recovery rebound,stable mature,low,low,5,-84.13845032057459,innovation_pulse
+mixed_transition|stable_mature|r_high|a_mid,mixed transition,stable mature,high,mid,1,-84.21422094420649,resilience_upgrade
+deep_cooling|volatile_rebound|r_mid|a_low,deep cooling,volatile rebound,mid,low,16,-84.27812059261635,resilience_upgrade
+mixed_transition|stable_mature|r_low|a_low,mixed transition,stable mature,low,low,55,-84.44628149534168,innovation_pulse
+mixed_transition|volatile_rebound|r_high|a_mid,mixed transition,volatile rebound,high,mid,10,-84.57343922286121,resilience_upgrade
+deep_cooling|stable_mature|r_low|a_high,deep cooling,stable mature,low,high,2,-84.65693334955611,innovation_pulse
+steady_cruise|volatile_rebound|r_low|a_mid,steady cruise,volatile rebound,low,mid,3,-84.84494879806859,innovation_pulse
+mixed_transition|structural_decline|r_low|a_high,mixed transition,structural decline,low,high,2,-84.84686196601228,resilience_upgrade
+deep_cooling|stable_mature|r_low|a_low,deep cooling,stable mature,low,low,88,-85.04185900432925,resilience_upgrade
+mixed_transition|late_takeoff|r_low|a_mid,mixed transition,late takeoff,low,mid,6,-85.29280453628456,innovation_pulse
+mixed_transition|structural_decline|r_low|a_mid,mixed transition,structural decline,low,mid,8,-85.58294173248851,resilience_upgrade
+surge_expansion|stable_mature|r_high|a_high,surge expansion,stable mature,high,high,97,-85.76672374493508,innovation_pulse
+mixed_transition|persistent_accelerator|r_low|a_high,mixed transition,persistent accelerator,low,high,2,-85.85319765323084,innovation_pulse
+recovery_rebound|volatile_rebound|r_low|a_high,recovery rebound,volatile rebound,low,high,2,-85.89664903907709,innovation_pulse
+mixed_transition|stable_mature|r_low|a_high,mixed transition,stable mature,low,high,7,-85.97806191788177,innovation_pulse
+deep_cooling|stable_mature|r_mid|a_low,deep cooling,stable mature,mid,low,21,-85.98949877764655,resilience_upgrade
+surge_expansion|late_takeoff|r_low|a_high,surge expansion,late takeoff,low,high,1,-86.20343120158986,innovation_pulse
+surge_expansion|volatile_rebound|r_mid|a_mid,surge expansion,volatile rebound,mid,mid,3,-86.35758258143615,resilience_upgrade
+mixed_transition|persistent_accelerator|r_low|a_mid,mixed transition,persistent accelerator,low,mid,5,-86.40108204127755,innovation_pulse
+mixed_transition|stable_mature|r_mid|a_mid,mixed transition,stable mature,mid,mid,43,-86.57832602511748,innovation_pulse
+mixed_transition|structural_decline|r_mid|a_low,mixed transition,structural decline,mid,low,8,-86.80440561861772,resilience_upgrade
+deep_cooling|late_takeoff|r_low|a_low,deep cooling,late takeoff,low,low,32,-86.86338899976025,resilience_upgrade
+surge_expansion|persistent_accelerator|r_high|a_high,surge expansion,persistent accelerator,high,high,94,-87.08398573520003,innovation_pulse
+deep_cooling|structural_decline|r_high|a_low,deep cooling,structural decline,high,low,3,-87.16671912561605,resilience_upgrade
+steady_cruise|late_takeoff|r_high|a_high,steady cruise,late takeoff,high,high,3,-87.25387431421923,innovation_pulse
+deep_cooling|late_takeoff|r_high|a_mid,deep cooling,late takeoff,high,mid,1,-87.25484091719838,resilience_upgrade
+mixed_transition|structural_decline|r_mid|a_mid,mixed transition,structural decline,mid,mid,33,-87.3300789798507,resilience_upgrade
+deep_cooling|persistent_accelerator|r_mid|a_low,deep cooling,persistent accelerator,mid,low,30,-87.3873309641718,resilience_upgrade
+mixed_transition|stable_mature|r_mid|a_high,mixed transition,stable mature,mid,high,22,-87.40929621836122,innovation_pulse
+mixed_transition|late_takeoff|r_mid|a_high,mixed transition,late takeoff,mid,high,44,-87.53220767229126,innovation_pulse
+deep_cooling|volatile_rebound|r_low|a_low,deep cooling,volatile rebound,low,low,67,-87.5339232841023,resilience_upgrade
+steady_cruise|late_takeoff|r_mid|a_mid,steady cruise,late takeoff,mid,mid,38,-87.55393068878614,innovation_pulse
+mixed_transition|persistent_accelerator|r_mid|a_high,mixed transition,persistent accelerator,mid,high,10,-87.56763841396992,innovation_pulse
+surge_expansion|late_takeoff|r_mid|a_high,surge expansion,late takeoff,mid,high,13,-87.65103354127447,innovation_pulse
+deep_cooling|late_takeoff|r_high|a_high,deep cooling,late takeoff,high,high,1,-87.65784012836745,resilience_upgrade
+recovery_rebound|persistent_accelerator|r_low|a_high,recovery rebound,persistent accelerator,low,high,1,-87.97264329457602,innovation_pulse
+mixed_transition|structural_decline|r_high|a_mid,mixed transition,structural decline,high,mid,24,-88.05709684504363,resilience_upgrade
+deep_cooling|persistent_accelerator|r_low|a_high,deep cooling,persistent accelerator,low,high,3,-88.11950538953579,innovation_pulse
+mixed_transition|volatile_rebound|r_low|a_mid,mixed transition,volatile rebound,low,mid,17,-88.18037588045439,wait_observe
+deep_cooling|volatile_rebound|r_low|a_mid,deep cooling,volatile rebound,low,mid,9,-88.20700750017924,resilience_upgrade
+mixed_transition|volatile_rebound|r_mid|a_mid,mixed transition,volatile rebound,mid,mid,38,-88.48329100218268,innovation_pulse
+deep_cooling|stable_mature|r_low|a_mid,deep cooling,stable mature,low,mid,15,-88.7711650667305,resilience_upgrade
+deep_cooling|late_takeoff|r_mid|a_mid,deep cooling,late takeoff,mid,mid,20,-88.79721615270473,resilience_upgrade
+recovery_rebound|late_takeoff|r_high|a_mid,recovery rebound,late takeoff,high,mid,1,-88.8039613737345,resilience_upgrade
+surge_expansion|late_takeoff|r_high|a_high,surge expansion,late takeoff,high,high,111,-89.00373365700428,resilience_upgrade
+deep_cooling|persistent_accelerator|r_mid|a_mid,deep cooling,persistent accelerator,mid,mid,10,-89.1419311657642,resilience_upgrade
+deep_cooling|late_takeoff|r_high|a_low,deep cooling,late takeoff,high,low,5,-89.35937483708733,resilience_upgrade
+surge_expansion|volatile_rebound|r_high|a_mid,surge expansion,volatile rebound,high,mid,5,-89.65469745168068,resilience_upgrade
+steady_cruise|late_takeoff|r_mid|a_high,steady cruise,late takeoff,mid,high,9,-89.6614910751561,innovation_pulse
+overheating|stable_mature|r_mid|a_mid,overheating,stable mature,mid,mid,1,-89.86166236757757,anti_overheating
+surge_expansion|structural_decline|r_mid|a_mid,surge expansion,structural decline,mid,mid,7,-89.88563709866743,resilience_upgrade
+deep_cooling|late_takeoff|r_mid|a_high,deep cooling,late takeoff,mid,high,4,-89.9779885199352,resilience_upgrade
+deep_cooling|structural_decline|r_high|a_mid,deep cooling,structural decline,high,mid,1,-90.04176202472206,resilience_upgrade
+deep_cooling|persistent_accelerator|r_low|a_low,deep cooling,persistent accelerator,low,low,47,-90.10724531853894,resilience_upgrade
+mixed_transition|structural_decline|r_mid|a_high,mixed transition,structural decline,mid,high,2,-90.52667854582091,resilience_upgrade
+mixed_transition|late_takeoff|r_high|a_high,mixed transition,late takeoff,high,high,58,-90.59503489420567,innovation_pulse
+recovery_rebound|late_takeoff|r_low|a_mid,recovery rebound,late takeoff,low,mid,2,-90.67661677926775,innovation_pulse
+surge_expansion|volatile_rebound|r_mid|a_high,surge expansion,volatile rebound,mid,high,22,-90.71739056901286,innovation_pulse
+steady_cruise|structural_decline|r_low|a_mid,steady cruise,structural decline,low,mid,2,-90.78368022288981,resilience_upgrade
+mixed_transition|late_takeoff|r_mid|a_low,mixed transition,late takeoff,mid,low,7,-91.41890227911404,resilience_upgrade
+deep_cooling|volatile_rebound|r_mid|a_high,deep cooling,volatile rebound,mid,high,3,-91.4923705158222,resilience_upgrade
+recovery_rebound|structural_decline|r_low|a_mid,recovery rebound,structural decline,low,mid,3,-92.09888233139849,resilience_upgrade
+recovery_rebound|persistent_accelerator|r_low|a_mid,recovery rebound,persistent accelerator,low,mid,2,-92.2618767057434,innovation_pulse
+steady_cruise|structural_decline|r_mid|a_high,steady cruise,structural decline,mid,high,1,-92.36396845353656,resilience_upgrade
+deep_cooling|late_takeoff|r_low|a_mid,deep cooling,late takeoff,low,mid,8,-92.45033551738894,resilience_upgrade
+mixed_transition|persistent_accelerator|r_high|a_low,mixed transition,persistent accelerator,high,low,6,-92.53119110488399,resilience_upgrade
+mixed_transition|late_takeoff|r_mid|a_mid,mixed transition,late takeoff,mid,mid,38,-92.62989528959089,innovation_pulse
+deep_cooling|late_takeoff|r_mid|a_low,deep cooling,late takeoff,mid,low,29,-93.05360097885831,resilience_upgrade
+recovery_rebound|persistent_accelerator|r_mid|a_mid,recovery rebound,persistent accelerator,mid,mid,1,-93.07118221125883,resilience_upgrade
+steady_cruise|late_takeoff|r_mid|a_low,steady cruise,late takeoff,mid,low,3,-93.27750070192747,resilience_upgrade
+mixed_transition|persistent_accelerator|r_mid|a_mid,mixed transition,persistent accelerator,mid,mid,20,-93.41615535509798,innovation_pulse
+recovery_rebound|stable_mature|r_low|a_high,recovery rebound,stable mature,low,high,3,-93.49211781096984,innovation_pulse
+surge_expansion|stable_mature|r_mid|a_mid,surge expansion,stable mature,mid,mid,5,-93.58043402778685,innovation_pulse
+mixed_transition|volatile_rebound|r_low|a_low,mixed transition,volatile rebound,low,low,12,-94.33921723284857,innovation_pulse
+mixed_transition|stable_mature|r_mid|a_low,mixed transition,stable mature,mid,low,6,-94.73288801437968,innovation_pulse
+steady_cruise|structural_decline|r_high|a_mid,steady cruise,structural decline,high,mid,3,-95.1157323618027,resilience_upgrade
+mixed_transition|persistent_accelerator|r_high|a_high,mixed transition,persistent accelerator,high,high,12,-95.1660429046464,resilience_upgrade
+steady_cruise|volatile_rebound|r_mid|a_mid,steady cruise,volatile rebound,mid,mid,6,-95.28380729003923,innovation_pulse
+surge_expansion|late_takeoff|r_high|a_mid,surge expansion,late takeoff,high,mid,3,-95.6354119126338,resilience_upgrade
+deep_cooling|persistent_accelerator|r_mid|a_high,deep cooling,persistent accelerator,mid,high,2,-95.64527775952745,resilience_upgrade
+mixed_transition|late_takeoff|r_low|a_high,mixed transition,late takeoff,low,high,2,-95.8822991995476,innovation_pulse
+mixed_transition|persistent_accelerator|r_high|a_mid,mixed transition,persistent accelerator,high,mid,8,-96.27878002777028,resilience_upgrade
+overheating|late_takeoff|r_mid|a_mid,overheating,late takeoff,mid,mid,1,-96.42304121158725,anti_overheating
+steady_cruise|stable_mature|r_low|a_mid,steady cruise,stable mature,low,mid,4,-97.07504468064988,innovation_pulse
+steady_cruise|structural_decline|r_mid|a_low,steady cruise,structural decline,mid,low,1,-97.44751082972479,resilience_upgrade
+recovery_rebound|structural_decline|r_mid|a_low,recovery rebound,structural decline,mid,low,2,-97.63875562719647,resilience_upgrade
+steady_cruise|late_takeoff|r_high|a_mid,steady cruise,late takeoff,high,mid,3,-97.86601730828652,resilience_upgrade
+mixed_transition|persistent_accelerator|r_mid|a_low,mixed transition,persistent accelerator,mid,low,3,-98.10186731503616,resilience_upgrade
+deep_cooling|late_takeoff|r_low|a_high,deep cooling,late takeoff,low,high,1,-99.34602502655196,innovation_pulse
+steady_cruise|persistent_accelerator|r_mid|a_mid,steady cruise,persistent accelerator,mid,mid,4,-100.14053524869207,resilience_upgrade
+recovery_rebound|late_takeoff|r_mid|a_mid,recovery rebound,late takeoff,mid,mid,4,-100.25765164893767,innovation_pulse
+mixed_transition|late_takeoff|r_high|a_mid,mixed transition,late takeoff,high,mid,12,-100.62510460626355,resilience_upgrade
+steady_cruise|persistent_accelerator|r_low|a_mid,steady cruise,persistent accelerator,low,mid,1,-101.35883215741046,innovation_pulse
+recovery_rebound|persistent_accelerator|r_mid|a_high,recovery rebound,persistent accelerator,mid,high,1,-101.64598747572605,innovation_pulse
+surge_expansion|late_takeoff|r_mid|a_mid,surge expansion,late takeoff,mid,mid,7,-101.65054499748479,innovation_pulse
+recovery_rebound|volatile_rebound|r_low|a_mid,recovery rebound,volatile rebound,low,mid,2,-103.52239107954136,wait_observe
+recovery_rebound|volatile_rebound|r_mid|a_low,recovery rebound,volatile rebound,mid,low,1,-104.45221088611139,resilience_upgrade
+recovery_rebound|late_takeoff|r_mid|a_low,recovery rebound,late takeoff,mid,low,1,-109.20821449720292,innovation_pulse

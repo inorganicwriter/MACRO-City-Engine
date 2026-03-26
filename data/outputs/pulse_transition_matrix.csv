@@ -1,0 +1,17 @@
+from_state,to_state,count,probability
+accelerating_expansion,accelerating_expansion,393,0.3239901071723001
+accelerating_expansion,bottoming_recovery,1,0.0008244023083264633
+accelerating_expansion,decelerating_expansion,372,0.30667765869744434
+accelerating_expansion,deepening_contraction,447,0.3685078318219291
+bottoming_recovery,accelerating_expansion,161,0.43869209809264303
+bottoming_recovery,bottoming_recovery,48,0.1307901907356948
+bottoming_recovery,decelerating_expansion,2,0.005449591280653951
+bottoming_recovery,deepening_contraction,156,0.4250681198910082
+decelerating_expansion,accelerating_expansion,156,0.39
+decelerating_expansion,bottoming_recovery,6,0.015
+decelerating_expansion,decelerating_expansion,65,0.1625
+decelerating_expansion,deepening_contraction,173,0.4325
+deepening_contraction,accelerating_expansion,420,0.4329896907216495
+deepening_contraction,bottoming_recovery,264,0.2721649484536082
+deepening_contraction,decelerating_expansion,1,0.0010309278350515464
+deepening_contraction,deepening_contraction,285,0.29381443298969073

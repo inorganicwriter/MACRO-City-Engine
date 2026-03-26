@@ -1,0 +1,17 @@
+{
+  "status": "ok",
+  "schemes_evaluated": 5,
+  "pca_weights": [
+    0.16525496242771376,
+    0.7766796524333457,
+    0.05806538513894049
+  ],
+  "mean_spearman_rho_vs_baseline": 0.9687965681004422,
+  "min_spearman_rho_vs_baseline": 0.9037763983284565,
+  "mean_stall_auc_across_schemes": 0.33834857916168837,
+  "mean_top10_overlap_ratio": 0.7500000000000001,
+  "conclusion": "robust",
+  "rank_correlation_file": "D:\\User\\Desktop\\CC\\data\\outputs\\weight_sensitivity_rank_correlations.csv",
+  "stall_auc_file": "D:\\User\\Desktop\\CC\\data\\outputs\\weight_sensitivity_stall_auc.csv",
+  "top10_overlap_file": "D:\\User\\Desktop\\CC\\data\\outputs\\weight_sensitivity_top10_overlap.csv"
+}

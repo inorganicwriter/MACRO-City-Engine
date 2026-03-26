@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+*.pyo
+*.log
+.env
+.venv/
+venv/
+logs/
+models/
+data/raw/
+data/processed/
+data/outputs/realtime_snapshots/
+*.pdf

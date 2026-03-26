@@ -1,0 +1,50 @@
+{
+  "status": "ok",
+  "rows": [
+    {
+      "policy_bucket": "Infrastructure",
+      "proxy_channel": "Fast activity pulse (observed NO2)",
+      "evidence_type": "Direct-core response grid",
+      "summary_stat": "DML coef = 1.17e-06",
+      "p_value": 0.085,
+      "sample": 2360,
+      "interpretation": "Consistent with an immediate activity/traffic pulse rather than instant structural catch-up."
+    },
+    {
+      "policy_bucket": "Infrastructure",
+      "proxy_channel": "Local transport/friction proxy (road growth, z-score)",
+      "evidence_type": "Two-way FE proxy DID",
+      "summary_stat": "coef = -0.327",
+      "p_value": 0.023,
+      "sample": 3245,
+      "interpretation": "Negative local road-adjustment response is more consistent with near-field disruption than with immediate capacity gain."
+    },
+    {
+      "policy_bucket": "Digital",
+      "proxy_channel": "Delayed slow response (VIIRS late-post window)",
+      "evidence_type": "Event-study late window (+2,+3)",
+      "summary_stat": "mean coef = 0.108",
+      "p_value": "0.018-0.030",
+      "sample": 3245,
+      "interpretation": "Digital interventions load into slower visible activity with a two-to-three-year delay."
+    },
+    {
+      "policy_bucket": "Digital",
+      "proxy_channel": "Slow physical catch-up (GHSL built-surface yoy, z-score)",
+      "evidence_type": "Two-way FE proxy DID",
+      "summary_stat": "coef = 0.117",
+      "p_value": 0.058,
+      "sample": 2950,
+      "interpretation": "Weak but directionally aligned evidence that digital gains translate into slower physical adjustment rather than fast pulses."
+    },
+    {
+      "policy_bucket": "Environmental / Regulatory",
+      "proxy_channel": "Fast anticipation channel (observed NO2)",
+      "evidence_type": "Event-study pretrend diagnostic",
+      "summary_stat": "joint pretrend p = 0.032",
+      "p_value": "",
+      "sample": 2360,
+      "interpretation": "The clearest signal is anticipatory movement before implementation, consistent with compliance timing rather than immediate level effects."
+    }
+  ]
+}

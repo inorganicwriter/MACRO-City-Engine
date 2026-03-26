@@ -1,0 +1,43 @@
+{
+  "status": "ok",
+  "trigger": "pipeline_step7",
+  "generated_at_utc": "2026-03-23T09:43:38.320486+00:00",
+  "version_tag": "20260323T094338Z",
+  "latest_data_year": 2025,
+  "city_count": 295,
+  "country_count": 136,
+  "continent_count": 6,
+  "alert_city_count": 32,
+  "critical_city_count": 0,
+  "warning_city_count": 4,
+  "opportunity_city_count": 28,
+  "sentinel_city_count": 85,
+  "sentinel_break_count": 0,
+  "sentinel_fragile_transition_count": 2,
+  "source_signature": {
+    "city_points.csv": "2026-03-23T09:43:36.082590+00:00",
+    "pulse_ai_city_latest.csv": "2026-03-23T09:43:36.319374+00:00",
+    "source_audit_city.csv": "2026-03-23T09:24:57.413637+00:00",
+    "source_audit_summary.json": "2026-03-23T09:24:57.415642+00:00",
+    "pipeline_summary.json": "2026-03-23T09:09:07.391053+00:00"
+  },
+  "source_signature_hash": "5714122875531909095",
+  "source_reliability": {
+    "enforce_verified": true,
+    "verified_row_ratio": 1.0,
+    "verified_complete_city_ratio": 1.0,
+    "city_retention_ratio": 1.0,
+    "reliability_gate_status": "ok"
+  },
+  "runtime_seconds": 0.701094,
+  "nowcast_config": {
+    "fraction_year": 0.25,
+    "min_history_years": 3,
+    "warn_risk_threshold": 70.0,
+    "critical_risk_threshold": 85.0,
+    "low_accel_threshold": 45.0,
+    "high_accel_threshold": 70.0,
+    "shock_z_threshold": 2.0,
+    "changepoint_alert_threshold": 0.72
+  }
+}

@@ -1,0 +1,4 @@
+channel,outcome_variable,weight_in_composite,status,coef,stderr,t_value,p_value,weighted_contribution,n_obs
+economic_activity_observed,log_viirs_ntl,0.45,ok,-0.09777532578979468,0.04110357146387047,-2.378754991539798,0.01930934818566912,-0.04399889660540761,935
+physical_built_environment_observed,physical_built_expansion_primary,0.35,ok,0.473324407673246,0.30684967598381035,1.5425286214029406,0.1261682218865312,0.1656635426856361,935
+knowledge_capital_observed,knowledge_capital_raw,0.2,ok,-40.23060998989738,39.708698188086764,-1.013143513276071,0.313486495265957,-8.046121997979476,935

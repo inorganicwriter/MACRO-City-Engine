@@ -1,0 +1,4634 @@
+{
+  "causal_panel_design": {
+    "status": "ok",
+    "causal_unit": "iso3_year",
+    "reason": "country_level_policy_assignment_requires_country_common_shock_panel",
+    "trigger": "policy_assignment_scope_country_level",
+    "source_rows": 3245,
+    "source_cities": 295,
+    "country_year_rows": 1496,
+    "country_count": 136
+  },
+  "policy_reference_year": 2020,
+  "policy_reference_year_all_sources": 2020,
+  "causal_primary_outcome": "log_viirs_ntl",
+  "main_design_selection_rule": "direct_core_only_with_direct_fallback",
+  "main_design_variant": "direct_core",
+  "main_treated_share": 0.6617647058823529,
+  "main_design_candidates": [
+    {
+      "variant": "direct_core",
+      "treated_share": 0.6617647058823529,
+      "did_variation": 2,
+      "cohort_count": 8,
+      "score": 0.7882352941176471,
+      "eligible": 1
+    },
+    {
+      "variant": "direct",
+      "treated_share": 0.8529411764705882,
+      "did_variation": 2,
+      "cohort_count": 7,
+      "score": 0.6460000000000001,
+      "eligible": 1
+    }
+  ],
+  "did_two_way_fe": {
+    "coef": 0.060179283786387414,
+    "stderr": 0.04043353202653228,
+    "t_value": 1.4883509001117705,
+    "p_value": 0.13986927989571513,
+    "r2_within": 0.039027962386264714,
+    "n_obs": 935,
+    "cov_type": "clustered",
+    "cluster_var": "iso3",
+    "controls_used": [
+      "temperature_mean",
+      "precipitation_sum",
+      "baseline_population_log"
+    ],
+    "stderr_type": "cluster_iso3_cr1",
+    "n_clusters": 99
+  },
+  "did_twfe_cluster_bootstrap": {
+    "status": "ok",
+    "coef_observed": 0.060179283786387414,
+    "stderr_observed": 0.04043353202653228,
+    "t_value_observed": 1.4883509001117705,
+    "draws_requested": 60,
+    "draws_successful": 60,
+    "coef_bootstrap_mean": 0.058948284179471615,
+    "coef_bootstrap_std": 0.04568787252533204,
+    "ci95_percentile": [
+      -0.028902629781679862,
+      0.13667006510244964
+    ],
+    "p_value_two_sided": 0.23333333333333334
+  },
+  "did_twfe_permutation": {
+    "status": "ok",
+    "coef_observed": 0.060179283786387414,
+    "t_value_observed": 1.4883509001117705,
+    "permutation_design": "permute_city_cohort_schedule_preserving_treated_share_and_timing_mix",
+    "draws_requested": 80,
+    "draws_successful": 80,
+    "null_coef_mean": 0.006483868475343549,
+    "null_coef_std": 0.04287100609369209,
+    "null_abs_t_p95": 2.1509335365754705,
+    "p_value_abs_coef": 0.18518518518518517,
+    "p_value_abs_t": 0.2222222222222222
+  },
+  "did_twfe_wild_bootstrap": {
+    "status": "ok",
+    "coef_observed": 0.060179283786387414,
+    "t_value_observed": 1.4883509001117705,
+    "n_clusters": 99,
+    "null_design": "restricted_null_beta_did_eq_0_with_cluster_rademacher_weights",
+    "draws_requested": 90,
+    "draws_successful": 90,
+    "null_coef_mean": -0.0007144490696622772,
+    "null_t_mean": -0.018070754762530766,
+    "null_t_std": 0.8816109842053442,
+    "null_abs_t_p95": 1.5745558397945354,
+    "p_value_abs_t": 0.07692307692307693,
+    "p_value_abs_coef": 0.06593406593406594,
+    "ci95_coef_percentile": [
+      -0.055646585155596895,
+      0.06130942056240704
+    ]
+  },
+  "did_twfe_lead_placebo": {
+    "status": "ok",
+    "lead_count": 2,
+    "share_p_lt_0_10": 0.0,
+    "max_abs_t": 0.8659132833962054,
+    "mean_abs_coef": 0.026833943841853468,
+    "rows": [
+      {
+        "lead_years": 1,
+        "coef": 0.01917162571537253,
+        "stderr": 0.04059973360745482,
+        "t_value": 0.4722106282946715,
+        "p_value": 0.6378262741973337
+      },
+      {
+        "lead_years": 2,
+        "coef": 0.034496261968334406,
+        "stderr": 0.039838009913690596,
+        "t_value": 0.8659132833962054,
+        "p_value": 0.38865267631220224
+      }
+    ],
+    "output_path": "D:\\User\\Desktop\\CC\\data\\outputs\\twfe_lead_placebo_main_log_viirs_ntl.csv"
+  },
+  "did_stacked_lead_placebo": {
+    "status": "skipped",
+    "reason": "no_valid_stacked_placebo_estimates",
+    "output_path": "D:\\User\\Desktop\\CC\\data\\outputs\\did_stacked_lead_placebo_main_log_viirs_ntl.csv"
+  },
+  "did_intense_contrast": {
+    "status": "ok",
+    "did_col": "did_treatment_intense_external_peak",
+    "treated_col": "treated_city_intense_external_peak",
+    "treated_share": 0.2556149732620321,
+    "coef": -0.00457258976926132,
+    "stderr": 0.05902050674381114,
+    "t_value": -0.07747459351898565,
+    "p_value": 0.9384039612912116,
+    "n_obs": 935,
+    "stderr_type": "cluster_iso3_cr1",
+    "n_clusters": 99
+  },
+  "did_dose_response": {
+    "status": "ok",
+    "dose_col": "policy_dose",
+    "coef": -0.024968961812006706,
+    "stderr": 0.029045355844536574,
+    "t_value": -0.8596541886300685,
+    "p_value": 0.39207773238247323,
+    "coef_per_1sd_dose": -0.008132981726809077,
+    "stderr_per_1sd_dose": 0.009460759726849783,
+    "dose_std": 0.3257236639650035,
+    "dose_positive_share": 0.1925133689839572,
+    "n_obs": 935,
+    "stderr_type": "cluster_iso3_cr1",
+    "n_clusters": 99
+  },
+  "did_dose_response_external_direct": {
+    "status": "ok",
+    "dose_col": "policy_dose_external_direct",
+    "coef": -0.012983487487691407,
+    "stderr": 0.025425568470376383,
+    "t_value": -0.5106468908578629,
+    "p_value": 0.6107467146740595,
+    "coef_per_1sd_dose": -0.004717819453047942,
+    "stderr_per_1sd_dose": 0.009238907623861621,
+    "dose_std": 0.3633707397585221,
+    "dose_positive_share": 0.38181818181818183,
+    "n_obs": 935,
+    "stderr_type": "cluster_iso3_cr1",
+    "n_clusters": 99
+  },
+  "did_dose_response_bins": {
+    "status": "ok",
+    "dose_col": "policy_dose",
+    "n_obs": 935,
+    "n_bins_effective": 4,
+    "stderr_type": "cluster_iso3_cr1",
+    "n_clusters": 99,
+    "effects_by_bin": [
+      {
+        "dose_bin": "dose_bin_1",
+        "dose_range_low": 0.4032824226032283,
+        "dose_range_high": 0.7178510442980941,
+        "coef": 0.025751154191287463,
+        "stderr": 0.03689674143332286,
+        "t_value": 0.6979248895955513,
+        "p_value": 0.4868768413900325,
+        "ci95_low": -0.04656645901802534,
+        "ci95_high": 0.09806876740060028,
+        "n_rows_bin": 45
+      },
+      {
+        "dose_bin": "dose_bin_2",
+        "dose_range_low": 0.7178510442980941,
+        "dose_range_high": 0.7940175519068642,
+        "coef": -0.030080124526909915,
+        "stderr": 0.03677506540317656,
+        "t_value": -0.8179489063345527,
+        "p_value": 0.415370688798249,
+        "ci95_low": -0.10215925271713597,
+        "ci95_high": 0.04199900366331613,
+        "n_rows_bin": 45
+      },
+      {
+        "dose_bin": "dose_bin_3",
+        "dose_range_low": 0.7940175519068642,
+        "dose_range_high": 0.9516467621274218,
+        "coef": -0.009716688139670776,
+        "stderr": 0.03080624086637944,
+        "t_value": -0.31541297692946163,
+        "p_value": 0.7531187939982891,
+        "ci95_low": -0.07009692023777447,
+        "ci95_high": 0.05066354395843292,
+        "n_rows_bin": 45
+      },
+      {
+        "dose_bin": "dose_bin_4",
+        "dose_range_low": 0.9516467621274218,
+        "dose_range_high": 1.0,
+        "coef": 0.04984436962406361,
+        "stderr": 0.03530710731722097,
+        "t_value": 1.4117375625318398,
+        "p_value": 0.16119451292072673,
+        "ci95_low": -0.01935756071768948,
+        "ci95_high": 0.1190462999658167,
+        "n_rows_bin": 45
+      }
+    ],
+    "monotonic_non_decreasing": false,
+    "monotonic_non_increasing": false,
+    "output_path": "D:\\User\\Desktop\\CC\\data\\outputs\\dose_response_bins_policy_dose_log_viirs_ntl.csv"
+  },
+  "did_dose_response_bins_external_direct": {
+    "status": "ok",
+    "dose_col": "policy_dose_external_direct",
+    "n_obs": 935,
+    "n_bins_effective": 4,
+    "stderr_type": "cluster_iso3_cr1",
+    "n_clusters": 99,
+    "effects_by_bin": [
+      {
+        "dose_bin": "dose_bin_1",
+        "dose_range_low": 0.3629096835534678,
+        "dose_range_high": 0.598110981773241,
+        "coef": -0.03888218205895147,
+        "stderr": 0.02770458880792643,
+        "t_value": -1.4034563850962867,
+        "p_value": 0.16364149275157613,
+        "ci95_low": -0.09318317612248728,
+        "ci95_high": 0.01541881200458433,
+        "n_rows_bin": 96
+      },
+      {
+        "dose_bin": "dose_bin_2",
+        "dose_range_low": 0.598110981773241,
+        "dose_range_high": 0.717698924416629,
+        "coef": 0.008693127705610336,
+        "stderr": 0.023891245019085666,
+        "t_value": 0.3638624817863522,
+        "p_value": 0.7167445240683379,
+        "ci95_low": -0.038133712531797564,
+        "ci95_high": 0.055519967943018236,
+        "n_rows_bin": 83
+      },
+      {
+        "dose_bin": "dose_bin_3",
+        "dose_range_low": 0.717698924416629,
+        "dose_range_high": 0.832769631059564,
+        "coef": -0.012354854351222879,
+        "stderr": 0.029370561015949304,
+        "t_value": -0.42065435333406587,
+        "p_value": 0.6749285099062565,
+        "ci95_low": -0.06992115394248351,
+        "ci95_high": 0.045211445240037756,
+        "n_rows_bin": 89
+      },
+      {
+        "dose_bin": "dose_bin_4",
+        "dose_range_low": 0.832769631059564,
+        "dose_range_high": 1.0,
+        "coef": 0.00334058997177314,
+        "stderr": 0.023890710449252738,
+        "t_value": 0.13982798790638845,
+        "p_value": 0.8890828736577889,
+        "ci95_low": -0.04348520250876223,
+        "ci95_high": 0.050166382452308506,
+        "n_rows_bin": 89
+      }
+    ],
+    "monotonic_non_decreasing": false,
+    "monotonic_non_increasing": false,
+    "output_path": "D:\\User\\Desktop\\CC\\data\\outputs\\dose_response_bins_policy_dose_external_direct_log_viirs_ntl.csv"
+  },
+  "did_spillover_twfe": {
+    "status": "skipped",
+    "reason": "spillover_not_identified_on_country_level_causal_panel"
+  },
+  "did_spillover_twfe_dose": {
+    "status": "skipped",
+    "reason": "spillover_not_identified_on_country_level_causal_panel"
+  },
+  "did_matched_trend": {
+    "status": "ok",
+    "grouping_mode": "ever_treated_vs_never",
+    "treatment_year": 2020,
+    "cohort_split": null,
+    "matching_caliper": 0.18,
+    "common_support_interval": [
+      0.2561251383261287,
+      0.8477726103899212
+    ],
+    "matched_pairs": 28,
+    "matched_cities": 56,
+    "matched_treated_group_cities": 28,
+    "matched_control_group_cities": 28,
+    "coef": -0.06335558889881308,
+    "stderr": 0.03639161774896597,
+    "t_value": -1.7409390628316674,
+    "p_value": 0.08728606056742096,
+    "n_obs": 517,
+    "r2_within": 0.04458671838795847,
+    "avg_abs_smd_before": 0.5605115056084944,
+    "avg_abs_smd_after": 0.12208279286037323,
+    "avg_abs_smd_improvement": 0.4384287127481212,
+    "placebo": [
+      {
+        "placebo_year": 2017,
+        "coef": -0.016027844421632294,
+        "stderr": 0.05204278728067744,
+        "t_value": -0.3079743660767214,
+        "p_value": 0.7592651750561551
+      },
+      {
+        "placebo_year": 2018,
+        "coef": -0.030469902378339683,
+        "stderr": 0.052347294504689064,
+        "t_value": -0.5820721522792417,
+        "p_value": 0.5628965661310701
+      },
+      {
+        "placebo_year": 2019,
+        "coef": -0.03814646522421322,
+        "stderr": 0.04215005040672761,
+        "t_value": -0.9050158862473063,
+        "p_value": 0.3694044241968174
+      }
+    ]
+  },
+  "staggered_did": {
+    "status": "ok",
+    "outcome": "log_viirs_ntl",
+    "treatment_year_reference": 2020,
+    "cohort_count": 4,
+    "treated_city_count": 36,
+    "event_window": [
+      -4,
+      4
+    ],
+    "post_avg_att": 0.0625878340692176,
+    "post_avg_t_value": 1.677817458021247,
+    "post_avg_ci95": [
+      -0.010526290586715642,
+      0.13570195872515084
+    ],
+    "pretrend_max_abs_t": 1.4822411980479093,
+    "pretrend_share_p_lt_0_10": 0.0,
+    "pretrend_joint_stat": 0.79544592974997,
+    "pretrend_joint_p_value": 0.14255,
+    "pretrend_joint_dof": 3,
+    "pretrend_raw_max_abs_t": 1.4822411980479093,
+    "pretrend_raw_share_p_lt_0_10": 0.0,
+    "pretrend_raw_joint_stat": 0.79544592974997,
+    "pretrend_raw_joint_p_value": 0.14255,
+    "pretrend_raw_joint_dof": 3,
+    "cohort_pretrend_screening": {
+      "status": "applied",
+      "rule": "keep cohorts with pre_cells>=2, pre_max_abs_t<=2.5, pre_share_sig<=0.5",
+      "kept_cohorts": [
+        2017,
+        2018,
+        2020,
+        2022
+      ],
+      "dropped_cohorts": [],
+      "kept_count": 4,
+      "dropped_count": 0
+    },
+    "cohort_distribution": [
+      {
+        "cohort_year": 2017,
+        "cities": 20
+      },
+      {
+        "cohort_year": 2018,
+        "cities": 4
+      },
+      {
+        "cohort_year": 2020,
+        "cities": 9
+      },
+      {
+        "cohort_year": 2022,
+        "cities": 3
+      }
+    ],
+    "event_time_points": [
+      {
+        "event_time": -4,
+        "att": 0.047475985651909074,
+        "stderr": 0.03968765910608151,
+        "t_value": 1.1962405120697612,
+        "p_value": 0.4432668264450892,
+        "cells": 2,
+        "weighted_n_treat": 12.0,
+        "ci95_low": -0.030311826196010687,
+        "ci95_high": 0.12526379749982883
+      },
+      {
+        "event_time": -3,
+        "att": 0.03781953676747876,
+        "stderr": 0.042291657497964076,
+        "t_value": 0.8942552504427002,
+        "p_value": 0.46555091803396587,
+        "cells": 3,
+        "weighted_n_treat": 16.0,
+        "ci95_low": -0.04507211192853082,
+        "ci95_high": 0.12071118546348834
+      },
+      {
+        "event_time": -2,
+        "att": 0.02635804164007574,
+        "stderr": 0.017782559056372816,
+        "t_value": 1.4822411980479093,
+        "p_value": 0.23489011414549912,
+        "cells": 4,
+        "weighted_n_treat": 36.0,
+        "ci95_low": -0.00849577411041498,
+        "ci95_high": 0.06121185739056646
+      },
+      {
+        "event_time": -1,
+        "att": 0.0,
+        "stderr": 0.0,
+        "t_value": 0.0,
+        "p_value": 1.0,
+        "cells": 4,
+        "weighted_n_treat": 36.0,
+        "ci95_low": 0.0,
+        "ci95_high": 0.0
+      },
+      {
+        "event_time": 0,
+        "att": -0.007665724170692264,
+        "stderr": 0.027745469468334397,
+        "t_value": -0.27628741980527927,
+        "p_value": 0.800267897467485,
+        "cells": 4,
+        "weighted_n_treat": 36.0,
+        "ci95_low": -0.062046844328627684,
+        "ci95_high": 0.046715395987243155
+      },
+      {
+        "event_time": 1,
+        "att": 0.05079255008034608,
+        "stderr": 0.03219947388105291,
+        "t_value": 1.577434161439323,
+        "p_value": 0.2127974151635434,
+        "cells": 4,
+        "weighted_n_treat": 36.0,
+        "ci95_low": -0.012318418726517621,
+        "ci95_high": 0.11390351888720979
+      },
+      {
+        "event_time": 2,
+        "att": 0.09032737982929631,
+        "stderr": 0.03306338832642454,
+        "t_value": 2.7319456474793875,
+        "p_value": 0.07182301904283772,
+        "cells": 4,
+        "weighted_n_treat": 36.0,
+        "ci95_low": 0.02552313870950422,
+        "ci95_high": 0.1551316209490884
+      },
+      {
+        "event_time": 3,
+        "att": 0.12059791855985384,
+        "stderr": 0.041418540565797565,
+        "t_value": 2.911689231740838,
+        "p_value": 0.06191172782669795,
+        "cells": 4,
+        "weighted_n_treat": 36.0,
+        "ci95_low": 0.03941757905089062,
+        "ci95_high": 0.20177825806881705
+      },
+      {
+        "event_time": 4,
+        "att": 0.05855061077256283,
+        "stderr": 0.04839747166831321,
+        "t_value": 1.209786560211927,
+        "p_value": 0.34995125650766723,
+        "cells": 3,
+        "weighted_n_treat": 33.0,
+        "ci95_low": -0.03630843369733106,
+        "ci95_high": 0.15340965524245673
+      }
+    ]
+  },
+  "not_yet_treated_did": {
+    "status": "ok",
+    "outcome": "log_viirs_ntl",
+    "cohort_count": 4,
+    "att_weighted": -0.051405049426932664,
+    "stderr_weighted": 0.030657220232268897,
+    "t_value_weighted": -1.6767681165308395,
+    "p_value_weighted": 0.19218101441019717,
+    "ci95_weighted": [
+      -0.1114932010821797,
+      0.008683102228314372
+    ],
+    "placebo_share_p_lt_0_10": 0.5,
+    "placebo_max_abs_t": 4.110565736217267,
+    "robust_placebo_pass_cohorts": 2,
+    "robust_att_weighted": -0.033321626725603265,
+    "robust_stderr_weighted": 0.05944917385362479,
+    "robust_t_value_weighted": -0.5605061360086764,
+    "robust_p_value_weighted": 0.6747678011610809,
+    "robust_ci95_weighted": [
+      -0.14984200747870785,
+      0.08319875402750132
+    ],
+    "by_cohort": [
+      {
+        "cohort_year": 2017,
+        "coef": -0.04488067484372382,
+        "stderr": 0.0352375470830478,
+        "t_value": -1.2736605853395275,
+        "p_value": 0.20579629057388643,
+        "n_obs": 441,
+        "n_treat_cities": 20,
+        "n_ctrl_cities": 79,
+        "placebo_t_value": -2.056712373328273,
+        "placebo_p_value": 0.04237114110704415
+      },
+      {
+        "cohort_year": 2018,
+        "coef": -0.06699954750323975,
+        "stderr": 0.09312539562702694,
+        "t_value": -0.7194551717297089,
+        "p_value": 0.4744393809968682,
+        "n_obs": 326,
+        "n_treat_cities": 4,
+        "n_ctrl_cities": 75,
+        "placebo_t_value": -0.3067119794259084,
+        "placebo_p_value": 0.7600430076937614
+      },
+      {
+        "cohort_year": 2020,
+        "coef": -0.01835366193554261,
+        "stderr": 0.07523814807419738,
+        "t_value": -0.2439409050504916,
+        "p_value": 0.8080951823226566,
+        "n_obs": 298,
+        "n_treat_cities": 9,
+        "n_ctrl_cities": 66,
+        "placebo_t_value": -0.8352783189172583,
+        "placebo_p_value": 0.406820709410476
+      },
+      {
+        "cohort_year": 2022,
+        "coef": -0.17326237835408564,
+        "stderr": 0.11743122136043803,
+        "t_value": -1.4754370800784062,
+        "p_value": 0.14636496880947858,
+        "n_obs": 247,
+        "n_treat_cities": 3,
+        "n_ctrl_cities": 63,
+        "placebo_t_value": -4.110565736217267,
+        "placebo_p_value": 0.00014662439234014335
+      }
+    ]
+  },
+  "dml_did": {
+    "coef": -0.18930250412894423,
+    "stderr": 0.06210236189305848,
+    "t_value": -3.0482335672663616,
+    "p_value": 0.0029665178496168184,
+    "n_obs": 934,
+    "n_features": 12,
+    "cv_mode": "group_kfold_city",
+    "primary_spec": "grouped_crossfit_orthogonal",
+    "overlap_trimmed_share": 0.0010695187165775666,
+    "selected_y_model": "hgb",
+    "selected_d_model": "rf_cls",
+    "nuisance_objective": 0.5471552289454275,
+    "nuisance_y_mse": 0.4800958341265937,
+    "nuisance_y_r2": 0.2474490383837601,
+    "nuisance_d_brier": 0.17428253571254204,
+    "nuisance_mean_abs_corr_dt_x": 0.0587219022267458,
+    "legacy_baseline_spec": {
+      "coef": -0.20749596299897857,
+      "stderr": 0.05651200261424879,
+      "t_value": -3.67171491718931,
+      "p_value": 0.0003924631419397106,
+      "n_obs": 935,
+      "n_features": 12,
+      "cv_mode": "kfold_random",
+      "spec": "legacy_rf_crossfit_baseline"
+    },
+    "advanced_grouped_spec": {
+      "coef": -0.18930250412894423,
+      "stderr": 0.06210236189305848,
+      "t_value": -3.0482335672663616,
+      "p_value": 0.0029665178496168184,
+      "n_obs": 934,
+      "n_features": 12,
+      "cv_mode": "group_kfold_city",
+      "overlap_trimmed_share": 0.0010695187165775666,
+      "selected_y_model": "hgb",
+      "selected_d_model": "rf_cls",
+      "nuisance_objective": 0.5471552289454275,
+      "nuisance_y_mse": 0.4800958341265937,
+      "nuisance_d_brier": 0.17428253571254204,
+      "nuisance_mean_abs_corr_dt_x": 0.0587219022267458,
+      "stabilized_weighted": {
+        "coef": -0.007442425898956875,
+        "stderr": 0.06103763533811894,
+        "t_value": -0.12193175338017995,
+        "p_value": 0.9032053188280935
+      }
+    }
+  },
+  "dr_did": {
+    "status": "ok",
+    "coef": 0.014342501926139983,
+    "stderr": 0.012452912963792095,
+    "t_value": 1.1517387110824615,
+    "p_value": 0.30150655377421864,
+    "n_obs": 836,
+    "treated_obs": 278,
+    "control_obs": 558,
+    "cv_mode": "group_kfold_city",
+    "overlap_bounds": [
+      0.02,
+      0.98
+    ],
+    "overlap_share_after_trim": 1.0,
+    "overlap_trimmed_share": 0.0,
+    "selected_ps_model": "rf_cls",
+    "selected_m0_model": "rf",
+    "n_features": 11,
+    "nuisance_brier": 0.1664990456896529,
+    "nuisance_control_mse": 0.014089250533635576,
+    "nuisance_moment_abs": 0.0018243791771988393
+  },
+  "did_heterogeneity": {},
+  "dynamic_phase_heterogeneity": {},
+  "dynamic_phase_rule_sensitivity": {},
+  "event_study_fe": {
+    "status": "ok",
+    "baseline_rel_year": -1,
+    "points": [
+      {
+        "rel_year": -3,
+        "coef": 0.038729521412706844,
+        "stderr": 0.04223539247984556,
+        "t_value": 0.9169921039845504,
+        "p_value": 0.4559490532651379,
+        "cells": 3,
+        "weighted_n_treat": 16.0
+      },
+      {
+        "rel_year": -2,
+        "coef": 0.023209914482919102,
+        "stderr": 0.01759708865132771,
+        "t_value": 1.3189633207404396,
+        "p_value": 0.2788233786658472,
+        "cells": 4,
+        "weighted_n_treat": 36.0
+      },
+      {
+        "rel_year": -1,
+        "coef": 0.0,
+        "stderr": 0.0,
+        "t_value": 0.0,
+        "p_value": 1.0,
+        "cells": 4,
+        "weighted_n_treat": 36.0
+      },
+      {
+        "rel_year": 0,
+        "coef": -0.007665724170692264,
+        "stderr": 0.027745469468334397,
+        "t_value": -0.27628741980527927,
+        "p_value": 0.800267897467485,
+        "cells": 4,
+        "weighted_n_treat": 36.0
+      },
+      {
+        "rel_year": 1,
+        "coef": 0.05079255008034608,
+        "stderr": 0.03219947388105291,
+        "t_value": 1.577434161439323,
+        "p_value": 0.2127974151635434,
+        "cells": 4,
+        "weighted_n_treat": 36.0
+      },
+      {
+        "rel_year": 2,
+        "coef": 0.09032737982929631,
+        "stderr": 0.03306338832642454,
+        "t_value": 2.7319456474793875,
+        "p_value": 0.07182301904283772,
+        "cells": 4,
+        "weighted_n_treat": 36.0
+      },
+      {
+        "rel_year": 3,
+        "coef": 0.12059791855985384,
+        "stderr": 0.041418540565797565,
+        "t_value": 2.911689231740838,
+        "p_value": 0.06191172782669795,
+        "cells": 4,
+        "weighted_n_treat": 36.0
+      }
+    ],
+    "meta": {
+      "n_obs": 1496,
+      "stderr_type": "cohort_time_att_aggregation",
+      "n_clusters": 136,
+      "relative_time_design": "city_specific_cohort",
+      "event_study_design": "staggered_not_yet_treated_aggregation",
+      "cohort_count": 8,
+      "pretrend_joint_p_value": 0.20535
+    }
+  },
+  "mechanism_decomposition": {
+    "status": "ok",
+    "treatment_col": "did_treatment",
+    "reference_outcome_requested": "log_viirs_ntl",
+    "reference_outcome": "log_viirs_ntl",
+    "reference_estimate": {
+      "status": "ok",
+      "coef": -0.09777532578979468,
+      "stderr": 0.04110357146387047,
+      "t_value": -2.378754991539798,
+      "p_value": 0.01930934818566912,
+      "n_obs": 935
+    },
+    "implied_composite_from_channels": -7.924457351899248,
+    "decomposition_gap_vs_reference": 7.826682026109453,
+    "channels_ok": 3,
+    "channel_shares": [
+      {
+        "channel": "economic_activity_observed",
+        "contribution_share_abs": 0.005329462868092311,
+        "weighted_contribution": -0.04399889660540761,
+        "p_value": 0.01930934818566912
+      },
+      {
+        "channel": "physical_built_environment_observed",
+        "contribution_share_abs": 0.020066360010291988,
+        "weighted_contribution": 0.1656635426856361,
+        "p_value": 0.1261682218865312
+      },
+      {
+        "channel": "knowledge_capital_observed",
+        "contribution_share_abs": 0.9746041771216156,
+        "weighted_contribution": -8.046121997979476,
+        "p_value": 0.313486495265957
+      }
+    ],
+    "rows": [
+      {
+        "channel": "economic_activity_observed",
+        "outcome_variable": "log_viirs_ntl",
+        "weight_in_composite": 0.45,
+        "status": "ok",
+        "coef": -0.09777532578979468,
+        "stderr": 0.04110357146387047,
+        "t_value": -2.378754991539798,
+        "p_value": 0.01930934818566912,
+        "weighted_contribution": -0.04399889660540761,
+        "n_obs": 935
+      },
+      {
+        "channel": "physical_built_environment_observed",
+        "outcome_variable": "physical_built_expansion_primary",
+        "weight_in_composite": 0.35,
+        "status": "ok",
+        "coef": 0.473324407673246,
+        "stderr": 0.30684967598381035,
+        "t_value": 1.5425286214029406,
+        "p_value": 0.1261682218865312,
+        "weighted_contribution": 0.1656635426856361,
+        "n_obs": 935
+      },
+      {
+        "channel": "knowledge_capital_observed",
+        "outcome_variable": "knowledge_capital_raw",
+        "weight_in_composite": 0.2,
+        "status": "ok",
+        "coef": -40.23060998989738,
+        "stderr": 39.708698188086764,
+        "t_value": -1.013143513276071,
+        "p_value": 0.313486495265957,
+        "weighted_contribution": -8.046121997979476,
+        "n_obs": 935
+      }
+    ],
+    "table_file": "D:\\User\\Desktop\\CC\\data\\outputs\\mechanism_decomposition_main_did_treatment.csv"
+  },
+  "matrix_completion_counterfactual": {},
+  "beta_convergence": {},
+  "elasticity_fe": {},
+  "synthetic_control": {
+    "status": "ok",
+    "treated_city": "IRL",
+    "treated_name": "Ireland",
+    "treatment_year": 2020,
+    "ate_post": 0.5255800753114235,
+    "donor_count": 51
+  },
+  "timing_ready_design": {
+    "status": "ok",
+    "rule": "keep supported cohorts as treated and censor unsupported treated units at their own adoption year",
+    "supported_window": [
+      2017,
+      2023
+    ],
+    "min_treated_cities_per_cohort": 3,
+    "kept_cohorts": [
+      2017,
+      2018,
+      2020,
+      2022
+    ],
+    "kept_cohort_count": 4,
+    "treated_city_count": 36,
+    "unsupported_treated_city_count": 54,
+    "unsupported_treated_post_rows_dropped": 561,
+    "treated_share": 0.4235294117647059,
+    "rows_before": 1496,
+    "rows_after": 935,
+    "cohort_distribution": [
+      {
+        "cohort_year": 2015,
+        "treated_cities": 37
+      },
+      {
+        "cohort_year": 2016,
+        "treated_cities": 13
+      },
+      {
+        "cohort_year": 2017,
+        "treated_cities": 20
+      },
+      {
+        "cohort_year": 2018,
+        "treated_cities": 4
+      },
+      {
+        "cohort_year": 2019,
+        "treated_cities": 2
+      },
+      {
+        "cohort_year": 2020,
+        "treated_cities": 9
+      },
+      {
+        "cohort_year": 2021,
+        "treated_cities": 2
+      },
+      {
+        "cohort_year": 2022,
+        "treated_cities": 3
+      }
+    ]
+  },
+  "identification_scorecard": {
+    "status": "ok",
+    "preferred": {
+      "estimator": "dr_did",
+      "effect": 0.014342501926139983,
+      "ci95": [
+        -0.010065207482892522,
+        0.03875021133517249
+      ],
+      "p_value": 0.30150655377421864,
+      "n_support": 836,
+      "credibility_score": 48.517228878810606,
+      "subscores": {
+        "significance": 0.0,
+        "design": 0.8947195013936661,
+        "support": 0.860102316501615
+      }
+    },
+    "ranking": [
+      {
+        "estimator": "dr_did",
+        "effect": 0.014342501926139983,
+        "ci95": [
+          -0.010065207482892522,
+          0.03875021133517249
+        ],
+        "p_value": 0.30150655377421864,
+        "n_support": 836,
+        "credibility_score": 48.517228878810606,
+        "subscores": {
+          "significance": 0.0,
+          "design": 0.8947195013936661,
+          "support": 0.860102316501615
+        }
+      },
+      {
+        "estimator": "did_matched_trend",
+        "effect": -0.06335558889881308,
+        "ci95": [
+          -0.13468315968678637,
+          0.007971981889160207
+        ],
+        "p_value": 0.08728606056742096,
+        "n_support": 517,
+        "credibility_score": 46.4418269471153,
+        "subscores": {
+          "significance": 0.12713939432579047,
+          "design": 0.7070012971351043,
+          "support": 0.798775440136304
+        }
+      },
+      {
+        "estimator": "staggered_did",
+        "effect": 0.0625878340692176,
+        "ci95": [
+          -0.010526290586715642,
+          0.13570195872515084
+        ],
+        "p_value": 0.3421718456378367,
+        "n_support": 36,
+        "credibility_score": 44.07007583360911,
+        "subscores": {
+          "significance": 0.0,
+          "design": 0.8221310562342508,
+          "support": 0.7647744432705167
+        }
+      },
+      {
+        "estimator": "did_dose_response",
+        "effect": -0.008132981726809077,
+        "ci95": [
+          -0.02667607079143465,
+          0.010410107337816497
+        ],
+        "p_value": 0.39207773238247323,
+        "n_support": 935,
+        "credibility_score": 42.98825450287194,
+        "subscores": {
+          "significance": 0.0,
+          "design": 0.7285845458985793,
+          "support": 0.8743897698210831,
+          "dose_positive_share": 0.1925133689839572
+        }
+      },
+      {
+        "estimator": "did_intense_contrast",
+        "effect": -0.00457258976926132,
+        "ci95": [
+          -0.12025278298713116,
+          0.11110760344860851
+        ],
+        "p_value": 0.9384039612912116,
+        "n_support": 935,
+        "credibility_score": 41.98886491513824,
+        "subscores": {
+          "significance": 0.0,
+          "design": 0.7000305576776165,
+          "support": 0.8743897698210831,
+          "treated_share_balance": 0.44461420932009166
+        }
+      },
+      {
+        "estimator": "did_two_way_fe",
+        "effect": 0.060179283786387414,
+        "ci95": [
+          -0.019070438985615848,
+          0.1394290065583907
+        ],
+        "p_value": 0.13986927989571513,
+        "n_support": 935,
+        "credibility_score": 33.7762569348832,
+        "subscores": {
+          "significance": 0.0,
+          "design": 0.46538461538461534,
+          "support": 0.8743897698210831,
+          "permutation_bonus": 0.0,
+          "bootstrap_bonus": 0.06,
+          "wild_bootstrap_bonus": 0.05538461538461537,
+          "lead_placebo_penalty": 0.0,
+          "lead_placebo_source": "twfe"
+        }
+      },
+      {
+        "estimator": "not_yet_treated_did",
+        "effect": -0.033321626725603265,
+        "ci95": [
+          -0.14984200747870785,
+          0.08319875402750132
+        ],
+        "p_value": 0.6747678011610809,
+        "n_support": 4,
+        "credibility_score": 24.536082042522477,
+        "subscores": {
+          "significance": 0.0,
+          "design": 0.25,
+          "support": 0.7893041021261237
+        }
+      }
+    ],
+    "majority_effect_sign": null,
+    "sign_consistency_share_p_le_0_20": null
+  },
+  "direct_event_design": {
+    "status": "ok",
+    "design_variant": "direct_core",
+    "policy_reference_year": 2020,
+    "primary_outcome": "log_viirs_ntl",
+    "did_two_way_fe": {
+      "coef": -0.01785373946183532,
+      "stderr": 0.040646166481170684,
+      "t_value": -0.4392478063117233,
+      "p_value": 0.6611842553887415,
+      "r2_within": 0.011710751033571776,
+      "n_obs": 1496,
+      "cov_type": "clustered",
+      "cluster_var": "iso3",
+      "controls_used": [
+        "temperature_mean",
+        "precipitation_sum",
+        "baseline_population_log"
+      ],
+      "stderr_type": "cluster_iso3_cr1",
+      "n_clusters": 136
+    },
+    "did_twfe_cluster_bootstrap": {
+      "status": "ok",
+      "coef_observed": -0.01785373946183532,
+      "stderr_observed": 0.040646166481170684,
+      "t_value_observed": -0.4392478063117233,
+      "draws_requested": 40,
+      "draws_successful": 40,
+      "coef_bootstrap_mean": -0.022822705875141912,
+      "coef_bootstrap_std": 0.04466691792068472,
+      "ci95_percentile": [
+        -0.08984665529362805,
+        0.04599769479267368
+      ],
+      "p_value_two_sided": 0.65
+    },
+    "did_twfe_permutation": {
+      "status": "ok",
+      "coef_observed": -0.01785373946183532,
+      "t_value_observed": -0.4392478063117233,
+      "permutation_design": "permute_city_cohort_schedule_preserving_treated_share_and_timing_mix",
+      "draws_requested": 50,
+      "draws_successful": 50,
+      "null_coef_mean": 0.004369515683622351,
+      "null_coef_std": 0.03224373509284275,
+      "null_abs_t_p95": 2.0224515765851536,
+      "p_value_abs_coef": 0.6078431372549019,
+      "p_value_abs_t": 0.6470588235294118
+    },
+    "did_twfe_wild_bootstrap": {
+      "status": "ok",
+      "coef_observed": -0.01785373946183532,
+      "t_value_observed": -0.4392478063117233,
+      "n_clusters": 136,
+      "null_design": "restricted_null_beta_did_eq_0_with_cluster_rademacher_weights",
+      "draws_requested": 60,
+      "draws_successful": 60,
+      "null_coef_mean": 0.0037837094243528906,
+      "null_t_mean": 0.09519861929943829,
+      "null_t_std": 1.0792701615373952,
+      "null_abs_t_p95": 1.9329695677119922,
+      "p_value_abs_t": 0.7049180327868853,
+      "p_value_abs_coef": 0.7049180327868853,
+      "ci95_coef_percentile": [
+        -0.06924329338366951,
+        0.08282575491463282
+      ]
+    },
+    "did_twfe_lead_placebo": {
+      "status": "ok",
+      "lead_count": 2,
+      "share_p_lt_0_10": 0.0,
+      "max_abs_t": 0.49137184677010975,
+      "mean_abs_coef": 0.008766114661238653,
+      "rows": [
+        {
+          "lead_years": 1,
+          "coef": -0.01674013461185029,
+          "stderr": 0.034068159830252194,
+          "t_value": -0.49137184677010975,
+          "p_value": 0.623961390190844
+        },
+        {
+          "lead_years": 2,
+          "coef": -0.0007920947106270153,
+          "stderr": 0.03257651950899807,
+          "t_value": -0.024314896820337977,
+          "p_value": 0.9806373345358794
+        }
+      ],
+      "output_path": "D:\\User\\Desktop\\CC\\data\\outputs\\twfe_lead_placebo_direct_log_viirs_ntl.csv"
+    },
+    "did_stacked_lead_placebo": {
+      "status": "skipped",
+      "reason": "no_valid_stacked_placebo_estimates",
+      "output_path": "D:\\User\\Desktop\\CC\\data\\outputs\\did_stacked_lead_placebo_direct_log_viirs_ntl.csv"
+    },
+    "did_matched_trend": {
+      "status": "skipped",
+      "reason": "lightweight_track_mode"
+    },
+    "staggered_did": {
+      "status": "skipped",
+      "reason": "lightweight_track_mode"
+    },
+    "not_yet_treated_did": {
+      "status": "skipped",
+      "reason": "lightweight_track_mode"
+    },
+    "dml_did": {
+      "status": "skipped",
+      "reason": "lightweight_track_mode"
+    },
+    "dr_did": {
+      "status": "skipped",
+      "reason": "lightweight_track_mode"
+    },
+    "synthetic_control": {
+      "status": "skipped",
+      "reason": "lightweight_track_mode"
+    },
+    "identification_scorecard": {
+      "status": "ok",
+      "preferred": {
+        "estimator": "did_dose_response",
+        "effect": -0.010332809529667045,
+        "ci95": [
+          -0.02974443229225873,
+          0.00907881323292464
+        ],
+        "p_value": 0.2986702063495785,
+        "n_support": 1496,
+        "credibility_score": 46.17780473269771,
+        "subscores": {
+          "significance": 0.0,
+          "design": 0.7854188948306595,
+          "support": 0.9344071706812312,
+          "dose_positive_share": 0.40040106951871657
+        }
+      },
+      "ranking": [
+        {
+          "estimator": "did_dose_response",
+          "effect": -0.010332809529667045,
+          "ci95": [
+            -0.02974443229225873,
+            0.00907881323292464
+          ],
+          "p_value": 0.2986702063495785,
+          "n_support": 1496,
+          "credibility_score": 46.17780473269771,
+          "subscores": {
+            "significance": 0.0,
+            "design": 0.7854188948306595,
+            "support": 0.9344071706812312,
+            "dose_positive_share": 0.40040106951871657
+          }
+        },
+        {
+          "estimator": "did_intense_contrast",
+          "effect": 0.0029398343718270137,
+          "ci95": [
+            -0.0575652705930544,
+            0.06344493933670843
+          ],
+          "p_value": 0.9242710681562841,
+          "n_support": 1496,
+          "credibility_score": 45.47049635480109,
+          "subscores": {
+            "significance": 0.0,
+            "design": 0.7652100840336135,
+            "support": 0.9344071706812312,
+            "treated_share_balance": 0.8067226890756302
+          }
+        },
+        {
+          "estimator": "did_two_way_fe",
+          "effect": -0.01785373946183532,
+          "ci95": [
+            -0.09752022576492986,
+            0.061812746841259224
+          ],
+          "p_value": 0.6611842553887415,
+          "n_support": 1496,
+          "credibility_score": 33.038143413624624,
+          "subscores": {
+            "significance": 0.0,
+            "design": 0.41,
+            "support": 0.9344071706812312,
+            "permutation_bonus": 0.0,
+            "bootstrap_bonus": 0.06,
+            "wild_bootstrap_bonus": 0.0,
+            "lead_placebo_penalty": 0.0,
+            "lead_placebo_source": "twfe"
+          }
+        }
+      ],
+      "majority_effect_sign": null,
+      "sign_consistency_share_p_le_0_20": null
+    },
+    "composite_outcome_robustness": {
+      "status": "skipped",
+      "reason": "composite_outcome_blocked_for_causal_econometrics",
+      "outcome": "composite_index"
+    },
+    "alignment_with_main": {
+      "main_preferred_estimator": "dr_did",
+      "main_preferred_effect": 0.014342501926139983,
+      "direct_preferred_estimator": "did_dose_response",
+      "direct_preferred_effect": -0.010332809529667045,
+      "effect_sign_consistency": 0
+    }
+  },
+  "evidence_tier_design": {
+    "status": "ok",
+    "design_variant": "evidence_a",
+    "policy_reference_year": 2020,
+    "treated_share": 0.6985294117647058,
+    "did_two_way_fe": {
+      "coef": -0.01785373946183532,
+      "stderr": 0.040646166481170684,
+      "t_value": -0.4392478063117233,
+      "p_value": 0.6611842553887415,
+      "r2_within": 0.011710751033571776,
+      "n_obs": 1496,
+      "cov_type": "clustered",
+      "cluster_var": "iso3",
+      "controls_used": [
+        "temperature_mean",
+        "precipitation_sum",
+        "baseline_population_log"
+      ],
+      "stderr_type": "cluster_iso3_cr1",
+      "n_clusters": 136
+    },
+    "did_twfe_cluster_bootstrap": {
+      "status": "ok",
+      "coef_observed": 0.0028811861888756772,
+      "stderr_observed": 0.038154660703414715,
+      "t_value_observed": 0.07551334845490634,
+      "draws_requested": 40,
+      "draws_successful": 40,
+      "coef_bootstrap_mean": -0.00015867653501536392,
+      "coef_bootstrap_std": 0.03615954418827062,
+      "ci95_percentile": [
+        -0.04853971870185095,
+        0.06987455511259724
+      ],
+      "p_value_two_sided": 0.95
+    },
+    "did_twfe_permutation": {
+      "status": "ok",
+      "coef_observed": 0.0028811861888756772,
+      "t_value_observed": 0.07551334845490634,
+      "permutation_design": "permute_city_cohort_schedule_preserving_treated_share_and_timing_mix",
+      "draws_requested": 50,
+      "draws_successful": 50,
+      "null_coef_mean": 0.00635232021587979,
+      "null_coef_std": 0.03776440213606478,
+      "null_abs_t_p95": 2.0005727999944676,
+      "p_value_abs_coef": 0.9607843137254902,
+      "p_value_abs_t": 0.9607843137254902
+    },
+    "did_twfe_wild_bootstrap": {
+      "status": "ok",
+      "coef_observed": 0.0028811861888756772,
+      "t_value_observed": 0.07551334845490634,
+      "n_clusters": 136,
+      "null_design": "restricted_null_beta_did_eq_0_with_cluster_rademacher_weights",
+      "draws_requested": 60,
+      "draws_successful": 60,
+      "null_coef_mean": -0.000434461260293309,
+      "null_t_mean": -0.01396482014128158,
+      "null_t_std": 0.9754635470193139,
+      "null_abs_t_p95": 2.078184458023512,
+      "p_value_abs_t": 0.8852459016393442,
+      "p_value_abs_coef": 0.8852459016393442,
+      "ci95_coef_percentile": [
+        -0.0730124239244675,
+        0.07206363340986396
+      ]
+    },
+    "did_twfe_lead_placebo": {
+      "status": "ok",
+      "lead_count": 2,
+      "share_p_lt_0_10": 0.5,
+      "max_abs_t": 1.958670073718984,
+      "mean_abs_coef": 0.041849990771656534,
+      "rows": [
+        {
+          "lead_years": 1,
+          "coef": 0.032707237062527914,
+          "stderr": 0.03159039197477017,
+          "t_value": 1.035353948398289,
+          "p_value": 0.30235470010977794
+        },
+        {
+          "lead_years": 2,
+          "coef": 0.050992744480785154,
+          "stderr": 0.026034371569257576,
+          "t_value": 1.958670073718984,
+          "p_value": 0.05221280340031618
+        }
+      ],
+      "output_path": "D:\\User\\Desktop\\CC\\data\\outputs\\twfe_lead_placebo_evidence_evidence_a_log_viirs_ntl.csv"
+    },
+    "did_stacked_lead_placebo": {
+      "status": "skipped",
+      "reason": "no_valid_stacked_placebo_estimates",
+      "output_path": "D:\\User\\Desktop\\CC\\data\\outputs\\did_stacked_lead_placebo_evidence_evidence_a_log_viirs_ntl.csv"
+    },
+    "did_intense_contrast": {
+      "status": "ok",
+      "did_col": "did_treatment_intense_external_peak",
+      "treated_col": "treated_city_intense_external_peak",
+      "treated_share": 0.38235294117647056,
+      "coef": 0.0029398343718270137,
+      "stderr": 0.030869951512694598,
+      "t_value": 0.09523287947563087,
+      "p_value": 0.9242710681562841,
+      "n_obs": 1496,
+      "stderr_type": "cluster_iso3_cr1",
+      "n_clusters": 136
+    },
+    "did_dose_response": {
+      "status": "ok",
+      "dose_col": "policy_dose",
+      "coef": -0.02558127928182484,
+      "stderr": 0.024511818172861306,
+      "t_value": -1.0436304276337856,
+      "p_value": 0.29852162504373214,
+      "coef_per_1sd_dose": -0.010341582005952553,
+      "stderr_per_1sd_dose": 0.009909237726423839,
+      "dose_std": 0.4042636762618869,
+      "dose_positive_share": 0.40040106951871657,
+      "n_obs": 1496,
+      "stderr_type": "cluster_iso3_cr1",
+      "n_clusters": 136
+    },
+    "did_dose_response_external_direct": {
+      "status": "ok",
+      "dose_col": "policy_dose_external_direct",
+      "coef": -0.02108073742530367,
+      "stderr": 0.020147127645120232,
+      "t_value": -1.0463395972184433,
+      "p_value": 0.29727408902348135,
+      "coef_per_1sd_dose": -0.008387132360982081,
+      "stderr_per_1sd_dose": 0.008015688580722906,
+      "dose_std": 0.39785763618092523,
+      "dose_positive_share": 0.5187165775401069,
+      "n_obs": 1496,
+      "stderr_type": "cluster_iso3_cr1",
+      "n_clusters": 136
+    },
+    "did_dose_response_bins": {
+      "status": "ok",
+      "dose_col": "policy_dose",
+      "n_obs": 1496,
+      "n_bins_effective": 4,
+      "stderr_type": "cluster_iso3_cr1",
+      "n_clusters": 136,
+      "effects_by_bin": [
+        {
+          "dose_bin": "dose_bin_1",
+          "dose_range_low": 0.0833333333333333,
+          "dose_range_high": 0.7253507024807188,
+          "coef": -0.00979397664101229,
+          "stderr": 0.022167132923082276,
+          "t_value": -0.4418242392914052,
+          "p_value": 0.6593233225574613,
+          "ci95_low": -0.05324155717025355,
+          "ci95_high": 0.033653603888228974,
+          "n_rows_bin": 150
+        },
+        {
+          "dose_bin": "dose_bin_2",
+          "dose_range_low": 0.7253507024807188,
+          "dose_range_high": 0.8051253495891727,
+          "coef": -0.04218268478709897,
+          "stderr": 0.02381484553412838,
+          "t_value": -1.7712768586572671,
+          "p_value": 0.07877112755884387,
+          "ci95_low": -0.08885978203399059,
+          "ci95_high": 0.0044944124597926585,
+          "n_rows_bin": 150
+        },
+        {
+          "dose_bin": "dose_bin_3",
+          "dose_range_low": 0.8051253495891727,
+          "dose_range_high": 0.9164673483917161,
+          "coef": -0.018144055529105828,
+          "stderr": 0.02227919318364951,
+          "t_value": -0.8143946407548357,
+          "p_value": 0.41685316264008576,
+          "ci95_low": -0.06181127416905887,
+          "ci95_high": 0.025523163110847215,
+          "n_rows_bin": 149
+        },
+        {
+          "dose_bin": "dose_bin_4",
+          "dose_range_low": 0.9164673483917161,
+          "dose_range_high": 1.0,
+          "coef": -0.010903741298444212,
+          "stderr": 0.02525397286347179,
+          "t_value": -0.4317634044113414,
+          "p_value": 0.6666021540789902,
+          "ci95_low": -0.06040152811084892,
+          "ci95_high": 0.03859404551396049,
+          "n_rows_bin": 150
+        }
+      ],
+      "monotonic_non_decreasing": false,
+      "monotonic_non_increasing": false,
+      "output_path": "D:\\User\\Desktop\\CC\\data\\outputs\\dose_response_bins_policy_dose_log_viirs_ntl.csv"
+    },
+    "did_dose_response_bins_external_direct": {
+      "status": "ok",
+      "dose_col": "policy_dose_external_direct",
+      "n_obs": 1496,
+      "n_bins_effective": 4,
+      "stderr_type": "cluster_iso3_cr1",
+      "n_clusters": 136,
+      "effects_by_bin": [
+        {
+          "dose_bin": "dose_bin_1",
+          "dose_range_low": 0.0833333333333333,
+          "dose_range_high": 0.7002162440170524,
+          "coef": -0.02141536867122122,
+          "stderr": 0.018586333396162863,
+          "t_value": -1.1522105094511224,
+          "p_value": 0.25127086904618284,
+          "ci95_low": -0.05784458212770043,
+          "ci95_high": 0.015013844785257989,
+          "n_rows_bin": 194
+        },
+        {
+          "dose_bin": "dose_bin_2",
+          "dose_range_low": 0.7002162440170524,
+          "dose_range_high": 0.75,
+          "coef": -0.0166688845338359,
+          "stderr": 0.02112723855962755,
+          "t_value": -0.7889760172296628,
+          "p_value": 0.43150942476221565,
+          "ci95_low": -0.058078272110705896,
+          "ci95_high": 0.024740503043034094,
+          "n_rows_bin": 196
+        },
+        {
+          "dose_bin": "dose_bin_3",
+          "dose_range_low": 0.75,
+          "dose_range_high": 0.875,
+          "coef": -0.02995857449055131,
+          "stderr": 0.022809359517753904,
+          "t_value": -1.313433394183328,
+          "p_value": 0.1912648463580433,
+          "ci95_low": -0.07466491914534895,
+          "ci95_high": 0.014747770164246339,
+          "n_rows_bin": 201
+        },
+        {
+          "dose_bin": "dose_bin_4",
+          "dose_range_low": 0.875,
+          "dose_range_high": 1.0,
+          "coef": -0.0066354195140992875,
+          "stderr": 0.02124944402516975,
+          "t_value": -0.3122632058626899,
+          "p_value": 0.7553222971670929,
+          "ci95_low": -0.048284329803431995,
+          "ci95_high": 0.03501349077523342,
+          "n_rows_bin": 185
+        }
+      ],
+      "monotonic_non_decreasing": false,
+      "monotonic_non_increasing": false,
+      "output_path": "D:\\User\\Desktop\\CC\\data\\outputs\\dose_response_bins_policy_dose_external_direct_log_viirs_ntl.csv"
+    },
+    "did_spillover_twfe": {
+      "status": "skipped",
+      "reason": "spillover_not_identified_on_country_level_causal_panel"
+    },
+    "did_spillover_twfe_dose": {
+      "status": "skipped",
+      "reason": "spillover_not_identified_on_country_level_causal_panel"
+    },
+    "did_matched_trend": {
+      "status": "skipped",
+      "reason": "lightweight_track_mode"
+    },
+    "staggered_did": {
+      "status": "skipped",
+      "reason": "lightweight_track_mode"
+    },
+    "not_yet_treated_did": {
+      "status": "skipped",
+      "reason": "lightweight_track_mode"
+    },
+    "dml_did": {
+      "status": "skipped",
+      "reason": "lightweight_track_mode"
+    },
+    "dr_did": {
+      "status": "skipped",
+      "reason": "lightweight_track_mode"
+    },
+    "dynamic_phase_heterogeneity": {},
+    "dynamic_phase_rule_sensitivity": {},
+    "synthetic_control": {
+      "status": "skipped",
+      "reason": "lightweight_track_mode"
+    },
+    "event_study_fe": {},
+    "mechanism_decomposition": {
+      "status": "ok",
+      "treatment_col": "did_treatment",
+      "reference_outcome_requested": "log_viirs_ntl",
+      "reference_outcome": "log_viirs_ntl",
+      "reference_estimate": {
+        "status": "ok",
+        "coef": -0.04945710206694128,
+        "stderr": 0.03834650093992403,
+        "t_value": -1.289742241265345,
+        "p_value": 0.1993452755977687,
+        "n_obs": 1496
+      },
+      "implied_composite_from_channels": -366.8191263877025,
+      "decomposition_gap_vs_reference": 366.7696692856356,
+      "channels_ok": 3,
+      "channel_shares": [
+        {
+          "channel": "economic_activity_observed",
+          "contribution_share_abs": 6.067212511323862e-05,
+          "weighted_contribution": -0.022255695930123578,
+          "p_value": 0.1993452755977687
+        },
+        {
+          "channel": "physical_built_environment_observed",
+          "contribution_share_abs": 0.001650186647074972,
+          "weighted_contribution": -0.6053200242566932,
+          "p_value": 0.04422944169206493
+        },
+        {
+          "channel": "knowledge_capital_observed",
+          "contribution_share_abs": 0.9982891412278118,
+          "weighted_contribution": -366.1915506675157,
+          "p_value": 0.28804687516175626
+        }
+      ],
+      "rows": [
+        {
+          "channel": "economic_activity_observed",
+          "outcome_variable": "log_viirs_ntl",
+          "weight_in_composite": 0.45,
+          "status": "ok",
+          "coef": -0.04945710206694128,
+          "stderr": 0.03834650093992403,
+          "t_value": -1.289742241265345,
+          "p_value": 0.1993452755977687,
+          "weighted_contribution": -0.022255695930123578,
+          "n_obs": 1496
+        },
+        {
+          "channel": "physical_built_environment_observed",
+          "outcome_variable": "physical_built_expansion_primary",
+          "weight_in_composite": 0.35,
+          "status": "ok",
+          "coef": -1.729485783590552,
+          "stderr": 0.8515900852088486,
+          "t_value": -2.030889994646196,
+          "p_value": 0.04422944169206493,
+          "weighted_contribution": -0.6053200242566932,
+          "n_obs": 1496
+        },
+        {
+          "channel": "knowledge_capital_observed",
+          "outcome_variable": "knowledge_capital_raw",
+          "weight_in_composite": 0.2,
+          "status": "ok",
+          "coef": -1830.9577533375784,
+          "stderr": 1716.5966641705934,
+          "t_value": -1.0666208268686348,
+          "p_value": 0.28804687516175626,
+          "weighted_contribution": -366.1915506675157,
+          "n_obs": 1496
+        }
+      ],
+      "table_file": "D:\\User\\Desktop\\CC\\data\\outputs\\mechanism_decomposition_evidence_evidence_a_did_treatment.csv"
+    },
+    "identification_scorecard": {
+      "status": "ok",
+      "preferred": {
+        "estimator": "did_dose_response",
+        "effect": -0.010341582005952553,
+        "ci95": [
+          -0.029763687949743278,
+          0.009080523937838172
+        ],
+        "p_value": 0.29852162504373214,
+        "n_support": 1496,
+        "credibility_score": 46.17780473269771,
+        "subscores": {
+          "significance": 0.0,
+          "design": 0.7854188948306595,
+          "support": 0.9344071706812312,
+          "dose_positive_share": 0.40040106951871657
+        }
+      },
+      "ranking": [
+        {
+          "estimator": "did_dose_response",
+          "effect": -0.010341582005952553,
+          "ci95": [
+            -0.029763687949743278,
+            0.009080523937838172
+          ],
+          "p_value": 0.29852162504373214,
+          "n_support": 1496,
+          "credibility_score": 46.17780473269771,
+          "subscores": {
+            "significance": 0.0,
+            "design": 0.7854188948306595,
+            "support": 0.9344071706812312,
+            "dose_positive_share": 0.40040106951871657
+          }
+        },
+        {
+          "estimator": "did_intense_contrast",
+          "effect": 0.0029398343718270137,
+          "ci95": [
+            -0.0575652705930544,
+            0.06344493933670843
+          ],
+          "p_value": 0.9242710681562841,
+          "n_support": 1496,
+          "credibility_score": 45.47049635480109,
+          "subscores": {
+            "significance": 0.0,
+            "design": 0.7652100840336135,
+            "support": 0.9344071706812312,
+            "treated_share_balance": 0.8067226890756302
+          }
+        },
+        {
+          "estimator": "did_two_way_fe",
+          "effect": -0.01785373946183532,
+          "ci95": [
+            -0.09752022576492986,
+            0.061812746841259224
+          ],
+          "p_value": 0.6611842553887415,
+          "n_support": 1496,
+          "credibility_score": 24.638143413624626,
+          "subscores": {
+            "significance": 0.0,
+            "design": 0.16999999999999998,
+            "support": 0.9344071706812312,
+            "permutation_bonus": 0.0,
+            "bootstrap_bonus": 0.06,
+            "wild_bootstrap_bonus": 0.0,
+            "lead_placebo_penalty": 0.24,
+            "lead_placebo_source": "twfe"
+          }
+        }
+      ],
+      "majority_effect_sign": null,
+      "sign_consistency_share_p_le_0_20": null
+    }
+  },
+  "evidence_tier_robustness": {
+    "status": "ok",
+    "variants": {
+      "evidence_a": {
+        "status": "ok",
+        "design_variant": "evidence_a",
+        "policy_reference_year": 2020,
+        "treated_share": 0.6985294117647058,
+        "did_two_way_fe": {
+          "coef": -0.01785373946183532,
+          "stderr": 0.040646166481170684,
+          "t_value": -0.4392478063117233,
+          "p_value": 0.6611842553887415,
+          "r2_within": 0.011710751033571776,
+          "n_obs": 1496,
+          "cov_type": "clustered",
+          "cluster_var": "iso3",
+          "controls_used": [
+            "temperature_mean",
+            "precipitation_sum",
+            "baseline_population_log"
+          ],
+          "stderr_type": "cluster_iso3_cr1",
+          "n_clusters": 136
+        },
+        "did_twfe_cluster_bootstrap": {
+          "status": "ok",
+          "coef_observed": 0.0028811861888756772,
+          "stderr_observed": 0.038154660703414715,
+          "t_value_observed": 0.07551334845490634,
+          "draws_requested": 40,
+          "draws_successful": 40,
+          "coef_bootstrap_mean": -0.00015867653501536392,
+          "coef_bootstrap_std": 0.03615954418827062,
+          "ci95_percentile": [
+            -0.04853971870185095,
+            0.06987455511259724
+          ],
+          "p_value_two_sided": 0.95
+        },
+        "did_twfe_permutation": {
+          "status": "ok",
+          "coef_observed": 0.0028811861888756772,
+          "t_value_observed": 0.07551334845490634,
+          "permutation_design": "permute_city_cohort_schedule_preserving_treated_share_and_timing_mix",
+          "draws_requested": 50,
+          "draws_successful": 50,
+          "null_coef_mean": 0.00635232021587979,
+          "null_coef_std": 0.03776440213606478,
+          "null_abs_t_p95": 2.0005727999944676,
+          "p_value_abs_coef": 0.9607843137254902,
+          "p_value_abs_t": 0.9607843137254902
+        },
+        "did_twfe_wild_bootstrap": {
+          "status": "ok",
+          "coef_observed": 0.0028811861888756772,
+          "t_value_observed": 0.07551334845490634,
+          "n_clusters": 136,
+          "null_design": "restricted_null_beta_did_eq_0_with_cluster_rademacher_weights",
+          "draws_requested": 60,
+          "draws_successful": 60,
+          "null_coef_mean": -0.000434461260293309,
+          "null_t_mean": -0.01396482014128158,
+          "null_t_std": 0.9754635470193139,
+          "null_abs_t_p95": 2.078184458023512,
+          "p_value_abs_t": 0.8852459016393442,
+          "p_value_abs_coef": 0.8852459016393442,
+          "ci95_coef_percentile": [
+            -0.0730124239244675,
+            0.07206363340986396
+          ]
+        },
+        "did_twfe_lead_placebo": {
+          "status": "ok",
+          "lead_count": 2,
+          "share_p_lt_0_10": 0.5,
+          "max_abs_t": 1.958670073718984,
+          "mean_abs_coef": 0.041849990771656534,
+          "rows": [
+            {
+              "lead_years": 1,
+              "coef": 0.032707237062527914,
+              "stderr": 0.03159039197477017,
+              "t_value": 1.035353948398289,
+              "p_value": 0.30235470010977794
+            },
+            {
+              "lead_years": 2,
+              "coef": 0.050992744480785154,
+              "stderr": 0.026034371569257576,
+              "t_value": 1.958670073718984,
+              "p_value": 0.05221280340031618
+            }
+          ],
+          "output_path": "D:\\User\\Desktop\\CC\\data\\outputs\\twfe_lead_placebo_evidence_evidence_a_log_viirs_ntl.csv"
+        },
+        "did_stacked_lead_placebo": {
+          "status": "skipped",
+          "reason": "no_valid_stacked_placebo_estimates",
+          "output_path": "D:\\User\\Desktop\\CC\\data\\outputs\\did_stacked_lead_placebo_evidence_evidence_a_log_viirs_ntl.csv"
+        },
+        "did_intense_contrast": {
+          "status": "ok",
+          "did_col": "did_treatment_intense_external_peak",
+          "treated_col": "treated_city_intense_external_peak",
+          "treated_share": 0.38235294117647056,
+          "coef": 0.0029398343718270137,
+          "stderr": 0.030869951512694598,
+          "t_value": 0.09523287947563087,
+          "p_value": 0.9242710681562841,
+          "n_obs": 1496,
+          "stderr_type": "cluster_iso3_cr1",
+          "n_clusters": 136
+        },
+        "did_dose_response": {
+          "status": "ok",
+          "dose_col": "policy_dose",
+          "coef": -0.02558127928182484,
+          "stderr": 0.024511818172861306,
+          "t_value": -1.0436304276337856,
+          "p_value": 0.29852162504373214,
+          "coef_per_1sd_dose": -0.010341582005952553,
+          "stderr_per_1sd_dose": 0.009909237726423839,
+          "dose_std": 0.4042636762618869,
+          "dose_positive_share": 0.40040106951871657,
+          "n_obs": 1496,
+          "stderr_type": "cluster_iso3_cr1",
+          "n_clusters": 136
+        },
+        "did_dose_response_external_direct": {
+          "status": "ok",
+          "dose_col": "policy_dose_external_direct",
+          "coef": -0.02108073742530367,
+          "stderr": 0.020147127645120232,
+          "t_value": -1.0463395972184433,
+          "p_value": 0.29727408902348135,
+          "coef_per_1sd_dose": -0.008387132360982081,
+          "stderr_per_1sd_dose": 0.008015688580722906,
+          "dose_std": 0.39785763618092523,
+          "dose_positive_share": 0.5187165775401069,
+          "n_obs": 1496,
+          "stderr_type": "cluster_iso3_cr1",
+          "n_clusters": 136
+        },
+        "did_dose_response_bins": {
+          "status": "ok",
+          "dose_col": "policy_dose",
+          "n_obs": 1496,
+          "n_bins_effective": 4,
+          "stderr_type": "cluster_iso3_cr1",
+          "n_clusters": 136,
+          "effects_by_bin": [
+            {
+              "dose_bin": "dose_bin_1",
+              "dose_range_low": 0.0833333333333333,
+              "dose_range_high": 0.7253507024807188,
+              "coef": -0.00979397664101229,
+              "stderr": 0.022167132923082276,
+              "t_value": -0.4418242392914052,
+              "p_value": 0.6593233225574613,
+              "ci95_low": -0.05324155717025355,
+              "ci95_high": 0.033653603888228974,
+              "n_rows_bin": 150
+            },
+            {
+              "dose_bin": "dose_bin_2",
+              "dose_range_low": 0.7253507024807188,
+              "dose_range_high": 0.8051253495891727,
+              "coef": -0.04218268478709897,
+              "stderr": 0.02381484553412838,
+              "t_value": -1.7712768586572671,
+              "p_value": 0.07877112755884387,
+              "ci95_low": -0.08885978203399059,
+              "ci95_high": 0.0044944124597926585,
+              "n_rows_bin": 150
+            },
+            {
+              "dose_bin": "dose_bin_3",
+              "dose_range_low": 0.8051253495891727,
+              "dose_range_high": 0.9164673483917161,
+              "coef": -0.018144055529105828,
+              "stderr": 0.02227919318364951,
+              "t_value": -0.8143946407548357,
+              "p_value": 0.41685316264008576,
+              "ci95_low": -0.06181127416905887,
+              "ci95_high": 0.025523163110847215,
+              "n_rows_bin": 149
+            },
+            {
+              "dose_bin": "dose_bin_4",
+              "dose_range_low": 0.9164673483917161,
+              "dose_range_high": 1.0,
+              "coef": -0.010903741298444212,
+              "stderr": 0.02525397286347179,
+              "t_value": -0.4317634044113414,
+              "p_value": 0.6666021540789902,
+              "ci95_low": -0.06040152811084892,
+              "ci95_high": 0.03859404551396049,
+              "n_rows_bin": 150
+            }
+          ],
+          "monotonic_non_decreasing": false,
+          "monotonic_non_increasing": false,
+          "output_path": "D:\\User\\Desktop\\CC\\data\\outputs\\dose_response_bins_policy_dose_log_viirs_ntl.csv"
+        },
+        "did_dose_response_bins_external_direct": {
+          "status": "ok",
+          "dose_col": "policy_dose_external_direct",
+          "n_obs": 1496,
+          "n_bins_effective": 4,
+          "stderr_type": "cluster_iso3_cr1",
+          "n_clusters": 136,
+          "effects_by_bin": [
+            {
+              "dose_bin": "dose_bin_1",
+              "dose_range_low": 0.0833333333333333,
+              "dose_range_high": 0.7002162440170524,
+              "coef": -0.02141536867122122,
+              "stderr": 0.018586333396162863,
+              "t_value": -1.1522105094511224,
+              "p_value": 0.25127086904618284,
+              "ci95_low": -0.05784458212770043,
+              "ci95_high": 0.015013844785257989,
+              "n_rows_bin": 194
+            },
+            {
+              "dose_bin": "dose_bin_2",
+              "dose_range_low": 0.7002162440170524,
+              "dose_range_high": 0.75,
+              "coef": -0.0166688845338359,
+              "stderr": 0.02112723855962755,
+              "t_value": -0.7889760172296628,
+              "p_value": 0.43150942476221565,
+              "ci95_low": -0.058078272110705896,
+              "ci95_high": 0.024740503043034094,
+              "n_rows_bin": 196
+            },
+            {
+              "dose_bin": "dose_bin_3",
+              "dose_range_low": 0.75,
+              "dose_range_high": 0.875,
+              "coef": -0.02995857449055131,
+              "stderr": 0.022809359517753904,
+              "t_value": -1.313433394183328,
+              "p_value": 0.1912648463580433,
+              "ci95_low": -0.07466491914534895,
+              "ci95_high": 0.014747770164246339,
+              "n_rows_bin": 201
+            },
+            {
+              "dose_bin": "dose_bin_4",
+              "dose_range_low": 0.875,
+              "dose_range_high": 1.0,
+              "coef": -0.0066354195140992875,
+              "stderr": 0.02124944402516975,
+              "t_value": -0.3122632058626899,
+              "p_value": 0.7553222971670929,
+              "ci95_low": -0.048284329803431995,
+              "ci95_high": 0.03501349077523342,
+              "n_rows_bin": 185
+            }
+          ],
+          "monotonic_non_decreasing": false,
+          "monotonic_non_increasing": false,
+          "output_path": "D:\\User\\Desktop\\CC\\data\\outputs\\dose_response_bins_policy_dose_external_direct_log_viirs_ntl.csv"
+        },
+        "did_spillover_twfe": {
+          "status": "skipped",
+          "reason": "spillover_not_identified_on_country_level_causal_panel"
+        },
+        "did_spillover_twfe_dose": {
+          "status": "skipped",
+          "reason": "spillover_not_identified_on_country_level_causal_panel"
+        },
+        "did_matched_trend": {
+          "status": "skipped",
+          "reason": "lightweight_track_mode"
+        },
+        "staggered_did": {
+          "status": "skipped",
+          "reason": "lightweight_track_mode"
+        },
+        "not_yet_treated_did": {
+          "status": "skipped",
+          "reason": "lightweight_track_mode"
+        },
+        "dml_did": {
+          "status": "skipped",
+          "reason": "lightweight_track_mode"
+        },
+        "dr_did": {
+          "status": "skipped",
+          "reason": "lightweight_track_mode"
+        },
+        "dynamic_phase_heterogeneity": {},
+        "dynamic_phase_rule_sensitivity": {},
+        "synthetic_control": {
+          "status": "skipped",
+          "reason": "lightweight_track_mode"
+        },
+        "event_study_fe": {},
+        "mechanism_decomposition": {
+          "status": "ok",
+          "treatment_col": "did_treatment",
+          "reference_outcome_requested": "log_viirs_ntl",
+          "reference_outcome": "log_viirs_ntl",
+          "reference_estimate": {
+            "status": "ok",
+            "coef": -0.04945710206694128,
+            "stderr": 0.03834650093992403,
+            "t_value": -1.289742241265345,
+            "p_value": 0.1993452755977687,
+            "n_obs": 1496
+          },
+          "implied_composite_from_channels": -366.8191263877025,
+          "decomposition_gap_vs_reference": 366.7696692856356,
+          "channels_ok": 3,
+          "channel_shares": [
+            {
+              "channel": "economic_activity_observed",
+              "contribution_share_abs": 6.067212511323862e-05,
+              "weighted_contribution": -0.022255695930123578,
+              "p_value": 0.1993452755977687
+            },
+            {
+              "channel": "physical_built_environment_observed",
+              "contribution_share_abs": 0.001650186647074972,
+              "weighted_contribution": -0.6053200242566932,
+              "p_value": 0.04422944169206493
+            },
+            {
+              "channel": "knowledge_capital_observed",
+              "contribution_share_abs": 0.9982891412278118,
+              "weighted_contribution": -366.1915506675157,
+              "p_value": 0.28804687516175626
+            }
+          ],
+          "rows": [
+            {
+              "channel": "economic_activity_observed",
+              "outcome_variable": "log_viirs_ntl",
+              "weight_in_composite": 0.45,
+              "status": "ok",
+              "coef": -0.04945710206694128,
+              "stderr": 0.03834650093992403,
+              "t_value": -1.289742241265345,
+              "p_value": 0.1993452755977687,
+              "weighted_contribution": -0.022255695930123578,
+              "n_obs": 1496
+            },
+            {
+              "channel": "physical_built_environment_observed",
+              "outcome_variable": "physical_built_expansion_primary",
+              "weight_in_composite": 0.35,
+              "status": "ok",
+              "coef": -1.729485783590552,
+              "stderr": 0.8515900852088486,
+              "t_value": -2.030889994646196,
+              "p_value": 0.04422944169206493,
+              "weighted_contribution": -0.6053200242566932,
+              "n_obs": 1496
+            },
+            {
+              "channel": "knowledge_capital_observed",
+              "outcome_variable": "knowledge_capital_raw",
+              "weight_in_composite": 0.2,
+              "status": "ok",
+              "coef": -1830.9577533375784,
+              "stderr": 1716.5966641705934,
+              "t_value": -1.0666208268686348,
+              "p_value": 0.28804687516175626,
+              "weighted_contribution": -366.1915506675157,
+              "n_obs": 1496
+            }
+          ],
+          "table_file": "D:\\User\\Desktop\\CC\\data\\outputs\\mechanism_decomposition_evidence_evidence_a_did_treatment.csv"
+        },
+        "identification_scorecard": {
+          "status": "ok",
+          "preferred": {
+            "estimator": "did_dose_response",
+            "effect": -0.010341582005952553,
+            "ci95": [
+              -0.029763687949743278,
+              0.009080523937838172
+            ],
+            "p_value": 0.29852162504373214,
+            "n_support": 1496,
+            "credibility_score": 46.17780473269771,
+            "subscores": {
+              "significance": 0.0,
+              "design": 0.7854188948306595,
+              "support": 0.9344071706812312,
+              "dose_positive_share": 0.40040106951871657
+            }
+          },
+          "ranking": [
+            {
+              "estimator": "did_dose_response",
+              "effect": -0.010341582005952553,
+              "ci95": [
+                -0.029763687949743278,
+                0.009080523937838172
+              ],
+              "p_value": 0.29852162504373214,
+              "n_support": 1496,
+              "credibility_score": 46.17780473269771,
+              "subscores": {
+                "significance": 0.0,
+                "design": 0.7854188948306595,
+                "support": 0.9344071706812312,
+                "dose_positive_share": 0.40040106951871657
+              }
+            },
+            {
+              "estimator": "did_intense_contrast",
+              "effect": 0.0029398343718270137,
+              "ci95": [
+                -0.0575652705930544,
+                0.06344493933670843
+              ],
+              "p_value": 0.9242710681562841,
+              "n_support": 1496,
+              "credibility_score": 45.47049635480109,
+              "subscores": {
+                "significance": 0.0,
+                "design": 0.7652100840336135,
+                "support": 0.9344071706812312,
+                "treated_share_balance": 0.8067226890756302
+              }
+            },
+            {
+              "estimator": "did_two_way_fe",
+              "effect": -0.01785373946183532,
+              "ci95": [
+                -0.09752022576492986,
+                0.061812746841259224
+              ],
+              "p_value": 0.6611842553887415,
+              "n_support": 1496,
+              "credibility_score": 24.638143413624626,
+              "subscores": {
+                "significance": 0.0,
+                "design": 0.16999999999999998,
+                "support": 0.9344071706812312,
+                "permutation_bonus": 0.0,
+                "bootstrap_bonus": 0.06,
+                "wild_bootstrap_bonus": 0.0,
+                "lead_placebo_penalty": 0.24,
+                "lead_placebo_source": "twfe"
+              }
+            }
+          ],
+          "majority_effect_sign": null,
+          "sign_consistency_share_p_le_0_20": null
+        }
+      },
+      "evidence_ab": {
+        "status": "ok",
+        "design_variant": "evidence_ab",
+        "policy_reference_year": 2020,
+        "treated_share": 0.8529411764705882,
+        "did_two_way_fe": {
+          "coef": -0.01785373946183532,
+          "stderr": 0.040646166481170684,
+          "t_value": -0.4392478063117233,
+          "p_value": 0.6611842553887415,
+          "r2_within": 0.011710751033571776,
+          "n_obs": 1496,
+          "cov_type": "clustered",
+          "cluster_var": "iso3",
+          "controls_used": [
+            "temperature_mean",
+            "precipitation_sum",
+            "baseline_population_log"
+          ],
+          "stderr_type": "cluster_iso3_cr1",
+          "n_clusters": 136
+        },
+        "did_twfe_cluster_bootstrap": {
+          "status": "ok",
+          "coef_observed": 0.02502577644595054,
+          "stderr_observed": 0.047035390374754765,
+          "t_value_observed": 0.5320626925078651,
+          "draws_requested": 40,
+          "draws_successful": 40,
+          "coef_bootstrap_mean": 0.019699017309353212,
+          "coef_bootstrap_std": 0.04509484492455897,
+          "ci95_percentile": [
+            -0.035520840798133675,
+            0.11512935588368262
+          ],
+          "p_value_two_sided": 0.8
+        },
+        "did_twfe_permutation": {
+          "status": "ok",
+          "coef_observed": 0.02502577644595054,
+          "t_value_observed": 0.5320626925078651,
+          "permutation_design": "permute_city_cohort_schedule_preserving_treated_share_and_timing_mix",
+          "draws_requested": 50,
+          "draws_successful": 50,
+          "null_coef_mean": 0.0036438636546951304,
+          "null_coef_std": 0.037143072916908666,
+          "null_abs_t_p95": 1.4498799542746923,
+          "p_value_abs_coef": 0.5882352941176471,
+          "p_value_abs_t": 0.6274509803921569
+        },
+        "did_twfe_wild_bootstrap": {
+          "status": "ok",
+          "coef_observed": 0.02502577644595054,
+          "t_value_observed": 0.5320626925078651,
+          "n_clusters": 136,
+          "null_design": "restricted_null_beta_did_eq_0_with_cluster_rademacher_weights",
+          "draws_requested": 60,
+          "draws_successful": 60,
+          "null_coef_mean": -0.0025104357308849234,
+          "null_t_mean": -0.05881842905591584,
+          "null_t_std": 0.9870350544676496,
+          "null_abs_t_p95": 1.9362980011874205,
+          "p_value_abs_t": 0.5245901639344263,
+          "p_value_abs_coef": 0.5245901639344263,
+          "ci95_coef_percentile": [
+            -0.097620641714734,
+            0.07876552503409437
+          ]
+        },
+        "did_twfe_lead_placebo": {
+          "status": "ok",
+          "lead_count": 2,
+          "share_p_lt_0_10": 0.0,
+          "max_abs_t": 0.7542475588867894,
+          "mean_abs_coef": 0.011985519555105387,
+          "rows": [
+            {
+              "lead_years": 1,
+              "coef": -0.0008800367348770692,
+              "stderr": 0.03751548535364179,
+              "t_value": -0.023457959468772813,
+              "p_value": 0.9813196104909616
+            },
+            {
+              "lead_years": 2,
+              "coef": 0.023091002375333704,
+              "stderr": 0.030614619965643936,
+              "t_value": 0.7542475588867894,
+              "p_value": 0.4520142102361433
+            }
+          ],
+          "output_path": "D:\\User\\Desktop\\CC\\data\\outputs\\twfe_lead_placebo_evidence_evidence_ab_log_viirs_ntl.csv"
+        },
+        "did_stacked_lead_placebo": {
+          "status": "skipped",
+          "reason": "no_valid_stacked_placebo_estimates",
+          "output_path": "D:\\User\\Desktop\\CC\\data\\outputs\\did_stacked_lead_placebo_evidence_evidence_ab_log_viirs_ntl.csv"
+        },
+        "did_intense_contrast": {
+          "status": "ok",
+          "did_col": "did_treatment_intense_external_peak",
+          "treated_col": "treated_city_intense_external_peak",
+          "treated_share": 0.38235294117647056,
+          "coef": 0.0029398343718270137,
+          "stderr": 0.030869951512694598,
+          "t_value": 0.09523287947563087,
+          "p_value": 0.9242710681562841,
+          "n_obs": 1496,
+          "stderr_type": "cluster_iso3_cr1",
+          "n_clusters": 136
+        },
+        "did_dose_response": {
+          "status": "ok",
+          "dose_col": "policy_dose",
+          "coef": -0.02335601335973822,
+          "stderr": 0.024233282524003585,
+          "t_value": -0.9637989957243138,
+          "p_value": 0.33686996219262433,
+          "coef_per_1sd_dose": -0.009441987823629518,
+          "stderr_per_1sd_dose": 0.009796635881046628,
+          "dose_std": 0.4042636762618869,
+          "dose_positive_share": 0.40040106951871657,
+          "n_obs": 1496,
+          "stderr_type": "cluster_iso3_cr1",
+          "n_clusters": 136
+        },
+        "did_dose_response_external_direct": {
+          "status": "ok",
+          "dose_col": "policy_dose_external_direct",
+          "coef": -0.02108073742530367,
+          "stderr": 0.020147127645120232,
+          "t_value": -1.0463395972184433,
+          "p_value": 0.29727408902348135,
+          "coef_per_1sd_dose": -0.008387132360982081,
+          "stderr_per_1sd_dose": 0.008015688580722906,
+          "dose_std": 0.39785763618092523,
+          "dose_positive_share": 0.5187165775401069,
+          "n_obs": 1496,
+          "stderr_type": "cluster_iso3_cr1",
+          "n_clusters": 136
+        },
+        "did_dose_response_bins": {
+          "status": "ok",
+          "dose_col": "policy_dose",
+          "n_obs": 1496,
+          "n_bins_effective": 4,
+          "stderr_type": "cluster_iso3_cr1",
+          "n_clusters": 136,
+          "effects_by_bin": [
+            {
+              "dose_bin": "dose_bin_1",
+              "dose_range_low": 0.0833333333333333,
+              "dose_range_high": 0.7253507024807188,
+              "coef": -0.00979397664101229,
+              "stderr": 0.022167132923082276,
+              "t_value": -0.4418242392914052,
+              "p_value": 0.6593233225574613,
+              "ci95_low": -0.05324155717025355,
+              "ci95_high": 0.033653603888228974,
+              "n_rows_bin": 150
+            },
+            {
+              "dose_bin": "dose_bin_2",
+              "dose_range_low": 0.7253507024807188,
+              "dose_range_high": 0.8051253495891727,
+              "coef": -0.04218268478709897,
+              "stderr": 0.02381484553412838,
+              "t_value": -1.7712768586572671,
+              "p_value": 0.07877112755884387,
+              "ci95_low": -0.08885978203399059,
+              "ci95_high": 0.0044944124597926585,
+              "n_rows_bin": 150
+            },
+            {
+              "dose_bin": "dose_bin_3",
+              "dose_range_low": 0.8051253495891727,
+              "dose_range_high": 0.9164673483917161,
+              "coef": -0.018144055529105828,
+              "stderr": 0.02227919318364951,
+              "t_value": -0.8143946407548357,
+              "p_value": 0.41685316264008576,
+              "ci95_low": -0.06181127416905887,
+              "ci95_high": 0.025523163110847215,
+              "n_rows_bin": 149
+            },
+            {
+              "dose_bin": "dose_bin_4",
+              "dose_range_low": 0.9164673483917161,
+              "dose_range_high": 1.0,
+              "coef": -0.010903741298444212,
+              "stderr": 0.02525397286347179,
+              "t_value": -0.4317634044113414,
+              "p_value": 0.6666021540789902,
+              "ci95_low": -0.06040152811084892,
+              "ci95_high": 0.03859404551396049,
+              "n_rows_bin": 150
+            }
+          ],
+          "monotonic_non_decreasing": false,
+          "monotonic_non_increasing": false,
+          "output_path": "D:\\User\\Desktop\\CC\\data\\outputs\\dose_response_bins_policy_dose_log_viirs_ntl.csv"
+        },
+        "did_dose_response_bins_external_direct": {
+          "status": "ok",
+          "dose_col": "policy_dose_external_direct",
+          "n_obs": 1496,
+          "n_bins_effective": 4,
+          "stderr_type": "cluster_iso3_cr1",
+          "n_clusters": 136,
+          "effects_by_bin": [
+            {
+              "dose_bin": "dose_bin_1",
+              "dose_range_low": 0.0833333333333333,
+              "dose_range_high": 0.7002162440170524,
+              "coef": -0.02141536867122122,
+              "stderr": 0.018586333396162863,
+              "t_value": -1.1522105094511224,
+              "p_value": 0.25127086904618284,
+              "ci95_low": -0.05784458212770043,
+              "ci95_high": 0.015013844785257989,
+              "n_rows_bin": 194
+            },
+            {
+              "dose_bin": "dose_bin_2",
+              "dose_range_low": 0.7002162440170524,
+              "dose_range_high": 0.75,
+              "coef": -0.0166688845338359,
+              "stderr": 0.02112723855962755,
+              "t_value": -0.7889760172296628,
+              "p_value": 0.43150942476221565,
+              "ci95_low": -0.058078272110705896,
+              "ci95_high": 0.024740503043034094,
+              "n_rows_bin": 196
+            },
+            {
+              "dose_bin": "dose_bin_3",
+              "dose_range_low": 0.75,
+              "dose_range_high": 0.875,
+              "coef": -0.02995857449055131,
+              "stderr": 0.022809359517753904,
+              "t_value": -1.313433394183328,
+              "p_value": 0.1912648463580433,
+              "ci95_low": -0.07466491914534895,
+              "ci95_high": 0.014747770164246339,
+              "n_rows_bin": 201
+            },
+            {
+              "dose_bin": "dose_bin_4",
+              "dose_range_low": 0.875,
+              "dose_range_high": 1.0,
+              "coef": -0.0066354195140992875,
+              "stderr": 0.02124944402516975,
+              "t_value": -0.3122632058626899,
+              "p_value": 0.7553222971670929,
+              "ci95_low": -0.048284329803431995,
+              "ci95_high": 0.03501349077523342,
+              "n_rows_bin": 185
+            }
+          ],
+          "monotonic_non_decreasing": false,
+          "monotonic_non_increasing": false,
+          "output_path": "D:\\User\\Desktop\\CC\\data\\outputs\\dose_response_bins_policy_dose_external_direct_log_viirs_ntl.csv"
+        },
+        "did_spillover_twfe": {
+          "status": "skipped",
+          "reason": "spillover_not_identified_on_country_level_causal_panel"
+        },
+        "did_spillover_twfe_dose": {
+          "status": "skipped",
+          "reason": "spillover_not_identified_on_country_level_causal_panel"
+        },
+        "did_matched_trend": {
+          "status": "skipped",
+          "reason": "lightweight_track_mode"
+        },
+        "staggered_did": {
+          "status": "skipped",
+          "reason": "lightweight_track_mode"
+        },
+        "not_yet_treated_did": {
+          "status": "skipped",
+          "reason": "lightweight_track_mode"
+        },
+        "dml_did": {
+          "status": "skipped",
+          "reason": "lightweight_track_mode"
+        },
+        "dr_did": {
+          "status": "skipped",
+          "reason": "lightweight_track_mode"
+        },
+        "dynamic_phase_heterogeneity": {},
+        "dynamic_phase_rule_sensitivity": {},
+        "synthetic_control": {
+          "status": "skipped",
+          "reason": "lightweight_track_mode"
+        },
+        "event_study_fe": {},
+        "mechanism_decomposition": {
+          "status": "ok",
+          "treatment_col": "did_treatment",
+          "reference_outcome_requested": "log_viirs_ntl",
+          "reference_outcome": "log_viirs_ntl",
+          "reference_estimate": {
+            "status": "ok",
+            "coef": 0.014181831443572848,
+            "stderr": 0.046866120877537325,
+            "t_value": 0.30260305692102035,
+            "p_value": 0.7626581331650111,
+            "n_obs": 1496
+          },
+          "implied_composite_from_channels": -265.5749527792166,
+          "decomposition_gap_vs_reference": 265.58913461066015,
+          "channels_ok": 3,
+          "channel_shares": [
+            {
+              "channel": "economic_activity_observed",
+              "contribution_share_abs": 2.4029063676028517e-05,
+              "weighted_contribution": 0.006381824149607781,
+              "p_value": 0.7626581331650111
+            },
+            {
+              "channel": "physical_built_environment_observed",
+              "contribution_share_abs": 0.000425250571152029,
+              "weighted_contribution": -0.1129413281017642,
+              "p_value": 0.6962700952733052
+            },
+            {
+              "channel": "knowledge_capital_observed",
+              "contribution_share_abs": 0.999550720365172,
+              "weighted_contribution": -265.4683932752644,
+              "p_value": 0.2703712830419326
+            }
+          ],
+          "rows": [
+            {
+              "channel": "economic_activity_observed",
+              "outcome_variable": "log_viirs_ntl",
+              "weight_in_composite": 0.45,
+              "status": "ok",
+              "coef": 0.014181831443572848,
+              "stderr": 0.046866120877537325,
+              "t_value": 0.30260305692102035,
+              "p_value": 0.7626581331650111,
+              "weighted_contribution": 0.006381824149607781,
+              "n_obs": 1496
+            },
+            {
+              "channel": "physical_built_environment_observed",
+              "outcome_variable": "physical_built_expansion_primary",
+              "weight_in_composite": 0.35,
+              "status": "ok",
+              "coef": -0.32268950886218345,
+              "stderr": 0.8248822369724517,
+              "t_value": -0.39119463894209205,
+              "p_value": 0.6962700952733052,
+              "weighted_contribution": -0.1129413281017642,
+              "n_obs": 1496
+            },
+            {
+              "channel": "knowledge_capital_observed",
+              "outcome_variable": "knowledge_capital_raw",
+              "weight_in_composite": 0.2,
+              "status": "ok",
+              "coef": -1327.341966376322,
+              "stderr": 1199.3177065558168,
+              "t_value": -1.1067475774940099,
+              "p_value": 0.2703712830419326,
+              "weighted_contribution": -265.4683932752644,
+              "n_obs": 1496
+            }
+          ],
+          "table_file": "D:\\User\\Desktop\\CC\\data\\outputs\\mechanism_decomposition_evidence_evidence_ab_did_treatment.csv"
+        },
+        "identification_scorecard": {
+          "status": "ok",
+          "preferred": {
+            "estimator": "did_dose_response",
+            "effect": -0.009441987823629518,
+            "ci95": [
+              -0.028643394150480908,
+              0.009759418503221873
+            ],
+            "p_value": 0.33686996219262433,
+            "n_support": 1496,
+            "credibility_score": 46.17780473269771,
+            "subscores": {
+              "significance": 0.0,
+              "design": 0.7854188948306595,
+              "support": 0.9344071706812312,
+              "dose_positive_share": 0.40040106951871657
+            }
+          },
+          "ranking": [
+            {
+              "estimator": "did_dose_response",
+              "effect": -0.009441987823629518,
+              "ci95": [
+                -0.028643394150480908,
+                0.009759418503221873
+              ],
+              "p_value": 0.33686996219262433,
+              "n_support": 1496,
+              "credibility_score": 46.17780473269771,
+              "subscores": {
+                "significance": 0.0,
+                "design": 0.7854188948306595,
+                "support": 0.9344071706812312,
+                "dose_positive_share": 0.40040106951871657
+              }
+            },
+            {
+              "estimator": "did_intense_contrast",
+              "effect": 0.0029398343718270137,
+              "ci95": [
+                -0.0575652705930544,
+                0.06344493933670843
+              ],
+              "p_value": 0.9242710681562841,
+              "n_support": 1496,
+              "credibility_score": 45.47049635480109,
+              "subscores": {
+                "significance": 0.0,
+                "design": 0.7652100840336135,
+                "support": 0.9344071706812312,
+                "treated_share_balance": 0.8067226890756302
+              }
+            },
+            {
+              "estimator": "did_two_way_fe",
+              "effect": -0.01785373946183532,
+              "ci95": [
+                -0.09752022576492986,
+                0.061812746841259224
+              ],
+              "p_value": 0.6611842553887415,
+              "n_support": 1496,
+              "credibility_score": 33.038143413624624,
+              "subscores": {
+                "significance": 0.0,
+                "design": 0.41,
+                "support": 0.9344071706812312,
+                "permutation_bonus": 0.0,
+                "bootstrap_bonus": 0.06,
+                "wild_bootstrap_bonus": 0.0,
+                "lead_placebo_penalty": 0.0,
+                "lead_placebo_source": "twfe"
+              }
+            }
+          ],
+          "majority_effect_sign": null,
+          "sign_consistency_share_p_le_0_20": null
+        }
+      }
+    },
+    "alignment": {
+      "evidence_a_preferred_estimator": "did_dose_response",
+      "evidence_a_preferred_effect": -0.010341582005952553,
+      "evidence_ab_preferred_estimator": "did_dose_response",
+      "evidence_ab_preferred_effect": -0.009441987823629518,
+      "effect_sign_consistency": 1
+    }
+  },
+  "source_event_design_robustness": {
+    "status": "ok",
+    "comparison_mode": "common_dynamic_shock_anchor",
+    "anchor_design_variant": "direct_core",
+    "variants": {
+      "source_external_direct": {
+        "status": "ok",
+        "design_variant": "source_external_direct_common_shock",
+        "policy_reference_year": 2020,
+        "treated_share": 0.6617647058823529,
+        "did_two_way_fe": {
+          "coef": -0.01785373946183532,
+          "stderr": 0.040646166481170684,
+          "t_value": -0.4392478063117233,
+          "p_value": 0.6611842553887415,
+          "r2_within": 0.011710751033571776,
+          "n_obs": 1496,
+          "cov_type": "clustered",
+          "cluster_var": "iso3",
+          "controls_used": [
+            "temperature_mean",
+            "precipitation_sum",
+            "baseline_population_log"
+          ],
+          "stderr_type": "cluster_iso3_cr1",
+          "n_clusters": 136
+        },
+        "did_twfe_cluster_bootstrap": {
+          "status": "ok",
+          "coef_observed": -0.01785373946183532,
+          "stderr_observed": 0.040646166481170684,
+          "t_value_observed": -0.4392478063117233,
+          "draws_requested": 40,
+          "draws_successful": 40,
+          "coef_bootstrap_mean": -0.022822705875141912,
+          "coef_bootstrap_std": 0.04466691792068472,
+          "ci95_percentile": [
+            -0.08984665529362805,
+            0.04599769479267368
+          ],
+          "p_value_two_sided": 0.65
+        },
+        "did_twfe_permutation": {
+          "status": "ok",
+          "coef_observed": -0.01785373946183532,
+          "t_value_observed": -0.4392478063117233,
+          "permutation_design": "permute_city_cohort_schedule_preserving_treated_share_and_timing_mix",
+          "draws_requested": 50,
+          "draws_successful": 50,
+          "null_coef_mean": 0.004369515683622351,
+          "null_coef_std": 0.03224373509284275,
+          "null_abs_t_p95": 2.0224515765851536,
+          "p_value_abs_coef": 0.6078431372549019,
+          "p_value_abs_t": 0.6470588235294118
+        },
+        "did_twfe_wild_bootstrap": {
+          "status": "ok",
+          "coef_observed": -0.01785373946183532,
+          "t_value_observed": -0.4392478063117233,
+          "n_clusters": 136,
+          "null_design": "restricted_null_beta_did_eq_0_with_cluster_rademacher_weights",
+          "draws_requested": 60,
+          "draws_successful": 60,
+          "null_coef_mean": 0.0037837094243528906,
+          "null_t_mean": 0.09519861929943829,
+          "null_t_std": 1.0792701615373952,
+          "null_abs_t_p95": 1.9329695677119922,
+          "p_value_abs_t": 0.7049180327868853,
+          "p_value_abs_coef": 0.7049180327868853,
+          "ci95_coef_percentile": [
+            -0.06924329338366951,
+            0.08282575491463282
+          ]
+        },
+        "did_twfe_lead_placebo": {
+          "status": "ok",
+          "lead_count": 2,
+          "share_p_lt_0_10": 0.0,
+          "max_abs_t": 0.49137184677010975,
+          "mean_abs_coef": 0.008766114661238653,
+          "rows": [
+            {
+              "lead_years": 1,
+              "coef": -0.01674013461185029,
+              "stderr": 0.034068159830252194,
+              "t_value": -0.49137184677010975,
+              "p_value": 0.623961390190844
+            },
+            {
+              "lead_years": 2,
+              "coef": -0.0007920947106270153,
+              "stderr": 0.03257651950899807,
+              "t_value": -0.024314896820337977,
+              "p_value": 0.9806373345358794
+            }
+          ],
+          "output_path": "D:\\User\\Desktop\\CC\\data\\outputs\\twfe_lead_placebo_source_source_external_direct_log_viirs_ntl.csv"
+        },
+        "did_stacked_lead_placebo": {
+          "status": "skipped",
+          "reason": "no_valid_stacked_placebo_estimates",
+          "output_path": "D:\\User\\Desktop\\CC\\data\\outputs\\did_stacked_lead_placebo_source_source_external_direct_log_viirs_ntl.csv"
+        },
+        "did_intense_contrast": {
+          "status": "ok",
+          "did_col": "did_treatment_intense_external_peak",
+          "treated_col": "treated_city_intense_external_peak",
+          "treated_share": 0.38235294117647056,
+          "coef": 0.0029398343718270137,
+          "stderr": 0.030869951512694598,
+          "t_value": 0.09523287947563087,
+          "p_value": 0.9242710681562841,
+          "n_obs": 1496,
+          "stderr_type": "cluster_iso3_cr1",
+          "n_clusters": 136
+        },
+        "did_dose_response": {
+          "status": "ok",
+          "dose_col": "policy_dose",
+          "coef": -0.025559579394348865,
+          "stderr": 0.024498587793407724,
+          "t_value": -1.0433082759662842,
+          "p_value": 0.2986702063495785,
+          "coef_per_1sd_dose": -0.010332809529667045,
+          "stderr_per_1sd_dose": 0.009903889164587594,
+          "dose_std": 0.4042636762618869,
+          "dose_positive_share": 0.40040106951871657,
+          "n_obs": 1496,
+          "stderr_type": "cluster_iso3_cr1",
+          "n_clusters": 136
+        },
+        "did_dose_response_external_direct": {
+          "status": "ok",
+          "dose_col": "policy_dose_external_direct",
+          "coef": -0.02335601335973822,
+          "stderr": 0.024233282524003585,
+          "t_value": -0.9637989957243138,
+          "p_value": 0.33686996219262433,
+          "coef_per_1sd_dose": -0.009441987823629518,
+          "stderr_per_1sd_dose": 0.009796635881046628,
+          "dose_std": 0.4042636762618869,
+          "dose_positive_share": 0.40040106951871657,
+          "n_obs": 1496,
+          "stderr_type": "cluster_iso3_cr1",
+          "n_clusters": 136
+        },
+        "did_dose_response_bins": {
+          "status": "ok",
+          "dose_col": "policy_dose",
+          "n_obs": 1496,
+          "n_bins_effective": 4,
+          "stderr_type": "cluster_iso3_cr1",
+          "n_clusters": 136,
+          "effects_by_bin": [
+            {
+              "dose_bin": "dose_bin_1",
+              "dose_range_low": 0.0833333333333333,
+              "dose_range_high": 0.7253507024807188,
+              "coef": -0.00979397664101229,
+              "stderr": 0.022167132923082276,
+              "t_value": -0.4418242392914052,
+              "p_value": 0.6593233225574613,
+              "ci95_low": -0.05324155717025355,
+              "ci95_high": 0.033653603888228974,
+              "n_rows_bin": 150
+            },
+            {
+              "dose_bin": "dose_bin_2",
+              "dose_range_low": 0.7253507024807188,
+              "dose_range_high": 0.8051253495891727,
+              "coef": -0.04218268478709897,
+              "stderr": 0.02381484553412838,
+              "t_value": -1.7712768586572671,
+              "p_value": 0.07877112755884387,
+              "ci95_low": -0.08885978203399059,
+              "ci95_high": 0.0044944124597926585,
+              "n_rows_bin": 150
+            },
+            {
+              "dose_bin": "dose_bin_3",
+              "dose_range_low": 0.8051253495891727,
+              "dose_range_high": 0.9164673483917161,
+              "coef": -0.018144055529105828,
+              "stderr": 0.02227919318364951,
+              "t_value": -0.8143946407548357,
+              "p_value": 0.41685316264008576,
+              "ci95_low": -0.06181127416905887,
+              "ci95_high": 0.025523163110847215,
+              "n_rows_bin": 149
+            },
+            {
+              "dose_bin": "dose_bin_4",
+              "dose_range_low": 0.9164673483917161,
+              "dose_range_high": 1.0,
+              "coef": -0.010903741298444212,
+              "stderr": 0.02525397286347179,
+              "t_value": -0.4317634044113414,
+              "p_value": 0.6666021540789902,
+              "ci95_low": -0.06040152811084892,
+              "ci95_high": 0.03859404551396049,
+              "n_rows_bin": 150
+            }
+          ],
+          "monotonic_non_decreasing": false,
+          "monotonic_non_increasing": false,
+          "output_path": "D:\\User\\Desktop\\CC\\data\\outputs\\dose_response_bins_policy_dose_log_viirs_ntl.csv"
+        },
+        "did_dose_response_bins_external_direct": {
+          "status": "ok",
+          "dose_col": "policy_dose_external_direct",
+          "n_obs": 1496,
+          "n_bins_effective": 4,
+          "stderr_type": "cluster_iso3_cr1",
+          "n_clusters": 136,
+          "effects_by_bin": [
+            {
+              "dose_bin": "dose_bin_1",
+              "dose_range_low": 0.0833333333333333,
+              "dose_range_high": 0.7253507024807188,
+              "coef": -0.00979397664101229,
+              "stderr": 0.022167132923082276,
+              "t_value": -0.4418242392914052,
+              "p_value": 0.6593233225574613,
+              "ci95_low": -0.05324155717025355,
+              "ci95_high": 0.033653603888228974,
+              "n_rows_bin": 150
+            },
+            {
+              "dose_bin": "dose_bin_2",
+              "dose_range_low": 0.7253507024807188,
+              "dose_range_high": 0.8051253495891727,
+              "coef": -0.04218268478709897,
+              "stderr": 0.02381484553412838,
+              "t_value": -1.7712768586572671,
+              "p_value": 0.07877112755884387,
+              "ci95_low": -0.08885978203399059,
+              "ci95_high": 0.0044944124597926585,
+              "n_rows_bin": 150
+            },
+            {
+              "dose_bin": "dose_bin_3",
+              "dose_range_low": 0.8051253495891727,
+              "dose_range_high": 0.9164673483917161,
+              "coef": -0.018144055529105828,
+              "stderr": 0.02227919318364951,
+              "t_value": -0.8143946407548357,
+              "p_value": 0.41685316264008576,
+              "ci95_low": -0.06181127416905887,
+              "ci95_high": 0.025523163110847215,
+              "n_rows_bin": 149
+            },
+            {
+              "dose_bin": "dose_bin_4",
+              "dose_range_low": 0.9164673483917161,
+              "dose_range_high": 1.0,
+              "coef": -0.010903741298444212,
+              "stderr": 0.02525397286347179,
+              "t_value": -0.4317634044113414,
+              "p_value": 0.6666021540789902,
+              "ci95_low": -0.06040152811084892,
+              "ci95_high": 0.03859404551396049,
+              "n_rows_bin": 150
+            }
+          ],
+          "monotonic_non_decreasing": false,
+          "monotonic_non_increasing": false,
+          "output_path": "D:\\User\\Desktop\\CC\\data\\outputs\\dose_response_bins_policy_dose_external_direct_log_viirs_ntl.csv"
+        },
+        "did_spillover_twfe": {
+          "status": "skipped",
+          "reason": "spillover_not_identified_on_country_level_causal_panel"
+        },
+        "did_spillover_twfe_dose": {
+          "status": "skipped",
+          "reason": "spillover_not_identified_on_country_level_causal_panel"
+        },
+        "did_matched_trend": {
+          "status": "skipped",
+          "reason": "lightweight_track_mode"
+        },
+        "staggered_did": {
+          "status": "skipped",
+          "reason": "lightweight_track_mode"
+        },
+        "not_yet_treated_did": {
+          "status": "skipped",
+          "reason": "lightweight_track_mode"
+        },
+        "dml_did": {
+          "status": "skipped",
+          "reason": "lightweight_track_mode"
+        },
+        "dr_did": {
+          "status": "skipped",
+          "reason": "lightweight_track_mode"
+        },
+        "dynamic_phase_heterogeneity": {},
+        "dynamic_phase_rule_sensitivity": {},
+        "synthetic_control": {
+          "status": "skipped",
+          "reason": "lightweight_track_mode"
+        },
+        "event_study_fe": {
+          "status": "ok",
+          "baseline_rel_year": -1,
+          "points": [
+            {
+              "rel_year": -3,
+              "coef": 0.038729521412706844,
+              "stderr": 0.04223539247984556,
+              "t_value": 0.9169921039845504,
+              "p_value": 0.4559490532651379,
+              "cells": 3,
+              "weighted_n_treat": 16.0
+            },
+            {
+              "rel_year": -2,
+              "coef": 0.023209914482919102,
+              "stderr": 0.01759708865132771,
+              "t_value": 1.3189633207404396,
+              "p_value": 0.2788233786658472,
+              "cells": 4,
+              "weighted_n_treat": 36.0
+            },
+            {
+              "rel_year": -1,
+              "coef": 0.0,
+              "stderr": 0.0,
+              "t_value": 0.0,
+              "p_value": 1.0,
+              "cells": 4,
+              "weighted_n_treat": 36.0
+            },
+            {
+              "rel_year": 0,
+              "coef": -0.007665724170692264,
+              "stderr": 0.027745469468334397,
+              "t_value": -0.27628741980527927,
+              "p_value": 0.800267897467485,
+              "cells": 4,
+              "weighted_n_treat": 36.0
+            },
+            {
+              "rel_year": 1,
+              "coef": 0.05079255008034608,
+              "stderr": 0.03219947388105291,
+              "t_value": 1.577434161439323,
+              "p_value": 0.2127974151635434,
+              "cells": 4,
+              "weighted_n_treat": 36.0
+            },
+            {
+              "rel_year": 2,
+              "coef": 0.09032737982929631,
+              "stderr": 0.03306338832642454,
+              "t_value": 2.7319456474793875,
+              "p_value": 0.07182301904283772,
+              "cells": 4,
+              "weighted_n_treat": 36.0
+            },
+            {
+              "rel_year": 3,
+              "coef": 0.12059791855985384,
+              "stderr": 0.041418540565797565,
+              "t_value": 2.911689231740838,
+              "p_value": 0.06191172782669795,
+              "cells": 4,
+              "weighted_n_treat": 36.0
+            }
+          ],
+          "meta": {
+            "n_obs": 1496,
+            "stderr_type": "cohort_time_att_aggregation",
+            "n_clusters": 136,
+            "relative_time_design": "city_specific_cohort",
+            "event_study_design": "staggered_not_yet_treated_aggregation",
+            "cohort_count": 8,
+            "pretrend_joint_p_value": 0.20535
+          }
+        },
+        "mechanism_decomposition": {
+          "status": "ok",
+          "treatment_col": "did_treatment",
+          "reference_outcome_requested": "log_viirs_ntl",
+          "reference_outcome": "log_viirs_ntl",
+          "reference_estimate": {
+            "status": "ok",
+            "coef": -0.07548728457094103,
+            "stderr": 0.04078721276573254,
+            "t_value": -1.8507585944769882,
+            "p_value": 0.06638990523906708,
+            "n_obs": 1496
+          },
+          "implied_composite_from_channels": -385.838809255113,
+          "decomposition_gap_vs_reference": 385.76332197054205,
+          "channels_ok": 3,
+          "channel_shares": [
+            {
+              "channel": "economic_activity_observed",
+              "contribution_share_abs": 8.804007591279729e-05,
+              "weighted_contribution": -0.033969278056923465,
+              "p_value": 0.06638990523906708
+            },
+            {
+              "channel": "physical_built_environment_observed",
+              "contribution_share_abs": 0.0009682469667532778,
+              "weighted_contribution": -0.3735872567169597,
+              "p_value": 0.14026749049633494
+            },
+            {
+              "channel": "knowledge_capital_observed",
+              "contribution_share_abs": 0.9989437129573339,
+              "weighted_contribution": -385.4312527203391,
+              "p_value": 0.2813860206361491
+            }
+          ],
+          "rows": [
+            {
+              "channel": "economic_activity_observed",
+              "outcome_variable": "log_viirs_ntl",
+              "weight_in_composite": 0.45,
+              "status": "ok",
+              "coef": -0.07548728457094103,
+              "stderr": 0.04078721276573254,
+              "t_value": -1.8507585944769882,
+              "p_value": 0.06638990523906708,
+              "weighted_contribution": -0.033969278056923465,
+              "n_obs": 1496
+            },
+            {
+              "channel": "physical_built_environment_observed",
+              "outcome_variable": "physical_built_expansion_primary",
+              "weight_in_composite": 0.35,
+              "status": "ok",
+              "coef": -1.0673921620484563,
+              "stderr": 0.7195001676734278,
+              "t_value": -1.483518989995472,
+              "p_value": 0.14026749049633494,
+              "weighted_contribution": -0.3735872567169597,
+              "n_obs": 1496
+            },
+            {
+              "channel": "knowledge_capital_observed",
+              "outcome_variable": "knowledge_capital_raw",
+              "weight_in_composite": 0.2,
+              "status": "ok",
+              "coef": -1927.1562636016954,
+              "stderr": 1781.8663507451795,
+              "t_value": -1.0815380529497935,
+              "p_value": 0.2813860206361491,
+              "weighted_contribution": -385.4312527203391,
+              "n_obs": 1496
+            }
+          ],
+          "table_file": "D:\\User\\Desktop\\CC\\data\\outputs\\mechanism_decomposition_source_source_external_direct_did_treatment.csv"
+        },
+        "identification_scorecard": {
+          "status": "ok",
+          "preferred": {
+            "estimator": "did_dose_response",
+            "effect": -0.010332809529667045,
+            "ci95": [
+              -0.02974443229225873,
+              0.00907881323292464
+            ],
+            "p_value": 0.2986702063495785,
+            "n_support": 1496,
+            "credibility_score": 46.17780473269771,
+            "subscores": {
+              "significance": 0.0,
+              "design": 0.7854188948306595,
+              "support": 0.9344071706812312,
+              "dose_positive_share": 0.40040106951871657
+            }
+          },
+          "ranking": [
+            {
+              "estimator": "did_dose_response",
+              "effect": -0.010332809529667045,
+              "ci95": [
+                -0.02974443229225873,
+                0.00907881323292464
+              ],
+              "p_value": 0.2986702063495785,
+              "n_support": 1496,
+              "credibility_score": 46.17780473269771,
+              "subscores": {
+                "significance": 0.0,
+                "design": 0.7854188948306595,
+                "support": 0.9344071706812312,
+                "dose_positive_share": 0.40040106951871657
+              }
+            },
+            {
+              "estimator": "did_intense_contrast",
+              "effect": 0.0029398343718270137,
+              "ci95": [
+                -0.0575652705930544,
+                0.06344493933670843
+              ],
+              "p_value": 0.9242710681562841,
+              "n_support": 1496,
+              "credibility_score": 45.47049635480109,
+              "subscores": {
+                "significance": 0.0,
+                "design": 0.7652100840336135,
+                "support": 0.9344071706812312,
+                "treated_share_balance": 0.8067226890756302
+              }
+            },
+            {
+              "estimator": "did_two_way_fe",
+              "effect": -0.01785373946183532,
+              "ci95": [
+                -0.09752022576492986,
+                0.061812746841259224
+              ],
+              "p_value": 0.6611842553887415,
+              "n_support": 1496,
+              "credibility_score": 33.038143413624624,
+              "subscores": {
+                "significance": 0.0,
+                "design": 0.41,
+                "support": 0.9344071706812312,
+                "permutation_bonus": 0.0,
+                "bootstrap_bonus": 0.06,
+                "wild_bootstrap_bonus": 0.0,
+                "lead_placebo_penalty": 0.0,
+                "lead_placebo_source": "twfe"
+              }
+            }
+          ],
+          "majority_effect_sign": null,
+          "sign_consistency_share_p_le_0_20": null
+        },
+        "source_sensitivity_mode": "common_dynamic_shock_anchor",
+        "anchor_design_variant": "direct_core",
+        "source_channel": "external_direct",
+        "source_intensity_col": "policy_intensity_external_direct",
+        "source_intensity_nonzero_share": 0.5187165775401069,
+        "source_dose_mean_post": 0.5760965449946419
+      },
+      "source_objective_indicator": {
+        "status": "ok",
+        "design_variant": "source_objective_indicator_common_shock",
+        "policy_reference_year": 2020,
+        "treated_share": 0.6617647058823529,
+        "did_two_way_fe": {
+          "coef": -0.01785373946183532,
+          "stderr": 0.040646166481170684,
+          "t_value": -0.4392478063117233,
+          "p_value": 0.6611842553887415,
+          "r2_within": 0.011710751033571776,
+          "n_obs": 1496,
+          "cov_type": "clustered",
+          "cluster_var": "iso3",
+          "controls_used": [
+            "temperature_mean",
+            "precipitation_sum",
+            "baseline_population_log"
+          ],
+          "stderr_type": "cluster_iso3_cr1",
+          "n_clusters": 136
+        },
+        "did_twfe_cluster_bootstrap": {
+          "status": "ok",
+          "coef_observed": -0.01785373946183532,
+          "stderr_observed": 0.040646166481170684,
+          "t_value_observed": -0.4392478063117233,
+          "draws_requested": 40,
+          "draws_successful": 40,
+          "coef_bootstrap_mean": -0.022822705875141912,
+          "coef_bootstrap_std": 0.04466691792068472,
+          "ci95_percentile": [
+            -0.08984665529362805,
+            0.04599769479267368
+          ],
+          "p_value_two_sided": 0.65
+        },
+        "did_twfe_permutation": {
+          "status": "ok",
+          "coef_observed": -0.01785373946183532,
+          "t_value_observed": -0.4392478063117233,
+          "permutation_design": "permute_city_cohort_schedule_preserving_treated_share_and_timing_mix",
+          "draws_requested": 50,
+          "draws_successful": 50,
+          "null_coef_mean": 0.004369515683622351,
+          "null_coef_std": 0.03224373509284275,
+          "null_abs_t_p95": 2.0224515765851536,
+          "p_value_abs_coef": 0.6078431372549019,
+          "p_value_abs_t": 0.6470588235294118
+        },
+        "did_twfe_wild_bootstrap": {
+          "status": "ok",
+          "coef_observed": -0.01785373946183532,
+          "t_value_observed": -0.4392478063117233,
+          "n_clusters": 136,
+          "null_design": "restricted_null_beta_did_eq_0_with_cluster_rademacher_weights",
+          "draws_requested": 60,
+          "draws_successful": 60,
+          "null_coef_mean": 0.0037837094243528906,
+          "null_t_mean": 0.09519861929943829,
+          "null_t_std": 1.0792701615373952,
+          "null_abs_t_p95": 1.9329695677119922,
+          "p_value_abs_t": 0.7049180327868853,
+          "p_value_abs_coef": 0.7049180327868853,
+          "ci95_coef_percentile": [
+            -0.06924329338366951,
+            0.08282575491463282
+          ]
+        },
+        "did_twfe_lead_placebo": {
+          "status": "ok",
+          "lead_count": 2,
+          "share_p_lt_0_10": 0.0,
+          "max_abs_t": 0.49137184677010975,
+          "mean_abs_coef": 0.008766114661238653,
+          "rows": [
+            {
+              "lead_years": 1,
+              "coef": -0.01674013461185029,
+              "stderr": 0.034068159830252194,
+              "t_value": -0.49137184677010975,
+              "p_value": 0.623961390190844
+            },
+            {
+              "lead_years": 2,
+              "coef": -0.0007920947106270153,
+              "stderr": 0.03257651950899807,
+              "t_value": -0.024314896820337977,
+              "p_value": 0.9806373345358794
+            }
+          ],
+          "output_path": "D:\\User\\Desktop\\CC\\data\\outputs\\twfe_lead_placebo_source_source_objective_indicator_log_viirs_ntl.csv"
+        },
+        "did_stacked_lead_placebo": {
+          "status": "skipped",
+          "reason": "no_valid_stacked_placebo_estimates",
+          "output_path": "D:\\User\\Desktop\\CC\\data\\outputs\\did_stacked_lead_placebo_source_source_objective_indicator_log_viirs_ntl.csv"
+        },
+        "did_intense_contrast": {
+          "status": "ok",
+          "did_col": "did_treatment_intense_external_peak",
+          "treated_col": "treated_city_intense_external_peak",
+          "treated_share": 0.38235294117647056,
+          "coef": 0.0029398343718270137,
+          "stderr": 0.030869951512694598,
+          "t_value": 0.09523287947563087,
+          "p_value": 0.9242710681562841,
+          "n_obs": 1496,
+          "stderr_type": "cluster_iso3_cr1",
+          "n_clusters": 136
+        },
+        "did_dose_response": {
+          "status": "skipped",
+          "reason": "no_dose_variation"
+        },
+        "did_dose_response_external_direct": {
+          "status": "skipped",
+          "reason": "no_dose_variation"
+        },
+        "did_dose_response_bins": {
+          "status": "skipped",
+          "reason": "too_few_positive_dose_rows"
+        },
+        "did_dose_response_bins_external_direct": {
+          "status": "skipped",
+          "reason": "too_few_positive_dose_rows"
+        },
+        "did_spillover_twfe": {
+          "status": "skipped",
+          "reason": "spillover_not_identified_on_country_level_causal_panel"
+        },
+        "did_spillover_twfe_dose": {
+          "status": "skipped",
+          "reason": "spillover_not_identified_on_country_level_causal_panel"
+        },
+        "did_matched_trend": {
+          "status": "skipped",
+          "reason": "lightweight_track_mode"
+        },
+        "staggered_did": {
+          "status": "skipped",
+          "reason": "lightweight_track_mode"
+        },
+        "not_yet_treated_did": {
+          "status": "skipped",
+          "reason": "lightweight_track_mode"
+        },
+        "dml_did": {
+          "status": "skipped",
+          "reason": "lightweight_track_mode"
+        },
+        "dr_did": {
+          "status": "skipped",
+          "reason": "lightweight_track_mode"
+        },
+        "dynamic_phase_heterogeneity": {},
+        "dynamic_phase_rule_sensitivity": {},
+        "synthetic_control": {
+          "status": "skipped",
+          "reason": "lightweight_track_mode"
+        },
+        "event_study_fe": {
+          "status": "ok",
+          "baseline_rel_year": -1,
+          "points": [
+            {
+              "rel_year": -3,
+              "coef": 0.038729521412706844,
+              "stderr": 0.04223539247984556,
+              "t_value": 0.9169921039845504,
+              "p_value": 0.4559490532651379,
+              "cells": 3,
+              "weighted_n_treat": 16.0
+            },
+            {
+              "rel_year": -2,
+              "coef": 0.023209914482919102,
+              "stderr": 0.01759708865132771,
+              "t_value": 1.3189633207404396,
+              "p_value": 0.2788233786658472,
+              "cells": 4,
+              "weighted_n_treat": 36.0
+            },
+            {
+              "rel_year": -1,
+              "coef": 0.0,
+              "stderr": 0.0,
+              "t_value": 0.0,
+              "p_value": 1.0,
+              "cells": 4,
+              "weighted_n_treat": 36.0
+            },
+            {
+              "rel_year": 0,
+              "coef": -0.007665724170692264,
+              "stderr": 0.027745469468334397,
+              "t_value": -0.27628741980527927,
+              "p_value": 0.800267897467485,
+              "cells": 4,
+              "weighted_n_treat": 36.0
+            },
+            {
+              "rel_year": 1,
+              "coef": 0.05079255008034608,
+              "stderr": 0.03219947388105291,
+              "t_value": 1.577434161439323,
+              "p_value": 0.2127974151635434,
+              "cells": 4,
+              "weighted_n_treat": 36.0
+            },
+            {
+              "rel_year": 2,
+              "coef": 0.09032737982929631,
+              "stderr": 0.03306338832642454,
+              "t_value": 2.7319456474793875,
+              "p_value": 0.07182301904283772,
+              "cells": 4,
+              "weighted_n_treat": 36.0
+            },
+            {
+              "rel_year": 3,
+              "coef": 0.12059791855985384,
+              "stderr": 0.041418540565797565,
+              "t_value": 2.911689231740838,
+              "p_value": 0.06191172782669795,
+              "cells": 4,
+              "weighted_n_treat": 36.0
+            }
+          ],
+          "meta": {
+            "n_obs": 1496,
+            "stderr_type": "cohort_time_att_aggregation",
+            "n_clusters": 136,
+            "relative_time_design": "city_specific_cohort",
+            "event_study_design": "staggered_not_yet_treated_aggregation",
+            "cohort_count": 8,
+            "pretrend_joint_p_value": 0.20535
+          }
+        },
+        "mechanism_decomposition": {
+          "status": "ok",
+          "treatment_col": "did_treatment",
+          "reference_outcome_requested": "log_viirs_ntl",
+          "reference_outcome": "log_viirs_ntl",
+          "reference_estimate": {
+            "status": "ok",
+            "coef": -0.07548728457094103,
+            "stderr": 0.04078721276573254,
+            "t_value": -1.8507585944769882,
+            "p_value": 0.06638990523906708,
+            "n_obs": 1496
+          },
+          "implied_composite_from_channels": -385.838809255113,
+          "decomposition_gap_vs_reference": 385.76332197054205,
+          "channels_ok": 3,
+          "channel_shares": [
+            {
+              "channel": "economic_activity_observed",
+              "contribution_share_abs": 8.804007591279729e-05,
+              "weighted_contribution": -0.033969278056923465,
+              "p_value": 0.06638990523906708
+            },
+            {
+              "channel": "physical_built_environment_observed",
+              "contribution_share_abs": 0.0009682469667532778,
+              "weighted_contribution": -0.3735872567169597,
+              "p_value": 0.14026749049633494
+            },
+            {
+              "channel": "knowledge_capital_observed",
+              "contribution_share_abs": 0.9989437129573339,
+              "weighted_contribution": -385.4312527203391,
+              "p_value": 0.2813860206361491
+            }
+          ],
+          "rows": [
+            {
+              "channel": "economic_activity_observed",
+              "outcome_variable": "log_viirs_ntl",
+              "weight_in_composite": 0.45,
+              "status": "ok",
+              "coef": -0.07548728457094103,
+              "stderr": 0.04078721276573254,
+              "t_value": -1.8507585944769882,
+              "p_value": 0.06638990523906708,
+              "weighted_contribution": -0.033969278056923465,
+              "n_obs": 1496
+            },
+            {
+              "channel": "physical_built_environment_observed",
+              "outcome_variable": "physical_built_expansion_primary",
+              "weight_in_composite": 0.35,
+              "status": "ok",
+              "coef": -1.0673921620484563,
+              "stderr": 0.7195001676734278,
+              "t_value": -1.483518989995472,
+              "p_value": 0.14026749049633494,
+              "weighted_contribution": -0.3735872567169597,
+              "n_obs": 1496
+            },
+            {
+              "channel": "knowledge_capital_observed",
+              "outcome_variable": "knowledge_capital_raw",
+              "weight_in_composite": 0.2,
+              "status": "ok",
+              "coef": -1927.1562636016954,
+              "stderr": 1781.8663507451795,
+              "t_value": -1.0815380529497935,
+              "p_value": 0.2813860206361491,
+              "weighted_contribution": -385.4312527203391,
+              "n_obs": 1496
+            }
+          ],
+          "table_file": "D:\\User\\Desktop\\CC\\data\\outputs\\mechanism_decomposition_source_source_objective_indicator_did_treatment.csv"
+        },
+        "identification_scorecard": {
+          "status": "ok",
+          "preferred": {
+            "estimator": "did_intense_contrast",
+            "effect": 0.0029398343718270137,
+            "ci95": [
+              -0.0575652705930544,
+              0.06344493933670843
+            ],
+            "p_value": 0.9242710681562841,
+            "n_support": 1496,
+            "credibility_score": 45.47049635480109,
+            "subscores": {
+              "significance": 0.0,
+              "design": 0.7652100840336135,
+              "support": 0.9344071706812312,
+              "treated_share_balance": 0.8067226890756302
+            }
+          },
+          "ranking": [
+            {
+              "estimator": "did_intense_contrast",
+              "effect": 0.0029398343718270137,
+              "ci95": [
+                -0.0575652705930544,
+                0.06344493933670843
+              ],
+              "p_value": 0.9242710681562841,
+              "n_support": 1496,
+              "credibility_score": 45.47049635480109,
+              "subscores": {
+                "significance": 0.0,
+                "design": 0.7652100840336135,
+                "support": 0.9344071706812312,
+                "treated_share_balance": 0.8067226890756302
+              }
+            },
+            {
+              "estimator": "did_two_way_fe",
+              "effect": -0.01785373946183532,
+              "ci95": [
+                -0.09752022576492986,
+                0.061812746841259224
+              ],
+              "p_value": 0.6611842553887415,
+              "n_support": 1496,
+              "credibility_score": 33.038143413624624,
+              "subscores": {
+                "significance": 0.0,
+                "design": 0.41,
+                "support": 0.9344071706812312,
+                "permutation_bonus": 0.0,
+                "bootstrap_bonus": 0.06,
+                "wild_bootstrap_bonus": 0.0,
+                "lead_placebo_penalty": 0.0,
+                "lead_placebo_source": "twfe"
+              }
+            }
+          ],
+          "majority_effect_sign": null,
+          "sign_consistency_share_p_le_0_20": null
+        },
+        "source_sensitivity_mode": "common_dynamic_shock_anchor",
+        "anchor_design_variant": "direct_core",
+        "source_channel": "objective_indicator",
+        "source_intensity_col": "policy_intensity_objective_indicator",
+        "source_intensity_nonzero_share": 0.0,
+        "source_dose_mean_post": 0.0
+      },
+      "source_objective_macro": {
+        "status": "ok",
+        "design_variant": "source_objective_macro_common_shock",
+        "policy_reference_year": 2020,
+        "treated_share": 0.6617647058823529,
+        "did_two_way_fe": {
+          "coef": -0.01785373946183532,
+          "stderr": 0.040646166481170684,
+          "t_value": -0.4392478063117233,
+          "p_value": 0.6611842553887415,
+          "r2_within": 0.011710751033571776,
+          "n_obs": 1496,
+          "cov_type": "clustered",
+          "cluster_var": "iso3",
+          "controls_used": [
+            "temperature_mean",
+            "precipitation_sum",
+            "baseline_population_log"
+          ],
+          "stderr_type": "cluster_iso3_cr1",
+          "n_clusters": 136
+        },
+        "did_twfe_cluster_bootstrap": {
+          "status": "ok",
+          "coef_observed": -0.01785373946183532,
+          "stderr_observed": 0.040646166481170684,
+          "t_value_observed": -0.4392478063117233,
+          "draws_requested": 40,
+          "draws_successful": 40,
+          "coef_bootstrap_mean": -0.022822705875141912,
+          "coef_bootstrap_std": 0.04466691792068472,
+          "ci95_percentile": [
+            -0.08984665529362805,
+            0.04599769479267368
+          ],
+          "p_value_two_sided": 0.65
+        },
+        "did_twfe_permutation": {
+          "status": "ok",
+          "coef_observed": -0.01785373946183532,
+          "t_value_observed": -0.4392478063117233,
+          "permutation_design": "permute_city_cohort_schedule_preserving_treated_share_and_timing_mix",
+          "draws_requested": 50,
+          "draws_successful": 50,
+          "null_coef_mean": 0.004369515683622351,
+          "null_coef_std": 0.03224373509284275,
+          "null_abs_t_p95": 2.0224515765851536,
+          "p_value_abs_coef": 0.6078431372549019,
+          "p_value_abs_t": 0.6470588235294118
+        },
+        "did_twfe_wild_bootstrap": {
+          "status": "ok",
+          "coef_observed": -0.01785373946183532,
+          "t_value_observed": -0.4392478063117233,
+          "n_clusters": 136,
+          "null_design": "restricted_null_beta_did_eq_0_with_cluster_rademacher_weights",
+          "draws_requested": 60,
+          "draws_successful": 60,
+          "null_coef_mean": 0.0037837094243528906,
+          "null_t_mean": 0.09519861929943829,
+          "null_t_std": 1.0792701615373952,
+          "null_abs_t_p95": 1.9329695677119922,
+          "p_value_abs_t": 0.7049180327868853,
+          "p_value_abs_coef": 0.7049180327868853,
+          "ci95_coef_percentile": [
+            -0.06924329338366951,
+            0.08282575491463282
+          ]
+        },
+        "did_twfe_lead_placebo": {
+          "status": "ok",
+          "lead_count": 2,
+          "share_p_lt_0_10": 0.0,
+          "max_abs_t": 0.49137184677010975,
+          "mean_abs_coef": 0.008766114661238653,
+          "rows": [
+            {
+              "lead_years": 1,
+              "coef": -0.01674013461185029,
+              "stderr": 0.034068159830252194,
+              "t_value": -0.49137184677010975,
+              "p_value": 0.623961390190844
+            },
+            {
+              "lead_years": 2,
+              "coef": -0.0007920947106270153,
+              "stderr": 0.03257651950899807,
+              "t_value": -0.024314896820337977,
+              "p_value": 0.9806373345358794
+            }
+          ],
+          "output_path": "D:\\User\\Desktop\\CC\\data\\outputs\\twfe_lead_placebo_source_source_objective_macro_log_viirs_ntl.csv"
+        },
+        "did_stacked_lead_placebo": {
+          "status": "skipped",
+          "reason": "no_valid_stacked_placebo_estimates",
+          "output_path": "D:\\User\\Desktop\\CC\\data\\outputs\\did_stacked_lead_placebo_source_source_objective_macro_log_viirs_ntl.csv"
+        },
+        "did_intense_contrast": {
+          "status": "ok",
+          "did_col": "did_treatment_intense_external_peak",
+          "treated_col": "treated_city_intense_external_peak",
+          "treated_share": 0.38235294117647056,
+          "coef": 0.0029398343718270137,
+          "stderr": 0.030869951512694598,
+          "t_value": 0.09523287947563087,
+          "p_value": 0.9242710681562841,
+          "n_obs": 1496,
+          "stderr_type": "cluster_iso3_cr1",
+          "n_clusters": 136
+        },
+        "did_dose_response": {
+          "status": "skipped",
+          "reason": "no_dose_variation"
+        },
+        "did_dose_response_external_direct": {
+          "status": "skipped",
+          "reason": "no_dose_variation"
+        },
+        "did_dose_response_bins": {
+          "status": "skipped",
+          "reason": "too_few_positive_dose_rows"
+        },
+        "did_dose_response_bins_external_direct": {
+          "status": "skipped",
+          "reason": "too_few_positive_dose_rows"
+        },
+        "did_spillover_twfe": {
+          "status": "skipped",
+          "reason": "spillover_not_identified_on_country_level_causal_panel"
+        },
+        "did_spillover_twfe_dose": {
+          "status": "skipped",
+          "reason": "spillover_not_identified_on_country_level_causal_panel"
+        },
+        "did_matched_trend": {
+          "status": "skipped",
+          "reason": "lightweight_track_mode"
+        },
+        "staggered_did": {
+          "status": "skipped",
+          "reason": "lightweight_track_mode"
+        },
+        "not_yet_treated_did": {
+          "status": "skipped",
+          "reason": "lightweight_track_mode"
+        },
+        "dml_did": {
+          "status": "skipped",
+          "reason": "lightweight_track_mode"
+        },
+        "dr_did": {
+          "status": "skipped",
+          "reason": "lightweight_track_mode"
+        },
+        "dynamic_phase_heterogeneity": {},
+        "dynamic_phase_rule_sensitivity": {},
+        "synthetic_control": {
+          "status": "skipped",
+          "reason": "lightweight_track_mode"
+        },
+        "event_study_fe": {
+          "status": "ok",
+          "baseline_rel_year": -1,
+          "points": [
+            {
+              "rel_year": -3,
+              "coef": 0.038729521412706844,
+              "stderr": 0.04223539247984556,
+              "t_value": 0.9169921039845504,
+              "p_value": 0.4559490532651379,
+              "cells": 3,
+              "weighted_n_treat": 16.0
+            },
+            {
+              "rel_year": -2,
+              "coef": 0.023209914482919102,
+              "stderr": 0.01759708865132771,
+              "t_value": 1.3189633207404396,
+              "p_value": 0.2788233786658472,
+              "cells": 4,
+              "weighted_n_treat": 36.0
+            },
+            {
+              "rel_year": -1,
+              "coef": 0.0,
+              "stderr": 0.0,
+              "t_value": 0.0,
+              "p_value": 1.0,
+              "cells": 4,
+              "weighted_n_treat": 36.0
+            },
+            {
+              "rel_year": 0,
+              "coef": -0.007665724170692264,
+              "stderr": 0.027745469468334397,
+              "t_value": -0.27628741980527927,
+              "p_value": 0.800267897467485,
+              "cells": 4,
+              "weighted_n_treat": 36.0
+            },
+            {
+              "rel_year": 1,
+              "coef": 0.05079255008034608,
+              "stderr": 0.03219947388105291,
+              "t_value": 1.577434161439323,
+              "p_value": 0.2127974151635434,
+              "cells": 4,
+              "weighted_n_treat": 36.0
+            },
+            {
+              "rel_year": 2,
+              "coef": 0.09032737982929631,
+              "stderr": 0.03306338832642454,
+              "t_value": 2.7319456474793875,
+              "p_value": 0.07182301904283772,
+              "cells": 4,
+              "weighted_n_treat": 36.0
+            },
+            {
+              "rel_year": 3,
+              "coef": 0.12059791855985384,
+              "stderr": 0.041418540565797565,
+              "t_value": 2.911689231740838,
+              "p_value": 0.06191172782669795,
+              "cells": 4,
+              "weighted_n_treat": 36.0
+            }
+          ],
+          "meta": {
+            "n_obs": 1496,
+            "stderr_type": "cohort_time_att_aggregation",
+            "n_clusters": 136,
+            "relative_time_design": "city_specific_cohort",
+            "event_study_design": "staggered_not_yet_treated_aggregation",
+            "cohort_count": 8,
+            "pretrend_joint_p_value": 0.20535
+          }
+        },
+        "mechanism_decomposition": {
+          "status": "ok",
+          "treatment_col": "did_treatment",
+          "reference_outcome_requested": "log_viirs_ntl",
+          "reference_outcome": "log_viirs_ntl",
+          "reference_estimate": {
+            "status": "ok",
+            "coef": -0.07548728457094103,
+            "stderr": 0.04078721276573254,
+            "t_value": -1.8507585944769882,
+            "p_value": 0.06638990523906708,
+            "n_obs": 1496
+          },
+          "implied_composite_from_channels": -385.838809255113,
+          "decomposition_gap_vs_reference": 385.76332197054205,
+          "channels_ok": 3,
+          "channel_shares": [
+            {
+              "channel": "economic_activity_observed",
+              "contribution_share_abs": 8.804007591279729e-05,
+              "weighted_contribution": -0.033969278056923465,
+              "p_value": 0.06638990523906708
+            },
+            {
+              "channel": "physical_built_environment_observed",
+              "contribution_share_abs": 0.0009682469667532778,
+              "weighted_contribution": -0.3735872567169597,
+              "p_value": 0.14026749049633494
+            },
+            {
+              "channel": "knowledge_capital_observed",
+              "contribution_share_abs": 0.9989437129573339,
+              "weighted_contribution": -385.4312527203391,
+              "p_value": 0.2813860206361491
+            }
+          ],
+          "rows": [
+            {
+              "channel": "economic_activity_observed",
+              "outcome_variable": "log_viirs_ntl",
+              "weight_in_composite": 0.45,
+              "status": "ok",
+              "coef": -0.07548728457094103,
+              "stderr": 0.04078721276573254,
+              "t_value": -1.8507585944769882,
+              "p_value": 0.06638990523906708,
+              "weighted_contribution": -0.033969278056923465,
+              "n_obs": 1496
+            },
+            {
+              "channel": "physical_built_environment_observed",
+              "outcome_variable": "physical_built_expansion_primary",
+              "weight_in_composite": 0.35,
+              "status": "ok",
+              "coef": -1.0673921620484563,
+              "stderr": 0.7195001676734278,
+              "t_value": -1.483518989995472,
+              "p_value": 0.14026749049633494,
+              "weighted_contribution": -0.3735872567169597,
+              "n_obs": 1496
+            },
+            {
+              "channel": "knowledge_capital_observed",
+              "outcome_variable": "knowledge_capital_raw",
+              "weight_in_composite": 0.2,
+              "status": "ok",
+              "coef": -1927.1562636016954,
+              "stderr": 1781.8663507451795,
+              "t_value": -1.0815380529497935,
+              "p_value": 0.2813860206361491,
+              "weighted_contribution": -385.4312527203391,
+              "n_obs": 1496
+            }
+          ],
+          "table_file": "D:\\User\\Desktop\\CC\\data\\outputs\\mechanism_decomposition_source_source_objective_macro_did_treatment.csv"
+        },
+        "identification_scorecard": {
+          "status": "ok",
+          "preferred": {
+            "estimator": "did_intense_contrast",
+            "effect": 0.0029398343718270137,
+            "ci95": [
+              -0.0575652705930544,
+              0.06344493933670843
+            ],
+            "p_value": 0.9242710681562841,
+            "n_support": 1496,
+            "credibility_score": 45.47049635480109,
+            "subscores": {
+              "significance": 0.0,
+              "design": 0.7652100840336135,
+              "support": 0.9344071706812312,
+              "treated_share_balance": 0.8067226890756302
+            }
+          },
+          "ranking": [
+            {
+              "estimator": "did_intense_contrast",
+              "effect": 0.0029398343718270137,
+              "ci95": [
+                -0.0575652705930544,
+                0.06344493933670843
+              ],
+              "p_value": 0.9242710681562841,
+              "n_support": 1496,
+              "credibility_score": 45.47049635480109,
+              "subscores": {
+                "significance": 0.0,
+                "design": 0.7652100840336135,
+                "support": 0.9344071706812312,
+                "treated_share_balance": 0.8067226890756302
+              }
+            },
+            {
+              "estimator": "did_two_way_fe",
+              "effect": -0.01785373946183532,
+              "ci95": [
+                -0.09752022576492986,
+                0.061812746841259224
+              ],
+              "p_value": 0.6611842553887415,
+              "n_support": 1496,
+              "credibility_score": 33.038143413624624,
+              "subscores": {
+                "significance": 0.0,
+                "design": 0.41,
+                "support": 0.9344071706812312,
+                "permutation_bonus": 0.0,
+                "bootstrap_bonus": 0.06,
+                "wild_bootstrap_bonus": 0.0,
+                "lead_placebo_penalty": 0.0,
+                "lead_placebo_source": "twfe"
+              }
+            }
+          ],
+          "majority_effect_sign": null,
+          "sign_consistency_share_p_le_0_20": null
+        },
+        "source_sensitivity_mode": "common_dynamic_shock_anchor",
+        "anchor_design_variant": "direct_core",
+        "source_channel": "objective_macro",
+        "source_intensity_col": "policy_intensity_objective_macro",
+        "source_intensity_nonzero_share": 0.0,
+        "source_dose_mean_post": 0.0
+      },
+      "source_ai_inferred": {
+        "status": "ok",
+        "design_variant": "source_ai_inferred_common_shock",
+        "policy_reference_year": 2020,
+        "treated_share": 0.6617647058823529,
+        "did_two_way_fe": {
+          "coef": -0.01785373946183532,
+          "stderr": 0.040646166481170684,
+          "t_value": -0.4392478063117233,
+          "p_value": 0.6611842553887415,
+          "r2_within": 0.011710751033571776,
+          "n_obs": 1496,
+          "cov_type": "clustered",
+          "cluster_var": "iso3",
+          "controls_used": [
+            "temperature_mean",
+            "precipitation_sum",
+            "baseline_population_log"
+          ],
+          "stderr_type": "cluster_iso3_cr1",
+          "n_clusters": 136
+        },
+        "did_twfe_cluster_bootstrap": {
+          "status": "ok",
+          "coef_observed": -0.01785373946183532,
+          "stderr_observed": 0.040646166481170684,
+          "t_value_observed": -0.4392478063117233,
+          "draws_requested": 40,
+          "draws_successful": 40,
+          "coef_bootstrap_mean": -0.022822705875141912,
+          "coef_bootstrap_std": 0.04466691792068472,
+          "ci95_percentile": [
+            -0.08984665529362805,
+            0.04599769479267368
+          ],
+          "p_value_two_sided": 0.65
+        },
+        "did_twfe_permutation": {
+          "status": "ok",
+          "coef_observed": -0.01785373946183532,
+          "t_value_observed": -0.4392478063117233,
+          "permutation_design": "permute_city_cohort_schedule_preserving_treated_share_and_timing_mix",
+          "draws_requested": 50,
+          "draws_successful": 50,
+          "null_coef_mean": 0.004369515683622351,
+          "null_coef_std": 0.03224373509284275,
+          "null_abs_t_p95": 2.0224515765851536,
+          "p_value_abs_coef": 0.6078431372549019,
+          "p_value_abs_t": 0.6470588235294118
+        },
+        "did_twfe_wild_bootstrap": {
+          "status": "ok",
+          "coef_observed": -0.01785373946183532,
+          "t_value_observed": -0.4392478063117233,
+          "n_clusters": 136,
+          "null_design": "restricted_null_beta_did_eq_0_with_cluster_rademacher_weights",
+          "draws_requested": 60,
+          "draws_successful": 60,
+          "null_coef_mean": 0.0037837094243528906,
+          "null_t_mean": 0.09519861929943829,
+          "null_t_std": 1.0792701615373952,
+          "null_abs_t_p95": 1.9329695677119922,
+          "p_value_abs_t": 0.7049180327868853,
+          "p_value_abs_coef": 0.7049180327868853,
+          "ci95_coef_percentile": [
+            -0.06924329338366951,
+            0.08282575491463282
+          ]
+        },
+        "did_twfe_lead_placebo": {
+          "status": "ok",
+          "lead_count": 2,
+          "share_p_lt_0_10": 0.0,
+          "max_abs_t": 0.49137184677010975,
+          "mean_abs_coef": 0.008766114661238653,
+          "rows": [
+            {
+              "lead_years": 1,
+              "coef": -0.01674013461185029,
+              "stderr": 0.034068159830252194,
+              "t_value": -0.49137184677010975,
+              "p_value": 0.623961390190844
+            },
+            {
+              "lead_years": 2,
+              "coef": -0.0007920947106270153,
+              "stderr": 0.03257651950899807,
+              "t_value": -0.024314896820337977,
+              "p_value": 0.9806373345358794
+            }
+          ],
+          "output_path": "D:\\User\\Desktop\\CC\\data\\outputs\\twfe_lead_placebo_source_source_ai_inferred_log_viirs_ntl.csv"
+        },
+        "did_stacked_lead_placebo": {
+          "status": "skipped",
+          "reason": "no_valid_stacked_placebo_estimates",
+          "output_path": "D:\\User\\Desktop\\CC\\data\\outputs\\did_stacked_lead_placebo_source_source_ai_inferred_log_viirs_ntl.csv"
+        },
+        "did_intense_contrast": {
+          "status": "ok",
+          "did_col": "did_treatment_intense_external_peak",
+          "treated_col": "treated_city_intense_external_peak",
+          "treated_share": 0.38235294117647056,
+          "coef": 0.0029398343718270137,
+          "stderr": 0.030869951512694598,
+          "t_value": 0.09523287947563087,
+          "p_value": 0.9242710681562841,
+          "n_obs": 1496,
+          "stderr_type": "cluster_iso3_cr1",
+          "n_clusters": 136
+        },
+        "did_dose_response": {
+          "status": "skipped",
+          "reason": "no_dose_variation"
+        },
+        "did_dose_response_external_direct": {
+          "status": "skipped",
+          "reason": "no_dose_variation"
+        },
+        "did_dose_response_bins": {
+          "status": "skipped",
+          "reason": "too_few_positive_dose_rows"
+        },
+        "did_dose_response_bins_external_direct": {
+          "status": "skipped",
+          "reason": "too_few_positive_dose_rows"
+        },
+        "did_spillover_twfe": {
+          "status": "skipped",
+          "reason": "spillover_not_identified_on_country_level_causal_panel"
+        },
+        "did_spillover_twfe_dose": {
+          "status": "skipped",
+          "reason": "spillover_not_identified_on_country_level_causal_panel"
+        },
+        "did_matched_trend": {
+          "status": "skipped",
+          "reason": "lightweight_track_mode"
+        },
+        "staggered_did": {
+          "status": "skipped",
+          "reason": "lightweight_track_mode"
+        },
+        "not_yet_treated_did": {
+          "status": "skipped",
+          "reason": "lightweight_track_mode"
+        },
+        "dml_did": {
+          "status": "skipped",
+          "reason": "lightweight_track_mode"
+        },
+        "dr_did": {
+          "status": "skipped",
+          "reason": "lightweight_track_mode"
+        },
+        "dynamic_phase_heterogeneity": {},
+        "dynamic_phase_rule_sensitivity": {},
+        "synthetic_control": {
+          "status": "skipped",
+          "reason": "lightweight_track_mode"
+        },
+        "event_study_fe": {
+          "status": "ok",
+          "baseline_rel_year": -1,
+          "points": [
+            {
+              "rel_year": -3,
+              "coef": 0.038729521412706844,
+              "stderr": 0.04223539247984556,
+              "t_value": 0.9169921039845504,
+              "p_value": 0.4559490532651379,
+              "cells": 3,
+              "weighted_n_treat": 16.0
+            },
+            {
+              "rel_year": -2,
+              "coef": 0.023209914482919102,
+              "stderr": 0.01759708865132771,
+              "t_value": 1.3189633207404396,
+              "p_value": 0.2788233786658472,
+              "cells": 4,
+              "weighted_n_treat": 36.0
+            },
+            {
+              "rel_year": -1,
+              "coef": 0.0,
+              "stderr": 0.0,
+              "t_value": 0.0,
+              "p_value": 1.0,
+              "cells": 4,
+              "weighted_n_treat": 36.0
+            },
+            {
+              "rel_year": 0,
+              "coef": -0.007665724170692264,
+              "stderr": 0.027745469468334397,
+              "t_value": -0.27628741980527927,
+              "p_value": 0.800267897467485,
+              "cells": 4,
+              "weighted_n_treat": 36.0
+            },
+            {
+              "rel_year": 1,
+              "coef": 0.05079255008034608,
+              "stderr": 0.03219947388105291,
+              "t_value": 1.577434161439323,
+              "p_value": 0.2127974151635434,
+              "cells": 4,
+              "weighted_n_treat": 36.0
+            },
+            {
+              "rel_year": 2,
+              "coef": 0.09032737982929631,
+              "stderr": 0.03306338832642454,
+              "t_value": 2.7319456474793875,
+              "p_value": 0.07182301904283772,
+              "cells": 4,
+              "weighted_n_treat": 36.0
+            },
+            {
+              "rel_year": 3,
+              "coef": 0.12059791855985384,
+              "stderr": 0.041418540565797565,
+              "t_value": 2.911689231740838,
+              "p_value": 0.06191172782669795,
+              "cells": 4,
+              "weighted_n_treat": 36.0
+            }
+          ],
+          "meta": {
+            "n_obs": 1496,
+            "stderr_type": "cohort_time_att_aggregation",
+            "n_clusters": 136,
+            "relative_time_design": "city_specific_cohort",
+            "event_study_design": "staggered_not_yet_treated_aggregation",
+            "cohort_count": 8,
+            "pretrend_joint_p_value": 0.20535
+          }
+        },
+        "mechanism_decomposition": {
+          "status": "ok",
+          "treatment_col": "did_treatment",
+          "reference_outcome_requested": "log_viirs_ntl",
+          "reference_outcome": "log_viirs_ntl",
+          "reference_estimate": {
+            "status": "ok",
+            "coef": -0.07548728457094103,
+            "stderr": 0.04078721276573254,
+            "t_value": -1.8507585944769882,
+            "p_value": 0.06638990523906708,
+            "n_obs": 1496
+          },
+          "implied_composite_from_channels": -385.838809255113,
+          "decomposition_gap_vs_reference": 385.76332197054205,
+          "channels_ok": 3,
+          "channel_shares": [
+            {
+              "channel": "economic_activity_observed",
+              "contribution_share_abs": 8.804007591279729e-05,
+              "weighted_contribution": -0.033969278056923465,
+              "p_value": 0.06638990523906708
+            },
+            {
+              "channel": "physical_built_environment_observed",
+              "contribution_share_abs": 0.0009682469667532778,
+              "weighted_contribution": -0.3735872567169597,
+              "p_value": 0.14026749049633494
+            },
+            {
+              "channel": "knowledge_capital_observed",
+              "contribution_share_abs": 0.9989437129573339,
+              "weighted_contribution": -385.4312527203391,
+              "p_value": 0.2813860206361491
+            }
+          ],
+          "rows": [
+            {
+              "channel": "economic_activity_observed",
+              "outcome_variable": "log_viirs_ntl",
+              "weight_in_composite": 0.45,
+              "status": "ok",
+              "coef": -0.07548728457094103,
+              "stderr": 0.04078721276573254,
+              "t_value": -1.8507585944769882,
+              "p_value": 0.06638990523906708,
+              "weighted_contribution": -0.033969278056923465,
+              "n_obs": 1496
+            },
+            {
+              "channel": "physical_built_environment_observed",
+              "outcome_variable": "physical_built_expansion_primary",
+              "weight_in_composite": 0.35,
+              "status": "ok",
+              "coef": -1.0673921620484563,
+              "stderr": 0.7195001676734278,
+              "t_value": -1.483518989995472,
+              "p_value": 0.14026749049633494,
+              "weighted_contribution": -0.3735872567169597,
+              "n_obs": 1496
+            },
+            {
+              "channel": "knowledge_capital_observed",
+              "outcome_variable": "knowledge_capital_raw",
+              "weight_in_composite": 0.2,
+              "status": "ok",
+              "coef": -1927.1562636016954,
+              "stderr": 1781.8663507451795,
+              "t_value": -1.0815380529497935,
+              "p_value": 0.2813860206361491,
+              "weighted_contribution": -385.4312527203391,
+              "n_obs": 1496
+            }
+          ],
+          "table_file": "D:\\User\\Desktop\\CC\\data\\outputs\\mechanism_decomposition_source_source_ai_inferred_did_treatment.csv"
+        },
+        "identification_scorecard": {
+          "status": "ok",
+          "preferred": {
+            "estimator": "did_intense_contrast",
+            "effect": 0.0029398343718270137,
+            "ci95": [
+              -0.0575652705930544,
+              0.06344493933670843
+            ],
+            "p_value": 0.9242710681562841,
+            "n_support": 1496,
+            "credibility_score": 45.47049635480109,
+            "subscores": {
+              "significance": 0.0,
+              "design": 0.7652100840336135,
+              "support": 0.9344071706812312,
+              "treated_share_balance": 0.8067226890756302
+            }
+          },
+          "ranking": [
+            {
+              "estimator": "did_intense_contrast",
+              "effect": 0.0029398343718270137,
+              "ci95": [
+                -0.0575652705930544,
+                0.06344493933670843
+              ],
+              "p_value": 0.9242710681562841,
+              "n_support": 1496,
+              "credibility_score": 45.47049635480109,
+              "subscores": {
+                "significance": 0.0,
+                "design": 0.7652100840336135,
+                "support": 0.9344071706812312,
+                "treated_share_balance": 0.8067226890756302
+              }
+            },
+            {
+              "estimator": "did_two_way_fe",
+              "effect": -0.01785373946183532,
+              "ci95": [
+                -0.09752022576492986,
+                0.061812746841259224
+              ],
+              "p_value": 0.6611842553887415,
+              "n_support": 1496,
+              "credibility_score": 33.038143413624624,
+              "subscores": {
+                "significance": 0.0,
+                "design": 0.41,
+                "support": 0.9344071706812312,
+                "permutation_bonus": 0.0,
+                "bootstrap_bonus": 0.06,
+                "wild_bootstrap_bonus": 0.0,
+                "lead_placebo_penalty": 0.0,
+                "lead_placebo_source": "twfe"
+              }
+            }
+          ],
+          "majority_effect_sign": null,
+          "sign_consistency_share_p_le_0_20": null
+        },
+        "source_sensitivity_mode": "common_dynamic_shock_anchor",
+        "anchor_design_variant": "direct_core",
+        "source_channel": "ai_inferred",
+        "source_intensity_col": "policy_intensity_ai_inferred",
+        "source_intensity_nonzero_share": 0.0,
+        "source_dose_mean_post": 0.0
+      }
+    }
+  },
+  "source_event_study": {
+    "status": "ok",
+    "variants": [
+      "source_ai_inferred",
+      "source_external_direct",
+      "source_objective_indicator",
+      "source_objective_macro"
+    ],
+    "n_rows": 28,
+    "table_file": "D:\\User\\Desktop\\CC\\data\\outputs\\econometric_source_event_study_points.csv"
+  },
+  "policy_source_sensitivity": {
+    "status": "ok",
+    "variants_considered": [
+      "direct_event_design",
+      "evidence_evidence_a",
+      "evidence_evidence_ab",
+      "main_design",
+      "source_ai_inferred",
+      "source_external_direct",
+      "source_objective_indicator",
+      "source_objective_macro"
+    ],
+    "variant_count": 8,
+    "table_file": "D:\\User\\Desktop\\CC\\data\\outputs\\econometric_policy_source_sensitivity.csv",
+    "best_variant": "main_design",
+    "best_identification_strength": 39.9451432367657,
+    "best_preferred_estimator": "dr_did",
+    "best_preferred_effect": 0.014342501926139983,
+    "sign_consistency_with_main_share": 0.0,
+    "sign_consistency_with_main_share_all_variants": 0.125,
+    "sign_reference_estimator": "did_intense_contrast_if_available_else_preferred",
+    "table": [
+      {
+        "variant": "main_design",
+        "status": "ok",
+        "design_variant": "direct_core",
+        "policy_reference_year": 2020,
+        "treated_share": 0.6617647058823529,
+        "did_coef": 0.060179283786387414,
+        "did_t_value": 1.4883509001117705,
+        "did_stderr": 0.04043353202653228,
+        "did_p_value": 0.13986927989571513,
+        "did_n_obs": 935,
+        "bootstrap_p_value": 0.23333333333333334,
+        "permutation_p_value": 0.2222222222222222,
+        "wild_bootstrap_p_value": 0.07692307692307693,
+        "lead_placebo_share_p_lt_0_10": 0.0,
+        "lead_placebo_method": "twfe",
+        "preferred_estimator": "dr_did",
+        "preferred_effect": 0.014342501926139983,
+        "preferred_p_value": 0.30150655377421864,
+        "preferred_credibility_score": 48.517228878810606,
+        "sign_reference_effect": -0.00457258976926132,
+        "dr_coef": 0.014342501926139983,
+        "dr_p_value": 0.30150655377421864,
+        "dml_coef": -0.18930250412894423,
+        "dml_p_value": 0.0029665178496168184,
+        "intense_coef": -0.00457258976926132,
+        "intense_p_value": 0.9384039612912116,
+        "dose_coef": -0.024968961812006706,
+        "dose_p_value": 0.39207773238247323,
+        "dose_external_direct_coef": -0.012983487487691407,
+        "dose_external_direct_p_value": 0.6107467146740595,
+        "identification_pass_count": 2,
+        "identification_strength": 39.9451432367657,
+        "effect_sign_consistent_with_main": 1
+      },
+      {
+        "variant": "direct_event_design",
+        "status": "ok",
+        "design_variant": "direct_core",
+        "policy_reference_year": 2020,
+        "treated_share": 0.6617647058823529,
+        "did_coef": -0.01785373946183532,
+        "did_t_value": -0.4392478063117233,
+        "did_stderr": 0.040646166481170684,
+        "did_p_value": 0.6611842553887415,
+        "did_n_obs": 1496,
+        "bootstrap_p_value": 0.65,
+        "permutation_p_value": 0.6470588235294118,
+        "wild_bootstrap_p_value": 0.7049180327868853,
+        "lead_placebo_share_p_lt_0_10": 0.0,
+        "lead_placebo_method": "twfe",
+        "preferred_estimator": "did_dose_response",
+        "preferred_effect": -0.010332809529667045,
+        "preferred_p_value": 0.2986702063495785,
+        "preferred_credibility_score": 46.17780473269771,
+        "sign_reference_effect": 0.0029398343718270137,
+        "dr_coef": NaN,
+        "dr_p_value": NaN,
+        "dml_coef": NaN,
+        "dml_p_value": NaN,
+        "intense_coef": 0.0029398343718270137,
+        "intense_p_value": 0.9242710681562841,
+        "dose_coef": -0.025559579394348865,
+        "dose_p_value": 0.2986702063495785,
+        "dose_external_direct_coef": -0.02108073742530367,
+        "dose_external_direct_p_value": 0.29727408902348135,
+        "identification_pass_count": 1,
+        "identification_strength": 24.891420943238458,
+        "effect_sign_consistent_with_main": 0
+      },
+      {
+        "variant": "evidence_evidence_ab",
+        "status": "ok",
+        "design_variant": "evidence_ab",
+        "policy_reference_year": 2020,
+        "treated_share": 0.8529411764705882,
+        "did_coef": -0.01785373946183532,
+        "did_t_value": -0.4392478063117233,
+        "did_stderr": 0.040646166481170684,
+        "did_p_value": 0.6611842553887415,
+        "did_n_obs": 1496,
+        "bootstrap_p_value": 0.8,
+        "permutation_p_value": 0.6274509803921569,
+        "wild_bootstrap_p_value": 0.5245901639344263,
+        "lead_placebo_share_p_lt_0_10": 0.0,
+        "lead_placebo_method": "twfe",
+        "preferred_estimator": "did_dose_response",
+        "preferred_effect": -0.009441987823629518,
+        "preferred_p_value": 0.33686996219262433,
+        "preferred_credibility_score": 46.17780473269771,
+        "sign_reference_effect": 0.0029398343718270137,
+        "dr_coef": NaN,
+        "dr_p_value": NaN,
+        "dml_coef": NaN,
+        "dml_p_value": NaN,
+        "intense_coef": 0.0029398343718270137,
+        "intense_p_value": 0.9242710681562841,
+        "dose_coef": -0.02335601335973822,
+        "dose_p_value": 0.33686996219262433,
+        "dose_external_direct_coef": -0.02108073742530367,
+        "dose_external_direct_p_value": 0.29727408902348135,
+        "identification_pass_count": 1,
+        "identification_strength": 24.891420943238458,
+        "effect_sign_consistent_with_main": 0
+      },
+      {
+        "variant": "source_external_direct",
+        "status": "ok",
+        "design_variant": "source_external_direct_common_shock",
+        "policy_reference_year": 2020,
+        "treated_share": 0.6617647058823529,
+        "did_coef": -0.01785373946183532,
+        "did_t_value": -0.4392478063117233,
+        "did_stderr": 0.040646166481170684,
+        "did_p_value": 0.6611842553887415,
+        "did_n_obs": 1496,
+        "bootstrap_p_value": 0.65,
+        "permutation_p_value": 0.6470588235294118,
+        "wild_bootstrap_p_value": 0.7049180327868853,
+        "lead_placebo_share_p_lt_0_10": 0.0,
+        "lead_placebo_method": "twfe",
+        "preferred_estimator": "did_dose_response",
+        "preferred_effect": -0.010332809529667045,
+        "preferred_p_value": 0.2986702063495785,
+        "preferred_credibility_score": 46.17780473269771,
+        "sign_reference_effect": 0.0029398343718270137,
+        "dr_coef": NaN,
+        "dr_p_value": NaN,
+        "dml_coef": NaN,
+        "dml_p_value": NaN,
+        "intense_coef": 0.0029398343718270137,
+        "intense_p_value": 0.9242710681562841,
+        "dose_coef": -0.025559579394348865,
+        "dose_p_value": 0.2986702063495785,
+        "dose_external_direct_coef": -0.02335601335973822,
+        "dose_external_direct_p_value": 0.33686996219262433,
+        "identification_pass_count": 1,
+        "identification_strength": 24.891420943238458,
+        "effect_sign_consistent_with_main": 0
+      },
+      {
+        "variant": "source_ai_inferred",
+        "status": "ok",
+        "design_variant": "source_ai_inferred_common_shock",
+        "policy_reference_year": 2020,
+        "treated_share": 0.6617647058823529,
+        "did_coef": -0.01785373946183532,
+        "did_t_value": -0.4392478063117233,
+        "did_stderr": 0.040646166481170684,
+        "did_p_value": 0.6611842553887415,
+        "did_n_obs": 1496,
+        "bootstrap_p_value": 0.65,
+        "permutation_p_value": 0.6470588235294118,
+        "wild_bootstrap_p_value": 0.7049180327868853,
+        "lead_placebo_share_p_lt_0_10": 0.0,
+        "lead_placebo_method": "twfe",
+        "preferred_estimator": "did_intense_contrast",
+        "preferred_effect": 0.0029398343718270137,
+        "preferred_p_value": 0.9242710681562841,
+        "preferred_credibility_score": 45.47049635480109,
+        "sign_reference_effect": 0.0029398343718270137,
+        "dr_coef": NaN,
+        "dr_p_value": NaN,
+        "dml_coef": NaN,
+        "dml_p_value": NaN,
+        "intense_coef": 0.0029398343718270137,
+        "intense_p_value": 0.9242710681562841,
+        "dose_coef": NaN,
+        "dose_p_value": NaN,
+        "dose_external_direct_coef": NaN,
+        "dose_external_direct_p_value": NaN,
+        "identification_pass_count": 1,
+        "identification_strength": 24.79239777033293,
+        "effect_sign_consistent_with_main": 0
+      },
+      {
+        "variant": "source_objective_indicator",
+        "status": "ok",
+        "design_variant": "source_objective_indicator_common_shock",
+        "policy_reference_year": 2020,
+        "treated_share": 0.6617647058823529,
+        "did_coef": -0.01785373946183532,
+        "did_t_value": -0.4392478063117233,
+        "did_stderr": 0.040646166481170684,
+        "did_p_value": 0.6611842553887415,
+        "did_n_obs": 1496,
+        "bootstrap_p_value": 0.65,
+        "permutation_p_value": 0.6470588235294118,
+        "wild_bootstrap_p_value": 0.7049180327868853,
+        "lead_placebo_share_p_lt_0_10": 0.0,
+        "lead_placebo_method": "twfe",
+        "preferred_estimator": "did_intense_contrast",
+        "preferred_effect": 0.0029398343718270137,
+        "preferred_p_value": 0.9242710681562841,
+        "preferred_credibility_score": 45.47049635480109,
+        "sign_reference_effect": 0.0029398343718270137,
+        "dr_coef": NaN,
+        "dr_p_value": NaN,
+        "dml_coef": NaN,
+        "dml_p_value": NaN,
+        "intense_coef": 0.0029398343718270137,
+        "intense_p_value": 0.9242710681562841,
+        "dose_coef": NaN,
+        "dose_p_value": NaN,
+        "dose_external_direct_coef": NaN,
+        "dose_external_direct_p_value": NaN,
+        "identification_pass_count": 1,
+        "identification_strength": 24.79239777033293,
+        "effect_sign_consistent_with_main": 0
+      },
+      {
+        "variant": "source_objective_macro",
+        "status": "ok",
+        "design_variant": "source_objective_macro_common_shock",
+        "policy_reference_year": 2020,
+        "treated_share": 0.6617647058823529,
+        "did_coef": -0.01785373946183532,
+        "did_t_value": -0.4392478063117233,
+        "did_stderr": 0.040646166481170684,
+        "did_p_value": 0.6611842553887415,
+        "did_n_obs": 1496,
+        "bootstrap_p_value": 0.65,
+        "permutation_p_value": 0.6470588235294118,
+        "wild_bootstrap_p_value": 0.7049180327868853,
+        "lead_placebo_share_p_lt_0_10": 0.0,
+        "lead_placebo_method": "twfe",
+        "preferred_estimator": "did_intense_contrast",
+        "preferred_effect": 0.0029398343718270137,
+        "preferred_p_value": 0.9242710681562841,
+        "preferred_credibility_score": 45.47049635480109,
+        "sign_reference_effect": 0.0029398343718270137,
+        "dr_coef": NaN,
+        "dr_p_value": NaN,
+        "dml_coef": NaN,
+        "dml_p_value": NaN,
+        "intense_coef": 0.0029398343718270137,
+        "intense_p_value": 0.9242710681562841,
+        "dose_coef": NaN,
+        "dose_p_value": NaN,
+        "dose_external_direct_coef": NaN,
+        "dose_external_direct_p_value": NaN,
+        "identification_pass_count": 1,
+        "identification_strength": 24.79239777033293,
+        "effect_sign_consistent_with_main": 0
+      },
+      {
+        "variant": "evidence_evidence_a",
+        "status": "ok",
+        "design_variant": "evidence_a",
+        "policy_reference_year": 2020,
+        "treated_share": 0.6985294117647058,
+        "did_coef": -0.01785373946183532,
+        "did_t_value": -0.4392478063117233,
+        "did_stderr": 0.040646166481170684,
+        "did_p_value": 0.6611842553887415,
+        "did_n_obs": 1496,
+        "bootstrap_p_value": 0.95,
+        "permutation_p_value": 0.9607843137254902,
+        "wild_bootstrap_p_value": 0.8852459016393442,
+        "lead_placebo_share_p_lt_0_10": 0.5,
+        "lead_placebo_method": "twfe",
+        "preferred_estimator": "did_dose_response",
+        "preferred_effect": -0.010341582005952553,
+        "preferred_p_value": 0.29852162504373214,
+        "preferred_credibility_score": 46.17780473269771,
+        "sign_reference_effect": 0.0029398343718270137,
+        "dr_coef": NaN,
+        "dr_p_value": NaN,
+        "dml_coef": NaN,
+        "dml_p_value": NaN,
+        "intense_coef": 0.0029398343718270137,
+        "intense_p_value": 0.9242710681562841,
+        "dose_coef": -0.02558127928182484,
+        "dose_p_value": 0.29852162504373214,
+        "dose_external_direct_coef": -0.02108073742530367,
+        "dose_external_direct_p_value": 0.29727408902348135,
+        "identification_pass_count": 0,
+        "identification_strength": 10.891420943238456,
+        "effect_sign_consistent_with_main": 0
+      }
+    ]
+  },
+  "sign_reversal_diagnostic": {
+    "status": "ok",
+    "main_design_variant": "direct_core",
+    "main_treated_share": 0.6617647058823529,
+    "estimator_count": 7,
+    "significant_estimator_count_p_lt_0_10": 3,
+    "significant_negative_count_p_lt_0_10": 3,
+    "significant_positive_count_p_lt_0_10": 0,
+    "high_treated_share_flag": true,
+    "staggered_pretrend_drift_flag": false,
+    "cohort_sign_mixing_flag": false,
+    "continent_sign_switch_share_vs_main_twfe": 1.0,
+    "diagnostic_table_file": "D:\\User\\Desktop\\CC\\data\\outputs\\econometric_sign_reversal_diagnostic.csv"
+  }
+}

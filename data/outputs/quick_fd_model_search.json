@@ -1,0 +1,46 @@
+{
+  "target": "composite_index_first_difference_raw",
+  "split": {
+    "train_year_max": 2021,
+    "test_year_min": 2022
+  },
+  "n_train": 2065,
+  "n_test": 885,
+  "feature_count": 46,
+  "top_model": "elastic_003",
+  "top_r2": 0.03757461918102434,
+  "model_ranking": [
+    {
+      "model": "elastic_003",
+      "r2": 0.03757461918102434
+    },
+    {
+      "model": "rf",
+      "r2": 0.026536022169246554
+    },
+    {
+      "model": "elastic_001",
+      "r2": 0.01287388894280761
+    },
+    {
+      "model": "ridge_20",
+      "r2": 0.010578119051455781
+    },
+    {
+      "model": "ridge_5",
+      "r2": -0.00035069131127896114
+    },
+    {
+      "model": "ridge_1",
+      "r2": -0.005179124635308563
+    },
+    {
+      "model": "linear",
+      "r2": -0.007058351665747198
+    },
+    {
+      "model": "hgb",
+      "r2": -0.010111240561483825
+    }
+  ]
+}

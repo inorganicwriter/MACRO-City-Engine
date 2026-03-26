@@ -1,0 +1,124 @@
+{
+  "status": "ok",
+  "signals_used": [
+    "road_growth_intensity",
+    "viirs_ntl_yoy",
+    "viirs_recent_drop",
+    "ghsl_built_surface_yoy",
+    "osm_hist_road_yoy",
+    "osm_hist_poi_yoy"
+  ],
+  "city_year_file": "D:\\User\\Desktop\\CC\\data\\outputs\\observed_cross_source_city_year.csv",
+  "pair_file": "D:\\User\\Desktop\\CC\\data\\outputs\\observed_cross_source_pairs.csv",
+  "share_rows_with_2plus_signals": 1.0,
+  "mean_consistency_score": 0.42019347400949936,
+  "median_sign_agreement_share": 0.5,
+  "high_consistency_row_share": 0.18428351309707242,
+  "pairwise_summary": [
+    {
+      "signal_a": "road_growth_intensity",
+      "signal_b": "viirs_ntl_yoy",
+      "n_overlap": 2950,
+      "corr": 0.0012760746018840403,
+      "sign_agreement": 0.5379661016949152
+    },
+    {
+      "signal_a": "road_growth_intensity",
+      "signal_b": "viirs_recent_drop",
+      "n_overlap": 3245,
+      "corr": 0.011313519178839462,
+      "sign_agreement": 0.8268104776579352
+    },
+    {
+      "signal_a": "road_growth_intensity",
+      "signal_b": "ghsl_built_surface_yoy",
+      "n_overlap": 2950,
+      "corr": 0.03513712246059416,
+      "sign_agreement": 0.9705084745762712
+    },
+    {
+      "signal_a": "road_growth_intensity",
+      "signal_b": "osm_hist_road_yoy",
+      "n_overlap": 3245,
+      "corr": 0.8514958964573233,
+      "sign_agreement": 1.0
+    },
+    {
+      "signal_a": "road_growth_intensity",
+      "signal_b": "osm_hist_poi_yoy",
+      "n_overlap": 3245,
+      "corr": 0.16199212382643963,
+      "sign_agreement": 0.9617873651771957
+    },
+    {
+      "signal_a": "viirs_ntl_yoy",
+      "signal_b": "viirs_recent_drop",
+      "n_overlap": 2950,
+      "corr": -0.13617329601218128,
+      "sign_agreement": 0.44745762711864406
+    },
+    {
+      "signal_a": "viirs_ntl_yoy",
+      "signal_b": "ghsl_built_surface_yoy",
+      "n_overlap": 2950,
+      "corr": -0.01630832278923613,
+      "sign_agreement": 0.5342372881355932
+    },
+    {
+      "signal_a": "viirs_ntl_yoy",
+      "signal_b": "osm_hist_road_yoy",
+      "n_overlap": 2950,
+      "corr": -0.017635948232845165,
+      "sign_agreement": 0.5379661016949152
+    },
+    {
+      "signal_a": "viirs_ntl_yoy",
+      "signal_b": "osm_hist_poi_yoy",
+      "n_overlap": 2950,
+      "corr": -0.029890128755355592,
+      "sign_agreement": 0.5294915254237288
+    },
+    {
+      "signal_a": "viirs_recent_drop",
+      "signal_b": "ghsl_built_surface_yoy",
+      "n_overlap": 2950,
+      "corr": -0.039907985770457725,
+      "sign_agreement": 0.8396610169491525
+    },
+    {
+      "signal_a": "viirs_recent_drop",
+      "signal_b": "osm_hist_road_yoy",
+      "n_overlap": 3245,
+      "corr": 0.025542355817079507,
+      "sign_agreement": 0.8268104776579352
+    },
+    {
+      "signal_a": "viirs_recent_drop",
+      "signal_b": "osm_hist_poi_yoy",
+      "n_overlap": 3245,
+      "corr": 0.04457516182422679,
+      "sign_agreement": 0.8252696456086287
+    },
+    {
+      "signal_a": "ghsl_built_surface_yoy",
+      "signal_b": "osm_hist_road_yoy",
+      "n_overlap": 2950,
+      "corr": 0.01958073792208213,
+      "sign_agreement": 0.9705084745762712
+    },
+    {
+      "signal_a": "ghsl_built_surface_yoy",
+      "signal_b": "osm_hist_poi_yoy",
+      "n_overlap": 2950,
+      "corr": -0.055211970067829554,
+      "sign_agreement": 0.9694915254237289
+    },
+    {
+      "signal_a": "osm_hist_road_yoy",
+      "signal_b": "osm_hist_poi_yoy",
+      "n_overlap": 3245,
+      "corr": 0.254283570278138,
+      "sign_agreement": 0.9617873651771957
+    }
+  ]
+}

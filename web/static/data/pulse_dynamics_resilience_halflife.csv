@@ -1,0 +1,8 @@
+scope,continent,stall_spell_count,stall_mean_duration,stall_exit_half_life,stall_survival_end,accel_spell_count,accel_mean_duration,accel_break_half_life,accel_survival_end,resilience_gap_t,resilience_score_0_100,resilience_rank
+global,Global,188,1.00531914893617,1.0,0.0,163,1.0,1.0,0.0,0.0,50.0,1
+continent,Africa,31,1.032258064516129,1.0,0.0,29,1.0,1.0,0.1034482758620689,0.0,50.0,1
+continent,Asia,49,1.0,1.0,0.0612244897959183,44,1.0,1.0,0.0454545454545454,0.0,50.0,1
+continent,Europe,55,1.0,1.0,0.1090909090909091,31,1.0,1.0,0.032258064516129,0.0,50.0,1
+continent,North America,18,1.0,1.0,0.1111111111111111,26,1.0,1.0,0.0384615384615384,0.0,50.0,1
+continent,Oceania,13,1.0,1.0,0.0,11,1.0,1.0,0.0,0.0,50.0,1
+continent,South America,22,1.0,1.0,0.1363636363636363,22,1.0,1.0,0.0,0.0,50.0,1

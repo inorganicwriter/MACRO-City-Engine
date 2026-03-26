@@ -1,0 +1,3 @@
+model,observed_stat,p_value_two_sided,draws
+matrix_completion,6.200047207236782,0.01775,4000
+synthetic_control,-0.06042520495833992,0.165,4000

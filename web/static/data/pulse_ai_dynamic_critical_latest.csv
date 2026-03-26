@@ -1,0 +1,296 @@
+city_id,city_name,country,continent,year,critical_transition_score,critical_transition_risk_score,critical_transition_band,stall_risk_score,acceleration_score,kinetic_state,trajectory_regime
+lae_pg,Lae,Papua New Guinea,Oceania,2025,46.61732368253813,92.13494412717957,high_alert,72.80541740018755,92.15391444114292,surge_expansion,persistent_accelerator
+phoenix_us,Phoenix,United States,North America,2025,41.12703272545589,82.86211608365171,high_alert,71.38720421496593,88.37068261623001,surge_expansion,structural_decline
+yekaterinburg_ru,Yekaterinburg,Russia,Asia,2025,32.2881017159081,74.81105669385404,high_alert,71.04323219179716,88.7863291285023,surge_expansion,late_takeoff
+toulouse_fr,Toulouse,France,Europe,2025,33.477194958846226,73.68285903969914,high_alert,70.82460079402128,85.29376635738319,surge_expansion,volatile_rebound
+curitiba_br,Curitiba,Brazil,South America,2025,30.914661979891186,73.65071443159067,monitoring,65.71047573534842,78.99592430285594,surge_expansion,persistent_accelerator
+bamako_ml,Bamako,Mali,Africa,2025,22.138166166192043,70.90933635896559,monitoring,69.15660102162433,83.642160236885,surge_expansion,late_takeoff
+havana_cu,Havana,Cuba,North America,2025,36.84878161211997,70.05211120929563,high_alert,65.86563099351372,89.30923446237887,surge_expansion,persistent_accelerator
+seoul_kr,Seoul,South Korea,Asia,2025,78.8988884503982,69.66003783776802,high_alert,76.59843319859716,100.0,surge_expansion,stable_mature
+dusseldorf_de,Dusseldorf,Germany,Europe,2025,25.94405088302585,68.62421311087417,monitoring,65.25409111286655,76.57123689451947,surge_expansion,persistent_accelerator
+lyon_fr,Lyon,France,Europe,2025,35.04918346619409,68.24193688804858,high_alert,68.49258550521485,87.09231608910424,surge_expansion,persistent_accelerator
+christchurch_nz,Christchurch,New Zealand,Oceania,2025,51.153942038560096,67.60399664954075,high_alert,66.22350381783875,81.59324978881034,surge_expansion,stable_mature
+london_gb,London,United Kingdom,Europe,2025,32.170588398756315,64.89962573428812,high_alert,67.57102745782831,86.35756883793712,surge_expansion,stable_mature
+ashgabat_tm,Ashgabat,Turkmenistan,Asia,2025,42.99684870744091,64.8678587074578,high_alert,64.24868034036098,80.22268118906076,surge_expansion,persistent_accelerator
+istanbul_tr,Istanbul,Turkey,Europe,2025,33.71350125361911,64.24134723929133,high_alert,64.57990743855704,71.7119182950385,surge_expansion,persistent_accelerator
+colombo_lk,Colombo,Sri Lanka,Asia,2025,46.1959741536463,62.41235108167456,high_alert,62.90466436965835,52.95186018667856,overheating,late_takeoff
+conakry_gn,Conakry,Guinea,Africa,2025,4.395896010945472,61.082830824014366,stable_window,52.90066785637273,59.847615605268814,mixed_transition,late_takeoff
+dunedin_nz,Dunedin,New Zealand,Oceania,2025,28.61707591014081,60.88210910838509,monitoring,64.23141958243568,81.28308341467304,surge_expansion,stable_mature
+vladivostok_ru,Vladivostok,Russia,Asia,2025,29.91696546573453,59.8119302320365,monitoring,63.47319473291256,73.27206097369742,surge_expansion,stable_mature
+tashkent_uz,Tashkent,Uzbekistan,Asia,2025,17.425180502896715,58.72975062373469,monitoring,54.87212883253461,75.15845592791665,surge_expansion,late_takeoff
+sao_paulo_br,Sao Paulo,Brazil,South America,2025,27.58063201608888,58.26351029784781,monitoring,52.05979192085769,60.12872445085981,overheating,late_takeoff
+geneva_ch,Geneva,Switzerland,Europe,2025,24.868544352125927,57.55938125055359,monitoring,64.16422055826843,72.46386701921377,surge_expansion,late_takeoff
+dushanbe_tj,Dushanbe,Tajikistan,Asia,2025,24.17366201674696,56.63408869867064,monitoring,51.765582346319626,72.36351954381331,surge_expansion,late_takeoff
+tokyo_jp,Tokyo,Japan,Asia,2025,15.477091427804629,56.44938734808732,monitoring,54.6571767892066,71.09153387329599,surge_expansion,late_takeoff
+brussels_be,Brussels,Belgium,Europe,2025,16.759050286247916,56.2248761052032,monitoring,63.25146970124009,71.79040747077174,surge_expansion,late_takeoff
+hamburg_de,Hamburg,Germany,Europe,2025,26.83835936576402,56.185747300590826,monitoring,63.14379698215807,75.21226897775499,surge_expansion,stable_mature
+rio_de_janeiro_br,Rio de Janeiro,Brazil,South America,2025,33.16753533263536,55.79343144406781,high_alert,58.19112152183632,78.95338771059939,surge_expansion,persistent_accelerator
+kigali_rw,Kigali,Rwanda,Africa,2025,12.5871552639565,55.67325748174201,stable_window,53.45445080570008,66.34444767582211,surge_expansion,persistent_accelerator
+luanda_ao,Luanda,Angola,Africa,2025,41.72852025505021,54.84199422110056,high_alert,65.66578539568,74.0378059317461,surge_expansion,late_takeoff
+cape_town_za,Cape Town,South Africa,Africa,2025,30.019728217291117,54.52684578408312,monitoring,56.12991763467249,73.73687957224293,surge_expansion,stalling_plateau
+merida_mx,Merida,Mexico,North America,2025,26.006494345520657,54.293216139599465,monitoring,59.85655802816192,76.8927475071156,surge_expansion,stable_mature
+antwerp_be,Antwerp,Belgium,Europe,2025,21.450809664016138,53.58518757915325,monitoring,60.44488879481757,69.19834719139611,surge_expansion,persistent_accelerator
+beijing_cn,Beijing,China,Asia,2025,20.867636914468694,53.11916486779682,monitoring,52.11608280712695,63.69912823908588,surge_expansion,late_takeoff
+vancouver_ca,Vancouver,Canada,North America,2025,51.978298230730026,52.17982661055529,high_alert,64.17603320317573,61.61756136914557,overheating,persistent_accelerator
+rotterdam_nl,Rotterdam,Netherlands,Europe,2025,28.972837184394468,52.09778865194436,monitoring,61.5226814422809,80.57149126381181,surge_expansion,stable_mature
+cusco_pe,Cusco,Peru,South America,2025,34.47368833509415,51.89709355962401,high_alert,62.22218018223281,87.16849144401134,surge_expansion,stable_mature
+brasilia_br,Brasilia,Brazil,South America,2025,19.98245181251561,51.30831589007842,monitoring,58.84833479653037,72.92049481962685,surge_expansion,volatile_rebound
+bengaluru_in,Bengaluru,India,Asia,2025,41.84393074326432,50.841444032627855,high_alert,53.379919594091874,70.44640768540738,surge_expansion,volatile_rebound
+karachi_pk,Karachi,Pakistan,Asia,2025,24.07293257174821,50.69372885305575,monitoring,53.14213687493058,70.18144138840536,surge_expansion,late_takeoff
+atlanta_us,Atlanta,United States,North America,2025,20.137796576199506,50.46092291148953,monitoring,52.6829011021284,65.18292496254136,surge_expansion,persistent_accelerator
+nagoya_jp,Nagoya,Japan,Asia,2025,36.70200529104654,50.43158760206674,high_alert,51.61181011440888,70.88965356835348,surge_expansion,stable_mature
+amsterdam_nl,Amsterdam,Netherlands,Europe,2025,22.8699380210356,50.117104202001386,monitoring,56.939248788814666,74.15177749167232,surge_expansion,stable_mature
+calgary_ca,Calgary,Canada,North America,2025,22.40424303478948,49.90686729199984,monitoring,57.880412009203695,73.18407343117016,surge_expansion,late_takeoff
+shanghai_cn,Shanghai,China,Asia,2025,22.96068806558283,49.81348962695299,monitoring,60.34238062418179,73.85726964334395,surge_expansion,late_takeoff
+miami_us,Miami,United States,North America,2025,17.946167282998324,48.75866908857749,monitoring,55.04000861282531,68.66870339389015,surge_expansion,persistent_accelerator
+dakar_sn,Dakar,Senegal,Africa,2025,27.16593924296563,48.57586403120776,monitoring,50.29800005962999,65.9589716314269,mixed_transition,structural_decline
+singapore_sg,Singapore,Singapore,Asia,2025,31.742739279729317,48.05199693895192,high_alert,50.20675775678804,72.93507785531541,surge_expansion,stalling_plateau
+hong_kong_hk,Hong Kong,Hong Kong,Asia,2025,21.74838388747109,47.916464226591486,monitoring,58.82709447855713,70.7969165658719,surge_expansion,persistent_accelerator
+freetown_sl,Freetown,Sierra Leone,Africa,2025,11.13681433338975,47.732684513043495,stable_window,53.84913656719035,67.60370490863225,surge_expansion,late_takeoff
+nice_fr,Nice,France,Europe,2025,39.69829426411301,47.72222833641253,high_alert,49.18170353842714,68.28621516179032,surge_expansion,persistent_accelerator
+tel_aviv_il,Tel Aviv,Israel,Asia,2025,23.35075631950862,47.58422375407471,monitoring,51.6720963867604,67.05876801454434,surge_expansion,stable_mature
+tirana_al,Tirana,Albania,Europe,2025,18.14532605801047,47.47264032226786,monitoring,52.11210097709026,57.80114775568374,mixed_transition,persistent_accelerator
+tripoli_ly,Tripoli,Libya,Africa,2025,21.780896504998093,47.35607961275509,monitoring,58.64643089835268,77.85095435911241,surge_expansion,persistent_accelerator
+managua_ni,Managua,Nicaragua,North America,2025,31.10206975251033,47.249318136939344,monitoring,43.40583056657346,76.77385470468437,surge_expansion,stalling_plateau
+lima_pe,Lima,Peru,South America,2025,30.473442209619503,46.55626049045063,monitoring,50.461400637766666,64.123284215082,mixed_transition,late_takeoff
+dar_es_salaam_tz,Dar es Salaam,Tanzania,Africa,2025,30.88448395858947,46.2869063817348,monitoring,44.19723148296195,64.64771639360838,surge_expansion,stalling_plateau
+stockholm_se,Stockholm,Sweden,Europe,2025,25.97780600428336,45.582637947909866,monitoring,46.18884240316798,54.81855622177745,deep_cooling,volatile_rebound
+los_angeles_us,Los Angeles,United States,North America,2025,51.98087959892707,45.293183273369166,high_alert,52.265822732908,54.34278488028611,overheating,stable_mature
+chennai_in,Chennai,India,Asia,2025,9.640577987865203,44.908037048430266,stable_window,53.02034742582307,66.0704231779578,surge_expansion,late_takeoff
+guadalajara_mx,Guadalajara,Mexico,North America,2025,20.619462940389678,44.734081511966885,monitoring,53.56847741786088,72.6299845994916,surge_expansion,late_takeoff
+fukuoka_jp,Fukuoka,Japan,Asia,2025,19.206002041108217,44.47115719122246,monitoring,58.34533130867491,66.71055046449693,surge_expansion,structural_decline
+bishkek_kg,Bishkek,Kyrgyzstan,Asia,2025,12.49988192364197,44.2659955350263,stable_window,50.19926212782975,69.07277755940294,surge_expansion,late_takeoff
+mashhad_ir,Mashhad,Iran,Asia,2025,21.047542766391725,44.20829215288084,monitoring,54.72881795907911,72.12574676889103,surge_expansion,late_takeoff
+edmonton_ca,Edmonton,Canada,North America,2025,19.53302660348949,44.0760816372023,monitoring,51.63498886168474,72.1451631803154,surge_expansion,stable_mature
+osaka_jp,Osaka,Japan,Asia,2025,9.330513079294358,44.03024101531018,stable_window,50.80831815844979,67.38408037291373,surge_expansion,persistent_accelerator
+astana_kz,Astana,Kazakhstan,Asia,2025,22.01504884520585,44.02457364939625,monitoring,49.8117141971421,62.40428936920591,steady_cruise,persistent_accelerator
+frankfurt_de,Frankfurt,Germany,Europe,2025,10.24105538802966,43.582458050478685,stable_window,50.25295801294221,65.70099756171706,surge_expansion,stable_mature
+guangzhou_cn,Guangzhou,China,Asia,2025,44.75580992503506,42.60153278778975,high_alert,62.25797968701453,71.20540846748949,surge_expansion,late_takeoff
+bangkok_th,Bangkok,Thailand,Asia,2025,29.782838499383008,42.5535301835534,monitoring,51.27050268196712,49.46388601269881,deep_cooling,volatile_rebound
+bilbao_es,Bilbao,Spain,Europe,2025,22.969671437711117,42.32042810297913,monitoring,58.80382032454048,72.3643111285835,surge_expansion,stable_mature
+houston_us,Houston,United States,North America,2025,16.17435646627169,41.62585439267371,monitoring,44.31174673822618,68.98912964944664,surge_expansion,late_takeoff
+kuala_lumpur_my,Kuala Lumpur,Malaysia,Asia,2025,25.21117614745752,41.32381703827963,monitoring,60.18955058398562,66.85871546745858,surge_expansion,stable_mature
+alexandria_eg,Alexandria,Egypt,Africa,2025,9.093552136225624,41.1034330617636,stable_window,51.1911610202924,65.01823221264644,surge_expansion,persistent_accelerator
+panama_city_pa,Panama City,Panama,North America,2025,16.832675577668596,41.078335914482096,monitoring,45.96932448425181,74.94919272560035,surge_expansion,stalling_plateau
+belo_horizonte_br,Belo Horizonte,Brazil,South America,2025,17.931548200887775,41.048482161116254,monitoring,45.59117431733725,73.15239836558739,surge_expansion,stalling_plateau
+jerusalem_il,Jerusalem,Israel,Asia,2025,15.17104800654718,40.872090217722736,stable_window,50.89542140287397,60.963625445179744,mixed_transition,late_takeoff
+delhi_in,Delhi,India,Asia,2025,28.51723590547962,40.7822090620842,monitoring,44.66566031990629,62.60939567197755,surge_expansion,persistent_accelerator
+naples_it,Naples,Italy,Europe,2025,13.44231897966537,40.63999932435144,stable_window,49.53658230209827,48.45942216714143,deep_cooling,late_takeoff
+yerevan_am,Yerevan,Armenia,Asia,2025,13.34390919969484,40.601160363029656,stable_window,43.276450810161535,65.50539665714281,mixed_transition,persistent_accelerator
+beirut_lb,Beirut,Lebanon,Asia,2025,24.940589934560727,40.59232678834784,monitoring,45.42976705753372,67.01800515436311,mixed_transition,stalling_plateau
+monterrey_mx,Monterrey,Mexico,North America,2025,25.86142051329739,40.44861890237589,monitoring,49.50569050927092,67.39553022874443,surge_expansion,late_takeoff
+milan_it,Milan,Italy,Europe,2025,56.35794327965028,40.08566968363515,high_alert,47.38148923987423,68.69873688841847,surge_expansion,volatile_rebound
+kumasi_gh,Kumasi,Ghana,Africa,2025,28.43547397104842,39.74896886311472,monitoring,50.17030524035984,64.95844827167875,mixed_transition,structural_decline
+riga_lv,Riga,Latvia,Europe,2025,54.02077314248788,39.61013067618473,high_alert,62.09187320101981,64.49803454817271,overheating,stable_mature
+lagos_ng,Lagos,Nigeria,Africa,2025,20.31578856509005,39.45639264289531,monitoring,44.37558747013499,63.36538952234826,mixed_transition,late_takeoff
+copenhagen_dk,Copenhagen,Denmark,Europe,2025,22.289261722525215,39.41676406412808,monitoring,49.78292129650573,71.19477265455677,surge_expansion,stable_mature
+athens_gr,Athens,Greece,Europe,2025,28.32994002550113,39.40667406460391,monitoring,49.2336972148678,61.87661792488595,mixed_transition,structural_decline
+quito_ec,Quito,Ecuador,South America,2025,44.7166054796489,39.292124913622914,high_alert,44.71663206914472,62.23337798840836,mixed_transition,volatile_rebound
+jakarta_id,Jakarta,Indonesia,Asia,2025,55.892729310279385,39.01106143688251,high_alert,55.56920210730824,79.79448025284573,surge_expansion,stable_mature
+yokohama_jp,Yokohama,Japan,Asia,2025,16.85648087640994,38.75000987032012,monitoring,49.32297899039608,66.72185890779183,surge_expansion,persistent_accelerator
+porto_alegre_br,Porto Alegre,Brazil,South America,2025,35.77090237595694,38.09479171954525,high_alert,53.91654184675987,67.71137902194995,surge_expansion,late_takeoff
+saint_petersburg_ru,Saint Petersburg,Russia,Europe,2025,78.09422829663026,37.9741469515567,high_alert,62.96978638239725,52.94805507209168,overheating,stable_mature
+dublin_ie,Dublin,Ireland,Europe,2025,12.854087412665418,37.95280915066046,stable_window,50.70963809372826,66.41973838288366,surge_expansion,stable_mature
+busan_kr,Busan,South Korea,Asia,2025,34.891759596236064,37.4209711224299,high_alert,54.22381677516328,61.83466706294761,overheating,stable_mature
+taipei_tw,Taipei,Taiwan,Asia,2025,30.33827605277328,37.38075187845087,monitoring,55.221657377172974,61.51161866056343,surge_expansion,late_takeoff
+dubai_ae,Dubai,United Arab Emirates,Asia,2025,35.40901888855695,37.37042503449973,high_alert,43.9881206129698,67.03431076229515,surge_expansion,late_takeoff
+wellington_nz,Wellington,New Zealand,Oceania,2025,28.69520941490756,37.295407688351375,monitoring,44.72683324686353,61.32869716044522,mixed_transition,stalling_plateau
+thessaloniki_gr,Thessaloniki,Greece,Europe,2025,20.591319987860704,37.14409184666587,monitoring,51.08263090259635,53.56450311857602,deep_cooling,structural_decline
+kampala_ug,Kampala,Uganda,Africa,2025,32.132092760844536,36.873895561260376,high_alert,49.844814685885446,53.95287698958606,mixed_transition,late_takeoff
+kaohsiung_tw,Kaohsiung,Taiwan,Asia,2025,24.330461428944837,36.74094303266857,monitoring,56.27757532186397,70.67916349168935,surge_expansion,persistent_accelerator
+philadelphia_us,Philadelphia,United States,North America,2025,14.07535637042772,36.54964935711428,stable_window,47.01407402574608,64.17464669268261,surge_expansion,stable_mature
+almaty_kz,Almaty,Kazakhstan,Asia,2025,18.573163055115707,35.41169245127831,monitoring,43.42617736924,60.291792161874845,steady_cruise,persistent_accelerator
+abu_dhabi_ae,Abu Dhabi,United Arab Emirates,Asia,2025,33.98116563087559,35.017940820647176,high_alert,50.05004046924534,62.11721092409112,steady_cruise,late_takeoff
+cologne_de,Cologne,Germany,Europe,2025,16.94690757790575,34.95583654878954,monitoring,47.71663618081778,66.51156147660635,surge_expansion,stalling_plateau
+helsinki_fi,Helsinki,Finland,Europe,2025,27.35691571244955,34.59675214344607,monitoring,46.56121671752307,65.28125024011057,surge_expansion,persistent_accelerator
+sydney_au,Sydney,Australia,Oceania,2025,20.23859488668551,34.5735155323336,monitoring,48.59525447825857,57.34094022312861,steady_cruise,late_takeoff
+yaounde_cm,Yaounde,Cameroon,Africa,2025,11.91522720408865,34.485493915551565,stable_window,45.78549548330989,60.7546419299422,steady_cruise,persistent_accelerator
+shenzhen_cn,Shenzhen,China,Asia,2025,18.12413652560767,34.35907418421893,monitoring,52.74816367142835,68.2375166455627,surge_expansion,late_takeoff
+jeddah_sa,Jeddah,Saudi Arabia,Asia,2025,57.612261955836296,34.33632964288934,high_alert,48.127864505345805,49.815360471311045,mixed_transition,structural_decline
+harare_zw,Harare,Zimbabwe,Africa,2025,44.193723375477504,34.30251777568006,high_alert,46.3809824903615,43.18663774420603,deep_cooling,late_takeoff
+las_vegas_us,Las Vegas,United States,North America,2025,15.547350578691727,34.235968286584104,monitoring,46.85076356399766,63.3516231401397,surge_expansion,structural_decline
+birmingham_gb,Birmingham,United Kingdom,Europe,2025,15.054033240150927,33.527116078063976,stable_window,38.88449705404602,71.46737482092949,surge_expansion,stalling_plateau
+basel_ch,Basel,Switzerland,Europe,2025,12.569617805508246,33.31734140348443,stable_window,44.57711788275262,63.24809141828219,surge_expansion,stable_mature
+douala_cm,Douala,Cameroon,Africa,2025,23.414625607201163,33.30136992586124,monitoring,47.91483588394731,59.30910688030203,mixed_transition,structural_decline
+tegucigalpa_hn,Tegucigalpa,Honduras,North America,2025,13.286918579222668,33.22959118416417,stable_window,48.064694015305896,69.36034576161568,surge_expansion,stable_mature
+omsk_ru,Omsk,Russia,Asia,2025,23.140399464939097,33.145064902323746,monitoring,50.241246461189945,60.37047484168304,mixed_transition,late_takeoff
+abidjan_ci,Abidjan,Cote d'Ivoire,Africa,2025,22.02486997615868,32.93211622619724,monitoring,38.481436242957926,61.7118705471287,overheating,stalling_plateau
+rome_it,Rome,Italy,Europe,2025,16.39975016280005,32.921845655593046,monitoring,47.94044045864832,55.76798319479301,mixed_transition,late_takeoff
+kolkata_in,Kolkata,India,Asia,2025,21.26635377783296,32.86998838425597,monitoring,43.456578182687615,63.95375692527051,surge_expansion,late_takeoff
+tbilisi_ge,Tbilisi,Georgia,Asia,2025,19.106842610771995,32.7334743845596,monitoring,45.26962872106388,51.5582531744269,deep_cooling,late_takeoff
+sofia_bg,Sofia,Bulgaria,Europe,2025,12.033927888233311,32.17397870488165,stable_window,43.99821170150175,54.016931560543455,deep_cooling,late_takeoff
+barranquilla_co,Barranquilla,Colombia,South America,2025,42.23043937403449,32.132176644735026,high_alert,44.26869932087386,63.78281101217896,surge_expansion,volatile_rebound
+boston_us,Boston,United States,North America,2025,37.91313849726287,31.792271438536037,high_alert,54.9954907020755,61.02574920055528,overheating,structural_decline
+dhaka_bd,Dhaka,Bangladesh,Asia,2025,22.53481225729096,31.64289916936421,monitoring,46.91331068091504,61.74588638985152,steady_cruise,volatile_rebound
+perth_au,Perth,Australia,Oceania,2025,18.40598224649278,31.44915749535236,monitoring,44.41035078178971,60.84521031384271,steady_cruise,late_takeoff
+mogadishu_so,Mogadishu,Somalia,Africa,2025,25.213721112350072,31.276615222797783,monitoring,48.725466048291736,66.38427075593658,surge_expansion,stable_mature
+turin_it,Turin,Italy,Europe,2025,23.487776349769156,30.999476496048,monitoring,47.968218378912766,67.42035043139062,surge_expansion,volatile_rebound
+novosibirsk_ru,Novosibirsk,Russia,Asia,2025,14.22915940120405,30.824003617524543,stable_window,44.97240266575282,60.91696750096469,steady_cruise,stable_mature
+guayaquil_ec,Guayaquil,Ecuador,South America,2025,30.39822738600329,30.680100494269496,monitoring,46.93897688327839,64.95935144657052,surge_expansion,late_takeoff
+asuncion_py,Asuncion,Paraguay,South America,2025,16.74135923112157,30.40090986466224,monitoring,44.64401375330653,55.49064072655766,mixed_transition,late_takeoff
+antananarivo_mg,Antananarivo,Madagascar,Africa,2025,26.68320208460473,30.334820119829704,monitoring,42.60371583067425,42.74153808380933,deep_cooling,structural_decline
+denver_us,Denver,United States,North America,2025,19.90993826576158,30.00455359286119,monitoring,43.086382066861376,55.90401593430073,mixed_transition,stable_mature
+irkutsk_ru,Irkutsk,Russia,Asia,2025,11.95523886544105,29.685315920555528,stable_window,58.66930013114457,61.98071569467235,overheating,late_takeoff
+santo_domingo_do,Santo Domingo,Dominican Republic,North America,2025,14.170218002899077,29.671056095300557,stable_window,47.23713461193426,62.40266504189796,mixed_transition,volatile_rebound
+tijuana_mx,Tijuana,Mexico,North America,2025,34.00212771476259,29.361805563430227,high_alert,44.35356478068025,56.8599005238514,mixed_transition,structural_decline
+canberra_au,Canberra,Australia,Oceania,2025,23.781312658741538,29.051108116089047,monitoring,42.14757907229399,58.20557343946151,mixed_transition,volatile_rebound
+madrid_es,Madrid,Spain,Europe,2025,8.460436603956515,28.919161609798472,stable_window,47.45250039215544,66.14099779051296,mixed_transition,stalling_plateau
+tunis_tn,Tunis,Tunisia,Africa,2025,22.12944129084828,28.80292423544571,monitoring,46.620333341829394,56.40104375390425,mixed_transition,structural_decline
+tallinn_ee,Tallinn,Estonia,Europe,2025,24.67324049654824,28.70144181433912,monitoring,45.69033952283471,54.76569093966115,mixed_transition,volatile_rebound
+caracas_ve,Caracas,Venezuela,South America,2025,30.713971093083337,28.551564475919683,monitoring,36.572193470363054,48.04836998218761,deep_cooling,volatile_rebound
+surat_in,Surat,India,Asia,2025,61.63096669844528,27.942119494428784,high_alert,47.07095377112685,60.14442675249647,surge_expansion,structural_decline
+san_salvador_sv,San Salvador,El Salvador,North America,2025,17.24080589813651,27.885552579849534,monitoring,44.26290781810872,61.30033527256409,mixed_transition,stable_mature
+minsk_by,Minsk,Belarus,Europe,2025,7.937099983010063,27.746104888479618,stable_window,45.16597591178863,67.00886323695514,surge_expansion,stable_mature
+tehran_ir,Tehran,Iran,Asia,2025,26.406470634129096,27.690787709330102,monitoring,37.45224382949045,58.60831353459559,mixed_transition,late_takeoff
+munich_de,Munich,Germany,Europe,2025,20.059565723295734,27.66704764588166,monitoring,33.49246667315518,70.19067535855866,surge_expansion,stalling_plateau
+salvador_br,Salvador,Brazil,South America,2025,10.90775258172038,27.60203827628473,stable_window,43.51477533717513,64.94932827966014,surge_expansion,stable_mature
+bobo_dioulasso_bf,Bobo-Dioulasso,Burkina Faso,Africa,2025,11.371893163480244,27.577749284786645,stable_window,37.74084828864929,62.296554321122265,mixed_transition,stable_mature
+bratislava_sk,Bratislava,Slovakia,Europe,2025,17.570291989457633,27.485318353313872,monitoring,41.021680323655616,59.68199333100824,mixed_transition,stable_mature
+montevideo_uy,Montevideo,Uruguay,South America,2025,18.23641908111825,27.39869209906934,monitoring,39.92107894739714,65.82732599493426,surge_expansion,persistent_accelerator
+nairobi_ke,Nairobi,Kenya,Africa,2025,32.34006657124584,27.136194311342383,high_alert,45.04040341889091,66.14288541010312,surge_expansion,volatile_rebound
+leon_mx,Leon,Mexico,North America,2025,16.6783220095751,27.058071496774648,monitoring,47.3570440234589,63.9748749368306,surge_expansion,volatile_rebound
+hamilton_nz,Hamilton,New Zealand,Oceania,2025,36.47802490264294,26.94905838126342,high_alert,40.41442031597519,56.6841186742376,mixed_transition,stable_mature
+queretaro_mx,Queretaro,Mexico,North America,2025,29.982565994318637,26.880059419661755,monitoring,39.98314297242019,66.61871513725858,surge_expansion,volatile_rebound
+minneapolis_us,Minneapolis,United States,North America,2025,16.55158771652595,26.359275722882806,monitoring,41.29678590018828,54.22498431312416,deep_cooling,late_takeoff
+glasgow_gb,Glasgow,United Kingdom,Europe,2025,25.661132966393048,26.105318895764228,monitoring,40.36522149879266,65.0146014852939,mixed_transition,stalling_plateau
+oslo_no,Oslo,Norway,Europe,2025,20.250158621489646,26.08660916141292,monitoring,38.82897434808552,65.76528034087963,surge_expansion,volatile_rebound
+budapest_hu,Budapest,Hungary,Europe,2025,21.95124259415058,25.461613481770662,monitoring,33.03630499526521,57.43813616993805,mixed_transition,stalling_plateau
+windhoek_na,Windhoek,Namibia,Africa,2025,8.207318962043209,25.45595625372917,stable_window,46.40715881050519,59.31392842682545,steady_cruise,stable_mature
+kinshasa_cd,Kinshasa,Democratic Republic of the Congo,Africa,2025,40.908847130457325,25.232766640736525,high_alert,41.84486739464868,47.44383164140877,deep_cooling,stable_mature
+hanoi_vn,Hanoi,Vietnam,Asia,2025,18.720412321954925,25.115227845559943,monitoring,34.83509242805361,65.83738055631099,surge_expansion,persistent_accelerator
+ottawa_ca,Ottawa,Canada,North America,2025,44.335562802362965,24.97111362401568,high_alert,42.07023992203804,55.94334365208026,mixed_transition,structural_decline
+kathmandu_np,Kathmandu,Nepal,Asia,2025,50.24144000452565,24.70958615604183,high_alert,35.789822674042334,62.83525234988036,surge_expansion,volatile_rebound
+monrovia_lr,Monrovia,Liberia,Africa,2025,16.74036196413323,24.679152154240985,monitoring,39.00316868474248,60.494452925272846,steady_cruise,late_takeoff
+la_paz_bo,La Paz,Bolivia,South America,2025,48.29104654670439,24.444671368838023,high_alert,37.22570252127343,34.04884034113741,deep_cooling,late_takeoff
+marseille_fr,Marseille,France,Europe,2025,27.797325773880218,23.9119108474025,monitoring,47.82873213692701,62.17624645957608,mixed_transition,volatile_rebound
+charlotte_us,Charlotte,United States,North America,2025,18.239496768202265,23.73068945795061,monitoring,38.47306206775406,48.53479397699352,deep_cooling,late_takeoff
+kisumu_ke,Kisumu,Kenya,Africa,2025,33.515985794447765,23.50641532628413,high_alert,32.91844566321615,37.80636013378809,deep_cooling,late_takeoff
+niamey_ne,Niamey,Niger,Africa,2025,21.31113554212346,23.485077040069957,monitoring,42.82234231165814,58.26854726595116,mixed_transition,volatile_rebound
+suva_fj,Suva,Fiji,Oceania,2025,21.114662143591914,23.196817404449103,monitoring,34.89258988178403,66.31150503012744,surge_expansion,stalling_plateau
+dallas_us,Dallas,United States,North America,2025,15.324589844718236,23.143990564244927,stable_window,39.95796395397507,57.83623776523888,steady_cruise,structural_decline
+baghdad_iq,Baghdad,Iraq,Asia,2025,8.952873114662264,23.123789858723036,stable_window,36.92775899020032,58.12807184853303,mixed_transition,late_takeoff
+manchester_gb,Manchester,United Kingdom,Europe,2025,22.30369642137441,23.055475666873654,monitoring,42.68775020924645,68.10448042989964,surge_expansion,stalling_plateau
+belgrade_rs,Belgrade,Serbia,Europe,2025,14.82207452560131,23.00524979177919,stable_window,42.6684704899216,52.120216452435855,deep_cooling,persistent_accelerator
+port_au_prince_ht,Port-au-Prince,Haiti,North America,2025,33.858095770066605,22.662253987660787,high_alert,38.0744393716197,67.55869172596691,surge_expansion,stalling_plateau
+baku_az,Baku,Azerbaijan,Asia,2025,15.662380911356424,22.577377664258417,monitoring,40.702380939684055,62.66357937478296,surge_expansion,persistent_accelerator
+lisbon_pt,Lisbon,Portugal,Europe,2025,19.373987201096647,22.510777146192183,monitoring,41.02745904293678,57.797536719897934,steady_cruise,stable_mature
+phnom_penh_kh,Phnom Penh,Cambodia,Asia,2025,24.281135724115146,22.462410049454355,monitoring,36.70533018136485,60.00948981701099,mixed_transition,stalling_plateau
+port_moresby_pg,Port Moresby,Papua New Guinea,Oceania,2025,36.42051788726732,22.339276638619435,high_alert,38.23924136251164,46.70493774493657,deep_cooling,stable_mature
+accra_gh,Accra,Ghana,Africa,2025,26.174971175176005,22.21073235199652,monitoring,34.42529334310305,58.40220008210565,mixed_transition,structural_decline
+cartagena_co,Cartagena,Colombia,South America,2025,33.20720963242543,22.05603862815994,high_alert,39.79201234471654,52.59904348410269,deep_cooling,late_takeoff
+buenos_aires_ar,Buenos Aires,Argentina,South America,2025,17.245689874744624,21.98904983682332,monitoring,28.41341136486245,64.22562863200129,surge_expansion,volatile_rebound
+cairo_eg,Cairo,Egypt,Africa,2025,33.20374217753133,21.80483376969145,high_alert,39.37645410049051,55.14894832261616,mixed_transition,volatile_rebound
+ahmedabad_in,Ahmedabad,India,Asia,2025,11.53432066983667,21.61574379318136,stable_window,33.669122785698086,67.06275520657012,surge_expansion,stalling_plateau
+ulaanbaatar_mn,Ulaanbaatar,Mongolia,Asia,2025,13.820040998672004,21.48552098946069,stable_window,40.26448188525817,61.282945587055885,steady_cruise,volatile_rebound
+paris_fr,Paris,France,Europe,2025,65.27248156196937,21.423270250899385,high_alert,20.34846735869153,2.146124331951966,deep_cooling,volatile_rebound
+mexico_city_mx,Mexico City,Mexico,North America,2025,30.05985110843778,21.2942507162389,monitoring,35.89468375807845,59.20176921895091,mixed_transition,late_takeoff
+doha_qa,Doha,Qatar,Asia,2025,22.07924747240984,21.25717215262634,monitoring,35.33833948232309,60.70698843357112,mixed_transition,late_takeoff
+kano_ng,Kano,Nigeria,Africa,2025,20.194030335097736,21.21076784052562,monitoring,32.32243992907486,54.59891890926111,deep_cooling,structural_decline
+kyiv_ua,Kyiv,Ukraine,Europe,2025,48.38998668997094,21.16212709651853,high_alert,36.91786308383556,55.54535775697504,mixed_transition,stalling_plateau
+san_diego_us,San Diego,United States,North America,2025,34.804676557989175,21.148362766692347,high_alert,34.55235861816271,48.42987142548257,deep_cooling,stable_mature
+auckland_nz,Auckland,New Zealand,Oceania,2025,32.93991628027178,21.11459088284772,high_alert,33.33411304684895,30.1647932219049,deep_cooling,structural_decline
+san_francisco_us,San Francisco,United States,North America,2025,22.02185625492648,20.931634118902792,monitoring,32.33800707880981,58.16179265890354,mixed_transition,stalling_plateau
+santa_cruz_bo,Santa Cruz,Bolivia,South America,2025,7.899275160123624,20.808099215995533,stable_window,42.3976180085882,52.17907678175373,deep_cooling,late_takeoff
+warsaw_pl,Warsaw,Poland,Europe,2025,12.832557958650453,20.76720516522911,stable_window,37.9409236160982,50.217648584621855,deep_cooling,persistent_accelerator
+amman_jo,Amman,Jordan,Asia,2025,6.825219078444555,20.74259573056349,stable_window,37.31776419681201,61.15657496589664,mixed_transition,stable_mature
+sarajevo_ba,Sarajevo,Bosnia and Herzegovina,Europe,2025,12.916022990083269,20.597923928656968,stable_window,40.993136836847,55.24198863384129,deep_cooling,late_takeoff
+adelaide_au,Adelaide,Australia,Oceania,2025,26.61132842109244,20.576741964326825,monitoring,35.59908004320879,38.75775163533708,deep_cooling,structural_decline
+seattle_us,Seattle,United States,North America,2025,22.057242725951,20.22864098490826,monitoring,32.27527723692413,47.04145774003613,deep_cooling,volatile_rebound
+addis_ababa_et,Addis Ababa,Ethiopia,Africa,2025,24.18960640157704,20.19959848660678,monitoring,37.4606029196686,64.39015086667648,surge_expansion,stalling_plateau
+muscat_om,Muscat,Oman,Asia,2025,7.750250670868951,20.091725485938515,stable_window,31.89525226802831,63.944980034894336,surge_expansion,stalling_plateau
+kuwait_city_kw,Kuwait City,Kuwait,Asia,2025,23.70759131613275,20.00973888873592,monitoring,34.87939126721685,54.92774744386634,deep_cooling,late_takeoff
+paramaribo_sr,Paramaribo,Suriname,South America,2025,26.409140790492764,19.946350123015087,monitoring,37.36296615109993,54.81500049387908,deep_cooling,late_takeoff
+melbourne_au,Melbourne,Australia,Oceania,2025,27.14936601608952,19.727998893868943,monitoring,29.10427053458641,61.61499512921015,overheating,stalling_plateau
+incheon_kr,Incheon,South Korea,Asia,2025,18.47663968911652,19.651337051673348,monitoring,33.23574177901396,53.28210393011664,deep_cooling,stalling_plateau
+arequipa_pe,Arequipa,Peru,South America,2025,22.879973577757568,19.485316058697737,monitoring,27.45381744920192,38.29346120999356,deep_cooling,late_takeoff
+belem_br,Belem,Brazil,South America,2025,21.522127117032948,19.41619624096336,monitoring,36.13663398706754,61.13798808750851,mixed_transition,stable_mature
+valencia_es,Valencia,Spain,Europe,2025,27.515528689903075,19.299235490435105,monitoring,38.740796370582416,55.98628460983903,steady_cruise,stable_mature
+algiers_dz,Algiers,Algeria,Africa,2025,16.731651914548067,19.279376380749607,monitoring,34.779685281819454,56.88300052094556,deep_cooling,stable_mature
+wuhan_cn,Wuhan,China,Asia,2025,35.05762268543364,19.256316261254835,high_alert,40.40698245746398,57.658333923811,mixed_transition,volatile_rebound
+san_jose_cr,San Jose,Costa Rica,North America,2025,33.28647351045122,19.07364714034219,high_alert,24.731625940466557,61.89493140458544,mixed_transition,stalling_plateau
+mwanza_tz,Mwanza,Tanzania,Africa,2025,75.4555879761832,18.860159820759183,high_alert,33.428912511602576,38.45221721109341,deep_cooling,structural_decline
+khabarovsk_ru,Khabarovsk,Russia,Asia,2025,1.9962325434296144,18.834266922587155,stable_window,42.97121113085407,62.737679145256266,steady_cruise,persistent_accelerator
+tabriz_ir,Tabriz,Iran,Asia,2025,9.556158296849064,18.76589639222217,stable_window,37.9930239781893,61.51782400315944,mixed_transition,structural_decline
+santiago_cl,Santiago,Chile,South America,2025,26.85221020418635,18.62527611433729,monitoring,35.73485045042372,49.49783341067236,deep_cooling,late_takeoff
+winnipeg_ca,Winnipeg,Canada,North America,2025,26.793480149272416,18.411223940413336,monitoring,38.91871981628008,53.063948763838944,mixed_transition,structural_decline
+djibouti_city_dj,Djibouti City,Djibouti,Africa,2025,27.84562599042936,18.24481645146013,monitoring,32.08130982963593,61.95178928718887,steady_cruise,stalling_plateau
+geelong_au,Geelong,Australia,Oceania,2025,21.93045958095821,18.08355624266994,monitoring,29.691478063129612,42.22010352862591,deep_cooling,volatile_rebound
+georgetown_gy,Georgetown,Guyana,South America,2025,28.18377553529136,18.08035245306245,monitoring,33.53268739623046,52.94731340273824,deep_cooling,persistent_accelerator
+vientiane_la,Vientiane,Laos,Asia,2025,14.803506087981358,18.059600223296663,stable_window,32.04701237491358,59.487028078526336,steady_cruise,stalling_plateau
+gold_coast_au,Gold Coast,Australia,Oceania,2025,20.72048450026624,18.042549593307328,monitoring,32.613263886028,59.77094544638069,mixed_transition,stable_mature
+toronto_ca,Toronto,Canada,North America,2025,18.063227137475668,17.88434261518736,monitoring,32.91929700392412,41.93079094070084,deep_cooling,late_takeoff
+sapporo_jp,Sapporo,Japan,Asia,2025,28.50545145119599,17.544950440995848,monitoring,33.48703082317263,57.010606011933326,mixed_transition,stalling_plateau
+concepcion_cl,Concepcion,Chile,South America,2025,15.484235481595416,17.530722984698876,monitoring,35.93721812146315,57.98284160788633,mixed_transition,late_takeoff
+riyadh_sa,Riyadh,Saudi Arabia,Asia,2025,26.451944814980248,17.324282223902003,monitoring,29.599226633526467,52.12281247190459,deep_cooling,volatile_rebound
+maracaibo_ve,Maracaibo,Venezuela,South America,2025,16.227754381504486,17.043595496214845,monitoring,26.43398576515874,57.92702675730264,mixed_transition,stable_mature
+zagreb_hr,Zagreb,Croatia,Europe,2025,17.68920726647657,16.917369013859897,monitoring,23.25369509597652,53.52008576185967,deep_cooling,stalling_plateau
+medellin_co,Medellin,Colombia,South America,2025,26.620294814645263,16.87942815817771,monitoring,33.91751829988844,44.63079489203033,deep_cooling,stable_mature
+lahore_pk,Lahore,Pakistan,Asia,2025,28.15372643778803,16.868492115469415,monitoring,30.417160345231743,52.31119137491726,deep_cooling,late_takeoff
+cordoba_ar,Cordoba,Argentina,South America,2025,11.542850648452523,16.71532230707549,stable_window,32.25252990696869,58.73578877916448,steady_cruise,late_takeoff
+berlin_de,Berlin,Germany,Europe,2025,30.646202453468742,16.466073537543153,monitoring,33.44155185706995,44.52434365674856,deep_cooling,volatile_rebound
+liverpool_gb,Liverpool,United Kingdom,Europe,2025,11.899299252722711,16.464320726223196,stable_window,23.428576399610925,63.63722791645407,surge_expansion,stalling_plateau
+pune_in,Pune,India,Asia,2025,47.80949143703055,16.464111984809175,high_alert,24.475655697650485,59.736685774667805,mixed_transition,stalling_plateau
+manaus_br,Manaus,Brazil,South America,2025,21.1805237353086,16.42258283423448,monitoring,27.582776236874206,59.02147353899946,steady_cruise,stalling_plateau
+new_york_us,New York,United States,North America,2025,14.383667171591934,16.321306531708927,stable_window,37.53789618375612,43.90930545146716,deep_cooling,structural_decline
+quebec_city_ca,Quebec City,Canada,North America,2025,60.66464783403155,16.10907667857545,high_alert,8.950818263243157,11.838744982396909,deep_cooling,structural_decline
+mendoza_ar,Mendoza,Argentina,South America,2025,32.45423197606461,16.06595933890459,high_alert,22.233655271953797,49.90914818711318,deep_cooling,volatile_rebound
+prague_cz,Prague,Czechia,Europe,2025,20.093639255425057,16.031818656419485,monitoring,31.42563974401429,64.8552334270681,surge_expansion,stalling_plateau
+detroit_us,Detroit,United States,North America,2025,28.131883848032142,15.935362850919876,monitoring,31.18552248098109,50.25249236887292,deep_cooling,stable_mature
+vienna_at,Vienna,Austria,Europe,2025,35.5254117712188,15.920782897330826,high_alert,27.85169738257475,50.95752318879968,deep_cooling,stable_mature
+washington_dc_us,Washington,United States,North America,2025,25.4208086243759,15.905203848554708,monitoring,29.863067537525676,43.05190440142855,deep_cooling,persistent_accelerator
+hobart_au,Hobart,Australia,Oceania,2025,20.81588851226909,15.88604399900952,monitoring,26.716482007985547,51.123921212009726,deep_cooling,stalling_plateau
+recife_br,Recife,Brazil,South America,2025,22.89226985665168,15.883963070232124,monitoring,27.716187364957943,60.2175829635969,mixed_transition,stalling_plateau
+ibadan_ng,Ibadan,Nigeria,Africa,2025,10.316548723468086,15.876536517258227,stable_window,32.854091441097225,57.659305043222375,mixed_transition,volatile_rebound
+moscow_ru,Moscow,Russia,Europe,2025,23.998866278331256,15.792902696761018,monitoring,27.687233748921585,53.74797381588158,deep_cooling,stalling_plateau
+bucharest_ro,Bucharest,Romania,Europe,2025,21.401511013218773,15.332256445064992,monitoring,35.76378717291406,56.077459856718384,deep_cooling,stable_mature
+porto_pt,Porto,Portugal,Europe,2025,26.3319844461368,15.079953262539872,monitoring,27.364856219187693,41.2321696141985,deep_cooling,stable_mature
+zurich_ch,Zurich,Switzerland,Europe,2025,20.357309279188488,14.92695507055826,monitoring,22.89932479658278,43.52973678837678,deep_cooling,stalling_plateau
+johannesburg_za,Johannesburg,South Africa,Africa,2025,38.76080045443727,14.88744862793562,high_alert,16.94100580711349,36.97409600963255,deep_cooling,stalling_plateau
+valparaiso_cl,Valparaiso,Chile,South America,2025,9.636142827376124,14.825223397269404,stable_window,34.81574602873545,66.7285999747331,surge_expansion,stalling_plateau
+maputo_mz,Maputo,Mozambique,Africa,2025,22.177314132731723,14.748010245207212,monitoring,28.949748300380435,55.45797563451935,deep_cooling,stalling_plateau
+la_plata_ar,La Plata,Argentina,South America,2025,33.50449513233368,14.658043575495928,high_alert,20.04779317451992,62.02983731644351,mixed_transition,volatile_rebound
+cali_co,Cali,Colombia,South America,2025,29.04459260183176,14.625144450711622,monitoring,20.289192357687234,42.435884801773405,deep_cooling,stalling_plateau
+brisbane_au,Brisbane,Australia,Oceania,2025,25.77591549768776,14.564269762510534,monitoring,35.10354230914816,54.310539350800056,recovery_rebound,late_takeoff
+trujillo_pe,Trujillo,Peru,South America,2025,15.013335348050564,14.342318007186456,stable_window,30.18428748686125,51.43048960054705,deep_cooling,late_takeoff
+khartoum_sd,Khartoum,Sudan,Africa,2025,44.26535577298322,14.24897513475794,high_alert,21.91029224417793,61.265521287349245,mixed_transition,stalling_plateau
+krasnoyarsk_ru,Krasnoyarsk,Russia,Asia,2025,62.07165052142047,14.216666532830022,high_alert,8.845469132752573,26.40064364665528,deep_cooling,stable_mature
+chengdu_cn,Chengdu,China,Asia,2025,30.828662480310857,14.19752665079839,monitoring,28.89062781835225,55.86237353736456,mixed_transition,stable_mature
+port_harcourt_ng,Port Harcourt,Nigeria,Africa,2025,18.40758679475242,13.978738574750563,monitoring,29.42957625414568,42.56578980614642,deep_cooling,late_takeoff
+stuttgart_de,Stuttgart,Germany,Europe,2025,12.789532642413274,13.864181444350946,stable_window,30.78098674048376,63.75780502140488,surge_expansion,stalling_plateau
+ho_chi_minh_city_vn,Ho Chi Minh City,Vietnam,Asia,2025,11.507156367228854,13.816597680885486,stable_window,43.03396795740197,50.96749129976337,deep_cooling,volatile_rebound
+gaborone_bw,Gaborone,Botswana,Africa,2025,27.818876365899808,13.331339128633738,monitoring,31.80233230617732,54.64361044706738,mixed_transition,volatile_rebound
+guatemala_city_gt,Guatemala City,Guatemala,North America,2025,26.9276768673691,13.263963947207042,monitoring,24.97092709656073,57.23684967889899,mixed_transition,stalling_plateau
+pretoria_za,Pretoria,South Africa,Africa,2025,49.20629314558976,13.188048580444834,high_alert,11.04698034909593,26.83081829349226,deep_cooling,stalling_plateau
+valencia_ve,Valencia,Venezuela,South America,2025,22.731313434043752,13.164163156278237,monitoring,25.788214467156877,55.000807965606704,deep_cooling,late_takeoff
+hyderabad_in,Hyderabad,India,Asia,2025,23.636317775728774,12.97190212319321,monitoring,25.59117098625293,61.90268353199407,mixed_transition,stalling_plateau
+abuja_ng,Abuja,Nigeria,Africa,2025,20.378327813450337,12.849248474835518,monitoring,28.798017498461725,64.79786191651212,surge_expansion,stalling_plateau
+puebla_mx,Puebla,Mexico,North America,2025,42.40189018241093,12.764658337936757,high_alert,33.64161462632558,48.22235846431349,deep_cooling,late_takeoff
+seville_es,Seville,Spain,Europe,2025,21.93535687207185,12.510852195143668,monitoring,24.252371478700677,52.66264175830114,mixed_transition,stalling_plateau
+ouagadougou_bf,Ouagadougou,Burkina Faso,Africa,2025,8.436758930629983,12.493865535173704,stable_window,29.47608976051293,61.05995358575523,mixed_transition,stalling_plateau
+bujumbura_bi,Bujumbura,Burundi,Africa,2025,39.09735272488258,12.483149895041414,high_alert,30.22796277149009,56.6677089940063,mixed_transition,late_takeoff
+krakow_pl,Krakow,Poland,Europe,2025,10.743447747783058,12.14138517618027,stable_window,29.36113132449001,52.29470588652718,deep_cooling,stable_mature
+manila_ph,Manila,Philippines,Asia,2025,15.48163491722803,12.058891113584137,monitoring,31.153625530209823,65.01884264046109,surge_expansion,stalling_plateau
+chicago_us,Chicago,United States,North America,2025,30.733160306719427,11.834392362941667,monitoring,31.73158968283837,58.63367914697204,mixed_transition,volatile_rebound
+mombasa_ke,Mombasa,Kenya,Africa,2025,26.952801438065503,11.77419950011224,monitoring,30.725240512679274,60.81356733229618,mixed_transition,stalling_plateau
+yakutsk_ru,Yakutsk,Russia,Asia,2025,8.448106827052044,11.59872591343741,stable_window,27.31875985786097,55.32875542114925,deep_cooling,stalling_plateau
+vilnius_lt,Vilnius,Lithuania,Europe,2025,24.45588112952249,11.068614963335657,monitoring,14.915879395073302,48.82737599273669,deep_cooling,stalling_plateau
+mumbai_in,Mumbai,India,Asia,2025,14.894268667576938,10.691605162353738,stable_window,23.937117769744308,51.52523255934918,deep_cooling,stalling_plateau
+bogota_co,Bogota,Colombia,South America,2025,28.55325556230548,10.589966750084884,monitoring,40.31612040388055,59.30768268791561,mixed_transition,persistent_accelerator
+montreal_ca,Montreal,Canada,North America,2025,36.64876942289592,10.514825830739818,high_alert,8.971733085240626,40.199550902734025,deep_cooling,stable_mature
+brazzaville_cg,Brazzaville,Republic of the Congo,Africa,2025,51.24508760617388,9.96188305217518,high_alert,14.508817336765048,26.996047830986114,deep_cooling,volatile_rebound
+casablanca_ma,Casablanca,Morocco,Africa,2025,44.38270950719392,9.91835608784962,high_alert,19.923928496150463,37.80369163316584,deep_cooling,stable_mature
+nouakchott_mr,Nouakchott,Mauritania,Africa,2025,36.37308078534877,9.842462829361208,high_alert,21.724857607316995,37.49189936981715,deep_cooling,late_takeoff
+fortaleza_br,Fortaleza,Brazil,South America,2025,42.71850240574641,9.605844389809048,high_alert,16.26926200025245,29.54982987483413,deep_cooling,stalling_plateau
+lusaka_zm,Lusaka,Zambia,Africa,2025,38.32758837726144,9.111480925704058,high_alert,11.937114742095542,28.19372953289851,deep_cooling,structural_decline
+bologna_it,Bologna,Italy,Europe,2025,73.06374488604054,9.05488813028974,high_alert,14.946489518277522,0.0,deep_cooling,structural_decline
+ljubljana_si,Ljubljana,Slovenia,Europe,2025,35.004979437543454,8.950500811490226,high_alert,16.03243402155414,51.721249340992095,deep_cooling,stalling_plateau
+darwin_au,Darwin,Australia,Oceania,2025,19.24194481685236,8.387229486966525,monitoring,12.81518918173566,56.58769863904286,steady_cruise,stable_mature
+malaga_es,Malaga,Spain,Europe,2025,60.35378539006354,8.373603683211732,high_alert,26.790768806893283,53.08322100633328,recovery_rebound,stalling_plateau
+rabat_ma,Rabat,Morocco,Africa,2025,48.004143380403086,8.133225669997428,high_alert,21.218393489640157,46.38251674029224,deep_cooling,volatile_rebound
+florence_it,Florence,Italy,Europe,2025,24.045459075970744,8.000439344365153,monitoring,31.366122740863155,53.36419142492678,mixed_transition,volatile_rebound
+genoa_it,Genoa,Italy,Europe,2025,52.41241675612515,7.911653327921335,high_alert,23.57380509941288,51.41150558515413,recovery_rebound,stalling_plateau
+durban_za,Durban,South Africa,Africa,2025,32.3787949818398,7.777541349015276,high_alert,27.652335941496204,52.39395062478338,recovery_rebound,stable_mature
+barcelona_es,Barcelona,Spain,Europe,2025,65.93419623457208,7.5362782593334385,high_alert,30.103302141262844,55.64265595929262,recovery_rebound,volatile_rebound
+newcastle_au,Newcastle,Australia,Oceania,2025,65.25766042716674,7.45832113335545,high_alert,23.97418406856196,45.93149881347501,recovery_rebound,volatile_rebound
+rosario_ar,Rosario,Argentina,South America,2025,27.813836732318336,7.348150046551432,monitoring,21.180991534836124,38.16429388566658,deep_cooling,volatile_rebound
+lilongwe_mw,Lilongwe,Malawi,Africa,2025,39.90866430753128,6.950143755541332,high_alert,11.819840512512972,38.06875360925128,deep_cooling,stalling_plateau

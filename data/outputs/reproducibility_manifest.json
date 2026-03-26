@@ -1,0 +1,29 @@
+{
+  "status": "ok",
+  "generated_at_utc": "2026-03-26T09:16:03.180231+00:00",
+  "python_version": "3.12.3",
+  "platform": "Linux-5.15.167.4-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "package_versions": {
+    "numpy": "2.4.2",
+    "pandas": "3.0.1",
+    "sklearn": "1.8.0",
+    "statsmodels": "not_installed",
+    "flask": "3.1.3",
+    "matplotlib": "3.10.8"
+  },
+  "required_artifact_count": 17,
+  "existing_artifact_count": 17,
+  "artifact_exists_share": 1.0,
+  "run_commands": [
+    "python3 run_pipeline.py --max-cities 295",
+    "python3 paper/scripts/generate_paper_assets.py",
+    "python3 paper/scripts/generate_submission_extensions.py",
+    "python3 paper/scripts/generate_submission_readiness.py"
+  ],
+  "fallback_notes": [
+    "If policy event crawler is unavailable, reuse the latest `data/raw/policy_events_registry*.csv` and rerun extension scripts.",
+    "If TeX is unavailable locally, keep markdown outputs and figure/table manifests as the review package.",
+    "If heavy models fail, use existing outputs plus artifact hashes to preserve auditability of the current release."
+  ],
+  "artifacts_csv": "/mnt/d/user/desktop/cc/data/outputs/reproducibility_artifact_hashes.csv"
+}

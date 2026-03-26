@@ -1,0 +1,271 @@
+{
+  "status": "ok",
+  "measurement_audit": {
+    "status": "ok",
+    "rows": 3245,
+    "cities": 295,
+    "year_range": [
+      2015,
+      2025
+    ],
+    "observed_primary_spec_share": 1.0,
+    "macro_context_only_row_ratio": 0.7845916795069338,
+    "city_macro_observed_row_ratio": 0.21540832049306627,
+    "mean_observed_channel_count": 5.233590138674884,
+    "share_rows_observed_channels_ge_3": 1.0,
+    "share_rows_dynamic_channels_ge_2": 1.0,
+    "channel_coverage": {
+      "road": 1.0,
+      "viirs": 1.0,
+      "osm_history": 1.0,
+      "social": 0.01818181818181818,
+      "poi": 1.0,
+      "weather": 1.0,
+      "city_macro": 0.21540832049306627
+    },
+    "measurement_tier_counts": {
+      "high_observed_coverage": 3245
+    },
+    "output_file": "D:\\User\\Desktop\\CC\\data\\outputs\\observed_measurement_audit.csv",
+    "note": "Country-year macro variables act as contextual controls, while the index specification is audited separately for direct city-observed signal dependence."
+  },
+  "feature_group_ablation": {
+    "status": "ok",
+    "targets_evaluated": 4,
+    "detail_file": "D:\\User\\Desktop\\CC\\data\\outputs\\observed_feature_group_ablation.csv",
+    "summary_file": "D:\\User\\Desktop\\CC\\data\\outputs\\observed_feature_group_summary.csv",
+    "mean_delta_rmse_observed_vs_macro": -1.974660300150737,
+    "mean_delta_rmse_policy_vs_observed": 0.0058610463306011384,
+    "mean_delta_rmse_full_vs_observed": 0.0170713840289467,
+    "mean_delta_r2_observed_vs_macro": 0.3501849266634733,
+    "mean_delta_r2_policy_vs_observed": -0.0006846576595798959,
+    "mean_delta_r2_full_vs_observed": -0.0015808175852595474,
+    "summary": [
+      {
+        "target": "economic_vitality",
+        "macro_context_only_rmse": 3.4595237643908114,
+        "macro_context_only_r2": 0.4897603366534371,
+        "macro_context_only_feature_count": 11,
+        "observed_core_rmse": 1.171728872290904,
+        "observed_core_r2": 0.9414676660589948,
+        "observed_core_feature_count": 49,
+        "observed_plus_policy_rmse": 1.175331308359909,
+        "observed_plus_policy_r2": 0.9411072019021754,
+        "observed_plus_policy_feature_count": 57,
+        "mixed_full_rmse": 1.1836810646840255,
+        "mixed_full_r2": 0.9402674604359847,
+        "mixed_full_feature_count": 68,
+        "delta_rmse_observed_vs_macro": -2.2877948920999076,
+        "delta_rmse_policy_vs_observed": 0.0036024360690050106,
+        "delta_rmse_full_vs_observed": 0.011952192393121397,
+        "delta_r2_observed_vs_macro": 0.4517073294055577,
+        "delta_r2_policy_vs_observed": -0.0003604641568193401,
+        "delta_r2_full_vs_observed": -0.0012002056230100422
+      },
+      {
+        "target": "livability",
+        "macro_context_only_rmse": 5.514555005635611,
+        "macro_context_only_r2": 0.6222700921798774,
+        "macro_context_only_feature_count": 11,
+        "observed_core_rmse": 2.6270536800112927,
+        "observed_core_r2": 0.9142768106368635,
+        "observed_core_feature_count": 49,
+        "observed_plus_policy_rmse": 2.637456495612996,
+        "observed_plus_policy_r2": 0.9135965594683795,
+        "observed_plus_policy_feature_count": 57,
+        "mixed_full_rmse": 2.6577554546351285,
+        "mixed_full_r2": 0.9122614479530549,
+        "mixed_full_feature_count": 68,
+        "delta_rmse_observed_vs_macro": -2.887501325624318,
+        "delta_rmse_policy_vs_observed": 0.01040281560170353,
+        "delta_rmse_full_vs_observed": 0.03070177462383583,
+        "delta_r2_observed_vs_macro": 0.2920067184569861,
+        "delta_r2_policy_vs_observed": -0.0006802511684840251,
+        "delta_r2_full_vs_observed": -0.0020153626838086414
+      },
+      {
+        "target": "innovation",
+        "macro_context_only_rmse": 2.1641297357630713,
+        "macro_context_only_r2": 0.4821661806585795,
+        "macro_context_only_feature_count": 11,
+        "observed_core_rmse": 1.4345204126865478,
+        "observed_core_r2": 0.772470721002837,
+        "observed_core_feature_count": 49,
+        "observed_plus_policy_rmse": 1.4381870859136825,
+        "observed_plus_policy_r2": 0.7713060924290426,
+        "observed_plus_policy_feature_count": 57,
+        "mixed_full_rmse": 1.4377286908293476,
+        "mixed_full_r2": 0.7714518529596917,
+        "mixed_full_feature_count": 68,
+        "delta_rmse_observed_vs_macro": -0.7296093230765235,
+        "delta_rmse_policy_vs_observed": 0.0036666732271346536,
+        "delta_rmse_full_vs_observed": 0.003208278142799781,
+        "delta_r2_observed_vs_macro": 0.29030454034425746,
+        "delta_r2_policy_vs_observed": -0.0011646285737944018,
+        "delta_r2_full_vs_observed": -0.0010188680431453268
+      },
+      {
+        "target": "composite_index",
+        "macro_context_only_rmse": 2.9939408315584584,
+        "macro_context_only_r2": 0.5872084161750883,
+        "macro_context_only_feature_count": 11,
+        "observed_core_rmse": 1.0002051717562594,
+        "observed_core_r2": 0.9539295346221803,
+        "observed_core_feature_count": 49,
+        "observed_plus_policy_rmse": 1.0059774321808208,
+        "observed_plus_policy_r2": 0.9533962478829585,
+        "observed_plus_policy_feature_count": 57,
+        "mixed_full_rmse": 1.0226284627122892,
+        "mixed_full_r2": 0.9518407006311062,
+        "mixed_full_feature_count": 68,
+        "delta_rmse_observed_vs_macro": -1.993735659802199,
+        "delta_rmse_policy_vs_observed": 0.00577226042456136,
+        "delta_rmse_full_vs_observed": 0.022423290956029795,
+        "delta_r2_observed_vs_macro": 0.366721118447092,
+        "delta_r2_policy_vs_observed": -0.0005332867392218166,
+        "delta_r2_full_vs_observed": -0.0020888339910741793
+      }
+    ]
+  },
+  "cross_source_consistency": {
+    "status": "ok",
+    "signals_used": [
+      "road_growth_intensity",
+      "viirs_ntl_yoy",
+      "viirs_recent_drop",
+      "ghsl_built_surface_yoy",
+      "osm_hist_road_yoy",
+      "osm_hist_poi_yoy"
+    ],
+    "city_year_file": "D:\\User\\Desktop\\CC\\data\\outputs\\observed_cross_source_city_year.csv",
+    "pair_file": "D:\\User\\Desktop\\CC\\data\\outputs\\observed_cross_source_pairs.csv",
+    "share_rows_with_2plus_signals": 1.0,
+    "mean_consistency_score": 0.42019347400949936,
+    "median_sign_agreement_share": 0.5,
+    "high_consistency_row_share": 0.18428351309707242,
+    "pairwise_summary": [
+      {
+        "signal_a": "road_growth_intensity",
+        "signal_b": "viirs_ntl_yoy",
+        "n_overlap": 2950,
+        "corr": 0.0012760746018840403,
+        "sign_agreement": 0.5379661016949152
+      },
+      {
+        "signal_a": "road_growth_intensity",
+        "signal_b": "viirs_recent_drop",
+        "n_overlap": 3245,
+        "corr": 0.011313519178839462,
+        "sign_agreement": 0.8268104776579352
+      },
+      {
+        "signal_a": "road_growth_intensity",
+        "signal_b": "ghsl_built_surface_yoy",
+        "n_overlap": 2950,
+        "corr": 0.03513712246059416,
+        "sign_agreement": 0.9705084745762712
+      },
+      {
+        "signal_a": "road_growth_intensity",
+        "signal_b": "osm_hist_road_yoy",
+        "n_overlap": 3245,
+        "corr": 0.8514958964573233,
+        "sign_agreement": 1.0
+      },
+      {
+        "signal_a": "road_growth_intensity",
+        "signal_b": "osm_hist_poi_yoy",
+        "n_overlap": 3245,
+        "corr": 0.16199212382643963,
+        "sign_agreement": 0.9617873651771957
+      },
+      {
+        "signal_a": "viirs_ntl_yoy",
+        "signal_b": "viirs_recent_drop",
+        "n_overlap": 2950,
+        "corr": -0.13617329601218128,
+        "sign_agreement": 0.44745762711864406
+      },
+      {
+        "signal_a": "viirs_ntl_yoy",
+        "signal_b": "ghsl_built_surface_yoy",
+        "n_overlap": 2950,
+        "corr": -0.01630832278923613,
+        "sign_agreement": 0.5342372881355932
+      },
+      {
+        "signal_a": "viirs_ntl_yoy",
+        "signal_b": "osm_hist_road_yoy",
+        "n_overlap": 2950,
+        "corr": -0.017635948232845165,
+        "sign_agreement": 0.5379661016949152
+      },
+      {
+        "signal_a": "viirs_ntl_yoy",
+        "signal_b": "osm_hist_poi_yoy",
+        "n_overlap": 2950,
+        "corr": -0.029890128755355592,
+        "sign_agreement": 0.5294915254237288
+      },
+      {
+        "signal_a": "viirs_recent_drop",
+        "signal_b": "ghsl_built_surface_yoy",
+        "n_overlap": 2950,
+        "corr": -0.039907985770457725,
+        "sign_agreement": 0.8396610169491525
+      },
+      {
+        "signal_a": "viirs_recent_drop",
+        "signal_b": "osm_hist_road_yoy",
+        "n_overlap": 3245,
+        "corr": 0.025542355817079507,
+        "sign_agreement": 0.8268104776579352
+      },
+      {
+        "signal_a": "viirs_recent_drop",
+        "signal_b": "osm_hist_poi_yoy",
+        "n_overlap": 3245,
+        "corr": 0.04457516182422679,
+        "sign_agreement": 0.8252696456086287
+      },
+      {
+        "signal_a": "ghsl_built_surface_yoy",
+        "signal_b": "osm_hist_road_yoy",
+        "n_overlap": 2950,
+        "corr": 0.01958073792208213,
+        "sign_agreement": 0.9705084745762712
+      },
+      {
+        "signal_a": "ghsl_built_surface_yoy",
+        "signal_b": "osm_hist_poi_yoy",
+        "n_overlap": 2950,
+        "corr": -0.055211970067829554,
+        "sign_agreement": 0.9694915254237289
+      },
+      {
+        "signal_a": "osm_hist_road_yoy",
+        "signal_b": "osm_hist_poi_yoy",
+        "n_overlap": 3245,
+        "corr": 0.254283570278138,
+        "sign_agreement": 0.9617873651771957
+      }
+    ]
+  },
+  "outputs": {
+    "measurement_audit_csv": "D:\\User\\Desktop\\CC\\data\\outputs\\observed_measurement_audit.csv",
+    "measurement_audit_json": "D:\\User\\Desktop\\CC\\data\\outputs\\observed_measurement_summary.json",
+    "feature_group_ablation_csv": "D:\\User\\Desktop\\CC\\data\\outputs\\observed_feature_group_ablation.csv",
+    "feature_group_summary_csv": "D:\\User\\Desktop\\CC\\data\\outputs\\observed_feature_group_summary.csv",
+    "feature_group_summary_json": "D:\\User\\Desktop\\CC\\data\\outputs\\observed_feature_group_summary.json",
+    "cross_source_city_year_csv": "D:\\User\\Desktop\\CC\\data\\outputs\\observed_cross_source_city_year.csv",
+    "cross_source_pairs_csv": "D:\\User\\Desktop\\CC\\data\\outputs\\observed_cross_source_pairs.csv",
+    "cross_source_summary_json": "D:\\User\\Desktop\\CC\\data\\outputs\\observed_cross_source_summary.json"
+  },
+  "row_counts": {
+    "measurement_audit": 3245,
+    "feature_group_ablation": 32,
+    "feature_group_summary": 4,
+    "cross_source_city_year": 3245,
+    "cross_source_pairs": 15
+  }
+}

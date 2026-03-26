@@ -1,0 +1,7 @@
+city_id,medoid_city_name,country,continent,cluster_id,trajectory_regime
+liverpool_gb,Liverpool,United Kingdom,Europe,5,stalling_plateau
+minneapolis_us,Minneapolis,United States,North America,0,late_takeoff
+nairobi_ke,Nairobi,Kenya,Africa,3,volatile_rebound
+ottawa_ca,Ottawa,Canada,North America,1,structural_decline
+tegucigalpa_hn,Tegucigalpa,Honduras,North America,4,stable_mature
+yerevan_am,Yerevan,Armenia,Asia,2,persistent_accelerator

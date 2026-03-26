@@ -1,0 +1,27 @@
+{
+  "status": "ok",
+  "sample": {
+    "observed_ppp_rows": 749,
+    "observed_ppp_cities": 89
+  },
+  "features": [
+    {
+      "feature": "log_viirs_ntl",
+      "n": 749,
+      "cities": 89,
+      "pooled_r2": 0.10292524311977613,
+      "pooled_spearman_rho": 0.3318560409509442,
+      "slope": 0.799581632125713,
+      "intercept": 8.432423591250323
+    },
+    {
+      "feature": "cobb_douglas_log_vitality_fit",
+      "n": 749,
+      "cities": 89,
+      "pooled_r2": 0.556967754987575,
+      "pooled_spearman_rho": 0.7551502877644366,
+      "slope": 2.79039696603731,
+      "intercept": 0.04843057758766456
+    }
+  ]
+}

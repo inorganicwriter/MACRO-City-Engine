@@ -1,0 +1,51 @@
+{
+  "att_post": 0.051547336795367354,
+  "outcome_variable": "log_viirs_ntl",
+  "treatment_spec": "direct_core",
+  "stderr": 0.025549284850705404,
+  "t_value": 2.0175647614631433,
+  "p_value": 0.125,
+  "att_ci95": [
+    -0.0021572085646546033,
+    0.08790083751580113
+  ],
+  "se_method": "bootstrap_cross_fit",
+  "n_obs": 3245,
+  "n_post_treated": 1670,
+  "n_bootstrap_ok": 16,
+  "feature_count": 29,
+  "estimator": "dr_crossfit",
+  "use_spatial": true,
+  "use_temporal": true,
+  "spatial_mode": "road_proxy",
+  "spatial_summary": {
+    "status": "ok",
+    "cities": 295,
+    "rows": 2052,
+    "sources_with_edges": 290,
+    "mean_out_degree": 7.075862068965518,
+    "median_out_degree": 8.0,
+    "top_k": 8,
+    "max_distance_km": 1500.0,
+    "latest_year": 2025,
+    "matrix_type": "road_structure_accessibility_proxy",
+    "spatial_mode": "road_proxy"
+  },
+  "variant": "road_proxy_global",
+  "cities": 295,
+  "years": [
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+  ],
+  "variant_status": "ok",
+  "stability_note": ""
+}

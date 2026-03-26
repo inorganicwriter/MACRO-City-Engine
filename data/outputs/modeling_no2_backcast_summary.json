@@ -1,0 +1,64 @@
+{
+  "status": "ok",
+  "fit_end_year": 2022,
+  "observed_rows_total": 2360,
+  "fit_rows_total": 1475,
+  "predictor_count": 25,
+  "targets": {
+    "no2_trop_mean": {
+      "status": "ok",
+      "train_rows": 1475,
+      "filled_rows": 885
+    },
+    "no2_trop_p90": {
+      "status": "ok",
+      "train_rows": 1475,
+      "filled_rows": 885
+    },
+    "no2_trop_anomaly_mean": {
+      "status": "ok",
+      "train_rows": 1475,
+      "filled_rows": 885
+    },
+    "no2_trop_anomaly_abs_mean": {
+      "status": "ok",
+      "train_rows": 1475,
+      "filled_rows": 885
+    },
+    "no2_recent_spike": {
+      "status": "ok",
+      "train_rows": 1475,
+      "filled_rows": 885
+    }
+  },
+  "filled_rows_total": 885,
+  "filled_feature_non_null_ratio": 1.0,
+  "coverage_file": "D:\\User\\Desktop\\CC\\data\\outputs\\modeling_no2_backcast_coverage.csv",
+  "used_predictors": [
+    "_year_index",
+    "_viirs_log1p",
+    "latitude",
+    "longitude",
+    "temperature_mean",
+    "precipitation_sum",
+    "climate_comfort",
+    "baseline_population_log",
+    "viirs_ntl_yoy",
+    "viirs_recent_drop",
+    "ghsl_built_surface_km2",
+    "ghsl_built_surface_yoy",
+    "ghsl_built_density",
+    "road_length_km_total",
+    "road_growth_intensity",
+    "arterial_share",
+    "intersection_density",
+    "transport_intensity",
+    "commerce_ratio",
+    "flight_connectivity_total",
+    "international_route_share",
+    "gravity_access_viirs",
+    "spatial_lag_log_viirs_ntl_wdist",
+    "policy_intensity_sum_iso_year",
+    "policy_event_count_iso_year"
+  ]
+}

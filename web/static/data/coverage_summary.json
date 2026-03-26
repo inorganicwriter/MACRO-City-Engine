@@ -1,0 +1,141 @@
+{
+  "status": "ok",
+  "strict_mode": true,
+  "year_range": [
+    2015,
+    2025
+  ],
+  "n_years": 11,
+  "n_rows": 3245,
+  "n_cities": 295,
+  "n_countries": 136,
+  "n_continents": 6,
+  "mean_country_row_coverage": 1.0,
+  "mean_country_objective_ratio": 1.0,
+  "mean_country_verified_ratio": 1.0,
+  "mean_continent_row_coverage": 1.0,
+  "mean_continent_objective_ratio": 1.0,
+  "mean_continent_verified_ratio": 1.0,
+  "lowest_coverage_countries": [
+    {
+      "country": "Albania",
+      "continent": "Europe",
+      "row_coverage": 1.0,
+      "verified_row_ratio": 1.0,
+      "objective_row_ratio": 1.0,
+      "city_count": 1
+    },
+    {
+      "country": "Algeria",
+      "continent": "Africa",
+      "row_coverage": 1.0,
+      "verified_row_ratio": 1.0,
+      "objective_row_ratio": 1.0,
+      "city_count": 1
+    },
+    {
+      "country": "Angola",
+      "continent": "Africa",
+      "row_coverage": 1.0,
+      "verified_row_ratio": 1.0,
+      "objective_row_ratio": 1.0,
+      "city_count": 1
+    },
+    {
+      "country": "Argentina",
+      "continent": "South America",
+      "row_coverage": 1.0,
+      "verified_row_ratio": 1.0,
+      "objective_row_ratio": 1.0,
+      "city_count": 5
+    },
+    {
+      "country": "Armenia",
+      "continent": "Asia",
+      "row_coverage": 1.0,
+      "verified_row_ratio": 1.0,
+      "objective_row_ratio": 1.0,
+      "city_count": 1
+    },
+    {
+      "country": "Australia",
+      "continent": "Oceania",
+      "row_coverage": 1.0,
+      "verified_row_ratio": 1.0,
+      "objective_row_ratio": 1.0,
+      "city_count": 11
+    },
+    {
+      "country": "Austria",
+      "continent": "Europe",
+      "row_coverage": 1.0,
+      "verified_row_ratio": 1.0,
+      "objective_row_ratio": 1.0,
+      "city_count": 1
+    },
+    {
+      "country": "Azerbaijan",
+      "continent": "Asia",
+      "row_coverage": 1.0,
+      "verified_row_ratio": 1.0,
+      "objective_row_ratio": 1.0,
+      "city_count": 1
+    },
+    {
+      "country": "Bangladesh",
+      "continent": "Asia",
+      "row_coverage": 1.0,
+      "verified_row_ratio": 1.0,
+      "objective_row_ratio": 1.0,
+      "city_count": 1
+    },
+    {
+      "country": "Belarus",
+      "continent": "Europe",
+      "row_coverage": 1.0,
+      "verified_row_ratio": 1.0,
+      "objective_row_ratio": 1.0,
+      "city_count": 1
+    },
+    {
+      "country": "Belgium",
+      "continent": "Europe",
+      "row_coverage": 1.0,
+      "verified_row_ratio": 1.0,
+      "objective_row_ratio": 1.0,
+      "city_count": 2
+    },
+    {
+      "country": "Bolivia",
+      "continent": "South America",
+      "row_coverage": 1.0,
+      "verified_row_ratio": 1.0,
+      "objective_row_ratio": 1.0,
+      "city_count": 2
+    },
+    {
+      "country": "Bosnia and Herzegovina",
+      "continent": "Europe",
+      "row_coverage": 1.0,
+      "verified_row_ratio": 1.0,
+      "objective_row_ratio": 1.0,
+      "city_count": 1
+    },
+    {
+      "country": "Botswana",
+      "continent": "Africa",
+      "row_coverage": 1.0,
+      "verified_row_ratio": 1.0,
+      "objective_row_ratio": 1.0,
+      "city_count": 1
+    },
+    {
+      "country": "Brazil",
+      "continent": "South America",
+      "row_coverage": 1.0,
+      "verified_row_ratio": 1.0,
+      "objective_row_ratio": 1.0,
+      "city_count": 11
+    }
+  ]
+}

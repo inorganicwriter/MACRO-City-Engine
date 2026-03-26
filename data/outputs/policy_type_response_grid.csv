@@ -1,0 +1,7 @@
+policy_bucket,outcome,response_speed,status,sample_rule,policy_year,n_obs,treated_share,dml_status,dml_coef,dml_p_value,event_status,event_pretrend_joint_p_value
+infra,log_viirs_ntl,slow,ok,all_years_observed_slow_proxy,2020,3245,0.5491525423728814,ok,-0.1586939538624799,1.2829366116051993e-07,ok,0.72695
+infra,no2_trop_anomaly_mean,fast,ok,observed_no2_only_2018_2025,2022,2360,0.5491525423728814,ok,1.1675451960342658e-06,0.08451112623233259,ok,0.28605
+digital,log_viirs_ntl,slow,ok,all_years_observed_slow_proxy,2020,3245,0.2542372881355932,ok,-0.05088807006092946,0.1766842286310824,ok,0.29605
+digital,no2_trop_anomaly_mean,fast,ok,observed_no2_only_2018_2025,2021,2360,0.2542372881355932,ok,-1.0122440549562719e-07,0.8397260268334616,ok,0.66135
+eco_reg,log_viirs_ntl,slow,ok,all_years_observed_slow_proxy,2019,3245,0.4711864406779661,ok,-0.0925632004317214,0.01057895265692546,ok,0.70955
+eco_reg,no2_trop_anomaly_mean,fast,ok,observed_no2_only_2018_2025,2022,2360,0.4711864406779661,ok,2.4022134970844304e-08,0.9727937758374212,ok,0.0323

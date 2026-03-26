@@ -1,0 +1,51 @@
+{
+  "att_post": -1.3240197896225616,
+  "outcome_variable": "log_viirs_ntl",
+  "treatment_spec": "direct_core",
+  "stderr": 0.3329470951169299,
+  "t_value": NaN,
+  "p_value": NaN,
+  "att_ci95": [
+    NaN,
+    NaN
+  ],
+  "se_method": "bootstrap_cross_fit",
+  "n_obs": 209,
+  "n_post_treated": 29,
+  "n_bootstrap_ok": 15,
+  "feature_count": 29,
+  "estimator": "dr_crossfit",
+  "use_spatial": true,
+  "use_temporal": true,
+  "spatial_mode": "road_proxy",
+  "spatial_summary": {
+    "status": "ok",
+    "cities": 19,
+    "rows": 86,
+    "sources_with_edges": 16,
+    "mean_out_degree": 5.375,
+    "median_out_degree": 6.0,
+    "top_k": 8,
+    "max_distance_km": 1500.0,
+    "latest_year": 2025,
+    "matrix_type": "road_structure_accessibility_proxy",
+    "spatial_mode": "road_proxy"
+  },
+  "variant": "road_proxy_oceania",
+  "cities": 19,
+  "years": [
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+  ],
+  "variant_status": "unstable_small_sample_bootstrap_geometry",
+  "stability_note": "Point estimate falls outside percentile CI in a small-sample road-topology run; t-value and p-value are suppressed and the row should not be interpreted substantively."
+}

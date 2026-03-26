@@ -1,0 +1,560 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Urban Pulse AI · Top-tier 审稿视角</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='subpages.css') }}">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+  <style>
+    .view-toolbar {
+      margin-top: 10px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .view-toolbar button {
+      border: none;
+      cursor: pointer;
+      font-family: inherit;
+      font-size: 0.82rem;
+      font-weight: 700;
+      color: #fff;
+      border-radius: 999px;
+      padding: 8px 12px;
+      background: linear-gradient(130deg, #64748b, #475569);
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="inner">
+      <div class="brand">
+        <div class="badge">UP</div>
+        <div>
+          <h1>Top-tier 审稿视角</h1>
+          <p>Gate diagnostics + evidence convergence + innovation frontier</p>
+        </div>
+      </div>
+      <nav class="nav">
+        <a href="/">门户</a>
+        <a href="/dashboard/dynamics">动态预�?/a>
+        <a href="/dashboard/method-core">方法显著�?/a>
+        <a href="/dashboard/realtime">实时监测</a>
+        <a href="/dashboard/identification">识别策略</a>
+        <a href="/dashboard/external-validity">外部效度</a>
+        <a href="/dashboard/policy-rl">政策RL</a>
+        <a class="active" href="/dashboard/top-tier">Top-tier 视角</a>
+        <a href="/dashboard/top-tier-story">评审叙事</a>
+        <a href="/dashboard/full">全量看板</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero">
+      <p class="eyebrow">Top-tier View</p>
+      <h2>审稿驾驶舱：门槛、证据、创新前沿一次看�?/h2>
+      <p>本页将“是否可投、差距在哪、优先修什么”压缩成同一工作流，支持快速迭代论文版本�?/p>
+      <div class="view-toolbar">
+        <a class="btn" href="/dashboard/top-tier-story">切换到评审叙事导出页</a>
+        <button id="toggle-advanced-btn" onclick="toggleAdvanced()">显示高级模块</button>
+      </div>
+    </section>
+
+    <section class="grid-4">
+      <div class="card"><p>Top-tier Gate</p><h3 id="k-ready">--</h3></div>
+      <div class="card"><p>Gate Pass Rate</p><h3 id="k-pass-rate">--</h3></div>
+      <div class="card"><p>Evidence Overall</p><h3 id="k-evidence">--</h3></div>
+      <div class="card"><p>Innovation Pareto</p><h3 id="k-frontier">--</h3></div>
+    </section>
+
+    <section class="grid-3">
+      <article class="panel">
+        <h3>Gate 通过漏斗</h3>
+        <div class="chart-wrap"><canvas id="gate-donut-chart"></canvas></div>
+      </article>
+      <article class="panel advanced-card">
+        <h3>证据收敛雷达（Top 6�?/h3>
+        <div class="chart-wrap"><canvas id="evidence-radar-chart"></canvas></div>
+      </article>
+      <article class="panel advanced-card">
+        <h3>创新前沿气泡（AUC x 1-Brier�?/h3>
+        <div class="chart-wrap"><canvas id="frontier-bubble-chart"></canvas></div>
+      </article>
+    </section>
+
+    <section class="grid-2">
+      <article class="panel">
+        <h3>Gate 阈值差距（|Gap Ratio|�?/h3>
+        <div class="chart-wrap tall"><canvas id="gate-gap-chart"></canvas></div>
+      </article>
+      <article class="panel advanced-card">
+        <h3>识别谱系双轴（强�?+ 稳健通过率）</h3>
+        <div class="chart-wrap tall"><canvas id="id-spectrum-chart"></canvas></div>
+      </article>
+    </section>
+
+    <section class="grid-2 advanced-grid">
+      <article class="panel">
+        <h3>优先缺口（审稿修复队列）</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Priority</th>
+              <th>Gate</th>
+              <th>Value</th>
+              <th>Threshold</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody id="gap-body"></tbody>
+        </table>
+      </article>
+      <article class="panel">
+        <h3>动作清单（自动生成）</h3>
+        <ul id="action-list" class="insight-list"></ul>
+      </article>
+    </section>
+
+    <section class="grid-2">
+      <article class="panel advanced-card">
+        <h3>证据梯度（按分数排序�?/h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Track</th>
+              <th>Score</th>
+              <th>Rank</th>
+            </tr>
+          </thead>
+          <tbody id="evidence-body"></tbody>
+        </table>
+      </article>
+      <article class="panel">
+        <h3>关键摘要</h3>
+        <table>
+          <tbody id="summary-body"></tbody>
+        </table>
+      </article>
+    </section>
+  </main>
+
+  <script src="{{ url_for('static', filename='dashboard_filters.js') }}"></script>
+  <script>
+    const charts = {
+      gateDonut: null,
+      evidenceRadar: null,
+      frontierBubble: null,
+      gateGap: null,
+      idSpectrum: null,
+    };
+
+    function num(v, fallback = NaN) {
+      const x = Number(v);
+      return Number.isFinite(x) ? x : fallback;
+    }
+
+    function fmt(v, d = 3) {
+      const x = num(v);
+      if (!Number.isFinite(x)) return 'N/A';
+      return x.toFixed(d);
+    }
+
+    function humanize(t) {
+      return String(t || '--').replaceAll('_', ' ');
+    }
+
+    function set(id, t, cls = '') {
+      const el = document.getElementById(id);
+      if (!el) return;
+      el.textContent = t;
+      el.className = cls;
+    }
+
+    function toggleAdvanced() {
+      document.body.classList.toggle('show-advanced');
+      const btn = document.getElementById('toggle-advanced-btn');
+      if (!btn) return;
+      btn.textContent = document.body.classList.contains('show-advanced') ? '隐藏高级模块' : '显示高级模块';
+    }
+
+    function destroyChart(name) {
+      if (charts[name]) {
+        charts[name].destroy();
+        charts[name] = null;
+      }
+    }
+
+    function priorityLevel(row) {
+      if (num(row.passed, 0) === 1) return { tag: 'P3', cls: 'pri-3' };
+      const g = Math.abs(num(row.gap_ratio, 0));
+      if (g >= 0.25) return { tag: 'P1', cls: 'pri-1' };
+      if (g >= 0.10) return { tag: 'P2', cls: 'pri-2' };
+      return { tag: 'P3', cls: 'pri-3' };
+    }
+
+    function drawGateDonut(rows) {
+      const ctx = document.getElementById('gate-donut-chart');
+      if (!ctx) return;
+      const all = Array.isArray(rows) ? rows : [];
+      const passN = all.filter((r) => num(r.passed, 0) === 1).length;
+      const failN = Math.max(0, all.length - passN);
+      destroyChart('gateDonut');
+      charts.gateDonut = new Chart(ctx, {
+        type: 'doughnut',
+        data: {
+          labels: ['PASS', 'FAIL'],
+          datasets: [{
+            data: [passN, failN],
+            backgroundColor: ['#2dd4bfcc', '#f87185cc'],
+            borderWidth: 0,
+            hoverOffset: 6,
+          }],
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          cutout: '66%',
+          plugins: { legend: { position: 'bottom' } },
+        },
+      });
+    }
+
+    function drawEvidenceRadar(rows) {
+      const ctx = document.getElementById('evidence-radar-chart');
+      if (!ctx) return;
+      const ranked = (Array.isArray(rows) ? rows : [])
+        .slice()
+        .sort((a, b) => num(b.score_0_100, 0) - num(a.score_0_100, 0))
+        .slice(0, 6);
+      const labels = ranked.map((r) => humanize(r.evidence_track));
+      const vals = ranked.map((r) => num(r.score_0_100, 0));
+      destroyChart('evidenceRadar');
+      charts.evidenceRadar = new Chart(ctx, {
+        type: 'radar',
+        data: {
+          labels,
+          datasets: [{
+            label: 'Evidence Score',
+            data: vals,
+            backgroundColor: '#0f766e26',
+            borderColor: '#2dd4bf',
+            pointBackgroundColor: '#2dd4bf',
+            pointRadius: 3,
+            borderWidth: 2,
+          }],
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          scales: {
+            r: {
+              min: 0,
+              max: 100,
+              ticks: { backdropColor: 'transparent' },
+              grid: { color: 'rgba(148,163,184,0.1)' },
+              angleLines: { color: 'rgba(148,163,184,0.1)' },
+            },
+          },
+          plugins: { legend: { display: false } },
+        },
+      });
+    }
+
+    function drawFrontierBubble(rows) {
+      const ctx = document.getElementById('frontier-bubble-chart');
+      if (!ctx) return;
+      const all = Array.isArray(rows) ? rows : [];
+      if (!all.length) {
+        destroyChart('frontierBubble');
+        return;
+      }
+
+      const aucVals = all.map((r) => num(r.eval_roc_auc, NaN)).filter((v) => Number.isFinite(v));
+      const qVals = all.map((r) => 1 - num(r.eval_brier, NaN)).filter((v) => Number.isFinite(v));
+      const gainVals = all.map((r) => Math.abs(num(r.temporal_mean_gain_vs_base, 0)));
+      const maxGain = Math.max(0.0001, ...gainVals);
+      const xMin = Math.max(0.60, Math.min(...aucVals) - 0.005);
+      const xMax = Math.min(1.00, Math.max(...aucVals) + 0.005);
+      const yMin = Math.max(0.60, Math.min(...qVals) - 0.005);
+      const yMax = Math.min(1.00, Math.max(...qVals) + 0.005);
+
+      const pareto = all.filter((r) => num(r.is_pareto_efficient, 0) === 1).map((r) => ({
+        x: num(r.eval_roc_auc, NaN),
+        y: 1 - num(r.eval_brier, NaN),
+        r: 4 + (16 * Math.abs(num(r.temporal_mean_gain_vs_base, 0)) / maxGain),
+      }));
+      const nonPareto = all.filter((r) => num(r.is_pareto_efficient, 0) !== 1).map((r) => ({
+        x: num(r.eval_roc_auc, NaN),
+        y: 1 - num(r.eval_brier, NaN),
+        r: 4 + (16 * Math.abs(num(r.temporal_mean_gain_vs_base, 0)) / maxGain),
+      }));
+
+      destroyChart('frontierBubble');
+      charts.frontierBubble = new Chart(ctx, {
+        type: 'bubble',
+        data: {
+          datasets: [
+            { label: 'Non Pareto', data: nonPareto, backgroundColor: '#94a3b866', borderColor: '#64748b88', borderWidth: 1 },
+            { label: 'Pareto', data: pareto, backgroundColor: '#2dd4bfbb', borderColor: '#115e59', borderWidth: 1.2 },
+          ],
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          scales: {
+            x: { min: xMin, max: xMax, title: { display: true, text: 'Eval ROC-AUC' }, grid: { color: 'rgba(148,163,184,0.1)' } },
+            y: { min: yMin, max: yMax, title: { display: true, text: 'Calibration Quality (1 - Brier)' }, grid: { color: 'rgba(148,163,184,0.1)' } },
+          },
+          plugins: {
+            tooltip: {
+              callbacks: {
+                label(context) {
+                  const p = context.raw || {};
+                  return [`AUC=${fmt(p.x, 3)}`, `1-Brier=${fmt(p.y, 3)}`, `gain-scale r=${fmt(p.r, 1)}`];
+                },
+              },
+            },
+          },
+        },
+      });
+    }
+
+    function drawGateGap(rows) {
+      const ctx = document.getElementById('gate-gap-chart');
+      if (!ctx) return;
+      const all = (Array.isArray(rows) ? rows : []).slice();
+      const labels = all.map((r) => humanize(r.gate));
+      const gaps = all.map((r) => Math.abs(num(r.gap_ratio, 0)));
+      const pass = all.map((r) => num(r.passed, 0));
+      destroyChart('gateGap');
+      charts.gateGap = new Chart(ctx, {
+        type: 'bar',
+        data: {
+          labels,
+          datasets: [{
+            label: '|Gap Ratio|',
+            data: gaps,
+            borderRadius: 6,
+            backgroundColor: pass.map((p) => p === 1 ? '#2dd4bfbb' : '#f87185cc'),
+          }],
+        },
+        options: {
+          indexAxis: 'y',
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: { legend: { display: false } },
+          scales: {
+            x: { beginAtZero: true, grid: { color: 'rgba(148,163,184,0.1)' } },
+            y: { grid: { display: false } },
+          },
+        },
+      });
+    }
+
+    function drawIdSpectrum(rows) {
+      const ctx = document.getElementById('id-spectrum-chart');
+      if (!ctx) return;
+      const all = (Array.isArray(rows) ? rows : [])
+        .slice()
+        .sort((a, b) => {
+          const pa = num(a.is_primary_track, 0);
+          const pb = num(b.is_primary_track, 0);
+          if (pa !== pb) return pb - pa;
+          return num(b.identification_strength, 0) - num(a.identification_strength, 0);
+        });
+      const labels = all.map((r) => humanize(r.design_variant || r.variant));
+      const strength = all.map((r) => num(r.identification_strength, 0));
+      const robust = all.map((r) => 100 * num(r.robust_pass_rate, 0));
+      const isPrimary = all.map((r) => num(r.is_primary_track, 0) === 1);
+
+      destroyChart('idSpectrum');
+      charts.idSpectrum = new Chart(ctx, {
+        data: {
+          labels,
+          datasets: [
+            {
+              type: 'bar',
+              label: 'Identification Strength',
+              data: strength,
+              yAxisID: 'y',
+              borderRadius: 6,
+              backgroundColor: isPrimary.map((v) => v ? '#2dd4bfcc' : '#94a3b899'),
+            },
+            {
+              type: 'line',
+              label: 'Robust Pass Rate (%)',
+              data: robust,
+              yAxisID: 'y',
+              borderColor: '#fbbf24',
+              backgroundColor: '#fbbf24',
+              pointRadius: 3,
+              tension: 0.24,
+            },
+          ],
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          interaction: { mode: 'index', intersect: false },
+          scales: {
+            y: { min: 0, max: 100, title: { display: true, text: 'Score / Rate (%)' }, grid: { color: 'rgba(148,163,184,0.1)' } },
+            x: { grid: { display: false }, ticks: { maxRotation: 80, minRotation: 40 } },
+          },
+        },
+      });
+    }
+
+    function renderGapTable(rows) {
+      const body = document.getElementById('gap-body');
+      if (!body) return;
+      const all = (Array.isArray(rows) ? rows : []).slice().sort((a, b) => {
+        const pa = num(a.passed, 0);
+        const pb = num(b.passed, 0);
+        if (pa !== pb) return pa - pb;
+        return Math.abs(num(b.gap_ratio, 0)) - Math.abs(num(a.gap_ratio, 0));
+      });
+      body.innerHTML = all.map((r) => {
+        const pr = priorityLevel(r);
+        const ok = num(r.passed, 0) === 1;
+        return `
+          <tr>
+            <td><span class="pri-tag ${pr.cls}">${pr.tag}</span></td>
+            <td>${humanize(r.gate)}</td>
+            <td>${fmt(r.value, 4)}</td>
+            <td>${fmt(r.threshold, 4)}</td>
+            <td class="${ok ? 'good' : 'bad'}">${ok ? 'PASS' : 'FAIL'}</td>
+          </tr>
+        `;
+      }).join('');
+    }
+
+    function renderEvidenceTable(rows) {
+      const body = document.getElementById('evidence-body');
+      if (!body) return;
+      const ranked = (Array.isArray(rows) ? rows : [])
+        .slice()
+        .sort((a, b) => num(b.score_0_100, 0) - num(a.score_0_100, 0));
+      body.innerHTML = ranked.map((r, i) => `
+        <tr>
+          <td>${humanize(r.evidence_track)}</td>
+          <td>${fmt(r.score_0_100, 2)}</td>
+          <td>#${i + 1}</td>
+        </tr>
+      `).join('');
+    }
+
+    function renderSummary(topTier, gateRows, evidenceRows, frontierRows, idRows) {
+      const body = document.getElementById('summary-body');
+      if (!body) return;
+      const gate = topTier && topTier.top_tier_gate ? topTier.top_tier_gate : {};
+      const score = num(topTier && topTier.evidence_overall_score_0_100, NaN);
+      const failN = (Array.isArray(gateRows) ? gateRows : []).filter((r) => num(r.passed, 0) !== 1).length;
+      const paretoN = (Array.isArray(frontierRows) ? frontierRows : []).filter((r) => num(r.is_pareto_efficient, 0) === 1).length;
+      const bestEvidence = (Array.isArray(evidenceRows) ? evidenceRows : []).slice().sort((a, b) => num(b.score_0_100, 0) - num(a.score_0_100, 0))[0] || {};
+      const weakestEvidence = (Array.isArray(evidenceRows) ? evidenceRows : []).slice().sort((a, b) => num(a.score_0_100, 0) - num(b.score_0_100, 0))[0] || {};
+      const meanStrength = (() => {
+        const vals = (Array.isArray(idRows) ? idRows : []).map((r) => num(r.identification_strength, NaN)).filter((v) => Number.isFinite(v));
+        if (!vals.length) return NaN;
+        return vals.reduce((a, b) => a + b, 0) / vals.length;
+      })();
+
+      const rows = [
+        ['Gate Ready', gate.ready ? 'true' : 'false'],
+        ['Gate Pass Rate', fmt(gate.gate_pass_rate, 3)],
+        ['Failed Gate Count', String(failN)],
+        ['Evidence Overall', fmt(score, 2)],
+        ['Pareto Candidates', String(paretoN)],
+        ['Mean ID Strength', fmt(meanStrength, 2)],
+        ['Best Evidence Track', humanize(bestEvidence.evidence_track)],
+        ['Weakest Evidence Track', humanize(weakestEvidence.evidence_track)],
+      ];
+      body.innerHTML = rows.map((r) => `<tr><th>${r[0]}</th><td>${r[1]}</td></tr>`).join('');
+    }
+
+    function renderActions(gateRows, evidenceRows, frontierRows, idRows) {
+      const el = document.getElementById('action-list');
+      if (!el) return;
+
+      const actions = [];
+      const failRows = (Array.isArray(gateRows) ? gateRows : []).filter((r) => num(r.passed, 0) !== 1)
+        .sort((a, b) => Math.abs(num(b.gap_ratio, 0)) - Math.abs(num(a.gap_ratio, 0)));
+      failRows.forEach((r) => {
+        const p = priorityLevel(r).tag;
+        actions.push(`[${p}] 修复 gate "${humanize(r.gate)}"：当�?${fmt(r.value, 4)}，阈�?${fmt(r.threshold, 4)}。`);
+      });
+
+      const weakEvidence = (Array.isArray(evidenceRows) ? evidenceRows : [])
+        .slice()
+        .sort((a, b) => num(a.score_0_100, 0) - num(b.score_0_100, 0))
+        .slice(0, 2);
+      weakEvidence.forEach((r) => {
+        actions.push(`[P2] 提升证据轨道 "${humanize(r.evidence_track)}" 分数（当�?${fmt(r.score_0_100, 2)}）。`);
+      });
+
+      const fragilePrimary = (Array.isArray(idRows) ? idRows : [])
+        .filter((r) => num(r.is_primary_track, 0) === 1 && num(r.robust_pass_rate, 0) < 0.5)
+        .sort((a, b) => num(a.robust_pass_rate, 0) - num(b.robust_pass_rate, 0));
+      fragilePrimary.slice(0, 2).forEach((r) => {
+        actions.push(`[P1] 主轨识别 "${humanize(r.design_variant)}" 稳健通过率偏低（${fmt(100 * num(r.robust_pass_rate, 0), 1)}%），补充安慰�?重采样。`);
+      });
+
+      const frontierTop = (Array.isArray(frontierRows) ? frontierRows : [])
+        .slice()
+        .sort((a, b) => num(b.frontier_score, 0) - num(a.frontier_score, 0))[0];
+      if (frontierTop) {
+        actions.push(`[P3] 保留前沿候选（AUC=${fmt(frontierTop.eval_roc_auc, 3)}, Brier=${fmt(frontierTop.eval_brier, 3)}）作为主模型对照。`);
+      }
+
+      if (!actions.length) {
+        actions.push('[P3] 当前 gate 与证据项均通过，建议进入写作打磨和补充附录实验阶段�?);
+      }
+
+      el.innerHTML = actions.slice(0, 8).map((x) => `<li>${x}</li>`).join('');
+    }
+
+    async function init() {
+      const [topTier, gateChecks, evidence, spectrum, frontier] = await Promise.all([
+        fetch('/api/top_tier').then((r) => r.json()).catch(() => ({})),
+        fetch('/api/top_tier_gate_checks').then((r) => r.json()).catch(() => ([])),
+        fetch('/api/top_tier_evidence_convergence').then((r) => r.json()).catch(() => ([])),
+        fetch('/api/top_tier_identification_spectrum').then((r) => r.json()).catch(() => ([])),
+        fetch('/api/top_tier_innovation_frontier').then((r) => r.json()).catch(() => ([])),
+      ]);
+
+      const gate = topTier && topTier.top_tier_gate ? topTier.top_tier_gate : {};
+      set('k-ready', gate.ready ? 'READY' : 'NOT READY', gate.ready ? 'good' : 'bad');
+      set('k-pass-rate', fmt(gate.gate_pass_rate, 3));
+      set('k-evidence', fmt(topTier ? topTier.evidence_overall_score_0_100 : NaN, 2));
+      set('k-frontier', `${num(topTier && topTier.innovation_pareto_count, 0)} / ${num(topTier && topTier.innovation_frontier_rows, 0)}`);
+
+      drawGateDonut(gateChecks);
+      drawEvidenceRadar(evidence);
+      drawFrontierBubble(frontier);
+      drawGateGap(gateChecks);
+      drawIdSpectrum(spectrum);
+      renderGapTable(gateChecks);
+      renderEvidenceTable(evidence);
+      renderSummary(topTier, gateChecks, evidence, frontier, spectrum);
+      renderActions(gateChecks, evidence, frontier, spectrum);
+    }
+
+    async function boot() {
+      if (window.UPDashboardFilters && window.UPDashboardFilters.mount) {
+        await window.UPDashboardFilters.mount({
+          onChange: () => init(),
+          hint: '本页核心是全局审稿门槛；筛选状态用于跨页同步与回跳�?,
+        });
+      }
+      await init();
+    }
+
+    boot();
+  </script>
+</body>
+</html>

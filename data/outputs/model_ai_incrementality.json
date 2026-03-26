@@ -1,0 +1,68 @@
+{
+  "status": "ok",
+  "targets_evaluated": 4,
+  "detail_file": "D:\\User\\Desktop\\CC\\data\\outputs\\model_ai_incrementality.csv",
+  "summary_file": "D:\\User\\Desktop\\CC\\data\\outputs\\model_ai_incrementality_summary.csv",
+  "mean_delta_rmse_full_ai_vs_structural": 0.3768401242716445,
+  "share_targets_rmse_improved_full_ai": 0.0,
+  "mean_delta_r2_full_ai_vs_structural": -0.006899164633324573,
+  "share_targets_r2_improved_full_ai": 0.0,
+  "summary": [
+    {
+      "target": "economic_vitality",
+      "structural_rmse": 2.4316426751568896,
+      "structural_plus_engineered_rmse": 2.5144587280369395,
+      "full_plus_pulse_ai_rmse": 2.525646944747332,
+      "delta_rmse_engineered_vs_structural": 0.0828160528800499,
+      "delta_rmse_full_ai_vs_structural": 0.09400426959044239,
+      "structural_r2": 0.9810484488491825,
+      "structural_plus_engineered_r2": 0.9797355756214031,
+      "full_plus_pulse_ai_r2": 0.9795548391659669,
+      "delta_r2_engineered_vs_structural": -0.0013128732277793986,
+      "delta_r2_full_ai_vs_structural": -0.0014936096832156576,
+      "best_set": "structural_only"
+    },
+    {
+      "target": "livability",
+      "structural_rmse": 1.8006333225216427,
+      "structural_plus_engineered_rmse": 1.8209455301840165,
+      "full_plus_pulse_ai_rmse": 1.8185598705114294,
+      "delta_rmse_engineered_vs_structural": 0.02031220766237385,
+      "delta_rmse_full_ai_vs_structural": 0.017926547989786767,
+      "structural_r2": 0.9810655670168476,
+      "structural_plus_engineered_r2": 0.9806359743971254,
+      "full_plus_pulse_ai_r2": 0.9806866796082887,
+      "delta_r2_engineered_vs_structural": -0.00042959261972219664,
+      "delta_r2_full_ai_vs_structural": -0.00037888740855884784,
+      "best_set": "structural_only"
+    },
+    {
+      "target": "innovation",
+      "structural_rmse": 0.6927102364879965,
+      "structural_plus_engineered_rmse": 2.0497858212638906,
+      "full_plus_pulse_ai_rmse": 2.0590298440772554,
+      "delta_rmse_engineered_vs_structural": 1.3570755847758942,
+      "delta_rmse_full_ai_vs_structural": 1.366319607589259,
+      "structural_r2": 0.9967954655331934,
+      "structural_plus_engineered_r2": 0.9719405789756845,
+      "full_plus_pulse_ai_r2": 0.9716869263264339,
+      "delta_r2_engineered_vs_structural": -0.024854886557508893,
+      "delta_r2_full_ai_vs_structural": -0.025108539206759484,
+      "best_set": "structural_only"
+    },
+    {
+      "target": "composite_index",
+      "structural_rmse": 1.506218900500472,
+      "structural_plus_engineered_rmse": 1.5334719877338758,
+      "full_plus_pulse_ai_rmse": 1.5353289724175618,
+      "delta_rmse_engineered_vs_structural": 0.027253087233403805,
+      "delta_rmse_full_ai_vs_structural": 0.029110071917089808,
+      "structural_r2": 0.9842256109375165,
+      "structural_plus_engineered_r2": 0.9836496122548083,
+      "full_plus_pulse_ai_r2": 0.9836099887027522,
+      "delta_r2_engineered_vs_structural": -0.0005759986827081898,
+      "delta_r2_full_ai_vs_structural": -0.0006156222347643014,
+      "best_set": "structural_only"
+    }
+  ]
+}

@@ -1,0 +1,1499 @@
+city_id,city_name,country,year,log_gdp_ppp_obs,feature_value,feature
+amsterdam_nl,Amsterdam,Netherlands,2015,12.289347048722894,4.012260423608006,log_viirs_ntl
+amsterdam_nl,Amsterdam,Netherlands,2016,12.325662936006209,4.083873262354805,log_viirs_ntl
+amsterdam_nl,Amsterdam,Netherlands,2017,12.355470620555808,4.078906559073015,log_viirs_ntl
+amsterdam_nl,Amsterdam,Netherlands,2018,12.389951322716021,4.089959977740104,log_viirs_ntl
+amsterdam_nl,Amsterdam,Netherlands,2019,12.421587169679892,4.011792923923553,log_viirs_ntl
+amsterdam_nl,Amsterdam,Netherlands,2020,12.345512797005759,4.060514845950477,log_viirs_ntl
+amsterdam_nl,Amsterdam,Netherlands,2021,12.402506651612168,4.065802195537591,log_viirs_ntl
+amsterdam_nl,Amsterdam,Netherlands,2022,12.443895920527313,3.989354350953737,log_viirs_ntl
+antwerp_be,Antwerp,Belgium,2015,11.243737975154612,4.323437044745553,log_viirs_ntl
+antwerp_be,Antwerp,Belgium,2016,11.254996350667795,4.299131783039023,log_viirs_ntl
+antwerp_be,Antwerp,Belgium,2017,11.273284069543339,4.232353770018389,log_viirs_ntl
+antwerp_be,Antwerp,Belgium,2018,11.280917742717547,4.200229942593895,log_viirs_ntl
+antwerp_be,Antwerp,Belgium,2019,11.291592773059982,4.188113148800259,log_viirs_ntl
+antwerp_be,Antwerp,Belgium,2020,11.234348481767105,4.126556255433657,log_viirs_ntl
+antwerp_be,Antwerp,Belgium,2021,11.311274288994117,4.112375461156619,log_viirs_ntl
+antwerp_be,Antwerp,Belgium,2022,11.353190890848952,4.071971121975633,log_viirs_ntl
+antwerp_be,Antwerp,Belgium,2023,11.352122709062593,4.052132710317881,log_viirs_ntl
+athens_gr,Athens,Greece,2015,11.905143212992764,4.72381952291029,log_viirs_ntl
+athens_gr,Athens,Greece,2016,11.909437278352808,4.703921410609978,log_viirs_ntl
+athens_gr,Athens,Greece,2017,11.927905165446978,4.827886979994588,log_viirs_ntl
+athens_gr,Athens,Greece,2018,11.94509092490835,4.840426738557072,log_viirs_ntl
+athens_gr,Athens,Greece,2019,11.9755897268292,4.869212525748827,log_viirs_ntl
+athens_gr,Athens,Greece,2020,11.88868022602118,4.800558780734415,log_viirs_ntl
+athens_gr,Athens,Greece,2021,11.973131251735852,4.770048822700625,log_viirs_ntl
+athens_gr,Athens,Greece,2022,12.01647870896911,4.848018314592211,log_viirs_ntl
+atlanta_us,Atlanta,United States,2015,12.739200710628493,4.914766618501483,log_viirs_ntl
+atlanta_us,Atlanta,United States,2016,12.797641039561,4.891482578867783,log_viirs_ntl
+atlanta_us,Atlanta,United States,2017,12.83713961416622,4.970374489793487,log_viirs_ntl
+atlanta_us,Atlanta,United States,2018,12.869528365049785,4.889603239331317,log_viirs_ntl
+atlanta_us,Atlanta,United States,2019,12.913371714067024,5.030094714278338,log_viirs_ntl
+atlanta_us,Atlanta,United States,2020,12.88036569882553,4.937586592515901,log_viirs_ntl
+atlanta_us,Atlanta,United States,2021,12.931967712549922,4.903755106368151,log_viirs_ntl
+atlanta_us,Atlanta,United States,2022,12.961962203877555,4.91945767422939,log_viirs_ntl
+atlanta_us,Atlanta,United States,2023,12.992366303140633,4.984388272468419,log_viirs_ntl
+auckland_nz,Auckland,New Zealand,2015,11.231636247937386,4.3858215138990895,log_viirs_ntl
+auckland_nz,Auckland,New Zealand,2016,11.27105770465774,4.469779926790413,log_viirs_ntl
+auckland_nz,Auckland,New Zealand,2017,11.297712880232217,4.465505740614706,log_viirs_ntl
+auckland_nz,Auckland,New Zealand,2018,11.334301065260508,4.437067062369983,log_viirs_ntl
+auckland_nz,Auckland,New Zealand,2019,11.349512017863786,4.424846639470976,log_viirs_ntl
+auckland_nz,Auckland,New Zealand,2020,11.351852548315305,4.308402524762913,log_viirs_ntl
+auckland_nz,Auckland,New Zealand,2021,11.400495575625094,4.258645934146083,log_viirs_ntl
+auckland_nz,Auckland,New Zealand,2022,11.441601306716198,4.330667534593352,log_viirs_ntl
+barcelona_es,Barcelona,Spain,2015,12.381180747805827,4.417102157896322,log_viirs_ntl
+barcelona_es,Barcelona,Spain,2016,12.41931938455907,4.507630859892807,log_viirs_ntl
+barcelona_es,Barcelona,Spain,2017,12.4568157995539,4.426312623851781,log_viirs_ntl
+barcelona_es,Barcelona,Spain,2018,12.484560076523618,4.479654200132356,log_viirs_ntl
+barcelona_es,Barcelona,Spain,2019,12.511164779491551,4.475384154013213,log_viirs_ntl
+barcelona_es,Barcelona,Spain,2020,12.390521105527739,4.436366845597201,log_viirs_ntl
+barcelona_es,Barcelona,Spain,2021,12.436573068577944,4.420355526129987,log_viirs_ntl
+barcelona_es,Barcelona,Spain,2022,12.488224454223836,4.445949727330817,log_viirs_ntl
+basel_ch,Basel,Switzerland,2015,10.837087609932846,3.41507289407882,log_viirs_ntl
+basel_ch,Basel,Switzerland,2016,10.886819920140972,3.410239710906504,log_viirs_ntl
+basel_ch,Basel,Switzerland,2017,10.923399287993865,3.43514245172887,log_viirs_ntl
+basel_ch,Basel,Switzerland,2018,10.938218881603463,3.409385977790333,log_viirs_ntl
+basel_ch,Basel,Switzerland,2019,10.945529489715843,3.419691967627026,log_viirs_ntl
+basel_ch,Basel,Switzerland,2020,10.934356189117718,3.4297308474126216,log_viirs_ntl
+basel_ch,Basel,Switzerland,2021,10.978831214264883,3.4519961149673626,log_viirs_ntl
+basel_ch,Basel,Switzerland,2022,10.990432036336555,3.381929603526677,log_viirs_ntl
+berlin_de,Berlin,Germany,2015,12.416410553463436,4.303929950140454,log_viirs_ntl
+berlin_de,Berlin,Germany,2016,12.462592944167682,4.265094800751816,log_viirs_ntl
+berlin_de,Berlin,Germany,2017,12.505217518337648,4.182177354217949,log_viirs_ntl
+berlin_de,Berlin,Germany,2018,12.535861886312453,4.306112549236533,log_viirs_ntl
+berlin_de,Berlin,Germany,2019,12.568699839628238,4.246373942977446,log_viirs_ntl
+berlin_de,Berlin,Germany,2020,12.542048330318499,4.308570695886351,log_viirs_ntl
+berlin_de,Berlin,Germany,2021,12.578463445908909,4.291794168705918,log_viirs_ntl
+berlin_de,Berlin,Germany,2022,12.599249224662582,4.213866825097968,log_viirs_ntl
+bilbao_es,Bilbao,Spain,2015,10.839443647384186,4.839754702157437,log_viirs_ntl
+bilbao_es,Bilbao,Spain,2016,10.859767932626442,4.876195552345852,log_viirs_ntl
+bilbao_es,Bilbao,Spain,2017,10.866356480170861,4.922520287461079,log_viirs_ntl
+bilbao_es,Bilbao,Spain,2018,10.891037918182654,4.865526016624895,log_viirs_ntl
+bilbao_es,Bilbao,Spain,2019,10.908960636460614,4.926220548119202,log_viirs_ntl
+bilbao_es,Bilbao,Spain,2020,10.791193607554506,4.829652831566865,log_viirs_ntl
+bilbao_es,Bilbao,Spain,2021,10.849298250946275,4.861264832520591,log_viirs_ntl
+bilbao_es,Bilbao,Spain,2022,10.930371087745765,4.842157481563463,log_viirs_ntl
+birmingham_gb,Birmingham,United Kingdom,2015,11.723202597777515,4.38173493071096,log_viirs_ntl
+birmingham_gb,Birmingham,United Kingdom,2016,11.756185319869262,4.420315416910834,log_viirs_ntl
+birmingham_gb,Birmingham,United Kingdom,2017,11.782196591288216,4.384263699605419,log_viirs_ntl
+birmingham_gb,Birmingham,United Kingdom,2018,11.795152686739046,4.345503122070587,log_viirs_ntl
+birmingham_gb,Birmingham,United Kingdom,2019,11.796591985875637,4.3107320032357945,log_viirs_ntl
+birmingham_gb,Birmingham,United Kingdom,2020,11.673878669359924,4.320882360797605,log_viirs_ntl
+birmingham_gb,Birmingham,United Kingdom,2021,11.761900492318704,4.286811243617191,log_viirs_ntl
+birmingham_gb,Birmingham,United Kingdom,2022,11.790678406344124,4.431818283436427,log_viirs_ntl
+birmingham_gb,Birmingham,United Kingdom,2023,11.79884849120697,4.612989536680384,log_viirs_ntl
+bologna_it,Bologna,Italy,2015,10.821995823851237,3.8467375284136542,log_viirs_ntl
+bologna_it,Bologna,Italy,2016,10.833602291003352,3.926813082381078,log_viirs_ntl
+bologna_it,Bologna,Italy,2017,10.858768201701478,3.86171168060781,log_viirs_ntl
+bologna_it,Bologna,Italy,2018,10.877688637695117,3.91077222989228,log_viirs_ntl
+bologna_it,Bologna,Italy,2019,10.894718767073803,3.888993183079641,log_viirs_ntl
+bologna_it,Bologna,Italy,2020,10.8039130952207,3.87632674577742,log_viirs_ntl
+bologna_it,Bologna,Italy,2021,10.86564990806634,3.8965031780143686,log_viirs_ntl
+bologna_it,Bologna,Italy,2022,10.910970907793136,3.863760201378832,log_viirs_ntl
+boston_us,Boston,United States,2015,12.843025065434318,4.742966424651935,log_viirs_ntl
+boston_us,Boston,United States,2016,12.869041506987626,4.620214788015007,log_viirs_ntl
+boston_us,Boston,United States,2017,12.888694630033608,4.7717222278123685,log_viirs_ntl
+boston_us,Boston,United States,2018,12.925669430850737,4.830504674475615,log_viirs_ntl
+boston_us,Boston,United States,2019,12.96126931465456,4.856538318113017,log_viirs_ntl
+boston_us,Boston,United States,2020,12.957934389611955,4.855993747138723,log_viirs_ntl
+boston_us,Boston,United States,2021,13.00519565240551,4.897895775745357,log_viirs_ntl
+boston_us,Boston,United States,2022,13.00538227011742,4.931165106401366,log_viirs_ntl
+boston_us,Boston,United States,2023,13.026711139104666,4.912170680639751,log_viirs_ntl
+bratislava_sk,Bratislava,Slovakia,2015,10.842537321530799,4.130154025142455,log_viirs_ntl
+bratislava_sk,Bratislava,Slovakia,2016,10.874417973368606,4.097866149093687,log_viirs_ntl
+bratislava_sk,Bratislava,Slovakia,2017,10.897017064751084,4.220903806947392,log_viirs_ntl
+bratislava_sk,Bratislava,Slovakia,2018,10.931248100232287,4.195370699161752,log_viirs_ntl
+bratislava_sk,Bratislava,Slovakia,2019,10.934623676079324,4.113520634942532,log_viirs_ntl
+bratislava_sk,Bratislava,Slovakia,2020,10.906341227535142,4.032720305164414,log_viirs_ntl
+bratislava_sk,Bratislava,Slovakia,2021,10.963740090649603,4.103964804339699,log_viirs_ntl
+bratislava_sk,Bratislava,Slovakia,2022,10.96924946099213,3.972851538673093,log_viirs_ntl
+bratislava_sk,Bratislava,Slovakia,2023,10.943322470501737,4.040313607292202,log_viirs_ntl
+brussels_be,Brussels,Belgium,2015,12.351501111488355,4.778128607242526,log_viirs_ntl
+brussels_be,Brussels,Belgium,2016,12.361874818035226,4.8886496857929975,log_viirs_ntl
+brussels_be,Brussels,Belgium,2017,12.375882928387057,4.8073828636069935,log_viirs_ntl
+brussels_be,Brussels,Belgium,2018,12.398971399361898,4.880184860269365,log_viirs_ntl
+brussels_be,Brussels,Belgium,2019,12.42831579160122,4.801059010714649,log_viirs_ntl
+brussels_be,Brussels,Belgium,2020,12.374067057178083,4.8215777786282485,log_viirs_ntl
+brussels_be,Brussels,Belgium,2021,12.425188094923946,4.733306858258718,log_viirs_ntl
+brussels_be,Brussels,Belgium,2022,12.462322098741378,4.689381112000088,log_viirs_ntl
+brussels_be,Brussels,Belgium,2023,12.48426861685749,4.653126666984896,log_viirs_ntl
+bucharest_ro,Bucharest,Romania,2015,11.923769414472725,4.657651943439396,log_viirs_ntl
+bucharest_ro,Bucharest,Romania,2016,11.938310840513523,4.572681421858158,log_viirs_ntl
+bucharest_ro,Bucharest,Romania,2017,12.015819718409938,4.693165792760773,log_viirs_ntl
+bucharest_ro,Bucharest,Romania,2018,12.060780942169561,4.557799017505225,log_viirs_ntl
+bucharest_ro,Bucharest,Romania,2019,12.128883778443685,4.580962874893274,log_viirs_ntl
+bucharest_ro,Bucharest,Romania,2020,12.098286969324066,4.440118647932844,log_viirs_ntl
+bucharest_ro,Bucharest,Romania,2021,12.164057230833931,4.5591087915992,log_viirs_ntl
+bucharest_ro,Bucharest,Romania,2022,12.23881569306567,4.5898788681938285,log_viirs_ntl
+bucharest_ro,Bucharest,Romania,2023,12.275715305858622,4.477923766001505,log_viirs_ntl
+budapest_hu,Budapest,Hungary,2015,11.856117927349576,4.164453478552719,log_viirs_ntl
+budapest_hu,Budapest,Hungary,2016,11.873588446106817,4.192025663076364,log_viirs_ntl
+budapest_hu,Budapest,Hungary,2017,11.921439254456413,4.178736773391496,log_viirs_ntl
+budapest_hu,Budapest,Hungary,2018,11.976458203085652,4.189364306024627,log_viirs_ntl
+budapest_hu,Budapest,Hungary,2019,12.056586071829793,4.295844454405086,log_viirs_ntl
+budapest_hu,Budapest,Hungary,2020,12.006114473940364,4.073035806255165,log_viirs_ntl
+budapest_hu,Budapest,Hungary,2021,12.080741821851873,4.138388021387661,log_viirs_ntl
+budapest_hu,Budapest,Hungary,2022,12.134479968905188,4.171845566879966,log_viirs_ntl
+budapest_hu,Budapest,Hungary,2023,12.152080976961276,4.119863397657939,log_viirs_ntl
+busan_kr,Busan,South Korea,2015,11.966933087537548,4.049492469885035,log_viirs_ntl
+busan_kr,Busan,South Korea,2016,11.978136377475346,4.050494255501795,log_viirs_ntl
+busan_kr,Busan,South Korea,2017,11.975835242239674,3.986620157324811,log_viirs_ntl
+busan_kr,Busan,South Korea,2018,11.98688376419034,3.981968758011876,log_viirs_ntl
+busan_kr,Busan,South Korea,2019,12.02567124405749,4.042027356464938,log_viirs_ntl
+busan_kr,Busan,South Korea,2020,11.984022246507223,4.021699188316689,log_viirs_ntl
+busan_kr,Busan,South Korea,2021,12.01974306733868,4.058155919649806,log_viirs_ntl
+busan_kr,Busan,South Korea,2022,12.074402377081986,4.097921493246495,log_viirs_ntl
+charlotte_us,Charlotte,United States,2015,11.782257704309128,4.688768102758537,log_viirs_ntl
+charlotte_us,Charlotte,United States,2016,11.824292325254406,4.722938409206574,log_viirs_ntl
+charlotte_us,Charlotte,United States,2017,11.86362458921187,4.759906413865924,log_viirs_ntl
+charlotte_us,Charlotte,United States,2018,11.88390264261972,4.68858412142083,log_viirs_ntl
+charlotte_us,Charlotte,United States,2019,11.925432387867438,4.636870701131231,log_viirs_ntl
+charlotte_us,Charlotte,United States,2020,11.936688801359768,4.745917145234919,log_viirs_ntl
+charlotte_us,Charlotte,United States,2021,11.98850104204279,4.802612951677868,log_viirs_ntl
+charlotte_us,Charlotte,United States,2022,12.026904112727623,4.812319855817178,log_viirs_ntl
+charlotte_us,Charlotte,United States,2023,12.087790110144569,4.663289715965132,log_viirs_ntl
+chicago_us,Chicago,United States,2015,13.37007153311621,5.373876961269967,log_viirs_ntl
+chicago_us,Chicago,United States,2016,13.381470033931706,5.278237961068887,log_viirs_ntl
+chicago_us,Chicago,United States,2017,13.39462161165463,5.256752925937089,log_viirs_ntl
+chicago_us,Chicago,United States,2018,13.420216548417502,5.271776575499977,log_viirs_ntl
+chicago_us,Chicago,United States,2019,13.432421234330228,5.235594971405013,log_viirs_ntl
+chicago_us,Chicago,United States,2020,13.379224836866113,5.185848317344635,log_viirs_ntl
+chicago_us,Chicago,United States,2021,13.430387637445804,5.310208890437824,log_viirs_ntl
+chicago_us,Chicago,United States,2022,13.45482042105897,5.412088663129811,log_viirs_ntl
+chicago_us,Chicago,United States,2023,13.47613230295886,5.228855633800428,log_viirs_ntl
+christchurch_nz,Christchurch,New Zealand,2015,9.928472805230037,4.199605070590547,log_viirs_ntl
+christchurch_nz,Christchurch,New Zealand,2016,9.935083114125879,4.160951246000772,log_viirs_ntl
+christchurch_nz,Christchurch,New Zealand,2017,9.971099470946148,4.245072740194581,log_viirs_ntl
+christchurch_nz,Christchurch,New Zealand,2018,9.996613530525611,4.277082699607402,log_viirs_ntl
+christchurch_nz,Christchurch,New Zealand,2019,10.022736180354121,4.315708759580775,log_viirs_ntl
+christchurch_nz,Christchurch,New Zealand,2020,9.996977895623466,4.304673017519839,log_viirs_ntl
+christchurch_nz,Christchurch,New Zealand,2021,10.040463007563206,4.2054883266179885,log_viirs_ntl
+christchurch_nz,Christchurch,New Zealand,2022,10.072386088997941,4.126583152953587,log_viirs_ntl
+cologne_de,Cologne,Germany,2015,11.928512506368737,3.919412292500161,log_viirs_ntl
+cologne_de,Cologne,Germany,2016,11.934657545542265,3.8595711423436256,log_viirs_ntl
+cologne_de,Cologne,Germany,2017,11.959948296883471,3.841636311464745,log_viirs_ntl
+cologne_de,Cologne,Germany,2018,11.965579455880851,3.825593273409326,log_viirs_ntl
+cologne_de,Cologne,Germany,2019,11.958790078362638,3.848639375415248,log_viirs_ntl
+cologne_de,Cologne,Germany,2020,11.891409844746619,3.8781386986662367,log_viirs_ntl
+cologne_de,Cologne,Germany,2021,11.941566589062818,3.788668238769177,log_viirs_ntl
+cologne_de,Cologne,Germany,2022,11.96205651973038,3.741807877134991,log_viirs_ntl
+copenhagen_dk,Copenhagen,Denmark,2015,11.905805039793892,4.012139791470959,log_viirs_ntl
+copenhagen_dk,Copenhagen,Denmark,2016,11.929989708921745,3.893740217920946,log_viirs_ntl
+copenhagen_dk,Copenhagen,Denmark,2017,11.965941874936615,3.86953294876551,log_viirs_ntl
+copenhagen_dk,Copenhagen,Denmark,2018,11.988786903700124,3.869585132149676,log_viirs_ntl
+copenhagen_dk,Copenhagen,Denmark,2019,11.99956494786739,3.863427810501708,log_viirs_ntl
+copenhagen_dk,Copenhagen,Denmark,2020,11.985270101917937,3.853811101879533,log_viirs_ntl
+copenhagen_dk,Copenhagen,Denmark,2021,12.090139772267312,3.8441188193973166,log_viirs_ntl
+copenhagen_dk,Copenhagen,Denmark,2022,12.161430864907054,3.862009605961734,log_viirs_ntl
+copenhagen_dk,Copenhagen,Denmark,2023,12.137386869741654,3.9071109569780784,log_viirs_ntl
+dallas_us,Dallas,United States,2015,13.024699830602904,4.804307903214615,log_viirs_ntl
+dallas_us,Dallas,United States,2016,13.050328025120134,4.9645448325152985,log_viirs_ntl
+dallas_us,Dallas,United States,2017,13.081608047328617,5.016313599124588,log_viirs_ntl
+dallas_us,Dallas,United States,2018,13.123696488416847,5.05055553531674,log_viirs_ntl
+dallas_us,Dallas,United States,2019,13.16176292072039,5.105228041962195,log_viirs_ntl
+dallas_us,Dallas,United States,2020,13.148522231610071,4.980284915357061,log_viirs_ntl
+dallas_us,Dallas,United States,2021,13.216927824673798,4.932397438728965,log_viirs_ntl
+dallas_us,Dallas,United States,2022,13.273142666188404,4.971709652219074,log_viirs_ntl
+dallas_us,Dallas,United States,2023,13.309944412197247,4.962477431584164,log_viirs_ntl
+denver_us,Denver,United States,2015,12.12975299865676,4.889966854048404,log_viirs_ntl
+denver_us,Denver,United States,2016,12.154674082444174,4.789565988048933,log_viirs_ntl
+denver_us,Denver,United States,2017,12.189861959482192,4.727638527671076,log_viirs_ntl
+denver_us,Denver,United States,2018,12.230545721829095,4.759156569656947,log_viirs_ntl
+denver_us,Denver,United States,2019,12.284879204871698,4.930497205258909,log_viirs_ntl
+denver_us,Denver,United States,2020,12.284324519849225,4.7999005423349965,log_viirs_ntl
+denver_us,Denver,United States,2021,12.345038619032229,4.774645702907215,log_viirs_ntl
+denver_us,Denver,United States,2022,12.383561711292142,4.926202414024731,log_viirs_ntl
+denver_us,Denver,United States,2023,12.422070728683511,4.872439078354447,log_viirs_ntl
+detroit_us,Detroit,United States,2015,12.418757696895169,5.129173603182184,log_viirs_ntl
+detroit_us,Detroit,United States,2016,12.440583345319462,5.275752169084378,log_viirs_ntl
+detroit_us,Detroit,United States,2017,12.441160577861355,5.397347882870598,log_viirs_ntl
+detroit_us,Detroit,United States,2018,12.453104583692884,5.200722918436714,log_viirs_ntl
+detroit_us,Detroit,United States,2019,12.4601216647401,5.479940764926794,log_viirs_ntl
+detroit_us,Detroit,United States,2020,12.40960923040537,5.325539290118514,log_viirs_ntl
+detroit_us,Detroit,United States,2021,12.440033478519737,5.428102173933962,log_viirs_ntl
+detroit_us,Detroit,United States,2022,12.460187593138008,5.518259121961419,log_viirs_ntl
+detroit_us,Detroit,United States,2023,12.497278502155572,5.319870920780737,log_viirs_ntl
+dublin_ie,Dublin,Ireland,2015,12.115146342480912,4.826705765928375,log_viirs_ntl
+dublin_ie,Dublin,Ireland,2016,12.17385415946325,4.830597778504473,log_viirs_ntl
+dublin_ie,Dublin,Ireland,2017,12.261739113639038,4.827273202847911,log_viirs_ntl
+dublin_ie,Dublin,Ireland,2018,12.364391768172482,4.871890327991263,log_viirs_ntl
+dublin_ie,Dublin,Ireland,2019,12.423688949718466,4.8530648923069535,log_viirs_ntl
+dublin_ie,Dublin,Ireland,2020,12.487726585243612,4.754932687812866,log_viirs_ntl
+dublin_ie,Dublin,Ireland,2021,12.62419399117879,4.74529437052912,log_viirs_ntl
+dublin_ie,Dublin,Ireland,2022,12.698531630474841,4.7387755500092,log_viirs_ntl
+dublin_ie,Dublin,Ireland,2023,12.68000293036334,4.870152807199437,log_viirs_ntl
+dusseldorf_de,Dusseldorf,Germany,2015,11.702404677850781,3.9876869032188353,log_viirs_ntl
+dusseldorf_de,Dusseldorf,Germany,2016,11.710939908443875,3.881701245410686,log_viirs_ntl
+dusseldorf_de,Dusseldorf,Germany,2017,11.74042750426139,3.783469686662985,log_viirs_ntl
+dusseldorf_de,Dusseldorf,Germany,2018,11.761128390877696,3.9168612786517385,log_viirs_ntl
+dusseldorf_de,Dusseldorf,Germany,2019,11.745543986646956,3.9058037099645246,log_viirs_ntl
+dusseldorf_de,Dusseldorf,Germany,2020,11.712833142135215,3.86800145971202,log_viirs_ntl
+dusseldorf_de,Dusseldorf,Germany,2021,11.749585258937909,3.902477581672642,log_viirs_ntl
+dusseldorf_de,Dusseldorf,Germany,2022,11.755502948169838,3.7954517272861232,log_viirs_ntl
+florence_it,Florence,Italy,2015,10.786056027005252,4.355532919461074,log_viirs_ntl
+florence_it,Florence,Italy,2016,10.800004056710831,4.352404704948698,log_viirs_ntl
+florence_it,Florence,Italy,2017,10.80677409527503,4.446926413906517,log_viirs_ntl
+florence_it,Florence,Italy,2018,10.826277121150113,4.399334308694286,log_viirs_ntl
+florence_it,Florence,Italy,2019,10.9110074208009,4.443611575361549,log_viirs_ntl
+florence_it,Florence,Italy,2020,10.684118914962527,4.459209486450589,log_viirs_ntl
+florence_it,Florence,Italy,2021,10.781785616900187,4.397417993706242,log_viirs_ntl
+florence_it,Florence,Italy,2022,10.846614938363842,4.345297811207519,log_viirs_ntl
+frankfurt_de,Frankfurt,Germany,2015,12.265849849566035,4.014564552899341,log_viirs_ntl
+frankfurt_de,Frankfurt,Germany,2016,12.286167659528019,4.119321685940319,log_viirs_ntl
+frankfurt_de,Frankfurt,Germany,2017,12.302382325667581,4.0438112191627935,log_viirs_ntl
+frankfurt_de,Frankfurt,Germany,2018,12.307319712546457,4.037847695339554,log_viirs_ntl
+frankfurt_de,Frankfurt,Germany,2019,12.320797676920636,4.005012308331548,log_viirs_ntl
+frankfurt_de,Frankfurt,Germany,2020,12.268779803244982,4.08364868130298,log_viirs_ntl
+frankfurt_de,Frankfurt,Germany,2021,12.306433684605738,4.253103655870341,log_viirs_ntl
+frankfurt_de,Frankfurt,Germany,2022,12.30804241911389,4.034447111237051,log_viirs_ntl
+fukuoka_jp,Fukuoka,Japan,2015,11.489615895534605,4.568186309459373,log_viirs_ntl
+fukuoka_jp,Fukuoka,Japan,2016,11.501945404127065,4.6130391534503,log_viirs_ntl
+fukuoka_jp,Fukuoka,Japan,2017,11.515362493003646,4.608929773742293,log_viirs_ntl
+fukuoka_jp,Fukuoka,Japan,2018,11.52018902135841,4.747934879657961,log_viirs_ntl
+fukuoka_jp,Fukuoka,Japan,2019,11.519434236883054,4.7314283214932615,log_viirs_ntl
+fukuoka_jp,Fukuoka,Japan,2020,11.459820003283124,4.668989694167834,log_viirs_ntl
+fukuoka_jp,Fukuoka,Japan,2021,11.484598004316375,4.580501735080413,log_viirs_ntl
+geneva_ch,Geneva,Switzerland,2015,10.798595505142377,3.810525389808592,log_viirs_ntl
+geneva_ch,Geneva,Switzerland,2016,10.816733654224057,3.818591056307691,log_viirs_ntl
+geneva_ch,Geneva,Switzerland,2017,10.835376005033337,3.769710308695132,log_viirs_ntl
+geneva_ch,Geneva,Switzerland,2018,10.874966981854165,3.724789410406741,log_viirs_ntl
+geneva_ch,Geneva,Switzerland,2019,10.887362163733814,3.78231288519727,log_viirs_ntl
+geneva_ch,Geneva,Switzerland,2020,10.84964771801256,3.876344008490768,log_viirs_ntl
+geneva_ch,Geneva,Switzerland,2021,10.91956931926324,3.924922773008805,log_viirs_ntl
+geneva_ch,Geneva,Switzerland,2022,10.963722772083234,3.894775114864706,log_viirs_ntl
+genoa_it,Genoa,Italy,2015,10.591345771162462,4.357061310241128,log_viirs_ntl
+genoa_it,Genoa,Italy,2016,10.60129883922295,4.557082265041065,log_viirs_ntl
+genoa_it,Genoa,Italy,2017,10.619080921925903,4.42960575472283,log_viirs_ntl
+genoa_it,Genoa,Italy,2018,10.60750048640638,4.496275657539544,log_viirs_ntl
+genoa_it,Genoa,Italy,2019,10.624031004577834,4.63280155545773,log_viirs_ntl
+genoa_it,Genoa,Italy,2020,10.476386160499898,4.491245320294982,log_viirs_ntl
+genoa_it,Genoa,Italy,2021,10.535264520896195,4.28928294294309,log_viirs_ntl
+genoa_it,Genoa,Italy,2022,10.568749529606537,4.228000945922293,log_viirs_ntl
+glasgow_gb,Glasgow,United Kingdom,2015,11.322575768728944,4.45001623358095,log_viirs_ntl
+glasgow_gb,Glasgow,United Kingdom,2016,11.324026323215884,4.460327451203604,log_viirs_ntl
+glasgow_gb,Glasgow,United Kingdom,2017,11.362823245722835,4.336898510548076,log_viirs_ntl
+glasgow_gb,Glasgow,United Kingdom,2018,11.36452985955428,4.355318969135578,log_viirs_ntl
+glasgow_gb,Glasgow,United Kingdom,2019,11.385626041793648,4.406149966537872,log_viirs_ntl
+glasgow_gb,Glasgow,United Kingdom,2020,11.284693992107073,4.23006452557846,log_viirs_ntl
+glasgow_gb,Glasgow,United Kingdom,2021,11.367853449076174,4.556933616687538,log_viirs_ntl
+glasgow_gb,Glasgow,United Kingdom,2022,11.397851257124763,4.292500736327579,log_viirs_ntl
+hamburg_de,Hamburg,Germany,2015,12.358626336563663,4.152416904149753,log_viirs_ntl
+hamburg_de,Hamburg,Germany,2016,12.371688773752425,4.082665531002199,log_viirs_ntl
+hamburg_de,Hamburg,Germany,2017,12.405996698687956,4.066187963020385,log_viirs_ntl
+hamburg_de,Hamburg,Germany,2018,12.40927059932845,4.100064296501134,log_viirs_ntl
+hamburg_de,Hamburg,Germany,2019,12.442239030445828,4.083101024794428,log_viirs_ntl
+hamburg_de,Hamburg,Germany,2020,12.393224185818248,4.097575440367663,log_viirs_ntl
+hamburg_de,Hamburg,Germany,2021,12.463667863845545,4.09424732774933,log_viirs_ntl
+hamburg_de,Hamburg,Germany,2022,12.494663055318659,4.182075593045664,log_viirs_ntl
+helsinki_fi,Helsinki,Finland,2015,11.474247004771236,4.491161259400365,log_viirs_ntl
+helsinki_fi,Helsinki,Finland,2016,11.501601591238785,4.858907591534311,log_viirs_ntl
+helsinki_fi,Helsinki,Finland,2017,11.534501029487908,4.779613577627265,log_viirs_ntl
+helsinki_fi,Helsinki,Finland,2018,11.551193801680078,4.703007473111117,log_viirs_ntl
+helsinki_fi,Helsinki,Finland,2019,11.5789378993638,4.692180871563603,log_viirs_ntl
+helsinki_fi,Helsinki,Finland,2020,11.548389129245798,4.656734289116852,log_viirs_ntl
+helsinki_fi,Helsinki,Finland,2021,11.569674350520469,5.022278345127698,log_viirs_ntl
+helsinki_fi,Helsinki,Finland,2022,11.565052911356245,4.969350214394104,log_viirs_ntl
+helsinki_fi,Helsinki,Finland,2023,11.550924278061439,4.481655121157637,log_viirs_ntl
+houston_us,Houston,United States,2015,13.055225213454941,5.047909662078589,log_viirs_ntl
+houston_us,Houston,United States,2016,13.022067791086686,5.169688212960409,log_viirs_ntl
+houston_us,Houston,United States,2017,13.039803170152961,5.273478080966448,log_viirs_ntl
+houston_us,Houston,United States,2018,13.092126825542389,5.260541946219196,log_viirs_ntl
+houston_us,Houston,United States,2019,13.076221004739066,5.289348092628638,log_viirs_ntl
+houston_us,Houston,United States,2020,13.03661374952894,5.245404349032171,log_viirs_ntl
+houston_us,Houston,United States,2021,13.111603699117868,5.167301858119139,log_viirs_ntl
+houston_us,Houston,United States,2022,13.190789955243963,5.184798668886444,log_viirs_ntl
+houston_us,Houston,United States,2023,13.231275179772284,5.206416789557758,log_viirs_ntl
+istanbul_tr,Istanbul,Turkey,2015,13.239748111526964,4.610630252404524,log_viirs_ntl
+istanbul_tr,Istanbul,Turkey,2016,13.271131597750712,4.556819932253652,log_viirs_ntl
+istanbul_tr,Istanbul,Turkey,2017,13.34926625359366,4.507134631292472,log_viirs_ntl
+istanbul_tr,Istanbul,Turkey,2018,13.370745733582163,4.473513223526924,log_viirs_ntl
+istanbul_tr,Istanbul,Turkey,2019,13.374646225504245,4.554376769719181,log_viirs_ntl
+istanbul_tr,Istanbul,Turkey,2020,13.37294776149003,4.58179919536946,log_viirs_ntl
+istanbul_tr,Istanbul,Turkey,2021,13.4913415255818,4.592388853426449,log_viirs_ntl
+istanbul_tr,Istanbul,Turkey,2022,13.545854371940313,4.550247508743051,log_viirs_ntl
+istanbul_tr,Istanbul,Turkey,2023,13.594365009312737,4.644551143323174,log_viirs_ntl
+krakow_pl,Krakow,Poland,2015,10.863527191340298,4.366627420998243,log_viirs_ntl
+krakow_pl,Krakow,Poland,2016,10.913560024017496,4.38407661662922,log_viirs_ntl
+krakow_pl,Krakow,Poland,2017,10.979598575857723,4.522359063976492,log_viirs_ntl
+krakow_pl,Krakow,Poland,2018,11.061107470117504,4.476427310963132,log_viirs_ntl
+krakow_pl,Krakow,Poland,2019,11.10712029904896,4.435587148341011,log_viirs_ntl
+krakow_pl,Krakow,Poland,2020,11.08104964418264,4.333273967381484,log_viirs_ntl
+krakow_pl,Krakow,Poland,2021,11.177844260415155,4.464335988247808,log_viirs_ntl
+krakow_pl,Krakow,Poland,2022,11.213157315916463,4.4176652126735085,log_viirs_ntl
+las_vegas_us,Las Vegas,United States,2015,11.579031506904892,4.591172669638891,log_viirs_ntl
+las_vegas_us,Las Vegas,United States,2016,11.619526211224043,4.542115000199636,log_viirs_ntl
+las_vegas_us,Las Vegas,United States,2017,11.651817463836847,4.544650238357099,log_viirs_ntl
+las_vegas_us,Las Vegas,United States,2018,11.704578349193067,4.52118151042197,log_viirs_ntl
+las_vegas_us,Las Vegas,United States,2019,11.756585114489903,4.575569709662964,log_viirs_ntl
+las_vegas_us,Las Vegas,United States,2020,11.66683897381753,4.657462152793316,log_viirs_ntl
+las_vegas_us,Las Vegas,United States,2021,11.762142138946766,4.753999584352012,log_viirs_ntl
+las_vegas_us,Las Vegas,United States,2022,11.829989139498512,4.852583490317872,log_viirs_ntl
+las_vegas_us,Las Vegas,United States,2023,11.87819338332698,4.865339727512314,log_viirs_ntl
+lisbon_pt,Lisbon,Portugal,2015,11.807980291751422,4.784884184686989,log_viirs_ntl
+lisbon_pt,Lisbon,Portugal,2016,11.82240082908929,4.780830714819227,log_viirs_ntl
+lisbon_pt,Lisbon,Portugal,2017,11.857096560603347,4.7812780291156685,log_viirs_ntl
+lisbon_pt,Lisbon,Portugal,2018,11.883778424160697,4.765452037595148,log_viirs_ntl
+lisbon_pt,Lisbon,Portugal,2019,11.917203201765329,4.731046310901736,log_viirs_ntl
+lisbon_pt,Lisbon,Portugal,2020,11.820976180971352,4.690353501871631,log_viirs_ntl
+lisbon_pt,Lisbon,Portugal,2021,11.868520826369384,4.705535755198328,log_viirs_ntl
+lisbon_pt,Lisbon,Portugal,2022,11.950134688049136,4.678389671149796,log_viirs_ntl
+liverpool_gb,Liverpool,United Kingdom,2015,10.980774054489485,4.323116689818213,log_viirs_ntl
+liverpool_gb,Liverpool,United Kingdom,2016,10.98371520807896,4.310832680504075,log_viirs_ntl
+liverpool_gb,Liverpool,United Kingdom,2017,11.006141662030569,4.166238783791357,log_viirs_ntl
+liverpool_gb,Liverpool,United Kingdom,2018,11.00912510614099,4.214039353323486,log_viirs_ntl
+liverpool_gb,Liverpool,United Kingdom,2019,11.043465687810134,4.273118168636115,log_viirs_ntl
+liverpool_gb,Liverpool,United Kingdom,2020,10.949156062709815,4.205811398207425,log_viirs_ntl
+liverpool_gb,Liverpool,United Kingdom,2021,11.059283254731692,4.088284572974383,log_viirs_ntl
+liverpool_gb,Liverpool,United Kingdom,2022,11.090095455895215,4.114923044306737,log_viirs_ntl
+liverpool_gb,Liverpool,United Kingdom,2023,11.098863509636546,4.300963428276488,log_viirs_ntl
+ljubljana_si,Ljubljana,Slovenia,2015,10.27163147557801,3.622917695549857,log_viirs_ntl
+ljubljana_si,Ljubljana,Slovenia,2016,10.30981895197225,3.6683152900025577,log_viirs_ntl
+ljubljana_si,Ljubljana,Slovenia,2017,10.35723475926234,3.7836023449095806,log_viirs_ntl
+ljubljana_si,Ljubljana,Slovenia,2018,10.407922801280105,3.719044866132323,log_viirs_ntl
+ljubljana_si,Ljubljana,Slovenia,2019,10.447525490508216,3.6595364555335914,log_viirs_ntl
+ljubljana_si,Ljubljana,Slovenia,2020,10.431848529391178,3.503829172584811,log_viirs_ntl
+ljubljana_si,Ljubljana,Slovenia,2021,10.526963059846754,3.583565234740355,log_viirs_ntl
+ljubljana_si,Ljubljana,Slovenia,2022,10.531082364855838,3.601049541670669,log_viirs_ntl
+ljubljana_si,Ljubljana,Slovenia,2023,10.577222529574613,3.460461590241969,log_viirs_ntl
+london_gb,London,United Kingdom,2015,13.756207375162594,4.648612748944463,log_viirs_ntl
+london_gb,London,United Kingdom,2016,13.79048706563924,4.630301727369701,log_viirs_ntl
+london_gb,London,United Kingdom,2017,13.810010460118677,4.570043754678069,log_viirs_ntl
+london_gb,London,United Kingdom,2018,13.824852783166595,4.658276410900969,log_viirs_ntl
+london_gb,London,United Kingdom,2019,13.836122661467737,4.73534282621185,log_viirs_ntl
+london_gb,London,United Kingdom,2020,13.708838070937153,4.65577616161767,log_viirs_ntl
+london_gb,London,United Kingdom,2021,13.788296594438409,4.647646816701927,log_viirs_ntl
+london_gb,London,United Kingdom,2022,13.848258444424077,4.694157393577139,log_viirs_ntl
+los_angeles_us,Los Angeles,United States,2015,13.861374540274538,4.983058526848869,log_viirs_ntl
+los_angeles_us,Los Angeles,United States,2016,13.885201718923707,4.934857556791347,log_viirs_ntl
+los_angeles_us,Los Angeles,United States,2017,13.916242377718275,4.974409207559706,log_viirs_ntl
+los_angeles_us,Los Angeles,United States,2018,13.941862993429499,4.858092577688299,log_viirs_ntl
+los_angeles_us,Los Angeles,United States,2019,13.980032130832518,4.91110342914963,log_viirs_ntl
+los_angeles_us,Los Angeles,United States,2020,13.945640171092307,4.89175790031165,log_viirs_ntl
+los_angeles_us,Los Angeles,United States,2021,13.995739927660342,4.874809221358554,log_viirs_ntl
+los_angeles_us,Los Angeles,United States,2022,14.013571760750928,4.94178528189964,log_viirs_ntl
+los_angeles_us,Los Angeles,United States,2023,14.026902933877704,4.997291103437967,log_viirs_ntl
+lyon_fr,Lyon,France,2015,11.83068077042815,4.283149701152808,log_viirs_ntl
+lyon_fr,Lyon,France,2016,11.853460864325811,4.268251167598448,log_viirs_ntl
+lyon_fr,Lyon,France,2017,11.882860109238448,4.256073595780316,log_viirs_ntl
+lyon_fr,Lyon,France,2018,11.921199956396244,4.296150984808105,log_viirs_ntl
+lyon_fr,Lyon,France,2019,11.940830243194625,4.224361096619421,log_viirs_ntl
+lyon_fr,Lyon,France,2020,11.870662844324528,4.152259619568352,log_viirs_ntl
+lyon_fr,Lyon,France,2021,11.934690340491846,4.085556062602972,log_viirs_ntl
+lyon_fr,Lyon,France,2022,11.93953870001258,4.0469471805734525,log_viirs_ntl
+lyon_fr,Lyon,France,2023,11.976867006837246,4.077269042859146,log_viirs_ntl
+madrid_es,Madrid,Spain,2015,12.805153622226786,4.1723081883952045,log_viirs_ntl
+madrid_es,Madrid,Spain,2016,12.84046189841557,4.099000369328487,log_viirs_ntl
+madrid_es,Madrid,Spain,2017,12.87328131268756,4.111652249260706,log_viirs_ntl
+madrid_es,Madrid,Spain,2018,12.902123107487075,4.129952982531479,log_viirs_ntl
+madrid_es,Madrid,Spain,2019,12.931013992121027,4.065459144317535,log_viirs_ntl
+madrid_es,Madrid,Spain,2020,12.821928330359885,4.025976498453996,log_viirs_ntl
+madrid_es,Madrid,Spain,2021,12.877886377684968,4.138401319657872,log_viirs_ntl
+madrid_es,Madrid,Spain,2022,12.941661308531607,4.144496226331566,log_viirs_ntl
+malaga_es,Malaga,Spain,2015,10.150464811101735,4.402370377139014,log_viirs_ntl
+malaga_es,Malaga,Spain,2016,10.169192384934412,4.410330602163004,log_viirs_ntl
+malaga_es,Malaga,Spain,2017,10.204073510592933,4.50026327622552,log_viirs_ntl
+malaga_es,Malaga,Spain,2018,10.234911352935114,4.497130158281309,log_viirs_ntl
+malaga_es,Malaga,Spain,2019,10.263013428702846,4.578090137975683,log_viirs_ntl
+malaga_es,Malaga,Spain,2020,10.120049492484783,4.449977296582389,log_viirs_ntl
+malaga_es,Malaga,Spain,2021,10.228429281911374,4.617214034230023,log_viirs_ntl
+malaga_es,Malaga,Spain,2022,10.313276632124348,4.589997321796851,log_viirs_ntl
+manchester_gb,Manchester,United Kingdom,2015,11.933712589176178,4.712850509039743,log_viirs_ntl
+manchester_gb,Manchester,United Kingdom,2016,11.9560074366497,4.688913735034153,log_viirs_ntl
+manchester_gb,Manchester,United Kingdom,2017,11.990736040551901,4.636006490509543,log_viirs_ntl
+manchester_gb,Manchester,United Kingdom,2018,12.00718868623719,4.585511547806183,log_viirs_ntl
+manchester_gb,Manchester,United Kingdom,2019,12.02567723252968,4.472095845852523,log_viirs_ntl
+manchester_gb,Manchester,United Kingdom,2020,11.959308562990943,4.435014331519748,log_viirs_ntl
+manchester_gb,Manchester,United Kingdom,2021,12.020140578682023,4.40487812890904,log_viirs_ntl
+manchester_gb,Manchester,United Kingdom,2022,12.085474400888971,4.537658346328858,log_viirs_ntl
+manchester_gb,Manchester,United Kingdom,2023,12.100039681607461,4.51918555887655,log_viirs_ntl
+marseille_fr,Marseille,France,2015,11.47558697931486,4.69612240041045,log_viirs_ntl
+marseille_fr,Marseille,France,2016,11.467258418786773,4.686089443724301,log_viirs_ntl
+marseille_fr,Marseille,France,2017,11.492498242655184,4.630187950203528,log_viirs_ntl
+marseille_fr,Marseille,France,2018,11.507299669818662,4.698797130840383,log_viirs_ntl
+marseille_fr,Marseille,France,2019,11.522846092411957,4.665347643273353,log_viirs_ntl
+marseille_fr,Marseille,France,2020,11.467436346349793,4.575844349797343,log_viirs_ntl
+marseille_fr,Marseille,France,2021,11.720752312172545,4.555743573600914,log_viirs_ntl
+marseille_fr,Marseille,France,2022,11.839498869412195,4.460568218572184,log_viirs_ntl
+marseille_fr,Marseille,France,2023,11.59080275289071,4.26421625203255,log_viirs_ntl
+miami_us,Miami,United States,2015,12.675229040974688,4.473760346731662,log_viirs_ntl
+miami_us,Miami,United States,2016,12.71071619962035,4.539048197472043,log_viirs_ntl
+miami_us,Miami,United States,2017,12.750960508060984,4.487783943165791,log_viirs_ntl
+miami_us,Miami,United States,2018,12.785449043072322,4.645303934077543,log_viirs_ntl
+miami_us,Miami,United States,2019,12.81492203671635,4.723826914164118,log_viirs_ntl
+miami_us,Miami,United States,2020,12.78551627052804,4.547134907263147,log_viirs_ntl
+miami_us,Miami,United States,2021,12.87914211096075,4.555603464768662,log_viirs_ntl
+miami_us,Miami,United States,2022,12.932673944349064,4.616925831576725,log_viirs_ntl
+miami_us,Miami,United States,2023,12.98127896094568,4.618037058724648,log_viirs_ntl
+milan_it,Milan,Italy,2015,12.779658961031151,4.469226363145415,log_viirs_ntl
+milan_it,Milan,Italy,2016,12.802422541092781,4.4074811443154704,log_viirs_ntl
+milan_it,Milan,Italy,2017,12.818524822384443,4.359259002603027,log_viirs_ntl
+milan_it,Milan,Italy,2018,12.836974673172156,4.337094651155245,log_viirs_ntl
+milan_it,Milan,Italy,2019,12.834910611993012,4.513849534345426,log_viirs_ntl
+milan_it,Milan,Italy,2020,12.764630731438826,4.420796510542378,log_viirs_ntl
+milan_it,Milan,Italy,2021,12.875595455226332,4.493185932424396,log_viirs_ntl
+milan_it,Milan,Italy,2022,12.915356427993938,4.507235721235119,log_viirs_ntl
+minneapolis_us,Minneapolis,United States,2015,12.395001492693307,4.695155612523269,log_viirs_ntl
+minneapolis_us,Minneapolis,United States,2016,12.411858418468,4.7835255592994885,log_viirs_ntl
+minneapolis_us,Minneapolis,United States,2017,12.427683022132458,4.754322689934455,log_viirs_ntl
+minneapolis_us,Minneapolis,United States,2018,12.457123150097392,4.879729009367867,log_viirs_ntl
+minneapolis_us,Minneapolis,United States,2019,12.475148949164836,4.916446719402173,log_viirs_ntl
+minneapolis_us,Minneapolis,United States,2020,12.441966564329647,4.833984295109436,log_viirs_ntl
+minneapolis_us,Minneapolis,United States,2021,12.486986867661216,4.833831814951242,log_viirs_ntl
+minneapolis_us,Minneapolis,United States,2022,12.505039554026437,5.061481563949775,log_viirs_ntl
+minneapolis_us,Minneapolis,United States,2023,12.534138216376835,5.081233534094606,log_viirs_ntl
+munich_de,Munich,Germany,2015,12.528467690366794,3.7733546268813463,log_viirs_ntl
+munich_de,Munich,Germany,2016,12.562680087190678,3.721709599627512,log_viirs_ntl
+munich_de,Munich,Germany,2017,12.603233367474722,3.768094903375727,log_viirs_ntl
+munich_de,Munich,Germany,2018,12.601339258661667,3.781325684195832,log_viirs_ntl
+munich_de,Munich,Germany,2019,12.631170431853468,3.7612194994906383,log_viirs_ntl
+munich_de,Munich,Germany,2020,12.57797062879439,3.989184645375264,log_viirs_ntl
+munich_de,Munich,Germany,2021,12.630225380467499,3.887149550061153,log_viirs_ntl
+munich_de,Munich,Germany,2022,12.640028024037965,3.842887256510144,log_viirs_ntl
+nagoya_jp,Nagoya,Japan,2015,12.982843805655037,4.0476605061967925,log_viirs_ntl
+nagoya_jp,Nagoya,Japan,2016,12.964553343634288,4.026749520795563,log_viirs_ntl
+nagoya_jp,Nagoya,Japan,2017,12.980230526645801,4.110928513950784,log_viirs_ntl
+nagoya_jp,Nagoya,Japan,2018,12.990898419660395,4.059896882899717,log_viirs_ntl
+nagoya_jp,Nagoya,Japan,2019,12.96636432371945,4.045723125361503,log_viirs_ntl
+nagoya_jp,Nagoya,Japan,2020,12.929734482037533,4.028086050106685,log_viirs_ntl
+nagoya_jp,Nagoya,Japan,2021,12.949551658421122,4.101361541186816,log_viirs_ntl
+naples_it,Naples,Italy,2015,11.552376920731156,4.5166030548180185,log_viirs_ntl
+naples_it,Naples,Italy,2016,11.56467315610394,4.498002478548342,log_viirs_ntl
+naples_it,Naples,Italy,2017,11.578497826510597,4.455335184364329,log_viirs_ntl
+naples_it,Naples,Italy,2018,11.577926379187641,4.436761390830171,log_viirs_ntl
+naples_it,Naples,Italy,2019,11.593011248639058,4.36258894531924,log_viirs_ntl
+naples_it,Naples,Italy,2020,11.49071053039907,4.375757021660286,log_viirs_ntl
+naples_it,Naples,Italy,2021,11.551819201595588,4.292500745019173,log_viirs_ntl
+naples_it,Naples,Italy,2022,11.604519658131226,4.400265538121003,log_viirs_ntl
+new_york_us,New York,United States,2015,14.292888802764612,4.799975997223882,log_viirs_ntl
+new_york_us,New York,United States,2016,14.321689402153282,4.835362167309078,log_viirs_ntl
+new_york_us,New York,United States,2017,14.34434013355561,4.779970467279358,log_viirs_ntl
+new_york_us,New York,United States,2018,14.377443658854856,4.808464701458559,log_viirs_ntl
+new_york_us,New York,United States,2019,14.400693836996279,4.726812427241302,log_viirs_ntl
+new_york_us,New York,United States,2020,14.374483853831578,4.674781756591668,log_viirs_ntl
+new_york_us,New York,United States,2021,14.414048662888918,4.719168296848904,log_viirs_ntl
+new_york_us,New York,United States,2022,14.41590244222379,4.721834064217645,log_viirs_ntl
+new_york_us,New York,United States,2023,14.43730512073897,4.826699112556938,log_viirs_ntl
+nice_fr,Nice,France,2015,10.31946389026994,4.487774569839135,log_viirs_ntl
+nice_fr,Nice,France,2016,10.34858995368279,4.53498017973144,log_viirs_ntl
+nice_fr,Nice,France,2017,10.360310952919434,4.477232656258887,log_viirs_ntl
+nice_fr,Nice,France,2018,10.367976001093753,4.402411197027902,log_viirs_ntl
+nice_fr,Nice,France,2019,10.380435762266156,4.340455665799323,log_viirs_ntl
+nice_fr,Nice,France,2020,10.24736090463765,4.2513364393915545,log_viirs_ntl
+nice_fr,Nice,France,2021,10.302833979636116,4.245980185538667,log_viirs_ntl
+nice_fr,Nice,France,2022,10.357679330734525,4.22025499902445,log_viirs_ntl
+nice_fr,Nice,France,2023,10.318077568421293,4.161315023204904,log_viirs_ntl
+osaka_jp,Osaka,Japan,2015,13.433438682031909,4.50597582009051,log_viirs_ntl
+osaka_jp,Osaka,Japan,2016,13.4411661385139,4.45295095953684,log_viirs_ntl
+osaka_jp,Osaka,Japan,2017,13.458358357299524,4.524737102171699,log_viirs_ntl
+osaka_jp,Osaka,Japan,2018,13.462527362556948,4.485438381433801,log_viirs_ntl
+osaka_jp,Osaka,Japan,2019,13.465034929925496,4.563722995013617,log_viirs_ntl
+osaka_jp,Osaka,Japan,2020,13.421973032578602,4.633482249768195,log_viirs_ntl
+osaka_jp,Osaka,Japan,2021,13.45227269654687,4.555384534229104,log_viirs_ntl
+oslo_no,Oslo,Norway,2015,11.52335093045381,4.447541245506164,log_viirs_ntl
+oslo_no,Oslo,Norway,2016,11.58412922397656,4.620961503273238,log_viirs_ntl
+oslo_no,Oslo,Norway,2017,11.582889864371067,4.39175004319396,log_viirs_ntl
+oslo_no,Oslo,Norway,2018,11.556999765006694,4.641373547626721,log_viirs_ntl
+oslo_no,Oslo,Norway,2019,11.627467699342894,4.413323400728797,log_viirs_ntl
+oslo_no,Oslo,Norway,2020,11.675792333930048,4.318554219170212,log_viirs_ntl
+oslo_no,Oslo,Norway,2021,11.531825724470709,4.678722637988731,log_viirs_ntl
+paris_fr,Paris,France,2015,13.87952706787769,4.316254001367344,log_viirs_ntl
+paris_fr,Paris,France,2016,13.89416091214803,4.326855234178884,log_viirs_ntl
+paris_fr,Paris,France,2017,13.914991120530273,4.25175184485883,log_viirs_ntl
+paris_fr,Paris,France,2018,13.935762543254626,4.2844023287034725,log_viirs_ntl
+paris_fr,Paris,France,2019,13.964595858965534,4.217544993197823,log_viirs_ntl
+paris_fr,Paris,France,2020,13.857940538981024,4.161133158578404,log_viirs_ntl
+paris_fr,Paris,France,2021,13.905693982022253,4.228984715500601,log_viirs_ntl
+paris_fr,Paris,France,2022,13.928024625846296,4.303197590808474,log_viirs_ntl
+paris_fr,Paris,France,2023,13.96577541202591,4.240607071031261,log_viirs_ntl
+philadelphia_us,Philadelphia,United States,2015,12.99616049410762,4.887211373754441,log_viirs_ntl
+philadelphia_us,Philadelphia,United States,2016,13.01243243323174,4.862070839017866,log_viirs_ntl
+philadelphia_us,Philadelphia,United States,2017,13.007042308618866,4.850857694775161,log_viirs_ntl
+philadelphia_us,Philadelphia,United States,2018,13.023753359116679,4.813159501510938,log_viirs_ntl
+philadelphia_us,Philadelphia,United States,2019,13.04216582440954,4.914534250561994,log_viirs_ntl
+philadelphia_us,Philadelphia,United States,2020,13.012506099783478,4.897479046720457,log_viirs_ntl
+philadelphia_us,Philadelphia,United States,2021,13.051253981945617,4.959751261966705,log_viirs_ntl
+philadelphia_us,Philadelphia,United States,2022,13.068382263537815,5.012622208779435,log_viirs_ntl
+philadelphia_us,Philadelphia,United States,2023,13.093910403509177,5.0272738738572205,log_viirs_ntl
+phoenix_us,Phoenix,United States,2015,12.30148736532455,4.774181338816258,log_viirs_ntl
+phoenix_us,Phoenix,United States,2016,12.343422986679085,4.737922108683225,log_viirs_ntl
+phoenix_us,Phoenix,United States,2017,12.386158371382551,4.702599322091461,log_viirs_ntl
+phoenix_us,Phoenix,United States,2018,12.429004174369206,4.655926672310876,log_viirs_ntl
+phoenix_us,Phoenix,United States,2019,12.480160230247417,4.678683934715434,log_viirs_ntl
+phoenix_us,Phoenix,United States,2020,12.505528879693546,4.697156674487223,log_viirs_ntl
+phoenix_us,Phoenix,United States,2021,12.581250352699882,4.713605969988278,log_viirs_ntl
+phoenix_us,Phoenix,United States,2022,12.62532888398745,4.749530242438366,log_viirs_ntl
+phoenix_us,Phoenix,United States,2023,12.666240562353797,4.786449533203602,log_viirs_ntl
+porto_pt,Porto,Portugal,2015,10.668606496608545,4.38907464864243,log_viirs_ntl
+porto_pt,Porto,Portugal,2016,10.691149141813103,4.354933752141578,log_viirs_ntl
+porto_pt,Porto,Portugal,2017,10.73035673255396,4.30790904075588,log_viirs_ntl
+porto_pt,Porto,Portugal,2018,10.763948399449612,4.289591473516796,log_viirs_ntl
+porto_pt,Porto,Portugal,2019,10.787874735397274,4.23973074406238,log_viirs_ntl
+porto_pt,Porto,Portugal,2020,10.708690286886394,4.13756367017909,log_viirs_ntl
+porto_pt,Porto,Portugal,2021,10.77191069453828,4.151053026969432,log_viirs_ntl
+porto_pt,Porto,Portugal,2022,10.837362767167287,4.223091960699475,log_viirs_ntl
+porto_pt,Porto,Portugal,2023,10.852729384549969,4.15802333411281,log_viirs_ntl
+prague_cz,Prague,Czechia,2015,11.92272118243884,3.776775834912274,log_viirs_ntl
+prague_cz,Prague,Czechia,2016,11.95871964613282,3.838824868127813,log_viirs_ntl
+prague_cz,Prague,Czechia,2017,12.009035341300443,3.875255288095712,log_viirs_ntl
+prague_cz,Prague,Czechia,2018,12.048406627468632,3.815677288521324,log_viirs_ntl
+prague_cz,Prague,Czechia,2019,12.09327901705473,3.87632674577742,log_viirs_ntl
+prague_cz,Prague,Czechia,2020,12.027669402110114,3.896892449841266,log_viirs_ntl
+prague_cz,Prague,Czechia,2021,12.079221745782268,3.954028290062952,log_viirs_ntl
+prague_cz,Prague,Czechia,2022,12.123315841359965,3.808993102007566,log_viirs_ntl
+prague_cz,Prague,Czechia,2023,12.102926343358046,3.743249268104052,log_viirs_ntl
+riga_lv,Riga,Latvia,2015,10.586382356631722,4.241278774969457,log_viirs_ntl
+riga_lv,Riga,Latvia,2016,10.61295089758101,4.509814998736824,log_viirs_ntl
+riga_lv,Riga,Latvia,2017,10.646781120036646,4.489263512146719,log_viirs_ntl
+riga_lv,Riga,Latvia,2018,10.681228606945007,4.4932138932769,log_viirs_ntl
+riga_lv,Riga,Latvia,2019,10.694895102263592,4.578252819487811,log_viirs_ntl
+riga_lv,Riga,Latvia,2020,10.634652800283595,4.432531591456212,log_viirs_ntl
+riga_lv,Riga,Latvia,2021,10.708779682349634,4.744330496817067,log_viirs_ntl
+rome_it,Rome,Italy,2015,12.450543151958453,4.8632367606080855,log_viirs_ntl
+rome_it,Rome,Italy,2016,12.485377224571236,4.850642589549938,log_viirs_ntl
+rome_it,Rome,Italy,2017,12.49161618294507,4.796072872152563,log_viirs_ntl
+rome_it,Rome,Italy,2018,12.494719252668782,4.747277201068554,log_viirs_ntl
+rome_it,Rome,Italy,2019,12.49873106540049,4.463395375876243,log_viirs_ntl
+rome_it,Rome,Italy,2020,12.397453046812474,4.455741660093524,log_viirs_ntl
+rome_it,Rome,Italy,2021,12.469636190573146,4.658442339254965,log_viirs_ntl
+rome_it,Rome,Italy,2022,12.55053785308031,4.744475493315387,log_viirs_ntl
+rotterdam_nl,Rotterdam,Netherlands,2015,11.616266943744163,4.241566542035183,log_viirs_ntl
+rotterdam_nl,Rotterdam,Netherlands,2016,11.635744686615075,4.283356649498394,log_viirs_ntl
+rotterdam_nl,Rotterdam,Netherlands,2017,11.660819469705586,4.184236043682954,log_viirs_ntl
+rotterdam_nl,Rotterdam,Netherlands,2018,11.675936773229683,4.15160407161433,log_viirs_ntl
+rotterdam_nl,Rotterdam,Netherlands,2019,11.685827799847692,4.211473054812282,log_viirs_ntl
+rotterdam_nl,Rotterdam,Netherlands,2020,11.649482276396439,4.207425201841406,log_viirs_ntl
+rotterdam_nl,Rotterdam,Netherlands,2021,11.714346787732115,4.169310305241617,log_viirs_ntl
+rotterdam_nl,Rotterdam,Netherlands,2022,11.794262449862169,4.1547469395153644,log_viirs_ntl
+san_diego_us,San Diego,United States,2015,12.247905329132108,4.521525857097132,log_viirs_ntl
+san_diego_us,San Diego,United States,2016,12.263761196600324,4.516694110336116,log_viirs_ntl
+san_diego_us,San Diego,United States,2017,12.295620802171774,4.596532980022986,log_viirs_ntl
+san_diego_us,San Diego,United States,2018,12.316146038116504,4.590394904922663,log_viirs_ntl
+san_diego_us,San Diego,United States,2019,12.345551939268317,4.49679587414622,log_viirs_ntl
+san_diego_us,San Diego,United States,2020,12.33851657207774,4.376668558648736,log_viirs_ntl
+san_diego_us,San Diego,United States,2021,12.392809440797539,4.53510531426751,log_viirs_ntl
+san_diego_us,San Diego,United States,2022,12.407150530806572,4.48865510729241,log_viirs_ntl
+san_diego_us,San Diego,United States,2023,12.43185670762536,4.455935179746165,log_viirs_ntl
+san_francisco_us,San Francisco,United States,2015,13.45821113336379,4.528550088234782,log_viirs_ntl
+san_francisco_us,San Francisco,United States,2016,13.510018830926217,4.521471502638233,log_viirs_ntl
+san_francisco_us,San Francisco,United States,2017,13.57665166500993,4.558602538182137,log_viirs_ntl
+san_francisco_us,San Francisco,United States,2018,13.629931300621315,4.535784377989015,log_viirs_ntl
+san_francisco_us,San Francisco,United States,2019,13.677671615439149,4.479172245343221,log_viirs_ntl
+san_francisco_us,San Francisco,United States,2020,13.69565324748657,4.484884020113589,log_viirs_ntl
+san_francisco_us,San Francisco,United States,2021,13.778465795711796,4.486583711100848,log_viirs_ntl
+san_francisco_us,San Francisco,United States,2022,13.744110147823376,4.552929069185291,log_viirs_ntl
+san_francisco_us,San Francisco,United States,2023,13.770950334966367,4.567000930967313,log_viirs_ntl
+sapporo_jp,Sapporo,Japan,2015,11.281724540028286,4.710078101755738,log_viirs_ntl
+sapporo_jp,Sapporo,Japan,2016,11.287592017582982,4.692929199861149,log_viirs_ntl
+sapporo_jp,Sapporo,Japan,2017,11.303055922886557,4.855358050843939,log_viirs_ntl
+sapporo_jp,Sapporo,Japan,2018,11.305815190968001,4.76564369245696,log_viirs_ntl
+sapporo_jp,Sapporo,Japan,2019,11.323941765302724,4.808872641325485,log_viirs_ntl
+sapporo_jp,Sapporo,Japan,2020,11.278657769153083,4.683996768457159,log_viirs_ntl
+sapporo_jp,Sapporo,Japan,2021,11.293761484648849,4.946167892210611,log_viirs_ntl
+seattle_us,Seattle,United States,2015,12.680671948472009,4.891413712784959,log_viirs_ntl
+seattle_us,Seattle,United States,2016,12.72099885040992,4.836156236064875,log_viirs_ntl
+seattle_us,Seattle,United States,2017,12.789159394219798,4.709177285275499,log_viirs_ntl
+seattle_us,Seattle,United States,2018,12.84890762921634,4.6516322512245205,log_viirs_ntl
+seattle_us,Seattle,United States,2019,12.90383914060994,4.738359866809297,log_viirs_ntl
+seattle_us,Seattle,United States,2020,12.91207435152632,4.460577846738834,log_viirs_ntl
+seattle_us,Seattle,United States,2021,12.96459081313178,4.753417763983207,log_viirs_ntl
+seattle_us,Seattle,United States,2022,12.961358595124517,4.641927920618921,log_viirs_ntl
+seattle_us,Seattle,United States,2023,13.01936673226844,4.786407834524141,log_viirs_ntl
+seoul_kr,Seoul,South Korea,2015,13.813401335116865,4.37149217748737,log_viirs_ntl
+seoul_kr,Seoul,South Korea,2016,13.84836295947434,4.363544383352068,log_viirs_ntl
+seoul_kr,Seoul,South Korea,2017,13.89563972343869,4.402125372178489,log_viirs_ntl
+seoul_kr,Seoul,South Korea,2018,13.940318637890863,4.440216935052154,log_viirs_ntl
+seoul_kr,Seoul,South Korea,2019,13.960753106516808,4.473541739883517,log_viirs_ntl
+seoul_kr,Seoul,South Korea,2020,13.966766194050647,4.525125404070765,log_viirs_ntl
+seoul_kr,Seoul,South Korea,2021,14.009212940117898,4.452902456595584,log_viirs_ntl
+seoul_kr,Seoul,South Korea,2022,14.029627088043773,4.462819067395549,log_viirs_ntl
+seville_es,Seville,Spain,2015,10.83101491633627,4.770804677851016,log_viirs_ntl
+seville_es,Seville,Spain,2016,10.846342315535834,4.665135758054094,log_viirs_ntl
+seville_es,Seville,Spain,2017,10.87714112179876,4.614262055609989,log_viirs_ntl
+seville_es,Seville,Spain,2018,10.898681882005748,4.561958184898337,log_viirs_ntl
+seville_es,Seville,Spain,2019,10.917394893270139,4.587506767137278,log_viirs_ntl
+seville_es,Seville,Spain,2020,10.818217066343328,4.564860216582203,log_viirs_ntl
+seville_es,Seville,Spain,2021,10.89648003267366,4.614410693515593,log_viirs_ntl
+seville_es,Seville,Spain,2022,10.929242368900846,4.6036356789525845,log_viirs_ntl
+sofia_bg,Sofia,Bulgaria,2015,11.151812114432564,4.098156731108455,log_viirs_ntl
+sofia_bg,Sofia,Bulgaria,2016,11.184185259008464,4.210570819115122,log_viirs_ntl
+sofia_bg,Sofia,Bulgaria,2017,11.214249851043581,4.31573101739512,log_viirs_ntl
+sofia_bg,Sofia,Bulgaria,2018,11.250261155493735,4.269685809914923,log_viirs_ntl
+sofia_bg,Sofia,Bulgaria,2019,11.338786340583832,4.338314172282584,log_viirs_ntl
+sofia_bg,Sofia,Bulgaria,2020,11.303734127274023,4.204692609901669,log_viirs_ntl
+sofia_bg,Sofia,Bulgaria,2021,11.381836800739672,4.26127043712501,log_viirs_ntl
+sofia_bg,Sofia,Bulgaria,2022,11.38240667276184,4.213620313962993,log_viirs_ntl
+sofia_bg,Sofia,Bulgaria,2023,11.436541057548919,4.075798645582687,log_viirs_ntl
+stockholm_se,Stockholm,Sweden,2015,12.079658720674516,4.6153102627164175,log_viirs_ntl
+stockholm_se,Stockholm,Sweden,2016,12.095811251272636,4.666461245171864,log_viirs_ntl
+stockholm_se,Stockholm,Sweden,2017,12.095180190203518,4.674532996871871,log_viirs_ntl
+stockholm_se,Stockholm,Sweden,2018,12.127110603726878,4.539644524141577,log_viirs_ntl
+stockholm_se,Stockholm,Sweden,2019,12.163765173233925,4.658687256917129,log_viirs_ntl
+stockholm_se,Stockholm,Sweden,2020,12.152207626037963,4.46199242922404,log_viirs_ntl
+stockholm_se,Stockholm,Sweden,2021,12.196481800054395,4.804929103519132,log_viirs_ntl
+stockholm_se,Stockholm,Sweden,2022,12.198554454625375,4.7266648579784665,log_viirs_ntl
+stockholm_se,Stockholm,Sweden,2023,12.199068171377291,4.657050803035967,log_viirs_ntl
+stuttgart_de,Stuttgart,Germany,2015,12.246859439430894,4.319752216204329,log_viirs_ntl
+stuttgart_de,Stuttgart,Germany,2016,12.248279280992561,4.226943233151639,log_viirs_ntl
+stuttgart_de,Stuttgart,Germany,2017,12.285461293199246,4.3687091822881055,log_viirs_ntl
+stuttgart_de,Stuttgart,Germany,2018,12.302368702833895,4.3339627783581465,log_viirs_ntl
+stuttgart_de,Stuttgart,Germany,2019,12.256756254097091,4.417263063042475,log_viirs_ntl
+stuttgart_de,Stuttgart,Germany,2020,12.19902788940347,4.2904822811697,log_viirs_ntl
+stuttgart_de,Stuttgart,Germany,2021,12.231326076442304,4.54106712707061,log_viirs_ntl
+stuttgart_de,Stuttgart,Germany,2022,12.240884615982218,4.357744616164911,log_viirs_ntl
+tallinn_ee,Tallinn,Estonia,2015,10.29620508782179,4.485926709979871,log_viirs_ntl
+tallinn_ee,Tallinn,Estonia,2016,10.331952784873353,4.803966386757403,log_viirs_ntl
+tallinn_ee,Tallinn,Estonia,2017,10.386284003580617,4.570095548639778,log_viirs_ntl
+tallinn_ee,Tallinn,Estonia,2018,10.4069259578681,4.688829422349845,log_viirs_ntl
+tallinn_ee,Tallinn,Estonia,2019,10.431730608339187,4.70234983606924,log_viirs_ntl
+tallinn_ee,Tallinn,Estonia,2020,10.415142832042596,4.567658687615045,log_viirs_ntl
+tallinn_ee,Tallinn,Estonia,2021,10.457487601685916,5.012672106256964,log_viirs_ntl
+tallinn_ee,Tallinn,Estonia,2022,10.46278900535916,4.678095315056938,log_viirs_ntl
+tallinn_ee,Tallinn,Estonia,2023,10.44755451008192,4.333951838066013,log_viirs_ntl
+thessaloniki_gr,Thessaloniki,Greece,2015,10.191182124909785,4.621592920881881,log_viirs_ntl
+thessaloniki_gr,Thessaloniki,Greece,2016,10.209537399846088,4.694789959511136,log_viirs_ntl
+thessaloniki_gr,Thessaloniki,Greece,2017,10.222995273466749,4.714443053741038,log_viirs_ntl
+thessaloniki_gr,Thessaloniki,Greece,2018,10.25224120572685,4.761725101792703,log_viirs_ntl
+thessaloniki_gr,Thessaloniki,Greece,2019,10.269969252665245,4.791027151460386,log_viirs_ntl
+thessaloniki_gr,Thessaloniki,Greece,2020,10.17789439778788,4.7943708018820566,log_viirs_ntl
+thessaloniki_gr,Thessaloniki,Greece,2021,10.2598674529538,4.815424358960326,log_viirs_ntl
+thessaloniki_gr,Thessaloniki,Greece,2022,10.317714166312864,4.915628388018908,log_viirs_ntl
+tokyo_jp,Tokyo,Japan,2015,14.408206817724414,3.7022891479243096,log_viirs_ntl
+tokyo_jp,Tokyo,Japan,2016,14.417253271484084,3.6374545732930814,log_viirs_ntl
+tokyo_jp,Tokyo,Japan,2017,14.435422308671647,3.7420647175646495,log_viirs_ntl
+tokyo_jp,Tokyo,Japan,2018,14.444634284716694,3.776470514258311,log_viirs_ntl
+tokyo_jp,Tokyo,Japan,2019,14.446560501692348,3.774579201576618,log_viirs_ntl
+tokyo_jp,Tokyo,Japan,2020,14.398987951278295,3.6630914516026287,log_viirs_ntl
+tokyo_jp,Tokyo,Japan,2021,14.426236537810727,3.727478964264934,log_viirs_ntl
+toulouse_fr,Toulouse,France,2015,11.30523686821088,4.096079178612325,log_viirs_ntl
+toulouse_fr,Toulouse,France,2016,11.323047429770627,4.088466211012008,log_viirs_ntl
+toulouse_fr,Toulouse,France,2017,11.338691118358893,4.100630327467277,log_viirs_ntl
+toulouse_fr,Toulouse,France,2018,11.376544301317045,4.028783292416246,log_viirs_ntl
+toulouse_fr,Toulouse,France,2019,11.40099899609809,3.88201043397517,log_viirs_ntl
+toulouse_fr,Toulouse,France,2020,11.280615025831201,3.8589386402356056,log_viirs_ntl
+toulouse_fr,Toulouse,France,2021,11.349512017863786,3.726556520582526,log_viirs_ntl
+toulouse_fr,Toulouse,France,2022,11.378113252445983,3.751188931470368,log_viirs_ntl
+toulouse_fr,Toulouse,France,2023,11.429587333346895,3.765821203763152,log_viirs_ntl
+turin_it,Turin,Italy,2015,11.410083996070519,4.761668098662531,log_viirs_ntl
+turin_it,Turin,Italy,2016,11.43039132291661,4.614344642651472,log_viirs_ntl
+turin_it,Turin,Italy,2017,11.458522076090842,4.673218166761938,log_viirs_ntl
+turin_it,Turin,Italy,2018,11.474621131812514,4.591400825254001,log_viirs_ntl
+turin_it,Turin,Italy,2019,11.45856431161726,4.605653410433392,log_viirs_ntl
+turin_it,Turin,Italy,2020,11.351500055009028,4.56161007654843,log_viirs_ntl
+turin_it,Turin,Italy,2021,11.4069981220295,4.625021835929037,log_viirs_ntl
+turin_it,Turin,Italy,2022,11.429935083839423,4.5825666335351904,log_viirs_ntl
+valencia_es,Valencia,Spain,2015,11.094177529405146,5.406397938194651,log_viirs_ntl
+valencia_es,Valencia,Spain,2016,11.105949215663113,5.264476154327865,log_viirs_ntl
+valencia_es,Valencia,Spain,2017,11.122708510624436,5.069773846853403,log_viirs_ntl
+valencia_es,Valencia,Spain,2018,11.158961129724467,5.108306321423467,log_viirs_ntl
+valencia_es,Valencia,Spain,2019,11.178626864289857,5.12151058560927,log_viirs_ntl
+valencia_es,Valencia,Spain,2020,11.07680525390243,4.377568800107634,log_viirs_ntl
+valencia_es,Valencia,Spain,2021,11.133230437555632,4.302881962007132,log_viirs_ntl
+valencia_es,Valencia,Spain,2022,11.183073267456214,4.223372770336997,log_viirs_ntl
+vienna_at,Vienna,Austria,2015,12.108399175353744,3.81505311433265,log_viirs_ntl
+vienna_at,Vienna,Austria,2016,12.137172626875122,3.841189156847834,log_viirs_ntl
+vienna_at,Vienna,Austria,2017,12.146821455124883,3.885473655047595,log_viirs_ntl
+vienna_at,Vienna,Austria,2018,12.172701987388336,3.85577005768968,log_viirs_ntl
+vienna_at,Vienna,Austria,2019,12.191603470060414,3.937836938090635,log_viirs_ntl
+vienna_at,Vienna,Austria,2020,12.122441005335913,3.836724577127788,log_viirs_ntl
+vienna_at,Vienna,Austria,2021,12.181006088031118,4.074921021083703,log_viirs_ntl
+vienna_at,Vienna,Austria,2022,12.213529771920573,3.9216762682492954,log_viirs_ntl
+vilnius_lt,Vilnius,Lithuania,2015,10.445375701753937,3.993295718523021,log_viirs_ntl
+vilnius_lt,Vilnius,Lithuania,2016,10.479454640632905,4.217815081692682,log_viirs_ntl
+vilnius_lt,Vilnius,Lithuania,2017,10.52384896337042,4.1785452800443,log_viirs_ntl
+vilnius_lt,Vilnius,Lithuania,2018,10.596584731846031,4.229178916167212,log_viirs_ntl
+vilnius_lt,Vilnius,Lithuania,2019,10.662211777281856,4.285985984353434,log_viirs_ntl
+vilnius_lt,Vilnius,Lithuania,2020,10.663779230725403,4.213213431574145,log_viirs_ntl
+vilnius_lt,Vilnius,Lithuania,2021,10.739153740836397,4.47157211749867,log_viirs_ntl
+vilnius_lt,Vilnius,Lithuania,2022,10.777809799587782,4.129000915614836,log_viirs_ntl
+vilnius_lt,Vilnius,Lithuania,2023,10.821057465908664,3.992265693280376,log_viirs_ntl
+warsaw_pl,Warsaw,Poland,2015,12.20579760771074,4.880254474997122,log_viirs_ntl
+warsaw_pl,Warsaw,Poland,2016,12.236402994713007,4.868354626057611,log_viirs_ntl
+warsaw_pl,Warsaw,Poland,2017,12.299717803591161,4.834693343255557,log_viirs_ntl
+warsaw_pl,Warsaw,Poland,2018,12.379029658197743,4.9115022485790165,log_viirs_ntl
+warsaw_pl,Warsaw,Poland,2019,12.436700122282128,4.9827443854333815,log_viirs_ntl
+warsaw_pl,Warsaw,Poland,2020,12.419440570729455,4.867207472557834,log_viirs_ntl
+warsaw_pl,Warsaw,Poland,2021,12.463319994733586,4.9239753669782536,log_viirs_ntl
+warsaw_pl,Warsaw,Poland,2022,12.532584729821417,4.879520036023514,log_viirs_ntl
+washington_dc_us,Washington,United States,2015,13.424569463872208,5.563798564958435,log_viirs_ntl
+washington_dc_us,Washington,United States,2016,13.458228286782537,5.508200050256401,log_viirs_ntl
+washington_dc_us,Washington,United States,2017,13.476898633843566,5.5198128982293735,log_viirs_ntl
+washington_dc_us,Washington,United States,2018,13.494204136791833,5.522353839808164,log_viirs_ntl
+washington_dc_us,Washington,United States,2019,13.51116372994341,5.551181514374007,log_viirs_ntl
+washington_dc_us,Washington,United States,2020,13.495898781570071,5.448678739913644,log_viirs_ntl
+washington_dc_us,Washington,United States,2021,13.527959143643015,5.481881218161864,log_viirs_ntl
+washington_dc_us,Washington,United States,2022,13.533738984052205,5.476822622318307,log_viirs_ntl
+washington_dc_us,Washington,United States,2023,13.568103770614385,5.47641124611614,log_viirs_ntl
+wellington_nz,Wellington,New Zealand,2015,9.99884318585288,3.861238358539759,log_viirs_ntl
+wellington_nz,Wellington,New Zealand,2016,10.028179996493446,3.803230691846261,log_viirs_ntl
+wellington_nz,Wellington,New Zealand,2017,10.032715950543913,3.772933337318456,log_viirs_ntl
+wellington_nz,Wellington,New Zealand,2018,10.05044096549229,3.786195192574045,log_viirs_ntl
+wellington_nz,Wellington,New Zealand,2019,10.095140436758967,3.897687405112869,log_viirs_ntl
+wellington_nz,Wellington,New Zealand,2020,10.072934924846477,3.672432448684277,log_viirs_ntl
+wellington_nz,Wellington,New Zealand,2021,10.110257789732392,3.6366427358994393,log_viirs_ntl
+wellington_nz,Wellington,New Zealand,2022,10.122341918431909,3.65777569922457,log_viirs_ntl
+zagreb_hr,Zagreb,Croatia,2015,10.803018622594942,4.557641721535287,log_viirs_ntl
+zagreb_hr,Zagreb,Croatia,2016,10.833681189579275,4.6354245334833655,log_viirs_ntl
+zagreb_hr,Zagreb,Croatia,2017,10.871440510734077,4.531846518011655,log_viirs_ntl
+zagreb_hr,Zagreb,Croatia,2018,10.908924048640696,4.49589462211141,log_viirs_ntl
+zagreb_hr,Zagreb,Croatia,2019,10.94649903718944,4.555358245443437,log_viirs_ntl
+zagreb_hr,Zagreb,Croatia,2020,10.878084927671337,4.459161269571687,log_viirs_ntl
+zagreb_hr,Zagreb,Croatia,2021,10.980382381786619,4.492822348837926,log_viirs_ntl
+zagreb_hr,Zagreb,Croatia,2022,11.027994982499575,4.400909713096896,log_viirs_ntl
+zagreb_hr,Zagreb,Croatia,2023,11.059031377457561,4.444238245762971,log_viirs_ntl
+zurich_ch,Zurich,Switzerland,2015,11.745401334424907,4.011129011280478,log_viirs_ntl
+zurich_ch,Zurich,Switzerland,2016,11.762453854789129,3.975748695592853,log_viirs_ntl
+zurich_ch,Zurich,Switzerland,2017,11.78305946670208,3.922171347305011,log_viirs_ntl
+zurich_ch,Zurich,Switzerland,2018,11.827458794072687,3.88412066670777,log_viirs_ntl
+zurich_ch,Zurich,Switzerland,2019,11.820586619737321,3.886978664061122,log_viirs_ntl
+zurich_ch,Zurich,Switzerland,2020,11.788600743497392,3.838484093607959,log_viirs_ntl
+zurich_ch,Zurich,Switzerland,2021,11.798953670537825,3.8490122033164895,log_viirs_ntl
+zurich_ch,Zurich,Switzerland,2022,11.845719516784374,3.7652809299990544,log_viirs_ntl
+amsterdam_nl,Amsterdam,Netherlands,2015,12.289347048722894,4.118314852614685,cobb_douglas_log_vitality_fit
+amsterdam_nl,Amsterdam,Netherlands,2016,12.325662936006209,4.12540761379666,cobb_douglas_log_vitality_fit
+amsterdam_nl,Amsterdam,Netherlands,2017,12.355470620555808,4.127958884564267,cobb_douglas_log_vitality_fit
+amsterdam_nl,Amsterdam,Netherlands,2018,12.389951322716021,4.129635677792015,cobb_douglas_log_vitality_fit
+amsterdam_nl,Amsterdam,Netherlands,2019,12.421587169679892,4.1348942128374775,cobb_douglas_log_vitality_fit
+amsterdam_nl,Amsterdam,Netherlands,2020,12.345512797005759,4.138602369249199,cobb_douglas_log_vitality_fit
+amsterdam_nl,Amsterdam,Netherlands,2021,12.402506651612168,4.139735239055854,cobb_douglas_log_vitality_fit
+amsterdam_nl,Amsterdam,Netherlands,2022,12.443895920527313,4.145560049882625,cobb_douglas_log_vitality_fit
+antwerp_be,Antwerp,Belgium,2015,11.243737975154612,4.130203712962556,cobb_douglas_log_vitality_fit
+antwerp_be,Antwerp,Belgium,2016,11.254996350667795,4.136030489449792,cobb_douglas_log_vitality_fit
+antwerp_be,Antwerp,Belgium,2017,11.273284069543339,4.133710849286119,cobb_douglas_log_vitality_fit
+antwerp_be,Antwerp,Belgium,2018,11.280917742717547,4.137941432437951,cobb_douglas_log_vitality_fit
+antwerp_be,Antwerp,Belgium,2019,11.291592773059982,4.144296438026742,cobb_douglas_log_vitality_fit
+antwerp_be,Antwerp,Belgium,2020,11.234348481767105,4.147535768841275,cobb_douglas_log_vitality_fit
+antwerp_be,Antwerp,Belgium,2021,11.311274288994117,4.172326888077619,cobb_douglas_log_vitality_fit
+antwerp_be,Antwerp,Belgium,2022,11.353190890848952,4.180304006246612,cobb_douglas_log_vitality_fit
+antwerp_be,Antwerp,Belgium,2023,11.352122709062593,4.180394178284297,cobb_douglas_log_vitality_fit
+athens_gr,Athens,Greece,2015,11.905143212992764,4.151407837760206,cobb_douglas_log_vitality_fit
+athens_gr,Athens,Greece,2016,11.909437278352808,4.134470038951212,cobb_douglas_log_vitality_fit
+athens_gr,Athens,Greece,2017,11.927905165446978,4.150945961155816,cobb_douglas_log_vitality_fit
+athens_gr,Athens,Greece,2018,11.94509092490835,4.15414246378008,cobb_douglas_log_vitality_fit
+athens_gr,Athens,Greece,2019,11.9755897268292,4.159396495399869,cobb_douglas_log_vitality_fit
+athens_gr,Athens,Greece,2020,11.88868022602118,4.174869270655613,cobb_douglas_log_vitality_fit
+athens_gr,Athens,Greece,2021,11.973131251735852,4.182660221140008,cobb_douglas_log_vitality_fit
+athens_gr,Athens,Greece,2022,12.01647870896911,4.203945201180721,cobb_douglas_log_vitality_fit
+atlanta_us,Atlanta,United States,2015,12.739200710628493,4.476778009376499,cobb_douglas_log_vitality_fit
+atlanta_us,Atlanta,United States,2016,12.797641039561,4.480748288180847,cobb_douglas_log_vitality_fit
+atlanta_us,Atlanta,United States,2017,12.83713961416622,4.480270867092594,cobb_douglas_log_vitality_fit
+atlanta_us,Atlanta,United States,2018,12.869528365049785,4.475853706306275,cobb_douglas_log_vitality_fit
+atlanta_us,Atlanta,United States,2019,12.913371714067024,4.4761099869098,cobb_douglas_log_vitality_fit
+atlanta_us,Atlanta,United States,2020,12.88036569882553,4.467657405614186,cobb_douglas_log_vitality_fit
+atlanta_us,Atlanta,United States,2021,12.931967712549922,4.463586704541927,cobb_douglas_log_vitality_fit
+atlanta_us,Atlanta,United States,2022,12.961962203877555,4.463669027615211,cobb_douglas_log_vitality_fit
+atlanta_us,Atlanta,United States,2023,12.992366303140633,4.463751452094592,cobb_douglas_log_vitality_fit
+auckland_nz,Auckland,New Zealand,2015,11.231636247937386,4.369845925029374,cobb_douglas_log_vitality_fit
+auckland_nz,Auckland,New Zealand,2016,11.27105770465774,4.363191556196704,cobb_douglas_log_vitality_fit
+auckland_nz,Auckland,New Zealand,2017,11.297712880232217,4.357561413600058,cobb_douglas_log_vitality_fit
+auckland_nz,Auckland,New Zealand,2018,11.334301065260508,4.367004643960382,cobb_douglas_log_vitality_fit
+auckland_nz,Auckland,New Zealand,2019,11.349512017863786,4.354324490554777,cobb_douglas_log_vitality_fit
+auckland_nz,Auckland,New Zealand,2020,11.351852548315305,4.3491795670451285,cobb_douglas_log_vitality_fit
+auckland_nz,Auckland,New Zealand,2021,11.400495575625094,4.3405739720959104,cobb_douglas_log_vitality_fit
+auckland_nz,Auckland,New Zealand,2022,11.441601306716198,4.340611548406381,cobb_douglas_log_vitality_fit
+barcelona_es,Barcelona,Spain,2015,12.381180747805827,4.081417418460928,cobb_douglas_log_vitality_fit
+barcelona_es,Barcelona,Spain,2016,12.41931938455907,4.082118606808154,cobb_douglas_log_vitality_fit
+barcelona_es,Barcelona,Spain,2017,12.4568157995539,4.066025304213669,cobb_douglas_log_vitality_fit
+barcelona_es,Barcelona,Spain,2018,12.484560076523618,4.045543635210589,cobb_douglas_log_vitality_fit
+barcelona_es,Barcelona,Spain,2019,12.511164779491551,4.037799852935512,cobb_douglas_log_vitality_fit
+barcelona_es,Barcelona,Spain,2020,12.390521105527739,4.044157898081246,cobb_douglas_log_vitality_fit
+barcelona_es,Barcelona,Spain,2021,12.436573068577944,4.044949720125643,cobb_douglas_log_vitality_fit
+barcelona_es,Barcelona,Spain,2022,12.488224454223836,4.050133373678884,cobb_douglas_log_vitality_fit
+basel_ch,Basel,Switzerland,2015,10.837087609932846,4.012838627355121,cobb_douglas_log_vitality_fit
+basel_ch,Basel,Switzerland,2016,10.886819920140972,4.012100049402622,cobb_douglas_log_vitality_fit
+basel_ch,Basel,Switzerland,2017,10.923399287993865,4.008005571165277,cobb_douglas_log_vitality_fit
+basel_ch,Basel,Switzerland,2018,10.938218881603463,4.010110075292918,cobb_douglas_log_vitality_fit
+basel_ch,Basel,Switzerland,2019,10.945529489715843,4.016136476394062,cobb_douglas_log_vitality_fit
+basel_ch,Basel,Switzerland,2020,10.934356189117718,4.021677976839315,cobb_douglas_log_vitality_fit
+basel_ch,Basel,Switzerland,2021,10.978831214264883,4.024033471669862,cobb_douglas_log_vitality_fit
+basel_ch,Basel,Switzerland,2022,10.990432036336555,4.0243485155802565,cobb_douglas_log_vitality_fit
+berlin_de,Berlin,Germany,2015,12.416410553463436,4.407008085014692,cobb_douglas_log_vitality_fit
+berlin_de,Berlin,Germany,2016,12.462592944167682,4.410922707751281,cobb_douglas_log_vitality_fit
+berlin_de,Berlin,Germany,2017,12.505217518337648,4.409668104309992,cobb_douglas_log_vitality_fit
+berlin_de,Berlin,Germany,2018,12.535861886312453,4.40676320605927,cobb_douglas_log_vitality_fit
+berlin_de,Berlin,Germany,2019,12.568699839628238,4.407618254219225,cobb_douglas_log_vitality_fit
+berlin_de,Berlin,Germany,2020,12.542048330318499,4.39368651267408,cobb_douglas_log_vitality_fit
+berlin_de,Berlin,Germany,2021,12.578463445908909,4.385565813629178,cobb_douglas_log_vitality_fit
+berlin_de,Berlin,Germany,2022,12.599249224662582,4.386371721733735,cobb_douglas_log_vitality_fit
+bilbao_es,Bilbao,Spain,2015,10.839443647384186,3.877948479242445,cobb_douglas_log_vitality_fit
+bilbao_es,Bilbao,Spain,2016,10.859767932626442,3.87863944174783,cobb_douglas_log_vitality_fit
+bilbao_es,Bilbao,Spain,2017,10.866356480170861,3.862535938921184,cobb_douglas_log_vitality_fit
+bilbao_es,Bilbao,Spain,2018,10.891037918182654,3.8420440951994994,cobb_douglas_log_vitality_fit
+bilbao_es,Bilbao,Spain,2019,10.908960636460614,3.8342901636237374,cobb_douglas_log_vitality_fit
+bilbao_es,Bilbao,Spain,2020,10.791193607554506,3.8406380847915456,cobb_douglas_log_vitality_fit
+bilbao_es,Bilbao,Spain,2021,10.849298250946275,3.8413715161867774,cobb_douglas_log_vitality_fit
+bilbao_es,Bilbao,Spain,2022,10.930371087745765,3.84649686558318,cobb_douglas_log_vitality_fit
+birmingham_gb,Birmingham,United Kingdom,2015,11.723202597777515,4.261072746326933,cobb_douglas_log_vitality_fit
+birmingham_gb,Birmingham,United Kingdom,2016,11.756185319869262,4.252821877330154,cobb_douglas_log_vitality_fit
+birmingham_gb,Birmingham,United Kingdom,2017,11.782196591288216,4.2480025307968665,cobb_douglas_log_vitality_fit
+birmingham_gb,Birmingham,United Kingdom,2018,11.795152686739046,4.244081943380158,cobb_douglas_log_vitality_fit
+birmingham_gb,Birmingham,United Kingdom,2019,11.796591985875637,4.236345505778154,cobb_douglas_log_vitality_fit
+birmingham_gb,Birmingham,United Kingdom,2020,11.673878669359924,4.235869686372212,cobb_douglas_log_vitality_fit
+birmingham_gb,Birmingham,United Kingdom,2021,11.761900492318704,4.231790843779538,cobb_douglas_log_vitality_fit
+birmingham_gb,Birmingham,United Kingdom,2022,11.790678406344124,4.231851975787524,cobb_douglas_log_vitality_fit
+birmingham_gb,Birmingham,United Kingdom,2023,11.79884849120697,4.2319057927484245,cobb_douglas_log_vitality_fit
+bologna_it,Bologna,Italy,2015,10.821995823851237,3.933711918994488,cobb_douglas_log_vitality_fit
+bologna_it,Bologna,Italy,2016,10.833602291003352,3.935477696228636,cobb_douglas_log_vitality_fit
+bologna_it,Bologna,Italy,2017,10.858768201701478,3.9339033706578017,cobb_douglas_log_vitality_fit
+bologna_it,Bologna,Italy,2018,10.877688637695117,3.940559913405525,cobb_douglas_log_vitality_fit
+bologna_it,Bologna,Italy,2019,10.894718767073803,3.946782012414888,cobb_douglas_log_vitality_fit
+bologna_it,Bologna,Italy,2020,10.8039130952207,3.957663723571389,cobb_douglas_log_vitality_fit
+bologna_it,Bologna,Italy,2021,10.86564990806634,3.961063355214392,cobb_douglas_log_vitality_fit
+bologna_it,Bologna,Italy,2022,10.910970907793136,3.962535208090639,cobb_douglas_log_vitality_fit
+boston_us,Boston,United States,2015,12.843025065434318,4.533135110452429,cobb_douglas_log_vitality_fit
+boston_us,Boston,United States,2016,12.869041506987626,4.53706169735643,cobb_douglas_log_vitality_fit
+boston_us,Boston,United States,2017,12.888694630033608,4.536540732234824,cobb_douglas_log_vitality_fit
+boston_us,Boston,United States,2018,12.925669430850737,4.532080174530067,cobb_douglas_log_vitality_fit
+boston_us,Boston,United States,2019,12.96126931465456,4.532293204583104,cobb_douglas_log_vitality_fit
+boston_us,Boston,United States,2020,12.957934389611955,4.523797518363045,cobb_douglas_log_vitality_fit
+boston_us,Boston,United States,2021,13.00519565240551,4.51966962863528,cobb_douglas_log_vitality_fit
+boston_us,Boston,United States,2022,13.00538227011742,4.51969481277102,cobb_douglas_log_vitality_fit
+boston_us,Boston,United States,2023,13.026711139104666,4.519720147959872,cobb_douglas_log_vitality_fit
+bratislava_sk,Bratislava,Slovakia,2015,10.842537321530799,3.9008408028524766,cobb_douglas_log_vitality_fit
+bratislava_sk,Bratislava,Slovakia,2016,10.874417973368606,3.898020168689023,cobb_douglas_log_vitality_fit
+bratislava_sk,Bratislava,Slovakia,2017,10.897017064751084,3.906289328227089,cobb_douglas_log_vitality_fit
+bratislava_sk,Bratislava,Slovakia,2018,10.931248100232287,3.9189048372297193,cobb_douglas_log_vitality_fit
+bratislava_sk,Bratislava,Slovakia,2019,10.934623676079324,3.9240317469536112,cobb_douglas_log_vitality_fit
+bratislava_sk,Bratislava,Slovakia,2020,10.906341227535142,3.9268160020239855,cobb_douglas_log_vitality_fit
+bratislava_sk,Bratislava,Slovakia,2021,10.963740090649603,3.9253326159954254,cobb_douglas_log_vitality_fit
+bratislava_sk,Bratislava,Slovakia,2022,10.96924946099213,3.933410901532313,cobb_douglas_log_vitality_fit
+bratislava_sk,Bratislava,Slovakia,2023,10.943322470501737,3.933533199249087,cobb_douglas_log_vitality_fit
+brussels_be,Brussels,Belgium,2015,12.351501111488355,4.121167833910441,cobb_douglas_log_vitality_fit
+brussels_be,Brussels,Belgium,2016,12.361874818035226,4.126651249083719,cobb_douglas_log_vitality_fit
+brussels_be,Brussels,Belgium,2017,12.375882928387057,4.123990305465264,cobb_douglas_log_vitality_fit
+brussels_be,Brussels,Belgium,2018,12.398971399361898,4.127881623279393,cobb_douglas_log_vitality_fit
+brussels_be,Brussels,Belgium,2019,12.42831579160122,4.133899382171448,cobb_douglas_log_vitality_fit
+brussels_be,Brussels,Belgium,2020,12.374067057178083,4.136803465715416,cobb_douglas_log_vitality_fit
+brussels_be,Brussels,Belgium,2021,12.425188094923946,4.161519654551734,cobb_douglas_log_vitality_fit
+brussels_be,Brussels,Belgium,2022,12.462322098741378,4.16942196361557,cobb_douglas_log_vitality_fit
+brussels_be,Brussels,Belgium,2023,12.48426861685749,4.169437447534936,cobb_douglas_log_vitality_fit
+bucharest_ro,Bucharest,Romania,2015,11.923769414472725,3.9299431905687072,cobb_douglas_log_vitality_fit
+bucharest_ro,Bucharest,Romania,2016,11.938310840513523,3.935864957999453,cobb_douglas_log_vitality_fit
+bucharest_ro,Bucharest,Romania,2017,12.015819718409938,3.943222322813892,cobb_douglas_log_vitality_fit
+bucharest_ro,Bucharest,Romania,2018,12.060780942169561,3.9431968697474415,cobb_douglas_log_vitality_fit
+bucharest_ro,Bucharest,Romania,2019,12.128883778443685,3.923996080902689,cobb_douglas_log_vitality_fit
+bucharest_ro,Bucharest,Romania,2020,12.098286969324066,3.9224548710290135,cobb_douglas_log_vitality_fit
+bucharest_ro,Bucharest,Romania,2021,12.164057230833931,3.921664200689268,cobb_douglas_log_vitality_fit
+bucharest_ro,Bucharest,Romania,2022,12.23881569306567,3.9226217453728474,cobb_douglas_log_vitality_fit
+bucharest_ro,Bucharest,Romania,2023,12.275715305858622,3.922801239661915,cobb_douglas_log_vitality_fit
+budapest_hu,Budapest,Hungary,2015,11.856117927349576,4.060011537700047,cobb_douglas_log_vitality_fit
+budapest_hu,Budapest,Hungary,2016,11.873588446106817,4.065752835664915,cobb_douglas_log_vitality_fit
+budapest_hu,Budapest,Hungary,2017,11.921439254456413,4.071525906084537,cobb_douglas_log_vitality_fit
+budapest_hu,Budapest,Hungary,2018,11.976458203085652,4.105033488511598,cobb_douglas_log_vitality_fit
+budapest_hu,Budapest,Hungary,2019,12.056586071829793,4.112372523422462,cobb_douglas_log_vitality_fit
+budapest_hu,Budapest,Hungary,2020,12.006114473940364,4.122332165065297,cobb_douglas_log_vitality_fit
+budapest_hu,Budapest,Hungary,2021,12.080741821851873,4.127195571187327,cobb_douglas_log_vitality_fit
+budapest_hu,Budapest,Hungary,2022,12.134479968905188,4.135710470795602,cobb_douglas_log_vitality_fit
+budapest_hu,Budapest,Hungary,2023,12.152080976961276,4.135803840257436,cobb_douglas_log_vitality_fit
+busan_kr,Busan,South Korea,2015,11.966933087537548,4.632364576579267,cobb_douglas_log_vitality_fit
+busan_kr,Busan,South Korea,2016,11.978136377475346,4.629570834938621,cobb_douglas_log_vitality_fit
+busan_kr,Busan,South Korea,2017,11.975835242239674,4.626491190485688,cobb_douglas_log_vitality_fit
+busan_kr,Busan,South Korea,2018,11.98688376419034,4.630885232546514,cobb_douglas_log_vitality_fit
+busan_kr,Busan,South Korea,2019,12.02567124405749,4.640182625476383,cobb_douglas_log_vitality_fit
+busan_kr,Busan,South Korea,2020,11.984022246507223,4.648819116796369,cobb_douglas_log_vitality_fit
+busan_kr,Busan,South Korea,2021,12.01974306733868,4.654069429114724,cobb_douglas_log_vitality_fit
+busan_kr,Busan,South Korea,2022,12.074402377081986,4.654452231477284,cobb_douglas_log_vitality_fit
+charlotte_us,Charlotte,United States,2015,11.782257704309128,4.348509396901619,cobb_douglas_log_vitality_fit
+charlotte_us,Charlotte,United States,2016,11.824292325254406,4.3535303679012,cobb_douglas_log_vitality_fit
+charlotte_us,Charlotte,United States,2017,11.86362458921187,4.354090879265488,cobb_douglas_log_vitality_fit
+charlotte_us,Charlotte,United States,2018,11.88390264261972,4.350699158377161,cobb_douglas_log_vitality_fit
+charlotte_us,Charlotte,United States,2019,11.925432387867438,4.351968645388197,cobb_douglas_log_vitality_fit
+charlotte_us,Charlotte,United States,2020,11.936688801359768,4.3445172882743766,cobb_douglas_log_vitality_fit
+charlotte_us,Charlotte,United States,2021,11.98850104204279,4.340471551012157,cobb_douglas_log_vitality_fit
+charlotte_us,Charlotte,United States,2022,12.026904112727623,4.340578799579225,cobb_douglas_log_vitality_fit
+charlotte_us,Charlotte,United States,2023,12.087790110144569,4.340686111324792,cobb_douglas_log_vitality_fit
+chicago_us,Chicago,United States,2015,13.37007153311621,4.712747514769671,cobb_douglas_log_vitality_fit
+chicago_us,Chicago,United States,2016,13.381470033931706,4.716603598405893,cobb_douglas_log_vitality_fit
+chicago_us,Chicago,United States,2017,13.39462161165463,4.7160123035696735,cobb_douglas_log_vitality_fit
+chicago_us,Chicago,United States,2018,13.420216548417502,4.7114815890520045,cobb_douglas_log_vitality_fit
+chicago_us,Chicago,United States,2019,13.432421234330228,4.711624634545683,cobb_douglas_log_vitality_fit
+chicago_us,Chicago,United States,2020,13.379224836866113,4.703059135374962,cobb_douglas_log_vitality_fit
+chicago_us,Chicago,United States,2021,13.430387637445804,4.698949054337166,cobb_douglas_log_vitality_fit
+chicago_us,Chicago,United States,2022,13.45482042105897,4.698992037364709,cobb_douglas_log_vitality_fit
+chicago_us,Chicago,United States,2023,13.47613230295886,4.699035161655475,cobb_douglas_log_vitality_fit
+christchurch_nz,Christchurch,New Zealand,2015,9.928472805230037,4.110517611566269,cobb_douglas_log_vitality_fit
+christchurch_nz,Christchurch,New Zealand,2016,9.935083114125879,4.102868248963199,cobb_douglas_log_vitality_fit
+christchurch_nz,Christchurch,New Zealand,2017,9.971099470946148,4.096262464456968,cobb_douglas_log_vitality_fit
+christchurch_nz,Christchurch,New Zealand,2018,9.996613530525611,4.104748815930716,cobb_douglas_log_vitality_fit
+christchurch_nz,Christchurch,New Zealand,2019,10.022736180354121,4.091129982521158,cobb_douglas_log_vitality_fit
+christchurch_nz,Christchurch,New Zealand,2020,9.996977895623466,4.085064037120249,cobb_douglas_log_vitality_fit
+christchurch_nz,Christchurch,New Zealand,2021,10.040463007563206,4.07651388052567,cobb_douglas_log_vitality_fit
+christchurch_nz,Christchurch,New Zealand,2022,10.072386088997941,4.076606870261434,cobb_douglas_log_vitality_fit
+cologne_de,Cologne,Germany,2015,11.928512506368737,4.312996984498211,cobb_douglas_log_vitality_fit
+cologne_de,Cologne,Germany,2016,11.934657545542265,4.316889872780587,cobb_douglas_log_vitality_fit
+cologne_de,Cologne,Germany,2017,11.959948296883471,4.315613654083405,cobb_douglas_log_vitality_fit
+cologne_de,Cologne,Germany,2018,11.965579455880851,4.312687258796881,cobb_douglas_log_vitality_fit
+cologne_de,Cologne,Germany,2019,11.958790078362638,4.313520927173579,cobb_douglas_log_vitality_fit
+cologne_de,Cologne,Germany,2020,11.891409844746619,4.299567922140703,cobb_douglas_log_vitality_fit
+cologne_de,Cologne,Germany,2021,11.941566589062818,4.291479236370106,cobb_douglas_log_vitality_fit
+cologne_de,Cologne,Germany,2022,11.96205651973038,4.292317118992688,cobb_douglas_log_vitality_fit
+copenhagen_dk,Copenhagen,Denmark,2015,11.905805039793892,4.240194186497195,cobb_douglas_log_vitality_fit
+copenhagen_dk,Copenhagen,Denmark,2016,11.929989708921745,4.247046933887246,cobb_douglas_log_vitality_fit
+copenhagen_dk,Copenhagen,Denmark,2017,11.965941874936615,4.242673948106932,cobb_douglas_log_vitality_fit
+copenhagen_dk,Copenhagen,Denmark,2018,11.988786903700124,4.237170974850685,cobb_douglas_log_vitality_fit
+copenhagen_dk,Copenhagen,Denmark,2019,11.99956494786739,4.241026675122372,cobb_douglas_log_vitality_fit
+copenhagen_dk,Copenhagen,Denmark,2020,11.985270101917937,4.238647404093965,cobb_douglas_log_vitality_fit
+copenhagen_dk,Copenhagen,Denmark,2021,12.090139772267312,4.235891705826225,cobb_douglas_log_vitality_fit
+copenhagen_dk,Copenhagen,Denmark,2022,12.161430864907054,4.252874233959428,cobb_douglas_log_vitality_fit
+copenhagen_dk,Copenhagen,Denmark,2023,12.137386869741654,4.252928360862065,cobb_douglas_log_vitality_fit
+dallas_us,Dallas,United States,2015,13.024699830602904,4.626150413411304,cobb_douglas_log_vitality_fit
+dallas_us,Dallas,United States,2016,13.050328025120134,4.630242791228803,cobb_douglas_log_vitality_fit
+dallas_us,Dallas,United States,2017,13.081608047328617,4.629886892685761,cobb_douglas_log_vitality_fit
+dallas_us,Dallas,United States,2018,13.123696488416847,4.6255906821083,cobb_douglas_log_vitality_fit
+dallas_us,Dallas,United States,2019,13.16176292072039,4.625967344675996,cobb_douglas_log_vitality_fit
+dallas_us,Dallas,United States,2020,13.148522231610071,4.617634581152078,cobb_douglas_log_vitality_fit
+dallas_us,Dallas,United States,2021,13.216927824673798,4.613692743145481,cobb_douglas_log_vitality_fit
+dallas_us,Dallas,United States,2022,13.273142666188404,4.6139036231991,cobb_douglas_log_vitality_fit
+dallas_us,Dallas,United States,2023,13.309944412197247,4.614114299732464,cobb_douglas_log_vitality_fit
+denver_us,Denver,United States,2015,12.12975299865676,4.623290569172482,cobb_douglas_log_vitality_fit
+denver_us,Denver,United States,2016,12.154674082444174,4.627638864822947,cobb_douglas_log_vitality_fit
+denver_us,Denver,United States,2017,12.189861959482192,4.627536898338336,cobb_douglas_log_vitality_fit
+denver_us,Denver,United States,2018,12.230545721829095,4.623492657601055,cobb_douglas_log_vitality_fit
+denver_us,Denver,United States,2019,12.284879204871698,4.6241193509679,cobb_douglas_log_vitality_fit
+denver_us,Denver,United States,2020,12.284324519849225,4.616034702008001,cobb_douglas_log_vitality_fit
+denver_us,Denver,United States,2021,12.345038619032229,4.612137223653613,cobb_douglas_log_vitality_fit
+denver_us,Denver,United States,2022,12.383561711292142,4.612392295913706,cobb_douglas_log_vitality_fit
+denver_us,Denver,United States,2023,12.422070728683511,4.612646998156936,cobb_douglas_log_vitality_fit
+detroit_us,Detroit,United States,2015,12.418757696895169,4.631457932468505,cobb_douglas_log_vitality_fit
+detroit_us,Detroit,United States,2016,12.440583345319462,4.63530984408503,cobb_douglas_log_vitality_fit
+detroit_us,Detroit,United States,2017,12.441160577861355,4.634714384979432,cobb_douglas_log_vitality_fit
+detroit_us,Detroit,United States,2018,12.453104583692884,4.630179513921124,cobb_douglas_log_vitality_fit
+detroit_us,Detroit,United States,2019,12.4601216647401,4.630318410581406,cobb_douglas_log_vitality_fit
+detroit_us,Detroit,United States,2020,12.40960923040537,4.62174877026311,cobb_douglas_log_vitality_fit
+detroit_us,Detroit,United States,2021,12.440033478519737,4.617634154688528,cobb_douglas_log_vitality_fit
+detroit_us,Detroit,United States,2022,12.460187593138008,4.617672606162177,cobb_douglas_log_vitality_fit
+detroit_us,Detroit,United States,2023,12.497278502155572,4.617711201878997,cobb_douglas_log_vitality_fit
+dublin_ie,Dublin,Ireland,2015,12.115146342480912,4.159100661499583,cobb_douglas_log_vitality_fit
+dublin_ie,Dublin,Ireland,2016,12.17385415946325,4.156735821110683,cobb_douglas_log_vitality_fit
+dublin_ie,Dublin,Ireland,2017,12.261739113639038,4.155602514098818,cobb_douglas_log_vitality_fit
+dublin_ie,Dublin,Ireland,2018,12.364391768172482,4.142046923995179,cobb_douglas_log_vitality_fit
+dublin_ie,Dublin,Ireland,2019,12.423688949718466,4.151633031475281,cobb_douglas_log_vitality_fit
+dublin_ie,Dublin,Ireland,2020,12.487726585243612,4.159960762848115,cobb_douglas_log_vitality_fit
+dublin_ie,Dublin,Ireland,2021,12.62419399117879,4.160650724387716,cobb_douglas_log_vitality_fit
+dublin_ie,Dublin,Ireland,2022,12.698531630474841,4.169706810139221,cobb_douglas_log_vitality_fit
+dublin_ie,Dublin,Ireland,2023,12.68000293036334,4.169852284944605,cobb_douglas_log_vitality_fit
+dusseldorf_de,Dusseldorf,Germany,2015,11.702404677850781,4.298402112971012,cobb_douglas_log_vitality_fit
+dusseldorf_de,Dusseldorf,Germany,2016,11.710939908443875,4.302265455627948,cobb_douglas_log_vitality_fit
+dusseldorf_de,Dusseldorf,Germany,2017,11.74042750426139,4.300959841144477,cobb_douglas_log_vitality_fit
+dusseldorf_de,Dusseldorf,Germany,2018,11.761128390877696,4.298004198773016,cobb_douglas_log_vitality_fit
+dusseldorf_de,Dusseldorf,Germany,2019,11.745543986646956,4.298808767639825,cobb_douglas_log_vitality_fit
+dusseldorf_de,Dusseldorf,Germany,2020,11.712833142135215,4.2848268095571616,cobb_douglas_log_vitality_fit
+dusseldorf_de,Dusseldorf,Germany,2021,11.749585258937909,4.27670493936159,cobb_douglas_log_vitality_fit
+dusseldorf_de,Dusseldorf,Germany,2022,11.755502948169838,4.277509677418456,cobb_douglas_log_vitality_fit
+florence_it,Florence,Italy,2015,10.786056027005252,4.018427402651831,cobb_douglas_log_vitality_fit
+florence_it,Florence,Italy,2016,10.800004056710831,4.020247711087221,cobb_douglas_log_vitality_fit
+florence_it,Florence,Italy,2017,10.80677409527503,4.018727718808007,cobb_douglas_log_vitality_fit
+florence_it,Florence,Italy,2018,10.826277121150113,4.025438398018439,cobb_douglas_log_vitality_fit
+florence_it,Florence,Italy,2019,10.9110074208009,4.031714437734413,cobb_douglas_log_vitality_fit
+florence_it,Florence,Italy,2020,10.684118914962527,4.042649894906431,cobb_douglas_log_vitality_fit
+florence_it,Florence,Italy,2021,10.781785616900187,4.046074764137943,cobb_douglas_log_vitality_fit
+florence_it,Florence,Italy,2022,10.846614938363842,4.047571805946921,cobb_douglas_log_vitality_fit
+frankfurt_de,Frankfurt,Germany,2015,12.265849849566035,4.281289247813693,cobb_douglas_log_vitality_fit
+frankfurt_de,Frankfurt,Germany,2016,12.286167659528019,4.285130614836401,cobb_douglas_log_vitality_fit
+frankfurt_de,Frankfurt,Germany,2017,12.302382325667581,4.283803127046246,cobb_douglas_log_vitality_fit
+frankfurt_de,Frankfurt,Germany,2018,12.307319712546457,4.280825712982244,cobb_douglas_log_vitality_fit
+frankfurt_de,Frankfurt,Germany,2019,12.320797676920636,4.281608611063875,cobb_douglas_log_vitality_fit
+frankfurt_de,Frankfurt,Germany,2020,12.268779803244982,4.26760508240316,cobb_douglas_log_vitality_fit
+frankfurt_de,Frankfurt,Germany,2021,12.306433684605738,4.25945893971911,cobb_douglas_log_vitality_fit
+frankfurt_de,Frankfurt,Germany,2022,12.30804241911389,4.260239423141599,cobb_douglas_log_vitality_fit
+fukuoka_jp,Fukuoka,Japan,2015,11.489615895534605,4.660026607676948,cobb_douglas_log_vitality_fit
+fukuoka_jp,Fukuoka,Japan,2016,11.501945404127065,4.661264340017928,cobb_douglas_log_vitality_fit
+fukuoka_jp,Fukuoka,Japan,2017,11.515362493003646,4.66170954309141,cobb_douglas_log_vitality_fit
+fukuoka_jp,Fukuoka,Japan,2018,11.52018902135841,4.658048802278986,cobb_douglas_log_vitality_fit
+fukuoka_jp,Fukuoka,Japan,2019,11.519434236883054,4.653279291127638,cobb_douglas_log_vitality_fit
+fukuoka_jp,Fukuoka,Japan,2020,11.459820003283124,4.641808646359795,cobb_douglas_log_vitality_fit
+fukuoka_jp,Fukuoka,Japan,2021,11.484598004316375,4.6385696667389,cobb_douglas_log_vitality_fit
+geneva_ch,Geneva,Switzerland,2015,10.798595505142377,4.020749442331592,cobb_douglas_log_vitality_fit
+geneva_ch,Geneva,Switzerland,2016,10.816733654224057,4.020492671774698,cobb_douglas_log_vitality_fit
+geneva_ch,Geneva,Switzerland,2017,10.835376005033337,4.016876204040762,cobb_douglas_log_vitality_fit
+geneva_ch,Geneva,Switzerland,2018,10.874966981854165,4.019454970039863,cobb_douglas_log_vitality_fit
+geneva_ch,Geneva,Switzerland,2019,10.887362163733814,4.025951931775736,cobb_douglas_log_vitality_fit
+geneva_ch,Geneva,Switzerland,2020,10.84964771801256,4.031960338169351,cobb_douglas_log_vitality_fit
+geneva_ch,Geneva,Switzerland,2021,10.91956931926324,4.034262629602166,cobb_douglas_log_vitality_fit
+geneva_ch,Geneva,Switzerland,2022,10.963722772083234,4.034524559016248,cobb_douglas_log_vitality_fit
+genoa_it,Genoa,Italy,2015,10.591345771162462,3.985939003255994,cobb_douglas_log_vitality_fit
+genoa_it,Genoa,Italy,2016,10.60129883922295,3.9877927284542234,cobb_douglas_log_vitality_fit
+genoa_it,Genoa,Italy,2017,10.619080921925903,3.986306007950693,cobb_douglas_log_vitality_fit
+genoa_it,Genoa,Italy,2018,10.60750048640638,3.9930498148924154,cobb_douglas_log_vitality_fit
+genoa_it,Genoa,Italy,2019,10.624031004577834,3.999358839229874,cobb_douglas_log_vitality_fit
+genoa_it,Genoa,Italy,2020,10.476386160499898,4.0103271388400845,cobb_douglas_log_vitality_fit
+genoa_it,Genoa,Italy,2021,10.535264520896195,4.013668240269089,cobb_douglas_log_vitality_fit
+genoa_it,Genoa,Italy,2022,10.568749529606537,4.015081636077222,cobb_douglas_log_vitality_fit
+glasgow_gb,Glasgow,United Kingdom,2015,11.322575768728944,4.135775953270107,cobb_douglas_log_vitality_fit
+glasgow_gb,Glasgow,United Kingdom,2016,11.324026323215884,4.127795747495172,cobb_douglas_log_vitality_fit
+glasgow_gb,Glasgow,United Kingdom,2017,11.362823245722835,4.123245371187299,cobb_douglas_log_vitality_fit
+glasgow_gb,Glasgow,United Kingdom,2018,11.36452985955428,4.119592077469307,cobb_douglas_log_vitality_fit
+glasgow_gb,Glasgow,United Kingdom,2019,11.385626041793648,4.112121273288588,cobb_douglas_log_vitality_fit
+glasgow_gb,Glasgow,United Kingdom,2020,11.284693992107073,4.111909443059108,cobb_douglas_log_vitality_fit
+glasgow_gb,Glasgow,United Kingdom,2021,11.367853449076174,4.10789115407665,cobb_douglas_log_vitality_fit
+glasgow_gb,Glasgow,United Kingdom,2022,11.397851257124763,4.108012765038034,cobb_douglas_log_vitality_fit
+hamburg_de,Hamburg,Germany,2015,12.358626336563663,4.372541248305903,cobb_douglas_log_vitality_fit
+hamburg_de,Hamburg,Germany,2016,12.371688773752425,4.376471404388607,cobb_douglas_log_vitality_fit
+hamburg_de,Hamburg,Germany,2017,12.405996698687956,4.375232244445744,cobb_douglas_log_vitality_fit
+hamburg_de,Hamburg,Germany,2018,12.40927059932845,4.372342700623173,cobb_douglas_log_vitality_fit
+hamburg_de,Hamburg,Germany,2019,12.442239030445828,4.373213014909477,cobb_douglas_log_vitality_fit
+hamburg_de,Hamburg,Germany,2020,12.393224185818248,4.359296451948531,cobb_douglas_log_vitality_fit
+hamburg_de,Hamburg,Germany,2021,12.463667863845545,4.351169140757069,cobb_douglas_log_vitality_fit
+hamburg_de,Hamburg,Germany,2022,12.494663055318659,4.3519684426507865,cobb_douglas_log_vitality_fit
+helsinki_fi,Helsinki,Finland,2015,11.474247004771236,4.172401508076452,cobb_douglas_log_vitality_fit
+helsinki_fi,Helsinki,Finland,2016,11.501601591238785,4.166515457499999,cobb_douglas_log_vitality_fit
+helsinki_fi,Helsinki,Finland,2017,11.534501029487908,4.1740001231443005,cobb_douglas_log_vitality_fit
+helsinki_fi,Helsinki,Finland,2018,11.551193801680078,4.17727263610673,cobb_douglas_log_vitality_fit
+helsinki_fi,Helsinki,Finland,2019,11.5789378993638,4.183204959154283,cobb_douglas_log_vitality_fit
+helsinki_fi,Helsinki,Finland,2020,11.548389129245798,4.194989623561188,cobb_douglas_log_vitality_fit
+helsinki_fi,Helsinki,Finland,2021,11.569674350520469,4.199859425771038,cobb_douglas_log_vitality_fit
+helsinki_fi,Helsinki,Finland,2022,11.565052911356245,4.203344951258726,cobb_douglas_log_vitality_fit
+helsinki_fi,Helsinki,Finland,2023,11.550924278061439,4.203617461723407,cobb_douglas_log_vitality_fit
+houston_us,Houston,United States,2015,13.055225213454941,4.657316772691425,cobb_douglas_log_vitality_fit
+houston_us,Houston,United States,2016,13.022067791086686,4.661556178616777,cobb_douglas_log_vitality_fit
+houston_us,Houston,United States,2017,13.039803170152961,4.661346295719412,cobb_douglas_log_vitality_fit
+houston_us,Houston,United States,2018,13.092126825542389,4.657195098849018,cobb_douglas_log_vitality_fit
+houston_us,Houston,United States,2019,13.076221004739066,4.657715783562028,cobb_douglas_log_vitality_fit
+houston_us,Houston,United States,2020,13.03661374952894,4.649526060854408,cobb_douglas_log_vitality_fit
+houston_us,Houston,United States,2021,13.111603699117868,4.645714383517107,cobb_douglas_log_vitality_fit
+houston_us,Houston,United States,2022,13.190789955243963,4.646054842882701,cobb_douglas_log_vitality_fit
+houston_us,Houston,United States,2023,13.231275179772284,4.64639452132811,cobb_douglas_log_vitality_fit
+istanbul_tr,Istanbul,Turkey,2015,13.239748111526964,4.187591005745055,cobb_douglas_log_vitality_fit
+istanbul_tr,Istanbul,Turkey,2016,13.271131597750712,4.211167440863311,cobb_douglas_log_vitality_fit
+istanbul_tr,Istanbul,Turkey,2017,13.34926625359366,4.25160686875439,cobb_douglas_log_vitality_fit
+istanbul_tr,Istanbul,Turkey,2018,13.370745733582163,4.236116928177111,cobb_douglas_log_vitality_fit
+istanbul_tr,Istanbul,Turkey,2019,13.374646225504245,4.251640036354637,cobb_douglas_log_vitality_fit
+istanbul_tr,Istanbul,Turkey,2020,13.37294776149003,4.255977166396387,cobb_douglas_log_vitality_fit
+istanbul_tr,Istanbul,Turkey,2021,13.4913415255818,4.264381058376296,cobb_douglas_log_vitality_fit
+istanbul_tr,Istanbul,Turkey,2022,13.545854371940313,4.267838220485142,cobb_douglas_log_vitality_fit
+istanbul_tr,Istanbul,Turkey,2023,13.594365009312737,4.268002132459372,cobb_douglas_log_vitality_fit
+krakow_pl,Krakow,Poland,2015,10.863527191340298,3.958411670581471,cobb_douglas_log_vitality_fit
+krakow_pl,Krakow,Poland,2016,10.913560024017496,3.951757864076997,cobb_douglas_log_vitality_fit
+krakow_pl,Krakow,Poland,2017,10.979598575857723,3.957953435141992,cobb_douglas_log_vitality_fit
+krakow_pl,Krakow,Poland,2018,11.061107470117504,3.967577949648119,cobb_douglas_log_vitality_fit
+krakow_pl,Krakow,Poland,2019,11.10712029904896,3.962280294497365,cobb_douglas_log_vitality_fit
+krakow_pl,Krakow,Poland,2020,11.08104964418264,3.968249896571912,cobb_douglas_log_vitality_fit
+krakow_pl,Krakow,Poland,2021,11.177844260415155,3.9585475453608256,cobb_douglas_log_vitality_fit
+krakow_pl,Krakow,Poland,2022,11.213157315916463,3.9621208843323057,cobb_douglas_log_vitality_fit
+las_vegas_us,Las Vegas,United States,2015,11.579031506904892,4.609211385641414,cobb_douglas_log_vitality_fit
+las_vegas_us,Las Vegas,United States,2016,11.619526211224043,4.614149785457755,cobb_douglas_log_vitality_fit
+las_vegas_us,Las Vegas,United States,2017,11.651817463836847,4.6146293630587305,cobb_douglas_log_vitality_fit
+las_vegas_us,Las Vegas,United States,2018,11.704578349193067,4.611158297582209,cobb_douglas_log_vitality_fit
+las_vegas_us,Las Vegas,United States,2019,11.756585114489903,4.612349982812887,cobb_douglas_log_vitality_fit
+las_vegas_us,Las Vegas,United States,2020,11.66683897381753,4.6048223221462905,cobb_douglas_log_vitality_fit
+las_vegas_us,Las Vegas,United States,2021,11.762142138946766,4.6009923051657164,cobb_douglas_log_vitality_fit
+las_vegas_us,Las Vegas,United States,2022,11.829989139498512,4.601314523325515,cobb_douglas_log_vitality_fit
+las_vegas_us,Las Vegas,United States,2023,11.87819338332698,4.601636058211986,cobb_douglas_log_vitality_fit
+lisbon_pt,Lisbon,Portugal,2015,11.807980291751422,4.126111677042991,cobb_douglas_log_vitality_fit
+lisbon_pt,Lisbon,Portugal,2016,11.82240082908929,4.126669875560201,cobb_douglas_log_vitality_fit
+lisbon_pt,Lisbon,Portugal,2017,11.857096560603347,4.134863898416736,cobb_douglas_log_vitality_fit
+lisbon_pt,Lisbon,Portugal,2018,11.883778424160697,4.143681339559394,cobb_douglas_log_vitality_fit
+lisbon_pt,Lisbon,Portugal,2019,11.917203201765329,4.152389559844498,cobb_douglas_log_vitality_fit
+lisbon_pt,Lisbon,Portugal,2020,11.820976180971352,4.159680400186007,cobb_douglas_log_vitality_fit
+lisbon_pt,Lisbon,Portugal,2021,11.868520826369384,4.168109626300201,cobb_douglas_log_vitality_fit
+lisbon_pt,Lisbon,Portugal,2022,11.950134688049136,4.174622013702768,cobb_douglas_log_vitality_fit
+liverpool_gb,Liverpool,United Kingdom,2015,10.980774054489485,4.164784951430844,cobb_douglas_log_vitality_fit
+liverpool_gb,Liverpool,United Kingdom,2016,10.98371520807896,4.156560121133369,cobb_douglas_log_vitality_fit
+liverpool_gb,Liverpool,United Kingdom,2017,11.006141662030569,4.151766701678594,cobb_douglas_log_vitality_fit
+liverpool_gb,Liverpool,United Kingdom,2018,11.00912510614099,4.147871930436373,cobb_douglas_log_vitality_fit
+liverpool_gb,Liverpool,United Kingdom,2019,11.043465687810134,4.1401611988154645,cobb_douglas_log_vitality_fit
+liverpool_gb,Liverpool,United Kingdom,2020,10.949156062709815,4.139710975901807,cobb_douglas_log_vitality_fit
+liverpool_gb,Liverpool,United Kingdom,2021,11.059283254731692,4.135655922568122,cobb_douglas_log_vitality_fit
+liverpool_gb,Liverpool,United Kingdom,2022,11.090095455895215,4.135740821589772,cobb_douglas_log_vitality_fit
+liverpool_gb,Liverpool,United Kingdom,2023,11.098863509636546,4.135818383350637,cobb_douglas_log_vitality_fit
+ljubljana_si,Ljubljana,Slovenia,2015,10.27163147557801,3.991524684876676,cobb_douglas_log_vitality_fit
+ljubljana_si,Ljubljana,Slovenia,2016,10.30981895197225,3.995786037040925,cobb_douglas_log_vitality_fit
+ljubljana_si,Ljubljana,Slovenia,2017,10.35723475926234,4.016028277890976,cobb_douglas_log_vitality_fit
+ljubljana_si,Ljubljana,Slovenia,2018,10.407922801280105,4.028067731824284,cobb_douglas_log_vitality_fit
+ljubljana_si,Ljubljana,Slovenia,2019,10.447525490508216,4.033400199141065,cobb_douglas_log_vitality_fit
+ljubljana_si,Ljubljana,Slovenia,2020,10.431848529391178,4.0370438674477285,cobb_douglas_log_vitality_fit
+ljubljana_si,Ljubljana,Slovenia,2021,10.526963059846754,4.038108545365371,cobb_douglas_log_vitality_fit
+ljubljana_si,Ljubljana,Slovenia,2022,10.531082364855838,4.042056305370448,cobb_douglas_log_vitality_fit
+ljubljana_si,Ljubljana,Slovenia,2023,10.577222529574613,4.042129564100414,cobb_douglas_log_vitality_fit
+london_gb,London,United Kingdom,2015,13.756207375162594,4.366754544895095,cobb_douglas_log_vitality_fit
+london_gb,London,United Kingdom,2016,13.79048706563924,4.358376275657486,cobb_douglas_log_vitality_fit
+london_gb,London,United Kingdom,2017,13.810010460118677,4.353429917220439,cobb_douglas_log_vitality_fit
+london_gb,London,United Kingdom,2018,13.824852783166595,4.349382704397013,cobb_douglas_log_vitality_fit
+london_gb,London,United Kingdom,2019,13.836122661467737,4.3415200260573,cobb_douglas_log_vitality_fit
+london_gb,London,United Kingdom,2020,13.708838070937153,4.340918348766524,cobb_douglas_log_vitality_fit
+london_gb,London,United Kingdom,2021,13.788296594438409,4.336829647245561,cobb_douglas_log_vitality_fit
+london_gb,London,United Kingdom,2022,13.848258444424077,4.336880926855627,cobb_douglas_log_vitality_fit
+los_angeles_us,Los Angeles,United States,2015,13.861374540274538,4.832208171432557,cobb_douglas_log_vitality_fit
+los_angeles_us,Los Angeles,United States,2016,13.885201718923707,4.836233747673331,cobb_douglas_log_vitality_fit
+los_angeles_us,Los Angeles,United States,2017,13.916242377718275,4.835811392710546,cobb_douglas_log_vitality_fit
+los_angeles_us,Los Angeles,United States,2018,13.941862993429499,4.831449068192541,cobb_douglas_log_vitality_fit
+los_angeles_us,Los Angeles,United States,2019,13.980032130832518,4.831759956648832,cobb_douglas_log_vitality_fit
+los_angeles_us,Los Angeles,United States,2020,13.945640171092307,4.823361756219963,cobb_douglas_log_vitality_fit
+los_angeles_us,Los Angeles,United States,2021,13.995739927660342,4.819309087537803,cobb_douglas_log_vitality_fit
+los_angeles_us,Los Angeles,United States,2022,14.013571760750928,4.819409416335684,cobb_douglas_log_vitality_fit
+los_angeles_us,Los Angeles,United States,2023,14.026902933877704,4.819509819933452,cobb_douglas_log_vitality_fit
+lyon_fr,Lyon,France,2015,11.83068077042815,4.190846482729235,cobb_douglas_log_vitality_fit
+lyon_fr,Lyon,France,2016,11.853460864325811,4.190789528597663,cobb_douglas_log_vitality_fit
+lyon_fr,Lyon,France,2017,11.882860109238448,4.19398819862801,cobb_douglas_log_vitality_fit
+lyon_fr,Lyon,France,2018,11.921199956396244,4.194121775702977,cobb_douglas_log_vitality_fit
+lyon_fr,Lyon,France,2019,11.940830243194625,4.1933385870374495,cobb_douglas_log_vitality_fit
+lyon_fr,Lyon,France,2020,11.870662844324528,4.182101035284919,cobb_douglas_log_vitality_fit
+lyon_fr,Lyon,France,2021,11.934690340491846,4.189190216817394,cobb_douglas_log_vitality_fit
+lyon_fr,Lyon,France,2022,11.93953870001258,4.19014559143073,cobb_douglas_log_vitality_fit
+lyon_fr,Lyon,France,2023,11.976867006837246,4.1902212899735085,cobb_douglas_log_vitality_fit
+madrid_es,Madrid,Spain,2015,12.805153622226786,4.095652175709105,cobb_douglas_log_vitality_fit
+madrid_es,Madrid,Spain,2016,12.84046189841557,4.096487292314334,cobb_douglas_log_vitality_fit
+madrid_es,Madrid,Spain,2017,12.87328131268756,4.080527426660897,cobb_douglas_log_vitality_fit
+madrid_es,Madrid,Spain,2018,12.902123107487075,4.060178706058361,cobb_douglas_log_vitality_fit
+madrid_es,Madrid,Spain,2019,12.931013992121027,4.052567386398346,cobb_douglas_log_vitality_fit
+madrid_es,Madrid,Spain,2020,12.821928330359885,4.059057411107463,cobb_douglas_log_vitality_fit
+madrid_es,Madrid,Spain,2021,12.877886377684968,4.059884579269699,cobb_douglas_log_vitality_fit
+madrid_es,Madrid,Spain,2022,12.941661308531607,4.065103499770686,cobb_douglas_log_vitality_fit
+malaga_es,Malaga,Spain,2015,10.150464811101735,3.853678750249236,cobb_douglas_log_vitality_fit
+malaga_es,Malaga,Spain,2016,10.169192384934412,3.854356158684396,cobb_douglas_log_vitality_fit
+malaga_es,Malaga,Spain,2017,10.204073510592933,3.838239133126303,cobb_douglas_log_vitality_fit
+malaga_es,Malaga,Spain,2018,10.234911352935114,3.817733797903305,cobb_douglas_log_vitality_fit
+malaga_es,Malaga,Spain,2019,10.263013428702846,3.8099664059482232,cobb_douglas_log_vitality_fit
+malaga_es,Malaga,Spain,2020,10.120049492484783,3.8163008977510566,cobb_douglas_log_vitality_fit
+malaga_es,Malaga,Spain,2021,10.228429281911374,3.817100553341077,cobb_douglas_log_vitality_fit
+malaga_es,Malaga,Spain,2022,10.313276632124348,3.8222920246371626,cobb_douglas_log_vitality_fit
+manchester_gb,Manchester,United Kingdom,2015,11.933712589176178,4.245610899978171,cobb_douglas_log_vitality_fit
+manchester_gb,Manchester,United Kingdom,2016,11.9560074366497,4.237405473462154,cobb_douglas_log_vitality_fit
+manchester_gb,Manchester,United Kingdom,2017,11.990736040551901,4.23263136750253,cobb_douglas_log_vitality_fit
+manchester_gb,Manchester,United Kingdom,2018,12.00718868623719,4.228755820098086,cobb_douglas_log_vitality_fit
+manchester_gb,Manchester,United Kingdom,2019,12.02567723252968,4.221064223280679,cobb_douglas_log_vitality_fit
+manchester_gb,Manchester,United Kingdom,2020,11.959308562990943,4.220633046753585,cobb_douglas_log_vitality_fit
+manchester_gb,Manchester,United Kingdom,2021,12.020140578682023,4.21660170635499,cobb_douglas_log_vitality_fit
+manchester_gb,Manchester,United Kingdom,2022,12.085474400888971,4.216710287012415,cobb_douglas_log_vitality_fit
+manchester_gb,Manchester,United Kingdom,2023,12.100039681607461,4.21681149917211,cobb_douglas_log_vitality_fit
+marseille_fr,Marseille,France,2015,11.47558697931486,4.152566653876839,cobb_douglas_log_vitality_fit
+marseille_fr,Marseille,France,2016,11.467258418786773,4.152537540443619,cobb_douglas_log_vitality_fit
+marseille_fr,Marseille,France,2017,11.492498242655184,4.155763921524405,cobb_douglas_log_vitality_fit
+marseille_fr,Marseille,France,2018,11.507299669818662,4.155925080906097,cobb_douglas_log_vitality_fit
+marseille_fr,Marseille,France,2019,11.522846092411957,4.155169346699396,cobb_douglas_log_vitality_fit
+marseille_fr,Marseille,France,2020,11.467436346349793,4.143959122445301,cobb_douglas_log_vitality_fit
+marseille_fr,Marseille,France,2021,11.720752312172545,4.151009507005375,cobb_douglas_log_vitality_fit
+marseille_fr,Marseille,France,2022,11.839498869412195,4.151926118355328,cobb_douglas_log_vitality_fit
+marseille_fr,Marseille,France,2023,11.59080275289071,4.15196308729791,cobb_douglas_log_vitality_fit
+miami_us,Miami,United States,2015,12.675229040974688,4.727492410418021,cobb_douglas_log_vitality_fit
+miami_us,Miami,United States,2016,12.71071619962035,4.731496332937013,cobb_douglas_log_vitality_fit
+miami_us,Miami,United States,2017,12.750960508060984,4.731052420705167,cobb_douglas_log_vitality_fit
+miami_us,Miami,United States,2018,12.785449043072322,4.726668634727478,cobb_douglas_log_vitality_fit
+miami_us,Miami,United States,2019,12.81492203671635,4.72695815689583,cobb_douglas_log_vitality_fit
+miami_us,Miami,United States,2020,12.78551627052804,4.718538684718785,cobb_douglas_log_vitality_fit
+miami_us,Miami,United States,2021,12.87914211096075,4.714524821463665,cobb_douglas_log_vitality_fit
+miami_us,Miami,United States,2022,12.932673944349064,4.71466388045298,cobb_douglas_log_vitality_fit
+miami_us,Miami,United States,2023,12.98127896094568,4.7148029392270745,cobb_douglas_log_vitality_fit
+milan_it,Milan,Italy,2015,12.779658961031151,4.239264796044733,cobb_douglas_log_vitality_fit
+milan_it,Milan,Italy,2016,12.802422541092781,4.2410559913057,cobb_douglas_log_vitality_fit
+milan_it,Milan,Italy,2017,12.818524822384443,4.239506997484751,cobb_douglas_log_vitality_fit
+milan_it,Milan,Italy,2018,12.836974673172156,4.246188786144494,cobb_douglas_log_vitality_fit
+milan_it,Milan,Italy,2019,12.834910611993012,4.252436045664092,cobb_douglas_log_vitality_fit
+milan_it,Milan,Italy,2020,12.764630731438826,4.263342832362184,cobb_douglas_log_vitality_fit
+milan_it,Milan,Italy,2021,12.875595455226332,4.266707937312237,cobb_douglas_log_vitality_fit
+milan_it,Milan,Italy,2022,12.915356427993938,4.268145313356985,cobb_douglas_log_vitality_fit
+minneapolis_us,Minneapolis,United States,2015,12.395001492693307,4.548235734587168,cobb_douglas_log_vitality_fit
+minneapolis_us,Minneapolis,United States,2016,12.411858418468,4.552204742994837,cobb_douglas_log_vitality_fit
+minneapolis_us,Minneapolis,United States,2017,12.427683022132458,4.551726056244364,cobb_douglas_log_vitality_fit
+minneapolis_us,Minneapolis,United States,2018,12.457123150097392,4.547307634503866,cobb_douglas_log_vitality_fit
+minneapolis_us,Minneapolis,United States,2019,12.475148949164836,4.547562658835037,cobb_douglas_log_vitality_fit
+minneapolis_us,Minneapolis,United States,2020,12.441966564329647,4.539108825922861,cobb_douglas_log_vitality_fit
+minneapolis_us,Minneapolis,United States,2021,12.486986867661216,4.535045195863291,cobb_douglas_log_vitality_fit
+minneapolis_us,Minneapolis,United States,2022,12.505039554026437,4.535134580120551,cobb_douglas_log_vitality_fit
+minneapolis_us,Minneapolis,United States,2023,12.534138216376835,4.535224055975685,cobb_douglas_log_vitality_fit
+munich_de,Munich,Germany,2015,12.528467690366794,4.278259236750875,cobb_douglas_log_vitality_fit
+munich_de,Munich,Germany,2016,12.562680087190678,4.282255499957863,cobb_douglas_log_vitality_fit
+munich_de,Munich,Germany,2017,12.603233367474722,4.281082021372368,cobb_douglas_log_vitality_fit
+munich_de,Munich,Germany,2018,12.601339258661667,4.278257737249556,cobb_douglas_log_vitality_fit
+munich_de,Munich,Germany,2019,12.631170431853468,4.279192893634482,cobb_douglas_log_vitality_fit
+munich_de,Munich,Germany,2020,12.57797062879439,4.265340759175514,cobb_douglas_log_vitality_fit
+munich_de,Munich,Germany,2021,12.630225380467499,4.257220573308164,cobb_douglas_log_vitality_fit
+munich_de,Munich,Germany,2022,12.640028024037965,4.258026994099957,cobb_douglas_log_vitality_fit
+nagoya_jp,Nagoya,Japan,2015,12.982843805655037,4.84175056492307,cobb_douglas_log_vitality_fit
+nagoya_jp,Nagoya,Japan,2016,12.964553343634288,4.842871858910346,cobb_douglas_log_vitality_fit
+nagoya_jp,Nagoya,Japan,2017,12.980230526645801,4.843201223605943,cobb_douglas_log_vitality_fit
+nagoya_jp,Nagoya,Japan,2018,12.990898419660395,4.839425239715307,cobb_douglas_log_vitality_fit
+nagoya_jp,Nagoya,Japan,2019,12.96636432371945,4.834541076158255,cobb_douglas_log_vitality_fit
+nagoya_jp,Nagoya,Japan,2020,12.929734482037533,4.822956365078389,cobb_douglas_log_vitality_fit
+nagoya_jp,Nagoya,Japan,2021,12.949551658421122,4.819686923019476,cobb_douglas_log_vitality_fit
+naples_it,Naples,Italy,2015,11.552376920731156,4.173794323352849,cobb_douglas_log_vitality_fit
+naples_it,Naples,Italy,2016,11.56467315610394,4.175617846786832,cobb_douglas_log_vitality_fit
+naples_it,Naples,Italy,2017,11.578497826510597,4.174101056340033,cobb_douglas_log_vitality_fit
+naples_it,Naples,Italy,2018,11.577926379187641,4.180814924297417,cobb_douglas_log_vitality_fit
+naples_it,Naples,Italy,2019,11.593011248639058,4.187094139754935,cobb_douglas_log_vitality_fit
+naples_it,Naples,Italy,2020,11.49071053039907,4.198032759742491,cobb_douglas_log_vitality_fit
+naples_it,Naples,Italy,2021,11.551819201595588,4.201429602862916,cobb_douglas_log_vitality_fit
+naples_it,Naples,Italy,2022,11.604519658131226,4.202898671960164,cobb_douglas_log_vitality_fit
+new_york_us,New York,United States,2015,14.292888802764612,4.763266894796686,cobb_douglas_log_vitality_fit
+new_york_us,New York,United States,2016,14.321689402153282,4.767087534763128,cobb_douglas_log_vitality_fit
+new_york_us,New York,United States,2017,14.34434013355561,4.7664608531286365,cobb_douglas_log_vitality_fit
+new_york_us,New York,United States,2018,14.377443658854856,4.761894808545982,cobb_douglas_log_vitality_fit
+new_york_us,New York,United States,2019,14.400693836996279,4.762002580570184,cobb_douglas_log_vitality_fit
+new_york_us,New York,United States,2020,14.374483853831578,4.75340186438817,cobb_douglas_log_vitality_fit
+new_york_us,New York,United States,2021,14.414048662888918,4.749289842658284,cobb_douglas_log_vitality_fit
+new_york_us,New York,United States,2022,14.41590244222379,4.749330886311165,cobb_douglas_log_vitality_fit
+new_york_us,New York,United States,2023,14.43730512073897,4.749372072543356,cobb_douglas_log_vitality_fit
+nice_fr,Nice,France,2015,10.31946389026994,4.057183307283143,cobb_douglas_log_vitality_fit
+nice_fr,Nice,France,2016,10.34858995368279,4.057143038079065,cobb_douglas_log_vitality_fit
+nice_fr,Nice,France,2017,10.360310952919434,4.060358316838816,cobb_douglas_log_vitality_fit
+nice_fr,Nice,France,2018,10.367976001093753,4.0605084269660425,cobb_douglas_log_vitality_fit
+nice_fr,Nice,France,2019,10.380435762266156,4.059741696191829,cobb_douglas_log_vitality_fit
+nice_fr,Nice,France,2020,10.24736090463765,4.048520527681189,cobb_douglas_log_vitality_fit
+nice_fr,Nice,France,2021,10.302833979636116,4.055604972287679,cobb_douglas_log_vitality_fit
+nice_fr,Nice,France,2022,10.357679330734525,4.056555615398144,cobb_douglas_log_vitality_fit
+nice_fr,Nice,France,2023,10.318077568421293,4.056626587851852,cobb_douglas_log_vitality_fit
+osaka_jp,Osaka,Japan,2015,13.433438682031909,4.861536586910426,cobb_douglas_log_vitality_fit
+osaka_jp,Osaka,Japan,2016,13.4411661385139,4.86253857296313,cobb_douglas_log_vitality_fit
+osaka_jp,Osaka,Japan,2017,13.458358357299524,4.862749017677396,cobb_douglas_log_vitality_fit
+osaka_jp,Osaka,Japan,2018,13.462527362556948,4.858854499814375,cobb_douglas_log_vitality_fit
+osaka_jp,Osaka,Japan,2019,13.465034929925496,4.853852186362912,cobb_douglas_log_vitality_fit
+osaka_jp,Osaka,Japan,2020,13.421973032578602,4.842149707548828,cobb_douglas_log_vitality_fit
+osaka_jp,Osaka,Japan,2021,13.45227269654687,4.838865962134755,cobb_douglas_log_vitality_fit
+oslo_no,Oslo,Norway,2015,11.52335093045381,4.09205071558526,cobb_douglas_log_vitality_fit
+oslo_no,Oslo,Norway,2016,11.58412922397656,4.099033086180027,cobb_douglas_log_vitality_fit
+oslo_no,Oslo,Norway,2017,11.582889864371067,4.103672762309943,cobb_douglas_log_vitality_fit
+oslo_no,Oslo,Norway,2018,11.556999765006694,4.1046182071300095,cobb_douglas_log_vitality_fit
+oslo_no,Oslo,Norway,2019,11.627467699342894,4.107465294335452,cobb_douglas_log_vitality_fit
+oslo_no,Oslo,Norway,2020,11.675792333930048,4.107027785130383,cobb_douglas_log_vitality_fit
+oslo_no,Oslo,Norway,2021,11.531825724470709,4.117804658996304,cobb_douglas_log_vitality_fit
+paris_fr,Paris,France,2015,13.87952706787769,4.387628946338563,cobb_douglas_log_vitality_fit
+paris_fr,Paris,France,2016,13.89416091214803,4.387498920890046,cobb_douglas_log_vitality_fit
+paris_fr,Paris,France,2017,13.914991120530273,4.390624800417961,cobb_douglas_log_vitality_fit
+paris_fr,Paris,France,2018,13.935762543254626,4.390685866176724,cobb_douglas_log_vitality_fit
+paris_fr,Paris,France,2019,13.964595858965534,4.389830443765596,cobb_douglas_log_vitality_fit
+paris_fr,Paris,France,2020,13.857940538981024,4.378520934234979,cobb_douglas_log_vitality_fit
+paris_fr,Paris,France,2021,13.905693982022253,4.385608826915627,cobb_douglas_log_vitality_fit
+paris_fr,Paris,France,2022,13.928024625846296,4.386562914188692,cobb_douglas_log_vitality_fit
+paris_fr,Paris,France,2023,13.96577541202591,4.386637326900095,cobb_douglas_log_vitality_fit
+philadelphia_us,Philadelphia,United States,2015,12.99616049410762,4.564960191315873,cobb_douglas_log_vitality_fit
+philadelphia_us,Philadelphia,United States,2016,13.01243243323174,4.5687954522556495,cobb_douglas_log_vitality_fit
+philadelphia_us,Philadelphia,United States,2017,13.007042308618866,4.568183370598959,cobb_douglas_log_vitality_fit
+philadelphia_us,Philadelphia,United States,2018,13.023753359116679,4.563631905043859,cobb_douglas_log_vitality_fit
+philadelphia_us,Philadelphia,United States,2019,13.04216582440954,4.563754235190538,cobb_douglas_log_vitality_fit
+philadelphia_us,Philadelphia,United States,2020,13.012506099783478,4.555168056270954,cobb_douglas_log_vitality_fit
+philadelphia_us,Philadelphia,United States,2021,13.051253981945617,4.551061140341729,cobb_douglas_log_vitality_fit
+philadelphia_us,Philadelphia,United States,2022,13.068382263537815,4.551107286198226,cobb_douglas_log_vitality_fit
+philadelphia_us,Philadelphia,United States,2023,13.093910403509177,4.551153571040788,cobb_douglas_log_vitality_fit
+phoenix_us,Phoenix,United States,2015,12.30148736532455,4.644563909926838,cobb_douglas_log_vitality_fit
+phoenix_us,Phoenix,United States,2016,12.343422986679085,4.6488253874942655,cobb_douglas_log_vitality_fit
+phoenix_us,Phoenix,United States,2017,12.386158371382551,4.648637394297428,cobb_douglas_log_vitality_fit
+phoenix_us,Phoenix,United States,2018,12.429004174369206,4.644507907426794,cobb_douglas_log_vitality_fit
+phoenix_us,Phoenix,United States,2019,12.480160230247417,4.645050124642938,cobb_douglas_log_vitality_fit
+phoenix_us,Phoenix,United States,2020,12.505528879693546,4.636881759110048,cobb_douglas_log_vitality_fit
+phoenix_us,Phoenix,United States,2021,12.581250352699882,4.633103353347131,cobb_douglas_log_vitality_fit
+phoenix_us,Phoenix,United States,2022,12.62532888398745,4.6334768918848095,cobb_douglas_log_vitality_fit
+phoenix_us,Phoenix,United States,2023,12.666240562353797,4.6338494587653045,cobb_douglas_log_vitality_fit
+porto_pt,Porto,Portugal,2015,10.668606496608545,4.082389096204204,cobb_douglas_log_vitality_fit
+porto_pt,Porto,Portugal,2016,10.691149141813103,4.0828882589251645,cobb_douglas_log_vitality_fit
+porto_pt,Porto,Portugal,2017,10.73035673255396,4.09102345908264,cobb_douglas_log_vitality_fit
+porto_pt,Porto,Portugal,2018,10.763948399449612,4.099782289465037,cobb_douglas_log_vitality_fit
+porto_pt,Porto,Portugal,2019,10.787874735397274,4.108432109778719,cobb_douglas_log_vitality_fit
+porto_pt,Porto,Portugal,2020,10.708690286886394,4.115664759796035,cobb_douglas_log_vitality_fit
+porto_pt,Porto,Portugal,2021,10.77191069453828,4.124036669645402,cobb_douglas_log_vitality_fit
+porto_pt,Porto,Portugal,2022,10.837362767167287,4.13049194216258,cobb_douglas_log_vitality_fit
+porto_pt,Porto,Portugal,2023,10.852729384549969,4.130675933303418,cobb_douglas_log_vitality_fit
+prague_cz,Prague,Czechia,2015,11.92272118243884,4.062148607791656,cobb_douglas_log_vitality_fit
+prague_cz,Prague,Czechia,2016,11.95871964613282,4.056231196875552,cobb_douglas_log_vitality_fit
+prague_cz,Prague,Czechia,2017,12.009035341300443,4.062553188469135,cobb_douglas_log_vitality_fit
+prague_cz,Prague,Czechia,2018,12.048406627468632,4.064276893903406,cobb_douglas_log_vitality_fit
+prague_cz,Prague,Czechia,2019,12.09327901705473,4.072203795519786,cobb_douglas_log_vitality_fit
+prague_cz,Prague,Czechia,2020,12.027669402110114,4.073921705324181,cobb_douglas_log_vitality_fit
+prague_cz,Prague,Czechia,2021,12.079221745782268,4.080255801101647,cobb_douglas_log_vitality_fit
+prague_cz,Prague,Czechia,2022,12.123315841359965,4.084456195181298,cobb_douglas_log_vitality_fit
+prague_cz,Prague,Czechia,2023,12.102926343358046,4.08456061005007,cobb_douglas_log_vitality_fit
+riga_lv,Riga,Latvia,2015,10.586382356631722,3.976584301150124,cobb_douglas_log_vitality_fit
+riga_lv,Riga,Latvia,2016,10.61295089758101,3.9538796388679622,cobb_douglas_log_vitality_fit
+riga_lv,Riga,Latvia,2017,10.646781120036646,3.969690975767408,cobb_douglas_log_vitality_fit
+riga_lv,Riga,Latvia,2018,10.681228606945007,3.9697422173848462,cobb_douglas_log_vitality_fit
+riga_lv,Riga,Latvia,2019,10.694895102263592,3.978213042151568,cobb_douglas_log_vitality_fit
+riga_lv,Riga,Latvia,2020,10.634652800283595,3.9977700666032687,cobb_douglas_log_vitality_fit
+riga_lv,Riga,Latvia,2021,10.708779682349634,4.01589272839953,cobb_douglas_log_vitality_fit
+rome_it,Rome,Italy,2015,12.450543151958453,4.137114567583554,cobb_douglas_log_vitality_fit
+rome_it,Rome,Italy,2016,12.485377224571236,4.13893318666584,cobb_douglas_log_vitality_fit
+rome_it,Rome,Italy,2017,12.49161618294507,4.137411511884997,cobb_douglas_log_vitality_fit
+rome_it,Rome,Italy,2018,12.494719252668782,4.14412051540368,cobb_douglas_log_vitality_fit
+rome_it,Rome,Italy,2019,12.49873106540049,4.150394886196524,cobb_douglas_log_vitality_fit
+rome_it,Rome,Italy,2020,12.397453046812474,4.161328681173099,cobb_douglas_log_vitality_fit
+rome_it,Rome,Italy,2021,12.469636190573146,4.16477460937862,cobb_douglas_log_vitality_fit
+rome_it,Rome,Italy,2022,12.55053785308031,4.166292661675101,cobb_douglas_log_vitality_fit
+rotterdam_nl,Rotterdam,Netherlands,2015,11.616266943744163,4.229080015053075,cobb_douglas_log_vitality_fit
+rotterdam_nl,Rotterdam,Netherlands,2016,11.635744686615075,4.235928757119203,cobb_douglas_log_vitality_fit
+rotterdam_nl,Rotterdam,Netherlands,2017,11.660819469705586,4.23823787151076,cobb_douglas_log_vitality_fit
+rotterdam_nl,Rotterdam,Netherlands,2018,11.675936773229683,4.239674349392049,cobb_douglas_log_vitality_fit
+rotterdam_nl,Rotterdam,Netherlands,2019,11.685827799847692,4.24469438875329,cobb_douglas_log_vitality_fit
+rotterdam_nl,Rotterdam,Netherlands,2020,11.649482276396439,4.248165848111688,cobb_douglas_log_vitality_fit
+rotterdam_nl,Rotterdam,Netherlands,2021,11.714346787732115,4.2492485988558775,cobb_douglas_log_vitality_fit
+rotterdam_nl,Rotterdam,Netherlands,2022,11.794262449862169,4.255023414752026,cobb_douglas_log_vitality_fit
+san_diego_us,San Diego,United States,2015,12.247905329132108,4.589435786420649,cobb_douglas_log_vitality_fit
+san_diego_us,San Diego,United States,2016,12.263761196600324,4.593414247627505,cobb_douglas_log_vitality_fit
+san_diego_us,San Diego,United States,2017,12.295620802171774,4.592944977823821,cobb_douglas_log_vitality_fit
+san_diego_us,San Diego,United States,2018,12.316146038116504,4.588535937381325,cobb_douglas_log_vitality_fit
+san_diego_us,San Diego,United States,2019,12.345551939268317,4.588800307563782,cobb_douglas_log_vitality_fit
+san_diego_us,San Diego,United States,2020,12.33851657207774,4.580355785256727,cobb_douglas_log_vitality_fit
+san_diego_us,San Diego,United States,2021,12.392809440797539,4.576358092570613,cobb_douglas_log_vitality_fit
+san_diego_us,San Diego,United States,2022,12.407150530806572,4.576513283586493,cobb_douglas_log_vitality_fit
+san_diego_us,San Diego,United States,2023,12.43185670762536,4.5766684359824845,cobb_douglas_log_vitality_fit
+san_francisco_us,San Francisco,United States,2015,13.45821113336379,4.685476091345622,cobb_douglas_log_vitality_fit
+san_francisco_us,San Francisco,United States,2016,13.510018830926217,4.689390338447705,cobb_douglas_log_vitality_fit
+san_francisco_us,San Francisco,United States,2017,13.57665166500993,4.688857069701985,cobb_douglas_log_vitality_fit
+san_francisco_us,San Francisco,United States,2018,13.629931300621315,4.684384244391987,cobb_douglas_log_vitality_fit
+san_francisco_us,San Francisco,United States,2019,13.677671615439149,4.684585042700659,cobb_douglas_log_vitality_fit
+san_francisco_us,San Francisco,United States,2020,13.69565324748657,4.6760771604400375,cobb_douglas_log_vitality_fit
+san_francisco_us,San Francisco,United States,2021,13.778465795711796,4.671960577276777,cobb_douglas_log_vitality_fit
+san_francisco_us,San Francisco,United States,2022,13.744110147823376,4.67199706235234,cobb_douglas_log_vitality_fit
+san_francisco_us,San Francisco,United States,2023,13.770950334966367,4.672033692860585,cobb_douglas_log_vitality_fit
+sapporo_jp,Sapporo,Japan,2015,11.281724540028286,4.646330980115592,cobb_douglas_log_vitality_fit
+sapporo_jp,Sapporo,Japan,2016,11.287592017582982,4.647513247887151,cobb_douglas_log_vitality_fit
+sapporo_jp,Sapporo,Japan,2017,11.303055922886557,4.647903299416811,cobb_douglas_log_vitality_fit
+sapporo_jp,Sapporo,Japan,2018,11.305815190968001,4.6441877174382045,cobb_douglas_log_vitality_fit
+sapporo_jp,Sapporo,Japan,2019,11.323941765302724,4.639363672880204,cobb_douglas_log_vitality_fit
+sapporo_jp,Sapporo,Japan,2020,11.278657769153083,4.627838799876548,cobb_douglas_log_vitality_fit
+sapporo_jp,Sapporo,Japan,2021,11.293761484648849,4.624584200629729,cobb_douglas_log_vitality_fit
+seattle_us,Seattle,United States,2015,12.680671948472009,4.604203534983265,cobb_douglas_log_vitality_fit
+seattle_us,Seattle,United States,2016,12.72099885040992,4.608451194975094,cobb_douglas_log_vitality_fit
+seattle_us,Seattle,United States,2017,12.789159394219798,4.608249499018193,cobb_douglas_log_vitality_fit
+seattle_us,Seattle,United States,2018,12.84890762921634,4.604106422777802,cobb_douglas_log_vitality_fit
+seattle_us,Seattle,United States,2019,12.90383914060994,4.604635162612752,cobb_douglas_log_vitality_fit
+seattle_us,Seattle,United States,2020,12.91207435152632,4.596453430308502,cobb_douglas_log_vitality_fit
+seattle_us,Seattle,United States,2021,12.96459081313178,4.592428039716485,cobb_douglas_log_vitality_fit
+seattle_us,Seattle,United States,2022,12.961358595124517,4.592555596262114,cobb_douglas_log_vitality_fit
+seattle_us,Seattle,United States,2023,13.01936673226844,4.592683177405134,cobb_douglas_log_vitality_fit
+seoul_kr,Seoul,South Korea,2015,13.813401335116865,4.863157109766249,cobb_douglas_log_vitality_fit
+seoul_kr,Seoul,South Korea,2016,13.84836295947434,4.860092363942529,cobb_douglas_log_vitality_fit
+seoul_kr,Seoul,South Korea,2017,13.89563972343869,4.85674441271195,cobb_douglas_log_vitality_fit
+seoul_kr,Seoul,South Korea,2018,13.940318637890863,4.860872804700977,cobb_douglas_log_vitality_fit
+seoul_kr,Seoul,South Korea,2019,13.960753106516808,4.869907164392044,cobb_douglas_log_vitality_fit
+seoul_kr,Seoul,South Korea,2020,13.966766194050647,4.87828320023892,cobb_douglas_log_vitality_fit
+seoul_kr,Seoul,South Korea,2021,14.009212940117898,4.883547070947747,cobb_douglas_log_vitality_fit
+seoul_kr,Seoul,South Korea,2022,14.029627088043773,4.883943396957847,cobb_douglas_log_vitality_fit
+seville_es,Seville,Spain,2015,10.83101491633627,3.881627200451719,cobb_douglas_log_vitality_fit
+seville_es,Seville,Spain,2016,10.846342315535834,3.8823139311991177,cobb_douglas_log_vitality_fit
+seville_es,Seville,Spain,2017,10.87714112179876,3.8662062067178775,cobb_douglas_log_vitality_fit
+seville_es,Seville,Spain,2018,10.898681882005748,3.845710151408852,cobb_douglas_log_vitality_fit
+seville_es,Seville,Spain,2019,10.917394893270139,3.8379520182770297,cobb_douglas_log_vitality_fit
+seville_es,Seville,Spain,2020,10.818217066343328,3.8442957478842574,cobb_douglas_log_vitality_fit
+seville_es,Seville,Spain,2021,10.89648003267366,3.8450939316279182,cobb_douglas_log_vitality_fit
+seville_es,Seville,Spain,2022,10.929242368900846,3.8502839341225847,cobb_douglas_log_vitality_fit
+sofia_bg,Sofia,Bulgaria,2015,11.151812114432564,3.9249603530933896,cobb_douglas_log_vitality_fit
+sofia_bg,Sofia,Bulgaria,2016,11.184185259008464,3.9383341304595296,cobb_douglas_log_vitality_fit
+sofia_bg,Sofia,Bulgaria,2017,11.214249851043581,3.929519987793223,cobb_douglas_log_vitality_fit
+sofia_bg,Sofia,Bulgaria,2018,11.250261155493735,3.942271151166409,cobb_douglas_log_vitality_fit
+sofia_bg,Sofia,Bulgaria,2019,11.338786340583832,3.948007042547109,cobb_douglas_log_vitality_fit
+sofia_bg,Sofia,Bulgaria,2020,11.303734127274023,3.951545582572734,cobb_douglas_log_vitality_fit
+sofia_bg,Sofia,Bulgaria,2021,11.381836800739672,3.942832562812488,cobb_douglas_log_vitality_fit
+sofia_bg,Sofia,Bulgaria,2022,11.38240667276184,3.955579870680392,cobb_douglas_log_vitality_fit
+sofia_bg,Sofia,Bulgaria,2023,11.436541057548919,3.955909655883613,cobb_douglas_log_vitality_fit
+stockholm_se,Stockholm,Sweden,2015,12.079658720674516,4.147307390116026,cobb_douglas_log_vitality_fit
+stockholm_se,Stockholm,Sweden,2016,12.095811251272636,4.152602672463275,cobb_douglas_log_vitality_fit
+stockholm_se,Stockholm,Sweden,2017,12.095180190203518,4.15506709820217,cobb_douglas_log_vitality_fit
+stockholm_se,Stockholm,Sweden,2018,12.127110603726878,4.154148988464465,cobb_douglas_log_vitality_fit
+stockholm_se,Stockholm,Sweden,2019,12.163765173233925,4.158095764440187,cobb_douglas_log_vitality_fit
+stockholm_se,Stockholm,Sweden,2020,12.152207626037963,4.158935881531117,cobb_douglas_log_vitality_fit
+stockholm_se,Stockholm,Sweden,2021,12.196481800054395,4.1654974093751225,cobb_douglas_log_vitality_fit
+stockholm_se,Stockholm,Sweden,2022,12.198554454625375,4.172572924147388,cobb_douglas_log_vitality_fit
+stockholm_se,Stockholm,Sweden,2023,12.199068171377291,4.172736124440204,cobb_douglas_log_vitality_fit
+stuttgart_de,Stuttgart,Germany,2015,12.246859439430894,4.262823655318147,cobb_douglas_log_vitality_fit
+stuttgart_de,Stuttgart,Germany,2016,12.248279280992561,4.266678504065515,cobb_douglas_log_vitality_fit
+stuttgart_de,Stuttgart,Germany,2017,12.285461293199246,4.265364436146356,cobb_douglas_log_vitality_fit
+stuttgart_de,Stuttgart,Germany,2018,12.302368702833895,4.262400380524466,cobb_douglas_log_vitality_fit
+stuttgart_de,Stuttgart,Germany,2019,12.256756254097091,4.263196576040222,cobb_douglas_log_vitality_fit
+stuttgart_de,Stuttgart,Germany,2020,12.19902788940347,4.249206284222705,cobb_douglas_log_vitality_fit
+stuttgart_de,Stuttgart,Germany,2021,12.231326076442304,4.241081385727719,cobb_douglas_log_vitality_fit
+stuttgart_de,Stuttgart,Germany,2022,12.240884615982218,4.241883098234146,cobb_douglas_log_vitality_fit
+tallinn_ee,Tallinn,Estonia,2015,10.29620508782179,4.047961914753786,cobb_douglas_log_vitality_fit
+tallinn_ee,Tallinn,Estonia,2016,10.331952784873353,4.053688639603507,cobb_douglas_log_vitality_fit
+tallinn_ee,Tallinn,Estonia,2017,10.386284003580617,4.066340621348911,cobb_douglas_log_vitality_fit
+tallinn_ee,Tallinn,Estonia,2018,10.4069259578681,4.075373362469281,cobb_douglas_log_vitality_fit
+tallinn_ee,Tallinn,Estonia,2019,10.431730608339187,4.076510469746793,cobb_douglas_log_vitality_fit
+tallinn_ee,Tallinn,Estonia,2020,10.415142832042596,4.079392212096167,cobb_douglas_log_vitality_fit
+tallinn_ee,Tallinn,Estonia,2021,10.457487601685916,4.087652608169985,cobb_douglas_log_vitality_fit
+tallinn_ee,Tallinn,Estonia,2022,10.46278900535916,4.1100678701602815,cobb_douglas_log_vitality_fit
+tallinn_ee,Tallinn,Estonia,2023,10.44755451008192,4.110138626388682,cobb_douglas_log_vitality_fit
+thessaloniki_gr,Thessaloniki,Greece,2015,10.191182124909785,3.987762612609485,cobb_douglas_log_vitality_fit
+thessaloniki_gr,Thessaloniki,Greece,2016,10.209537399846088,3.9709697687287138,cobb_douglas_log_vitality_fit
+thessaloniki_gr,Thessaloniki,Greece,2017,10.222995273466749,3.987590387856853,cobb_douglas_log_vitality_fit
+thessaloniki_gr,Thessaloniki,Greece,2018,10.25224120572685,3.990931330187666,cobb_douglas_log_vitality_fit
+thessaloniki_gr,Thessaloniki,Greece,2019,10.269969252665245,3.996329545081225,cobb_douglas_log_vitality_fit
+thessaloniki_gr,Thessaloniki,Greece,2020,10.17789439778788,4.01194624795867,cobb_douglas_log_vitality_fit
+thessaloniki_gr,Thessaloniki,Greece,2021,10.2598674529538,4.019855175496731,cobb_douglas_log_vitality_fit
+thessaloniki_gr,Thessaloniki,Greece,2022,10.317714166312864,4.041257992214023,cobb_douglas_log_vitality_fit
+tokyo_jp,Tokyo,Japan,2015,14.408206817724414,4.9559166677052975,cobb_douglas_log_vitality_fit
+tokyo_jp,Tokyo,Japan,2016,14.417253271484084,4.957183674578012,cobb_douglas_log_vitality_fit
+tokyo_jp,Tokyo,Japan,2017,14.435422308671647,4.957657967015016,cobb_douglas_log_vitality_fit
+tokyo_jp,Tokyo,Japan,2018,14.444634284716694,4.954026132150008,cobb_douglas_log_vitality_fit
+tokyo_jp,Tokyo,Japan,2019,14.446560501692348,4.949285345260039,cobb_douglas_log_vitality_fit
+tokyo_jp,Tokyo,Japan,2020,14.398987951278295,4.937843244775904,cobb_douglas_log_vitality_fit
+tokyo_jp,Tokyo,Japan,2021,14.426236537810727,4.934577059423059,cobb_douglas_log_vitality_fit
+toulouse_fr,Toulouse,France,2015,11.30523686821088,4.151208868816784,cobb_douglas_log_vitality_fit
+toulouse_fr,Toulouse,France,2016,11.323047429770627,4.151552732248777,cobb_douglas_log_vitality_fit
+toulouse_fr,Toulouse,France,2017,11.338691118358893,4.155149152394319,cobb_douglas_log_vitality_fit
+toulouse_fr,Toulouse,France,2018,11.376544301317045,4.155677449262913,cobb_douglas_log_vitality_fit
+toulouse_fr,Toulouse,France,2019,11.40099899609809,4.155285986570493,cobb_douglas_log_vitality_fit
+toulouse_fr,Toulouse,France,2020,11.280615025831201,4.144437202859473,cobb_douglas_log_vitality_fit
+toulouse_fr,Toulouse,France,2021,11.349512017863786,4.151640887870764,cobb_douglas_log_vitality_fit
+toulouse_fr,Toulouse,France,2022,11.378113252445983,4.152710524370527,cobb_douglas_log_vitality_fit
+toulouse_fr,Toulouse,France,2023,11.429587333346895,4.152900244020106,cobb_douglas_log_vitality_fit
+turin_it,Turin,Italy,2015,11.410083996070519,4.110785489389977,cobb_douglas_log_vitality_fit
+turin_it,Turin,Italy,2016,11.43039132291661,4.112478628456417,cobb_douglas_log_vitality_fit
+turin_it,Turin,Italy,2017,11.458522076090842,4.110831853729605,cobb_douglas_log_vitality_fit
+turin_it,Turin,Italy,2018,11.474621131812514,4.117416135583833,cobb_douglas_log_vitality_fit
+turin_it,Turin,Italy,2019,11.45856431161726,4.123566161216939,cobb_douglas_log_vitality_fit
+turin_it,Turin,Italy,2020,11.351500055009028,4.134375985773181,cobb_douglas_log_vitality_fit
+turin_it,Turin,Italy,2021,11.4069981220295,4.137710532307287,cobb_douglas_log_vitality_fit
+turin_it,Turin,Italy,2022,11.429935083839423,4.139117377955684,cobb_douglas_log_vitality_fit
+valencia_es,Valencia,Spain,2015,11.094177529405146,3.985249742360712,cobb_douglas_log_vitality_fit
+valencia_es,Valencia,Spain,2016,11.105949215663113,3.985966420732837,cobb_douglas_log_vitality_fit
+valencia_es,Valencia,Spain,2017,11.122708510624436,3.96988856615008,cobb_douglas_log_vitality_fit
+valencia_es,Valencia,Spain,2018,11.158961129724467,3.9494223033163705,cobb_douglas_log_vitality_fit
+valencia_es,Valencia,Spain,2019,11.178626864289857,3.941693885538199,cobb_douglas_log_vitality_fit
+valencia_es,Valencia,Spain,2020,11.07680525390243,3.948067253677344,cobb_douglas_log_vitality_fit
+valencia_es,Valencia,Spain,2021,11.133230437555632,3.948845229454696,cobb_douglas_log_vitality_fit
+valencia_es,Valencia,Spain,2022,11.183073267456214,3.954015062244298,cobb_douglas_log_vitality_fit
+vienna_at,Vienna,Austria,2015,12.108399175353744,4.217185814866948,cobb_douglas_log_vitality_fit
+vienna_at,Vienna,Austria,2016,12.137172626875122,4.220648998870558,cobb_douglas_log_vitality_fit
+vienna_at,Vienna,Austria,2017,12.146821455124883,4.221041239820686,cobb_douglas_log_vitality_fit
+vienna_at,Vienna,Austria,2018,12.172701987388336,4.225557670286154,cobb_douglas_log_vitality_fit
+vienna_at,Vienna,Austria,2019,12.191603470060414,4.231606719245375,cobb_douglas_log_vitality_fit
+vienna_at,Vienna,Austria,2020,12.122441005335913,4.230827133030533,cobb_douglas_log_vitality_fit
+vienna_at,Vienna,Austria,2021,12.181006088031118,4.233999680335515,cobb_douglas_log_vitality_fit
+vienna_at,Vienna,Austria,2022,12.213529771920573,4.240088111423422,cobb_douglas_log_vitality_fit
+vilnius_lt,Vilnius,Lithuania,2015,10.445375701753937,3.9737339390910513,cobb_douglas_log_vitality_fit
+vilnius_lt,Vilnius,Lithuania,2016,10.479454640632905,3.982074655821916,cobb_douglas_log_vitality_fit
+vilnius_lt,Vilnius,Lithuania,2017,10.52384896337042,3.987684789005188,cobb_douglas_log_vitality_fit
+vilnius_lt,Vilnius,Lithuania,2018,10.596584731846031,3.9937394540418194,cobb_douglas_log_vitality_fit
+vilnius_lt,Vilnius,Lithuania,2019,10.662211777281856,4.007036837483825,cobb_douglas_log_vitality_fit
+vilnius_lt,Vilnius,Lithuania,2020,10.663779230725403,4.016407463160947,cobb_douglas_log_vitality_fit
+vilnius_lt,Vilnius,Lithuania,2021,10.739153740836397,4.028194800602234,cobb_douglas_log_vitality_fit
+vilnius_lt,Vilnius,Lithuania,2022,10.777809799587782,4.036365053567969,cobb_douglas_log_vitality_fit
+vilnius_lt,Vilnius,Lithuania,2023,10.821057465908664,4.036644889779938,cobb_douglas_log_vitality_fit
+warsaw_pl,Warsaw,Poland,2015,12.20579760771074,4.096995917217312,cobb_douglas_log_vitality_fit
+warsaw_pl,Warsaw,Poland,2016,12.236402994713007,4.089960040196719,cobb_douglas_log_vitality_fit
+warsaw_pl,Warsaw,Poland,2017,12.299717803591161,4.095778808045633,cobb_douglas_log_vitality_fit
+warsaw_pl,Warsaw,Poland,2018,12.379029658197743,4.105031676731662,cobb_douglas_log_vitality_fit
+warsaw_pl,Warsaw,Poland,2019,12.436700122282128,4.099367426334718,cobb_douglas_log_vitality_fit
+warsaw_pl,Warsaw,Poland,2020,12.419440570729455,4.104975379888111,cobb_douglas_log_vitality_fit
+warsaw_pl,Warsaw,Poland,2021,12.463319994733586,4.095119402612225,cobb_douglas_log_vitality_fit
+warsaw_pl,Warsaw,Poland,2022,12.532584729821417,4.098539715446936,cobb_douglas_log_vitality_fit
+washington_dc_us,Washington,United States,2015,13.424569463872208,4.620248283369248,cobb_douglas_log_vitality_fit
+washington_dc_us,Washington,United States,2016,13.458228286782537,4.624356862246774,cobb_douglas_log_vitality_fit
+washington_dc_us,Washington,United States,2017,13.476898633843566,4.624017070230879,cobb_douglas_log_vitality_fit
+washington_dc_us,Washington,United States,2018,13.494204136791833,4.61973687247281,cobb_douglas_log_vitality_fit
+washington_dc_us,Washington,United States,2019,13.51116372994341,4.620129454967692,cobb_douglas_log_vitality_fit
+washington_dc_us,Washington,United States,2020,13.495898781570071,4.611812519284867,cobb_douglas_log_vitality_fit
+washington_dc_us,Washington,United States,2021,13.527959143643015,4.607889837894199,cobb_douglas_log_vitality_fit
+washington_dc_us,Washington,United States,2022,13.533738984052205,4.608119806148558,cobb_douglas_log_vitality_fit
+washington_dc_us,Washington,United States,2023,13.568103770614385,4.608349502833547,cobb_douglas_log_vitality_fit
+wellington_nz,Wellington,New Zealand,2015,9.99884318585288,4.1023494085486405,cobb_douglas_log_vitality_fit
+wellington_nz,Wellington,New Zealand,2016,10.028179996493446,4.094447625176624,cobb_douglas_log_vitality_fit
+wellington_nz,Wellington,New Zealand,2017,10.032715950543913,4.087591833187823,cobb_douglas_log_vitality_fit
+wellington_nz,Wellington,New Zealand,2018,10.05044096549229,4.095830555514215,cobb_douglas_log_vitality_fit
+wellington_nz,Wellington,New Zealand,2019,10.095140436758967,4.081966437022411,cobb_douglas_log_vitality_fit
+wellington_nz,Wellington,New Zealand,2020,10.072934924846477,4.075657516998575,cobb_douglas_log_vitality_fit
+wellington_nz,Wellington,New Zealand,2021,10.110257789732392,4.067055992599153,cobb_douglas_log_vitality_fit
+wellington_nz,Wellington,New Zealand,2022,10.122341918431909,4.067097639324965,cobb_douglas_log_vitality_fit
+zagreb_hr,Zagreb,Croatia,2015,10.803018622594942,3.90026645564488,cobb_douglas_log_vitality_fit
+zagreb_hr,Zagreb,Croatia,2016,10.833681189579275,3.930950727078301,cobb_douglas_log_vitality_fit
+zagreb_hr,Zagreb,Croatia,2017,10.871440510734077,3.93062940250919,cobb_douglas_log_vitality_fit
+zagreb_hr,Zagreb,Croatia,2018,10.908924048640696,3.933753886642617,cobb_douglas_log_vitality_fit
+zagreb_hr,Zagreb,Croatia,2019,10.94649903718944,3.9565409544679975,cobb_douglas_log_vitality_fit
+zagreb_hr,Zagreb,Croatia,2020,10.878084927671337,3.956367017125645,cobb_douglas_log_vitality_fit
+zagreb_hr,Zagreb,Croatia,2021,10.980382381786619,3.9608904101544073,cobb_douglas_log_vitality_fit
+zagreb_hr,Zagreb,Croatia,2022,11.027994982499575,3.968565634161064,cobb_douglas_log_vitality_fit
+zagreb_hr,Zagreb,Croatia,2023,11.059031377457561,3.9687515206747968,cobb_douglas_log_vitality_fit
+zurich_ch,Zurich,Switzerland,2015,11.745401334424907,4.097345988728444,cobb_douglas_log_vitality_fit
+zurich_ch,Zurich,Switzerland,2016,11.762453854789129,4.096652538036159,cobb_douglas_log_vitality_fit
+zurich_ch,Zurich,Switzerland,2017,11.78305946670208,4.092602989711936,cobb_douglas_log_vitality_fit
+zurich_ch,Zurich,Switzerland,2018,11.827458794072687,4.094752227700283,cobb_douglas_log_vitality_fit
+zurich_ch,Zurich,Switzerland,2019,11.820586619737321,4.100823167893072,cobb_douglas_log_vitality_fit
+zurich_ch,Zurich,Switzerland,2020,11.788600743497392,4.106409013933054,cobb_douglas_log_vitality_fit
+zurich_ch,Zurich,Switzerland,2021,11.798953670537825,4.108710728492398,cobb_douglas_log_vitality_fit
+zurich_ch,Zurich,Switzerland,2022,11.845719516784374,4.108972081745762,cobb_douglas_log_vitality_fit

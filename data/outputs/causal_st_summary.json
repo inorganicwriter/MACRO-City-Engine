@@ -1,0 +1,20 @@
+{
+  "att_post": 0.044977356596428715,
+  "outcome_variable": "log_viirs_ntl",
+  "treatment_spec": "direct_core",
+  "stderr": 0.023491146006468216,
+  "t_value": 1.9146514428901995,
+  "p_value": 0.1,
+  "att_ci95": [
+    -0.004096816033800344,
+    0.08675507493826223
+  ],
+  "se_method": "bootstrap_cross_fit",
+  "n_obs": 3245,
+  "n_post_treated": 1670,
+  "n_bootstrap_ok": 60,
+  "feature_count": 21,
+  "estimator": "dr_crossfit",
+  "use_spatial": true,
+  "use_temporal": true
+}

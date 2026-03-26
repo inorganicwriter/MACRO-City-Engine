@@ -1,0 +1,16 @@
+{
+  "status": "ok",
+  "feature_count": 11,
+  "rows_train": 2655,
+  "rows_test": 295,
+  "evaluation_auc": 0.7509578544061303,
+  "evaluation_brier": 0.1822317067075847,
+  "shap_method": "counterfactual_leave_one_feature_out",
+  "permutation_shap_spearman": 0.5363636363636364,
+  "top5_overlap_count": 3,
+  "top5_overlap_ratio": 0.6,
+  "mean_yearly_rank_corr": 0.07506832752474063,
+  "consistency_file": "D:\\User\\Desktop\\CC\\data\\outputs\\ai_explainability_consistency.csv",
+  "year_importance_file": "D:\\User\\Desktop\\CC\\data\\outputs\\ai_feature_importance_by_year.csv",
+  "year_drift_summary_file": "D:\\User\\Desktop\\CC\\data\\outputs\\ai_feature_importance_drift_summary.csv"
+}

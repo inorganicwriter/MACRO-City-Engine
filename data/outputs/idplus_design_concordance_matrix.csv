@@ -1,0 +1,9 @@
+variant,main_design,direct_event_design,evidence_evidence_ab,source_external_direct,source_ai_inferred,source_objective_indicator,source_objective_macro,evidence_evidence_a
+main_design,1.0,0.5000032037307522,0.5000032037307522,0.5000032037307522,0.5000032037307522,0.5000032037307522,0.5000032037307522,0.5000032037307522
+direct_event_design,0.5000032037307522,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+evidence_evidence_ab,0.5000032037307522,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+source_external_direct,0.5000032037307522,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+source_ai_inferred,0.5000032037307522,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+source_objective_indicator,0.5000032037307522,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+source_objective_macro,0.5000032037307522,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+evidence_evidence_a,0.5000032037307522,1.0,1.0,1.0,1.0,1.0,1.0,1.0
