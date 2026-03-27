@@ -19,7 +19,6 @@ from .econometrics import run_econometric_suite
 from .external_validity import run_external_validity_suite
 from .exogenous_shock_design import run_exogenous_shock_suite
 from .exogenous_shock_heterogeneity import run_exogenous_shock_heterogeneity_suite
-from .export_dashboard import export_dashboard_data
 from .experiment_enhancements import run_experiment_enhancements
 from .global_data import build_global_city_panel
 from .identification_plus import run_identification_plus_suite
@@ -31,7 +30,7 @@ from .pulse_ai import run_pulse_ai_engine
 from .pulse_dynamics import run_pulse_dynamics_suite
 from .pulse_nowcast import run_pulse_nowcast_suite
 from .pulse_state import estimate_pulse_states
-from .realtime_monitor import generate_realtime_monitor_snapshot
+from .realtime_monitor import export_realtime_inputs, generate_realtime_monitor_snapshot
 from .representation import build_city_embeddings
 from .research_matrix import build_research_matrix_report
 from .submission_extensions import run_submission_extensions
@@ -140,8 +139,8 @@ def run_pipeline(
     submission_extensions = run_submission_extensions()
     weight_sensitivity = run_weight_sensitivity_analysis(panel)
 
-    LOGGER.info("Step 7/7: Exporting dashboard data and reports...")
-    export_dashboard_data(panel)
+    LOGGER.info("Step 7/7: Writing analysis artifacts and reports...")
+    export_realtime_inputs(panel)
     realtime_status = generate_realtime_monitor_snapshot(trigger="pipeline_step7")
     _write_summary_report(
         panel,
@@ -289,19 +288,13 @@ def run_pipeline(
             "policy_objective_macro": "data/processed/policy_event_objective_macro_summary.json",
             "policy_ai_inference": "data/processed/policy_event_ai_inference_summary.json",
             "policy_evidence": "data/processed/policy_event_evidence_summary.json",
-            "realtime_status": "web/static/data/realtime_status.json",
-            "realtime_country_monitor": "web/static/data/realtime_country_monitor.csv",
-            "realtime_alerts": "web/static/data/realtime_alerts.csv",
-            "realtime_sentinel": "web/static/data/realtime_sentinel.csv",
-            "pulse_ai_policy_rl_city": "web/static/data/pulse_ai_dynamic_policy_rl_city.csv",
-            "pulse_ai_policy_rl_action_summary": "web/static/data/pulse_ai_dynamic_policy_rl_action_summary.csv",
-            "pulse_ai_policy_rl_state_value": "web/static/data/pulse_ai_dynamic_policy_rl_state_value.csv",
-            "pulse_ai_policy_rl_ope": "web/static/data/pulse_ai_dynamic_policy_rl_ope.csv",
-            "pulse_ai_policy_rl_ablation": "web/static/data/pulse_ai_dynamic_policy_rl_ablation.csv",
-            "pulse_ai_dynamic_index_latest": "web/static/data/pulse_ai_dynamic_index_latest.csv",
-            "pulse_ai_dynamic_index_continent": "web/static/data/pulse_ai_dynamic_index_continent_year.csv",
+            "city_points": "data/outputs/city_points.csv",
+            "pulse_ai_city_latest": "data/outputs/pulse_ai_city_latest.csv",
+            "realtime_status": "data/outputs/realtime/realtime_status.json",
+            "realtime_country_monitor": "data/outputs/realtime/realtime_country_monitor.csv",
+            "realtime_alerts": "data/outputs/realtime/realtime_alerts.csv",
+            "realtime_sentinel": "data/outputs/realtime/realtime_sentinel.csv",
             "realtime_snapshot_history": "data/outputs/realtime_monitor_history.jsonl",
-            "dashboard": "web/static/data",
         },
         "submission_extensions": submission_extensions,
         "observed_evidence": observed_evidence,

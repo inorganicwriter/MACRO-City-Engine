@@ -26,28 +26,6 @@ from src.utils import DATA_OUTPUTS
 
 
 class TestRegressionFixes(unittest.TestCase):
-    def test_unified_dashboard_template_is_valid_html(self) -> None:
-        template = Path("web/templates/dashboard_unified.html")
-        text = template.read_text(encoding="utf-8")
-        self.assertTrue(text.lstrip().lower().startswith("<!doctype html>"))
-
-        required_markers = [
-            'id="year-select"',
-            'id="continent-select"',
-            'id="refresh-btn"',
-            'id="k-gate"',
-            'id="nowcast-chart"',
-            'id="gate-chart"',
-            'id="quadrant-chart"',
-            'id="evidence-chart"',
-            'id="risk-body"',
-            'id="summary-body"',
-            'id="narrative-text"',
-            'id="actions-list"',
-        ]
-        for marker in required_markers:
-            self.assertIn(marker, text)
-
     def test_main_treatment_track_prefers_direct_core_when_available(self) -> None:
         cfg = load_config()
         years = [2019, 2020, 2021]

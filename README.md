@@ -14,7 +14,6 @@ Multi-modal Analytics and Causal Research Observatory for Cities
 - 政策处理：先用外部直接事件（WB Projects）构建处理变量，再用 WB 指标结构突变事件（`objective_indicator`）补齐缺口国家，之后才退化到客观宏观规则与 AI 推断；主 DID 口径仅使用 `direct_core`
 - 情绪模块：`social_sentiment_*` 不进入主面板 PCA/主因果链，只保留 `has_sentiment` 掩码供子样本机制分析
 - AI升级：城市表征学习（embedding）、脉搏状态概率建模、Pulse AI 动态引擎（加速/失速风险/城市类型）、Trajectory Regime AI（DTW+KMedoids 动态体制识别 + 转移特征 + Regime网络特征 + 候选模型自动择优 + 跨洲先验校准）、动态六层结构（Kinetic State + Transition Hazard + Graph Diffusion + Main Risk Fusion + Global Cycle + Policy/Event Lab）、状态门控融合（state-gated hazard fusion）、动态状态事件研究（entry event study with de-shocked relative effects）、跨洲同步网络（lead-lag sync network + permutation显著性）、政策实验室（counterfactual policy lab）、自适应象限阈值与1年迁移轨迹分析、冲击-脉搏响应 IRF 分析、跨洲泛化评估（含 Logit 基线对照、bootstrap 显著性区间）、分位无分布不确定性量化（Split-Conformal + Bootstrap区间）、动态融合显著性评估（AUC/Brier bootstrap CI + p值）、多期失速风险预测（1Y/2Y/3Y Markov-Regime Forecast）、时空因果模型（Causal-ST v2，含消融与政策仿真）、跨时空OOD基准评测（t->t+1）、解释一致性诊断（Permutation vs SHAP/Proxy）与跨年份特征漂移分析
-- 可视化：Flask + Leaflet + Chart.js 全球仪表盘
 
 ## 目录结构
 
@@ -33,12 +32,10 @@ Multi-modal Analytics and Causal Research Observatory for Cities
 - `src/pulse_dynamics.py`：动态状态转移/生存风险/跨期预警诊断
 - `src/pulse_nowcast.py`：动态现在预测（nowcast）与预测区间
 - `src/dynamic_method_core.py`：主方法-强基线滚动评测、配对显著性与消融
-- `src/export_dashboard.py`：可视化数据导出
 - `src/pipeline.py`：全流程编排
 - `run_pipeline.py`：一键执行入口
 - `run_data_crawler.py`：统一多源真实数据爬取入口
 - `run_social_crawler.py`：城市舆情情绪抓取入口
-- `run_web.py`：仪表盘启动入口
 - `run_realtime_monitor.py`：实时监测快照刷新入口（轻量）
 
 ## 快速开始
@@ -187,27 +184,7 @@ python3 run_data_crawler.py \
 python3 run_data_crawler.py --skip-weather --skip-poi --extra-wb-cache-only
 ```
 
-2. 启动可视化
-
-```bash
-python3 run_web.py
-```
-
-访问：
-- `http://127.0.0.1:8000/`（统一单页工作台，默认入口）
-
-兼容旧链接（会进入统一单页并切到对应标签）：
-- `http://127.0.0.1:8000/dashboard/dynamics`
-- `http://127.0.0.1:8000/dashboard/method-core`
-- `http://127.0.0.1:8000/dashboard/realtime`
-- `http://127.0.0.1:8000/dashboard/identification`
-- `http://127.0.0.1:8000/dashboard/external-validity`
-- `http://127.0.0.1:8000/dashboard/policy-rl`
-- `http://127.0.0.1:8000/dashboard/top-tier`
-- `http://127.0.0.1:8000/dashboard/top-tier-story`
-- `http://127.0.0.1:8000/dashboard/full`
-
-3. 仅刷新实时监测快照（不重跑全流程）
+2. 仅刷新实时监测快照（不重跑全流程）
 
 ```bash
 python3 run_realtime_monitor.py
@@ -219,101 +196,13 @@ python3 run_realtime_monitor.py
 python3 run_realtime_monitor.py --loop-seconds 600
 ```
 
-默认会启动后台实时监测线程（按固定周期刷新 nowcast 快照），可通过环境变量调整：
-
-```bash
-export URBAN_PULSE_MONITOR_REFRESH_SECONDS=900
-```
-
-如需禁用后台线程（仅按需触发）：
-
-```bash
-export URBAN_PULSE_DISABLE_BACKGROUND_MONITOR=1
-```
-
-实时监测 API：
-- `GET /api/realtime/status`
-- `GET /api/realtime/countries`
-- `GET /api/realtime/alerts`
-- `GET /api/realtime/continents`
-- `GET /api/realtime/sentinel`
-- `GET /api/realtime/stream`（SSE 实时推送）
-- `POST /api/realtime/trigger`（手动触发更新）
-
-Pulse AI 动态策略 API：
-- `GET /api/pulse_ai_dynamic_policy`
-- `GET /api/pulse_ai_dynamic_policy_rl`
-- `GET /api/pulse_ai_dynamic_policy_rl_city`
-- `GET /api/pulse_ai_dynamic_policy_rl_state`
-- `GET /api/pulse_ai_dynamic_policy_rl_ope`
-- `GET /api/pulse_ai_dynamic_policy_rl_ablation`
-- `GET /api/pulse_ai_dynamic_policy_rl_continent_ope`
-- `GET /api/pulse_ai_dynamic_policy_rl_continent_action`
-- `GET /api/pulse_ai_dynamic_index_latest`
-- `GET /api/pulse_ai_dynamic_index_continent`
-
-Trajectory Regime 动态 API：
-- `GET /api/pulse_ai_regime_share`
-- `GET /api/pulse_ai_regime_dynamics`
-- `GET /api/pulse_ai_regime_transition`
-- `GET /api/pulse_ai_trajectory_regimes`
-
-Identification Stress-Test API：
-- `GET /api/idplus_summary`
-- `GET /api/idplus_stress_index`
-- `GET /api/idplus_pretrend_geometry`
-- `GET /api/idplus_concordance_pairs`
-- `GET /api/idplus_leave_continent_stability`
-- `GET /api/econometric_policy_source_sensitivity`
-- `GET /api/econometric_source_event_study_points`
-
-Dynamic Causal Envelope API：
-- `GET /api/dce_summary`
-- `GET /api/dce_event`
-- `GET /api/dce_event_bootstrap`
-- `GET /api/dce_city_scores`
-- `GET /api/dce_continent_year`
-- `GET /api/dce_regime_summary`
-- `GET /api/dce_continent_stability`
-
-Pulse Dynamics API：
-- `GET /api/pulse_dynamics_summary`
-- `GET /api/pulse_dynamics_transition`
-- `GET /api/pulse_dynamics_spell_hazard`
-- `GET /api/pulse_dynamics_resilience`
-- `GET /api/pulse_dynamics_warning`
-
-Pulse Nowcast API：
-- `GET /api/pulse_nowcast_summary`
-- `GET /api/pulse_nowcast_latest`
-- `GET /api/pulse_nowcast_history`
-- `GET /api/pulse_nowcast_global`
-
-Dynamic Method Core API：
-- `GET /api/dynamic_method_core_summary`
-- `GET /api/dynamic_method_core_metrics`
-- `GET /api/dynamic_method_core_significance`
-- `GET /api/dynamic_method_core_ablation`
-
-External Validity API：
-- `GET /api/external_validity`
-- `GET /api/external_validity_indicators`
-- `GET /api/external_validity_rank_corr`
-
-Top-tier 审稿视角 API：
-- `GET /api/top_tier`
-- `GET /api/top_tier_gate_checks`
-- `GET /api/top_tier_evidence_convergence`
-- `GET /api/top_tier_identification_spectrum`
-- `GET /api/top_tier_innovation_frontier`
-- `GET /api/top_tier_story_bundle`
-- `GET /api/top_tier_story_markdown`
-  - 两个 story 接口支持 `?continent=<name>&year=<yyyy>`，用于按筛选导出评审叙事快照
-- `GET /api/frontend_bundle`
-  - 统一单页前端聚合接口，支持 `?continent=<name>&year=<yyyy>`
-
-投稿就绪状态 API：
-- `GET /api/submission_readiness`
+实时监测主要输出：
+- `data/outputs/realtime/realtime_status.json`
+- `data/outputs/realtime/realtime_city_monitor.csv`
+- `data/outputs/realtime/realtime_country_monitor.csv`
+- `data/outputs/realtime/realtime_continent_monitor.csv`
+- `data/outputs/realtime/realtime_alerts.csv`
+- `data/outputs/realtime/realtime_sentinel.csv`
 
 ## 主要产物
 
@@ -429,12 +318,12 @@ Top-tier 审稿视角 API：
   - `data/outputs/dynamic_method_core_significance.csv`
   - `data/outputs/dynamic_method_core_ablation.csv`
   - `data/outputs/pulse_ai_summary.json`
-  - `web/static/data/realtime_status.json`
-  - `web/static/data/realtime_city_monitor.csv`
-  - `web/static/data/realtime_country_monitor.csv`
-  - `web/static/data/realtime_continent_monitor.csv`
-  - `web/static/data/realtime_alerts.csv`
-  - `web/static/data/realtime_sentinel.csv`
+  - `data/outputs/realtime/realtime_status.json`
+  - `data/outputs/realtime/realtime_city_monitor.csv`
+  - `data/outputs/realtime/realtime_country_monitor.csv`
+  - `data/outputs/realtime/realtime_continent_monitor.csv`
+  - `data/outputs/realtime/realtime_alerts.csv`
+  - `data/outputs/realtime/realtime_sentinel.csv`
   - `data/outputs/realtime_monitor_history.jsonl`
   - `data/outputs/causal_st_summary.json`
   - `data/outputs/causal_st_counterfactual.csv`
@@ -489,7 +378,7 @@ Top-tier 审稿视角 API：
 1. 主干 DID / Event Study / DR-DID
 - 主处理变量：`treated_city_direct_core`
 - 主因变量：仅允许具物理含义的原始观测变量或自然对数版本，如 `log_viirs_ntl`、`physical_built_expansion_primary`、`knowledge_capital_raw`
-- 综合指数仅用于 Dashboard 展示、排序和预测辅助，不作为主因果回归的 `Y`
+- 综合指数仅用于排序与预测辅助，不作为主因果回归的 `Y`
 - 控制变量白名单：`temperature_mean`、`precipitation_sum`、`baseline_population_log`
 - 标准误：按 `iso3` 聚类
 

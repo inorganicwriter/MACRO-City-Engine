@@ -584,11 +584,11 @@ class TestCore(unittest.TestCase):
     def test_realtime_monitor_snapshot_generation(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp)
-            web_dir = root / "web" / "static" / "data"
+            artifact_dir = root / "data" / "outputs" / "realtime"
             processed_dir = root / "data" / "processed"
             outputs_dir = root / "data" / "outputs"
             reports_dir = root / "reports"
-            web_dir.mkdir(parents=True, exist_ok=True)
+            artifact_dir.mkdir(parents=True, exist_ok=True)
             processed_dir.mkdir(parents=True, exist_ok=True)
             outputs_dir.mkdir(parents=True, exist_ok=True)
             reports_dir.mkdir(parents=True, exist_ok=True)
@@ -629,7 +629,7 @@ class TestCore(unittest.TestCase):
                     for y in [2023, 2024, 2025]
                 ]
             )
-            city_points.to_csv(web_dir / "city_points.csv", index=False)
+            city_points.to_csv(outputs_dir / "city_points.csv", index=False)
 
             pulse = pd.DataFrame(
                 [
@@ -651,7 +651,7 @@ class TestCore(unittest.TestCase):
                     },
                 ]
             )
-            pulse.to_csv(web_dir / "pulse_ai_city_latest.csv", index=False)
+            pulse.to_csv(outputs_dir / "pulse_ai_city_latest.csv", index=False)
 
             pd.DataFrame(
                 [
@@ -667,7 +667,7 @@ class TestCore(unittest.TestCase):
 
             status = generate_realtime_monitor_snapshot(
                 trigger="unit_test",
-                web_data_dir=web_dir,
+                artifact_dir=artifact_dir,
                 data_processed_dir=processed_dir,
                 data_outputs_dir=outputs_dir,
                 reports_dir=reports_dir,
@@ -680,10 +680,10 @@ class TestCore(unittest.TestCase):
             self.assertIn("sentinel_city_count", status)
             self.assertIn("sentinel_break_count", status)
 
-            self.assertTrue((web_dir / "realtime_status.json").exists())
-            self.assertTrue((web_dir / "realtime_country_monitor.csv").exists())
-            self.assertTrue((web_dir / "realtime_alerts.csv").exists())
-            self.assertTrue((web_dir / "realtime_sentinel.csv").exists())
+            self.assertTrue((artifact_dir / "realtime_status.json").exists())
+            self.assertTrue((artifact_dir / "realtime_country_monitor.csv").exists())
+            self.assertTrue((artifact_dir / "realtime_alerts.csv").exists())
+            self.assertTrue((artifact_dir / "realtime_sentinel.csv").exists())
             self.assertTrue((outputs_dir / "realtime_monitor_history.jsonl").exists())
 
     def test_pulse_state_runs(self) -> None:

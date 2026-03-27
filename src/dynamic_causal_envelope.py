@@ -747,7 +747,7 @@ def _build_continent_stability(continent_year: pd.DataFrame, draws: int = 400, r
 
 
 def run_dynamic_causal_envelope_suite() -> Dict[str, Any]:
-    """Generate dynamic-causal-envelope artifacts for dashboard and paper diagnostics."""
+    """Generate dynamic-causal-envelope artifacts for analysis and paper diagnostics."""
     event = _build_event_envelope()
     event_boot = _build_event_envelope_bootstrap()
     regime_event = _build_regime_event_envelope()

@@ -15,9 +15,8 @@ if str(PROJECT_ROOT) not in sys.path:
 
 from src.benchmark_eval import run_benchmark_suite
 from src.causal_st import run_causal_st_analysis, run_causal_st_experiment_matrix
-from src.export_dashboard import export_dashboard_data
 from src.pipeline import _read_json_if_exists, _write_summary_report, setup_logging
-from src.realtime_monitor import generate_realtime_monitor_snapshot
+from src.realtime_monitor import export_realtime_inputs, generate_realtime_monitor_snapshot
 from src.research_matrix import build_research_matrix_report
 from src.utils import DATA_OUTPUTS, DATA_PROCESSED, REPORTS_DIR, dump_json
 
@@ -77,8 +76,9 @@ def _build_summary(
             "causal_st": "data/outputs/causal_st_summary.json",
             "causal_st_ablation": "data/outputs/causal_st_ablation.json",
             "benchmark": "data/outputs/benchmark_scores.json",
-            "realtime_status": "web/static/data/realtime_status.json",
-            "dashboard": "web/static/data",
+            "city_points": "data/outputs/city_points.csv",
+            "pulse_ai_city_latest": "data/outputs/pulse_ai_city_latest.csv",
+            "realtime_status": "data/outputs/realtime/realtime_status.json",
         }
     )
     summary["outputs"] = outputs
@@ -118,8 +118,8 @@ def main() -> None:
     LOGGER.info("Refreshing benchmark outputs for target=%s...", benchmark_target or "auto")
     benchmark = run_benchmark_suite(panel, target=benchmark_target)
 
-    LOGGER.info("Refreshing dashboard snapshot and reports...")
-    export_dashboard_data(panel)
+    LOGGER.info("Refreshing analysis snapshots and reports...")
+    export_realtime_inputs(panel)
     realtime_status = generate_realtime_monitor_snapshot(trigger="late_stage_refresh")
     existing = _load_existing_summary()
     inputs = _load_inputs()

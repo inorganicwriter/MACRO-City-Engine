@@ -1,7 +1,0 @@
-continent,country_count,city_count,observed_rows,objective_rows,verified_rows,years_observed,expected_rows,row_coverage,objective_row_ratio,verified_row_ratio,year_coverage
-Africa,37,52,572,572,572,11,572,1.0,1.0,1.0,1.0
-Asia,38,74,814,814,814,11,814,1.0,1.0,1.0,1.0
-Europe,34,67,737,737,737,11,737,1.0,1.0,1.0,1.0
-North America,12,44,484,484,484,11,484,1.0,1.0,1.0,1.0
-Oceania,4,19,209,209,209,11,209,1.0,1.0,1.0,1.0
-South America,12,39,429,429,429,11,429,1.0,1.0,1.0,1.0

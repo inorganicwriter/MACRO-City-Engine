@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-"""Realtime monitoring snapshot generation for MACRO-City Engine tracking."""
+"""Realtime monitoring snapshot generation for MACRO-City Engine analysis outputs."""
 
 import json
 import logging
@@ -12,7 +12,7 @@ from typing import Any, Dict, Iterable, Tuple
 import numpy as np
 import pandas as pd
 
-from .utils import DATA_OUTPUTS, DATA_PROCESSED, REPORTS_DIR, WEB_DATA_DIR, dump_json
+from .utils import DATA_OUTPUTS, DATA_PROCESSED, REALTIME_OUTPUT_DIR, REPORTS_DIR, dump_json
 
 LOGGER = logging.getLogger(__name__)
 
@@ -32,6 +32,29 @@ class RealtimeMonitorConfig:
     top_sentinel: int = 120
     shock_z_threshold: float = 2.0
     changepoint_alert_threshold: float = 0.72
+
+
+def export_realtime_inputs(panel: pd.DataFrame, *, data_outputs_dir: Path | None = None) -> Path:
+    """Write the minimal city-year panel required by realtime diagnostics."""
+    outputs_dir = DATA_OUTPUTS if data_outputs_dir is None else Path(data_outputs_dir)
+    path = outputs_dir / "city_points.csv"
+    keep = [
+        "city_id",
+        "city_name",
+        "country",
+        "continent",
+        "year",
+        "latitude",
+        "longitude",
+        "economic_vitality",
+        "livability",
+        "innovation",
+        "composite_index",
+        "treated_city",
+    ]
+    available = [c for c in keep if c in panel.columns]
+    panel[available].copy().to_csv(path, index=False)
+    return path
 
 
 def _read_csv(path: Path) -> pd.DataFrame:
@@ -551,22 +574,22 @@ def generate_realtime_monitor_snapshot(
     *,
     config: RealtimeMonitorConfig | None = None,
     trigger: str = "manual",
-    web_data_dir: Path | None = None,
+    artifact_dir: Path | None = None,
     data_processed_dir: Path | None = None,
     data_outputs_dir: Path | None = None,
     reports_dir: Path | None = None,
     write_versioned_snapshot: bool = True,
 ) -> Dict[str, Any]:
-    """Generate realtime monitoring artifacts from current dashboard outputs."""
+    """Generate realtime monitoring artifacts from processed analysis outputs."""
     cfg = config or RealtimeMonitorConfig()
-    web_dir = WEB_DATA_DIR if web_data_dir is None else Path(web_data_dir)
+    output_dir = REALTIME_OUTPUT_DIR if artifact_dir is None else Path(artifact_dir)
     processed_dir = DATA_PROCESSED if data_processed_dir is None else Path(data_processed_dir)
     outputs_dir = DATA_OUTPUTS if data_outputs_dir is None else Path(data_outputs_dir)
     rep_dir = REPORTS_DIR if reports_dir is None else Path(reports_dir)
 
     t0 = datetime.now(timezone.utc)
-    city_points_path = web_dir / "city_points.csv"
-    pulse_latest_path = web_dir / "pulse_ai_city_latest.csv"
+    city_points_path = outputs_dir / "city_points.csv"
+    pulse_latest_path = outputs_dir / "pulse_ai_city_latest.csv"
     source_city_path = processed_dir / "source_audit_city.csv"
     source_summary_path = processed_dir / "source_audit_summary.json"
     pipeline_summary_path = rep_dir / "pipeline_summary.json"
@@ -628,13 +651,13 @@ def generate_realtime_monitor_snapshot(
         },
     }
 
-    web_dir.mkdir(parents=True, exist_ok=True)
-    city_monitor.to_csv(web_dir / "realtime_city_monitor.csv", index=False)
-    country_monitor.to_csv(web_dir / "realtime_country_monitor.csv", index=False)
-    continent_monitor.to_csv(web_dir / "realtime_continent_monitor.csv", index=False)
-    alerts.to_csv(web_dir / "realtime_alerts.csv", index=False)
-    sentinel.to_csv(web_dir / "realtime_sentinel.csv", index=False)
-    dump_json(web_dir / "realtime_status.json", status)
+    output_dir.mkdir(parents=True, exist_ok=True)
+    city_monitor.to_csv(output_dir / "realtime_city_monitor.csv", index=False)
+    country_monitor.to_csv(output_dir / "realtime_country_monitor.csv", index=False)
+    continent_monitor.to_csv(output_dir / "realtime_continent_monitor.csv", index=False)
+    alerts.to_csv(output_dir / "realtime_alerts.csv", index=False)
+    sentinel.to_csv(output_dir / "realtime_sentinel.csv", index=False)
+    dump_json(output_dir / "realtime_status.json", status)
 
     if write_versioned_snapshot:
         _write_versioned_snapshot(

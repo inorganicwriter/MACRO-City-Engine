@@ -1446,7 +1446,7 @@ def _apply_split_conformal_uncertainty(
             out["stall_risk_boot_high"] = np.clip(100.0 * out["stall_probability_boot_high"], 0.0, 100.0)
             out["stall_risk_interval_width_boot"] = out["stall_risk_boot_high"] - out["stall_risk_boot_low"]
 
-            # Use epistemic interval for dashboard-facing uncertainty width.
+            # Use epistemic interval for front-end uncertainty width.
             out["stall_probability_low"] = out["stall_probability_boot_low"]
             out["stall_probability_high"] = out["stall_probability_boot_high"]
             out["stall_risk_low"] = out["stall_risk_boot_low"]

@@ -17,14 +17,14 @@ OUTPUT_ROOT = Path(os.environ.get("URBAN_PULSE_OUTPUT_ROOT", str(ROOT))).resolve
 DATA_RAW = ROOT / "data" / "raw"
 DATA_PROCESSED = OUTPUT_ROOT / "data" / "processed"
 DATA_OUTPUTS = OUTPUT_ROOT / "data" / "outputs"
+REALTIME_OUTPUT_DIR = DATA_OUTPUTS / "realtime"
 MODELS_DIR = OUTPUT_ROOT / "models"
 REPORTS_DIR = OUTPUT_ROOT / "reports"
-WEB_DATA_DIR = OUTPUT_ROOT / "web" / "static" / "data"
 
 
 def ensure_project_dirs() -> None:
     """Create standard output directories if missing."""
-    for p in [DATA_RAW, DATA_PROCESSED, DATA_OUTPUTS, MODELS_DIR, REPORTS_DIR, WEB_DATA_DIR]:
+    for p in [DATA_RAW, DATA_PROCESSED, DATA_OUTPUTS, REALTIME_OUTPUT_DIR, MODELS_DIR, REPORTS_DIR]:
         p.mkdir(parents=True, exist_ok=True)
 
 
