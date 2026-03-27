@@ -46,7 +46,7 @@ def _configure_runtime() -> None:
 
 
 def parse_args() -> argparse.Namespace:
-    parser = argparse.ArgumentParser(description="Run Urban Pulse global pipeline.")
+    parser = argparse.ArgumentParser(description="Run the MACRO-City Engine global pipeline.")
     parser.add_argument("--max-cities", type=int, default=None, help="Maximum number of cities to include.")
     parser.add_argument(
         "--require-policy-events",

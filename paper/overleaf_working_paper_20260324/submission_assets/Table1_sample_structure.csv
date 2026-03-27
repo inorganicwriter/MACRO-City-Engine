@@ -1,0 +1,15 @@
+metric,value
+cities,295.0
+countries,136.0
+continents,6.0
+year_start,2015.0
+year_end,2025.0
+observations,3245.0
+objective_row_ratio,1.0
+objective_complete_city_ratio,1.0
+city_count_africa,52.0
+city_count_asia,74.0
+city_count_europe,67.0
+city_count_north_america,44.0
+city_count_oceania,19.0
+city_count_south_america,39.0

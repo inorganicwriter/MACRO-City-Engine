@@ -9,7 +9,7 @@ import numpy as np
 import pandas as pd
 from PIL import Image, TiffImagePlugin
 
-TEST_OUTPUT_ROOT = Path(tempfile.gettempdir()) / "urban_pulse_test_artifacts"
+TEST_OUTPUT_ROOT = Path(tempfile.gettempdir()) / "macro_city_engine_test_artifacts"
 os.environ["URBAN_PULSE_OUTPUT_ROOT"] = str(TEST_OUTPUT_ROOT)
 
 from src.historical_viirs import _parse_temporal_meta, _sample_geotiff_city_values, merge_viirs_monthly_panels

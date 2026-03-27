@@ -1,0 +1,7 @@
+metric,value
+roc_auc,0.7422687465790914
+average_precision,0.4742167304936189
+brier,0.203338594849619
+train_rows,2360.0
+test_rows,295.0
+test_positive_rate,0.2135593220338983

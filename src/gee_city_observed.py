@@ -178,8 +178,8 @@ def _viirs_script_template(asset_id: str, start_year: int, end_year: int) -> str
 
         Export.table.toDrive({{
           collection: rows,
-          description: 'urban_pulse_viirs_monthly',
-          fileNamePrefix: 'urban_pulse_viirs_monthly',
+          description: 'macro_city_engine_viirs_monthly',
+          fileNamePrefix: 'macro_city_engine_viirs_monthly',
           fileFormat: 'CSV',
           selectors: ['city_id', 'city_name', 'iso3', 'year', 'month', 'radiance', 'radiance_sum', 'cf_cvg', 'viirs_source']
         }});
@@ -239,8 +239,8 @@ def _ghsl_script_template(asset_id: str) -> str:
 
         Export.table.toDrive({{
           collection: rows,
-          description: 'urban_pulse_ghsl_yearly',
-          fileNamePrefix: 'urban_pulse_ghsl_yearly',
+          description: 'macro_city_engine_ghsl_yearly',
+          fileNamePrefix: 'macro_city_engine_ghsl_yearly',
           fileFormat: 'CSV',
           selectors: [
             'city_id',
@@ -338,8 +338,8 @@ def _no2_script_template(asset_id: str, start_year: int, end_year: int) -> str:
 
         Export.table.toDrive({{
           collection: rows,
-          description: 'urban_pulse_no2_monthly',
-          fileNamePrefix: 'urban_pulse_no2_monthly',
+          description: 'macro_city_engine_no2_monthly',
+          fileNamePrefix: 'macro_city_engine_no2_monthly',
           fileFormat: 'CSV',
           selectors: ['city_id', 'city_name', 'iso3', 'year', 'month', 'no2_trop_mean', 'no2_valid_obs_count', 'no2_source']
         }});

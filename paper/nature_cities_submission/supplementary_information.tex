@@ -1,0 +1,220 @@
+\documentclass[oneside,pdflatex,sn-nature]{sn-jnl}
+
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{longtable}
+\usepackage{float}
+\usepackage{afterpage}
+\usepackage{hyperref}
+\usepackage{siunitx}
+\usepackage{tabularx}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage[section]{placeins}
+\usepackage{microtype}
+\usepackage{vruler}
+\raggedbottom
+\setcitestyle{super,sort&compress,open={},close={}}
+
+\makeatletter
+\def\fps@figure{!htbp}
+\def\fps@table{!htbp}
+\def\linenoon{\setvruler[12bp][1][1][3][1][1.18\textwidth][26pt][-7pt][0.99\textheight]}
+\linenoon
+\def\lineno@off{\unsetvruler}
+\makeatother
+
+\title[Supplementary Information]{Supplementary Information: Fragile Booms in Cities}
+\author[1]{\fnm{MACRO-City Engine Research} \sur{Team}}
+\affil[1]{\orgname{MACRO-City Research Collaboration}, \orgaddress{\city{Global}, \country{International}}}
+
+\begin{document}
+\maketitle
+
+\section{Supplementary Table S1: Backcasted NO$_2$ robustness}
+
+The main fast-variable specification uses observed NO$_2$ only and therefore restricts the causal sample to 2018--2025.
+To check whether the core interpretation is mechanically driven by left-censoring of the early panel, we estimate a supplementary robustness design in which NO$_2$ is backcasted for 2015--2017 using predictors observed no later than 2023.
+These backcasted features never enter the main causal outcome specification.
+They are used only as a robustness expansion of the sample window.
+
+\begin{table}[H]
+\centering
+\caption{Supplementary Table S1. Backcasted NO$_2$ does not overturn the main fast-variable ordering in the full-sample robustness design (2015--2025).}
+\small
+\setlength{\tabcolsep}{5pt}
+\begin{tabular}{lrrrrr}
+\toprule
+Policy bucket & DML coef ($\times 10^{-6}$) & $p$-value & Mean post coef ($\times 10^{-6}$) & Pretrend $p$ & Filled rows \\
+\midrule
+Infrastructure & 0.757 & 0.103 & 4.708 & 0.245 & 885 \\
+Digital & 0.253 & 0.587 & 2.453 & 0.408 & 885 \\
+Environmental / regulatory & 0.029 & 0.958 & -0.519 & 0.406 & 885 \\
+\bottomrule
+\end{tabular}
+\end{table}
+\FloatBarrier
+
+\section{Supplementary Table S2: Pooled-estimator disclosure}
+
+\begin{table}[H]
+\centering
+\caption{Supplementary Table S2. Global average policy effects remain design-sensitive even after treatment tightening to the direct-core track.}
+\small
+\setlength{\tabcolsep}{5pt}
+\begin{tabular}{lrrrrrr}
+\toprule
+Method & Estimate & SE & 95\% CI & $t$-stat & Bootstrap sign $p$ & $N$ \\
+\midrule
+TWFE-DID & 0.060 & 0.040 & [$-0.019$, 0.139] & 1.488 & 0.140 & 935 \\
+Staggered DID & 0.063 & -- & [$-0.011$, 0.136] & 1.678 & 0.193 & 935 \\
+DML-DID & $-0.189$ & 0.062 & [$-0.311$, $-0.068$] & $-3.048$ & 0.003 & 934 \\
+DR-DID & 0.014 & 0.012 & [$-0.010$, 0.039] & 1.152 & 0.302 & 836 \\
+Causal-ST & 0.051 & 0.024 & [0.004, 0.084] & 2.094 & 0.100 & 3245 \\
+\bottomrule
+\end{tabular}
+\end{table}
+\FloatBarrier
+
+\noindent\textit{Notes:} The main outcome is $\log(\mathrm{VIIRS\ NTL})$ and the main treatment is the direct-core policy track. Staggered DID reports its published confidence interval directly. Causal-ST reports a percentile bootstrap confidence interval together with a two-sided sign-bootstrap $p$-value from 60 successful draws, so the two uncertainty summaries need not line up exactly.
+
+\section{Supplementary Figure S1: Counterfactual and effect envelope}
+
+Synthetic control for the treated Ireland case reports a positive post-treatment gap of 0.526, whereas panel-wide Causal-ST reports a much smaller positive average ATT of 0.051.
+This gap is not contradictory.
+It reflects the difference between a one-case long-horizon counterfactual and a pooled spatiotemporal panel estimand.
+We therefore avoid collapsing these magnitudes into one policy number and instead use them to define a conservative effect envelope for decision interpretation.
+
+We summarize the remaining model dependence with a signed effect envelope rather than treating any one estimator as the final word:
+\[
+\mathcal{E}_{\text{signed}} = \left[\min\{0.060, 0.063, -0.189, 0.014, 0.051, 0.526\},\ \max\{0.060, 0.063, -0.189, 0.014, 0.051, 0.526\}\right] = [-0.189, 0.526].
+\]
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.85\textwidth]{submission_assets/Figure34_nonse_permutation_distribution.pdf}
+  \caption{Supplementary Figure S1. Design-dependent estimators still produce interpretable effect envelopes once uncertainty is reported transparently. Dashed lines denote the observed post-pre gap statistics against their permutation distributions.}
+\end{figure}
+\FloatBarrier
+
+\section{Supplementary Table S3: Identification risks and mitigation}
+
+\begin{table}[H]
+\centering
+\caption{Supplementary Table S3. The main identification risks are explicit, partially mitigated, and still consequential for claim boundaries.}
+\small
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{p{0.21\textwidth}p{0.27\textwidth}p{0.24\textwidth}p{0.20\textwidth}}
+\toprule
+Threat & Why it matters & Current mitigation & Remaining risk \\
+\midrule
+Endogenous timing & Adoption can correlate with latent trends & External-direct event track, pretrend tests, placebo timing checks & Event timing granularity remains limited \\
+Differential trends & Treated/control drift may differ pre-treatment & TWFE, event-study, and DML triangulation & Short pre-period for some cohorts \\
+Spillovers & Neighbor interventions contaminate controls & Causal-ST spatial controls and ablations & Network misspecification possible \\
+Measurement heterogeneity & Country-level macro available for part of control set & Resolution flags, city-observed primary specification, country-clustered SE & Within-country macro micro-foundations remain partially observed \\
+Predictive overfit & High fit may not transport & Strict temporal holdout and continent OOD tests & Higher-frequency validation pending \\
+\bottomrule
+\end{tabular}
+\end{table}
+\FloatBarrier
+
+\section{Supplementary Table S4: Road-proxy spatial robustness}
+
+\begin{table}[H]
+\centering
+\caption{Supplementary Table S4. A road-structure accessibility proxy preserves the positive global spatial estimate, while continent-level and dense-core specifications remain heterogeneous.}
+\small
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{lrrrrrr}
+\toprule
+Variant & ATT & SE & 95\% CI & $t$-stat & Bootstrap ok & Cities \\
+\midrule
+Global & 0.052 & 0.026 & [$-0.002$, 0.088] & 2.018 & 16 & 295 \\
+Dense core (Europe + North America) & $-0.030$ & 0.022 & [$-0.055$, 0.020] & $-1.354$ & 16 & 107 \\
+Africa & 0.005 & 0.122 & [$-0.158$, 0.272] & 0.043 & 16 & 52 \\
+Asia & $-0.027$ & 0.084 & [$-0.184$, 0.057] & $-0.327$ & 16 & 74 \\
+Europe & 0.047 & 0.042 & [$-0.048$, 0.096] & 1.113 & 16 & 67 \\
+North America & 0.234 & 0.213 & [$-0.232$, 0.400] & 1.103 & 16 & 44 \\
+Oceania & $-1.324$ & 0.333 & [--, --] & -- & 15 & 19 \\
+South America & 0.226 & 0.122 & [0.058, 0.461] & 1.858 & 16 & 39 \\
+\bottomrule
+\end{tabular}
+\end{table}
+\FloatBarrier
+
+\noindent\textit{Notes:} These estimates replace the geographic KNN map with a continent-bounded road-structure accessibility proxy derived from cleaned OSM road attributes (`road length', `arterial share', and `intersection density') and a 1,500 km corridor threshold. The dense-core specification restricts the sample to Europe and North America and further requires each city to have at least five road-proxy neighbors, thereby emphasizing high-density continental corridors. The proxy is informative for robustness, but it is not equivalent to a realized route-time or shortest-path matrix. The Oceania row is retained for transparency, but the 19-city sample yields unstable bootstrap geometry; its interval and test statistics are therefore suppressed and not interpreted substantively.
+
+\section{Supplementary Table S5: Variable credibility and resolution hierarchy}
+
+\begin{table}[H]
+\centering
+\caption{Supplementary Table S5. Core variables differ in resolution, coverage, and analytical role; city-observed outcomes remain separated from mixed-resolution context and partial validation anchors.}
+\small
+\setlength{\tabcolsep}{4pt}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{p{0.20\textwidth}p{0.15\textwidth}p{0.13\textwidth}p{0.07\textwidth}p{0.09\textwidth}p{0.09\textwidth}p{0.19\textwidth}}
+\toprule
+Variable & Resolution & City-observed & Coverage & Main pred. & Main causal & Notes \\
+\midrule
+$\log(\mathrm{VIIRS\ NTL})$ & city-year polygon satellite & yes & 1.000 & yes & yes & Primary slow outcome; full 2015--2025 panel coverage. \\
+NO$_2$ anomaly & city-year polygon satellite & yes & 0.727 & no & yes & Primary fast outcome; observed 2018--2025 only. Backcasted variant enters benchmark modules only. \\
+Physical built expansion & city-year polygon satellite & yes & 1.000 & no & no & Structural proxy used in mechanism decomposition and appendix proxy checks. \\
+Road growth intensity & city-year OSM-derived & yes & 1.000 & yes & no & Local transport/friction proxy used in dynamic features and supplementary mechanism checks. \\
+POI total growth & city-year OSM-derived & yes & 0.909 & yes & no & Middle-speed activity proxy; coverage begins after first within-city year. \\
+Climate controls & city-year weather & yes & 1.000 & yes & yes & Temperature and precipitation are used as controls, not as direct growth outcomes. \\
+Baseline population log & mixed / baseline-derived & mixed & 1.000 & yes & yes & Retained as a scale control, not interpreted as direct city-level measurement. \\
+Knowledge capital raw & mixed / macro-derived composite & no & 1.000 & yes & no & Used in theory fit and mechanism decomposition, not as the primary policy outcome. \\
+Country-year macro context block & country-year & no & 1.000 & yes & yes & Background context only; never interpreted as direct city-level measurement. \\
+Observed PPP GDP & city/metro-year observed & partial & 0.231 & no & no & External validation anchor for calibration and future-slowdown ranking. \\
+Observed local-currency GDP & city/metro-year observed & partial & 0.090 & no & no & Supplementary external robustness anchor only. \\
+\bottomrule
+\end{tabular}
+}
+\end{table}
+\FloatBarrier
+
+\section{Supplementary Table S6: Mechanism proxy checks}
+
+\begin{table}[H]
+\centering
+\caption{Supplementary Table S6. Supplementary proxy checks reinforce the timing interpretation without claiming a full mediation design.}
+\small
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{p{0.14\textwidth}p{0.22\textwidth}p{0.20\textwidth}p{0.12\textwidth}p{0.08\textwidth}p{0.17\textwidth}}
+\toprule
+Policy bucket & Proxy channel & Evidence type & Summary statistic & $p$-value & Interpretation \\
+\midrule
+Infrastructure & Fast activity pulse (observed NO$_2$) & Direct-core response grid & DML coef $=1.17\times10^{-6}$ & 0.085 & Consistent with an immediate activity/traffic pulse rather than instant structural catch-up. \\
+Infrastructure & Local transport / friction proxy (road growth, z-score) & Two-way FE proxy DID & coef $=-0.327$ & 0.023 & Negative local road-adjustment response is more consistent with near-field disruption than with immediate capacity gain. \\
+Digital & Delayed slow response (VIIRS late-post window) & Event-study late window $(+2,+3)$ & mean coef $=0.108$ & 0.018--0.030 & Digital interventions load into slower visible activity with a two-to-three-year delay. \\
+Digital & Slow physical catch-up (GHSL built-surface yoy, z-score) & Two-way FE proxy DID & coef $=0.117$ & 0.058 & Weak but directionally aligned evidence that digital gains translate into slower physical adjustment rather than fast pulses. \\
+Environmental / Regulatory & Fast anticipation channel (observed NO$_2$) & Event-study pretrend diagnostic & joint pretrend $p=0.032$ & -- & The clearest fast-channel signal is anticipatory movement before implementation, consistent with compliance timing rather than contemporaneous level shifts. \\
+\bottomrule
+\end{tabular}
+\end{table}
+\FloatBarrier
+
+\section{Supplementary Table S7: Event-to-city mapping audit}
+
+\begin{table}[H]
+\centering
+\caption{Supplementary Table S7. Event-to-city treatment assignment is auditable at the country-year level: explicit country-level events define the direct-core cohort, which is then mapped to in-sample cities through an audited onset rule. Regional rows are retained as corroborative support rather than as separate within-country rollout dates.}
+\small
+\setlength{\tabcolsep}{4pt}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{p{0.17\textwidth}rrrrp{0.13\textwidth}p{0.16\textwidth}}
+\toprule
+Treatment track & Pipeline rows & Cohort-defining rows & Regional support rows & Treated countries & Treated country-years & Mapped cities / city-years \\
+\midrule
+Direct-core (all buckets) & 721 & 720 & 119 & 90 & 990 & 169 / 1859 \\
+Direct-core infrastructure & -- & 408 & 63 & 83 & 913 & 162 / 1782 \\
+Direct-core digital & -- & 49 & 32 & 33 & 363 & 75 / 825 \\
+Direct-core environmental / regulatory & -- & 263 & 24 & 72 & 792 & 139 / 1529 \\
+\bottomrule
+\end{tabular}
+}
+\end{table}
+\FloatBarrier
+
+\end{document}

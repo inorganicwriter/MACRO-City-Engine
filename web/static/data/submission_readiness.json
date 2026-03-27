@@ -172,9 +172,7 @@
       "status": "done",
       "note": "latex_main=True, has_jel=True, appendix_assets=True",
       "evidence": [
-        "paper/latex/urban_pulse_main.tex",
-        "paper/latex/references.bib",
-        "paper/appendix_assets/"
+        "public release excludes manuscript assets"
       ]
     },
     {
@@ -225,7 +223,7 @@
       "status": "done",
       "note": "integrity_statement_present=True",
       "evidence": [
-        "paper/latex/urban_pulse_main.tex"
+        "public release excludes manuscript assets"
       ]
     },
     {

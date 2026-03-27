@@ -7,7 +7,7 @@ from pathlib import Path
 
 import pandas as pd
 
-TEST_OUTPUT_ROOT = Path(tempfile.gettempdir()) / "urban_pulse_test_artifacts"
+TEST_OUTPUT_ROOT = Path(tempfile.gettempdir()) / "macro_city_engine_test_artifacts"
 os.environ["URBAN_PULSE_OUTPUT_ROOT"] = str(TEST_OUTPUT_ROOT)
 
 from src.gee_city_observed import (

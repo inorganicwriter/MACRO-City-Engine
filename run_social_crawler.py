@@ -10,7 +10,7 @@ from src.social_sentiment import build_city_social_sentiment_yearly
 
 
 def parse_args() -> argparse.Namespace:
-    parser = argparse.ArgumentParser(description="Crawl social sentiment proxy for Urban Pulse.")
+    parser = argparse.ArgumentParser(description="Crawl social sentiment proxies for MACRO-City Engine.")
     parser.add_argument("--max-cities", type=int, default=295, help="Maximum cities sampled from city catalog.")
     parser.add_argument("--start-year", type=int, default=2015, help="Start year for crawling.")
     parser.add_argument("--end-year", type=int, default=2025, help="End year for crawling.")

@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Urban Pulse AI · Top-tier 评审叙事�?/title>
+  <title>MACRO-City Engine · Top-tier 评审叙事�?/title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet">
@@ -144,7 +144,7 @@
   <header class="topbar">
     <div class="inner">
       <div class="brand">
-        <div class="badge">UP</div>
+        <div class="badge">MC</div>
         <div>
           <h1>Top-tier 评审叙事�?/h1>
           <p>Question -> Evidence -> Identification -> Decision</p>
@@ -555,13 +555,13 @@
     function downloadHtmlSnapshot() {
       const stamp = new Date().toISOString().slice(0, 10).replaceAll('-', '');
       const html = '<!doctype html>\n' + document.documentElement.outerHTML;
-      downloadBlob(html, `urban_pulse_top_tier_story_${stamp}.html`, 'text/html;charset=utf-8');
+      downloadBlob(html, `macro_city_engine_top_tier_story_${stamp}.html`, 'text/html;charset=utf-8');
     }
 
     function downloadStoryJson() {
       const stamp = new Date().toISOString().slice(0, 10).replaceAll('-', '');
       const pretty = JSON.stringify(currentBundle || {}, null, 2);
-      downloadBlob(pretty, `urban_pulse_top_tier_story_${stamp}.json`, 'application/json;charset=utf-8');
+      downloadBlob(pretty, `macro_city_engine_top_tier_story_${stamp}.json`, 'application/json;charset=utf-8');
     }
 
     async function init() {

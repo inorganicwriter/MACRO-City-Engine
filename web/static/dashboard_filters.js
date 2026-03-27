@@ -1,5 +1,5 @@
 (function () {
-  const KEY = "urban_pulse_dashboard_filters_v1";
+  const KEY = "macro_city_engine_dashboard_filters_v1";
   const DEFAULT_STATE = { year: "all", continent: "all" };
   const FALLBACK_CONTINENTS = [
     "all",

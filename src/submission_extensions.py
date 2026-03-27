@@ -585,9 +585,9 @@ def run_reproducibility_manifest() -> Dict[str, Any]:
         Path("data/outputs/exoshock_summary.json"),
         Path("data/outputs/exoshock_leave_one_shock_out.csv"),
         Path("data/outputs/submission_readiness.json"),
-        Path("paper/latex/urban_pulse_main.tex"),
-        Path("paper/latex/references.bib"),
-        Path("paper/submission_readiness_report.md"),
+        Path("README.md"),
+        Path("docs/gee_city_export_import.md"),
+        Path("config.json"),
     ]
 
     rows: List[Dict[str, Any]] = []

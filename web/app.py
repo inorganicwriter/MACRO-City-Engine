@@ -478,7 +478,7 @@ def _compose_top_tier_story_markdown(bundle: dict[str, object]) -> str:
     dynamic_city_count = int(_safe_float(dynamic_snapshot.get("city_count"), default=0.0))
 
     lines: list[str] = []
-    lines.append("# Urban Pulse AI · Top-tier Review Story")
+    lines.append("# MACRO-City Engine · Top-tier Review Story")
     lines.append("")
     lines.append(f"- Generated at (UTC): {generated_at}")
     lines.append(f"- Scope filter: continent={scope_continent}, year={scope_year}")
@@ -1076,7 +1076,7 @@ def api_top_tier_story_markdown():
     content = _compose_top_tier_story_markdown(bundle)
     stamp = datetime.now(timezone.utc).strftime("%Y%m%d")
     headers = {
-        "Content-Disposition": f'attachment; filename="urban_pulse_top_tier_story_{stamp}.md"',
+        "Content-Disposition": f'attachment; filename="macro_city_engine_top_tier_story_{stamp}.md"',
         "Cache-Control": "no-store",
     }
     return Response(content, mimetype="text/markdown; charset=utf-8", headers=headers)

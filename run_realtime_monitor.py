@@ -11,7 +11,7 @@ from src.realtime_monitor import generate_realtime_monitor_snapshot
 
 
 def parse_args() -> argparse.Namespace:
-    parser = argparse.ArgumentParser(description="Generate realtime Urban Pulse monitor snapshots.")
+    parser = argparse.ArgumentParser(description="Generate realtime MACRO-City Engine monitor snapshots.")
     parser.add_argument(
         "--loop-seconds",
         type=int,
@@ -74,4 +74,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-

@@ -13,6 +13,6 @@ data/outputs/inference_multiple_testing.csv,True,1625,e499965c3bae4a74184030461f
 data/outputs/exoshock_summary.json,True,1300,a370b01ce5ae232e51b52a2181c8a2fb07976ccbf70149b9ae92fc157a50bed5,2026-03-23T09:43:34.146824+00:00
 data/outputs/exoshock_leave_one_shock_out.csv,True,141,30f711d411ed1e9f9b65f77e9fef9c68da97aaa6fdca4754f90a369881a50c0c,2026-03-23T09:43:34.146824+00:00
 data/outputs/submission_readiness.json,True,9728,f8e809f1addf2d9f3c26f1cac4c58b69af4dd645503a79d2e73da0ec9c0e9669,2026-03-26T09:05:33.685349+00:00
-paper/latex/urban_pulse_main.tex,True,82687,3c40733ee73a0621934aea7113639005bef35cebeffbdf83d9054768dbe9600c,2026-03-26T09:06:00.485512+00:00
-paper/latex/references.bib,True,17412,8937517120905f44262a09bf15112345d720a83a0afe807c172b050f3d887b90,2026-03-25T18:57:28.979523+00:00
-paper/submission_readiness_report.md,True,6731,2794d3a3a182609715d52d12fadc91781f5a7877a0c32ca8228be754862225b9,2026-03-26T09:05:33.677373+00:00
+public_release/paper_assets_not_distributed,False,0,,
+public_release/reference_assets_not_distributed,False,0,,
+public_release/submission_report_not_distributed,False,0,,

@@ -2,8 +2,6 @@
 
 Multi-modal Analytics and Causal Research Observatory for Cities
 
-兼容性说明：仓库内部仍保留一部分 `urban_pulse_*` 文件名、环境变量和导出前缀，以避免打断既有 pipeline；公开展示名称统一为 `MACRO-City Engine`。
-
 基于全球城市面板数据的城市发展多维评估系统，覆盖：
 - 空间锚点：城市目录新增 `geometry_wkt`，优先采用 GHSL Urban Centres，多边形缺口按 GHSL FUA / OECD cities 回填；遥感裁剪基于 polygon，而非 point-buffer
 - 数据采集：World Bank + Open-Meteo + OSM（严格模式默认先尝试 `verified source` 过滤；当 verified 覆盖不足时自动回退到 `objective source` 全样本，并在审计文件中明确标记 `filter_basis=objective_city_complete_fallback`）
@@ -101,7 +99,7 @@ python3 run_pipeline.py --allow-synthetic-fallback
 可选：将输出重定向到独立目录（避免覆盖主产物）：
 
 ```bash
-export URBAN_PULSE_OUTPUT_ROOT=/tmp/urban_pulse_runs/main_run
+export URBAN_PULSE_OUTPUT_ROOT=/tmp/macro_city_engine_runs/main_run
 ```
 
 可选：启用“真实政策事件表”处理变量。将 `data/raw/policy_events_registry_template.csv` 复制为
@@ -482,21 +480,9 @@ Top-tier 审稿视角 API：
 - 合成控制明细：
   - `data/outputs/synthetic_control_timeseries.csv`
   - `data/outputs/synthetic_control_weights.csv`
-- 挑战杯报告草稿：`reports/final_report.md`
-- 论文图表清单：`paper/figures_tables_guide.md`
-- 投稿增强清单：`paper/submission_checklist.md`
-- 投稿就绪执行报告：`paper/submission_readiness_report.md`
 - 投稿就绪审计 JSON：`data/outputs/submission_readiness.json`
-- 可复现说明：`paper/reproducibility.md`
 - 锁定依赖：`requirements_lock.txt`
-- Conda 锁环境：`paper/environment_lock.yml`
-- LaTeX 投稿包：`paper/latex/urban_pulse_main.tex` + `paper/latex/references.bib`
-- 论文图表自动导出脚本：`paper/scripts/generate_paper_assets.py`
-- 论文扩展图表自动导出脚本：`paper/scripts/generate_extended_paper_assets.py`
-- 投稿一键打包脚本：`paper/scripts/build_submission_package.py`
-- 投稿清单自动验收脚本：`paper/scripts/generate_submission_readiness.py`
-- 导出的论文图表索引：`paper/assets_manifest.json`
-- 扩展附录图表索引：`paper/appendix_assets/extended_assets_manifest.json`
+- 说明：公开仓库不包含论文文稿、原始卫星影像和大体量第三方源文件，仅保留代码、文档和支撑性导出结果
 
 ## 方法说明（经济学）
 
