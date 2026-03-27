@@ -1477,7 +1477,7 @@ def _apply_split_conformal_uncertainty(
         "evaluation_coverage": cover_eval,
         "conformal_mean_interval_width_risk_score": conformal_mean_width_risk,
         "bootstrap_interval": bootstrap_interval,
-        "interval_type_for_dashboard": "bootstrap_p16_p84" if bootstrap_interval.get("status") == "ok" else "conformal",
+        "interval_type_for_output": "bootstrap_p16_p84" if bootstrap_interval.get("status") == "ok" else "conformal",
         "mean_interval_width_prob": float(np.mean(out["stall_probability_high"] - out["stall_probability_low"])),
         "mean_interval_width_risk_score": float(np.mean(out["stall_risk_interval_width"])),
     }

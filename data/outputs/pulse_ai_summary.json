@@ -198,7 +198,7 @@
       "mean_interval_width_risk_score": 4.822810633098485,
       "interval": "p16-p84"
     },
-    "interval_type_for_dashboard": "bootstrap_p16_p84",
+    "interval_type_for_output": "bootstrap_p16_p84",
     "mean_interval_width_prob": 0.048228106330984837,
     "mean_interval_width_risk_score": 4.822810633098485
   },

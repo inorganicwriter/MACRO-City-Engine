@@ -265,7 +265,7 @@ For descriptive ranking and monitoring only, three sub-indices are constructed f
 The baseline weights are $(w_E, w_L, w_I) = (0.45, 0.35, 0.20)$.
 Following \citet{oecd2008handbook}, we conduct sensitivity analysis with four alternative schemes:\ PCA-derived weights, equal weights $(1/3, 1/3, 1/3)$, economic-heavy $(0.60, 0.25, 0.15)$, and innovation-heavy $(0.25, 0.30, 0.45)$.
 Spearman rank correlations between baseline and alternatives are reported in Section~\ref{sec:robustness}.
-This composite is used for dashboard ranking, transition visualization, and state benchmarking.
+This composite is used for composite ranking, transition visualization, and state benchmarking.
 It is not admissible as the dependent variable in the main causal estimators, where only interpretable observed indicators are allowed.
 
 \subsection{Dynamic transition variables}
@@ -404,7 +404,7 @@ The remaining gaps are handled asymmetrically: unavailable channels are neutrali
 This rule prevents the main index and the main causal designs from reintroducing fabricated within-country variation through hidden imputations.
 
 The source-group ablation reinforces this interpretation.
-Relative to a macro-context-only specification, the observed-core feature block reduces RMSE from 3.460 to 1.172 for economic vitality, from 5.515 to 2.627 for livability, from 2.164 to 1.435 for innovation, and from 2.994 to 1.000 for the dashboard composite index.
+Relative to a macro-context-only specification, the observed-core feature block reduces RMSE from 3.460 to 1.172 for economic vitality, from 5.515 to 2.627 for livability, from 2.164 to 1.435 for innovation, and from 2.994 to 1.000 for the composite index.
 Averaged across the four targets, the observed-core specification lowers RMSE by 1.975 points and raises $R^2$ by 0.350 relative to macro-context-only baselines.
 Innovation remains the weakest target, but once policy context and the mixed full specification are added, the innovation gap narrows materially relative to the observed-core-only specification.
 
@@ -430,7 +430,7 @@ The calibration evidence is intentionally presented in a restrained way.
 Raw $\log(\mathrm{VIIRS\ NTL})$ is positively associated with observed PPP GDP, but only moderately so (pooled $R^2=0.103$, pooled Spearman $\rho=0.332$).
 By contrast, the theory-anchored Cobb-Douglas vitality fit---which combines knowledge capital, built volume, and baseline population rather than using observed GDP directly---tracks observed PPP GDP much more closely (pooled $R^2=0.557$, pooled Spearman $\rho=0.755$).
 For the argument of this paper, that is the more relevant bridge:
-the vitality layer is not merely a dashboard construction, but a measurable proxy that co-moves with external metro-level output in a standardized sample.
+the vitality layer is not merely a monitoring construction, but a measurable proxy that co-moves with external metro-level output in a standardized sample.
 
 We then ask a forward-looking question: does the dynamic risk layer help anticipate subsequent deterioration in real activity?
 Defining an adverse outcome as bottom-quintile next-year observed PPP GDP growth, we evaluate rolling one-year-ahead ranking performance over test years 2020--2022.

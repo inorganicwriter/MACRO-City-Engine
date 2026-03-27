@@ -5294,10 +5294,10 @@ def _engineer_features(
         out["composite_index_pca"] = np.nan
         out["pca_explained_variance_ratio"] = np.nan
 
-    out["composite_index_dashboard"] = pd.to_numeric(out["composite_index_pca"], errors="coerce").combine_first(
+    out["composite_index_ranking"] = pd.to_numeric(out["composite_index_pca"], errors="coerce").combine_first(
         pd.to_numeric(out["composite_index_weighted"], errors="coerce")
     )
-    out["composite_index_dashboard_source"] = np.where(
+    out["composite_index_ranking_source"] = np.where(
         pd.to_numeric(out["composite_index_pca"], errors="coerce").notna(),
         "pca_pc1",
         "weighted_fallback",
@@ -5312,7 +5312,7 @@ def _engineer_features(
     )
     if prefer_pca_composite:
         LOGGER.warning(
-            "prefer_pca_composite is ignored for econometric safety; use composite_index_dashboard/composite_index_pca for ranking."
+            "prefer_pca_composite is ignored for econometric safety; use composite_index_ranking/composite_index_pca for ranking."
         )
 
     registry = _load_policy_event_registry(out, config)
