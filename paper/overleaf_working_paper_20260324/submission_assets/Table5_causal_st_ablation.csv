@@ -1,6 +1,0 @@
-variant,status,att_post,t_value,bootstrap_sign_p_value,se_method,att_ci95_low,att_ci95_high,n_obs,feature_count,spatial_mode,ci95_method,p_value_method
-full_dr_spatiotemporal,ok,0.0505214450048882,2.094158636729127,0.1,bootstrap_cross_fit,0.0042308846987128,0.0841149682750937,3245,29,distance,percentile_bootstrap,two_sided_sign_bootstrap
-no_spatial,ok,0.0431966420915338,1.7450256411406446,0.1,bootstrap_cross_fit,-0.0119979340675004,0.0734022079854438,3245,28,distance,percentile_bootstrap,two_sided_sign_bootstrap
-no_temporal,ok,0.046465845537896,0.8173391405437788,0.7,bootstrap_cross_fit,-0.0836946450171161,0.0967264626127908,3245,26,distance,percentile_bootstrap,two_sided_sign_bootstrap
-flight_spatial,ok,0.039573837237552,1.636427821801188,0.1,bootstrap_cross_fit,-0.0130065208561057,0.0655028048311416,3245,29,flight,percentile_bootstrap,two_sided_sign_bootstrap
-plugin_no_dr,ok,0.0539510399071263,2.329414490295266,0.1,bootstrap_cross_fit,0.0050695095957827,0.0812620863391379,3245,29,distance,percentile_bootstrap,two_sided_sign_bootstrap

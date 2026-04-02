@@ -32,25 +32,24 @@
 \begin{document}
 \maketitle
 
-\section{Supplementary Table S1: Backcasted NO$_2$ robustness}
+\section{Supplementary Table S1: Full-panel NO$_2$ replay}
 
-The main fast-variable specification uses observed NO$_2$ only and therefore restricts the causal sample to 2018--2025.
-To check whether the core interpretation is mechanically driven by left-censoring of the early panel, we estimate a supplementary robustness design in which NO$_2$ is backcasted for 2015--2017 using predictors observed no later than 2023.
-These backcasted features never enter the main causal outcome specification.
-They are used only as a robustness expansion of the sample window.
+The main fast-variable specification now uses directly observed NO$_2$ across the full 2015--2025 panel by merging early OMI observations with later S5P observations.
+To verify that the earlier backfill machinery no longer drives the fast-layer results, we retain a supplementary replay that reruns the former NO$_2$-filled design after the observed-panel update.
+Because the merged observation layer already covers the full panel, this replay adds no new filled rows and is retained only as a continuity check.
 
 \begin{table}[H]
 \centering
-\caption{Supplementary Table S1. Backcasted NO$_2$ does not overturn the main fast-variable ordering in the full-sample robustness design (2015--2025).}
+\caption{Supplementary Table S1. The former NO$_2$-backfill design no longer changes the fast-layer sample after the observed OMI+S5P extension, and the replay remains directionally aligned with the main timing interpretation.}
 \small
 \setlength{\tabcolsep}{5pt}
-\begin{tabular}{lrrrrr}
+\begin{tabular}{p{0.18\textwidth}rrrr}
 \toprule
-Policy bucket & DML coef ($\times 10^{-6}$) & $p$-value & Mean post coef ($\times 10^{-6}$) & Pretrend $p$ & Filled rows \\
+Policy bucket & DML coef (SD units) & $p$-value & Filled rows & Interpretation \\
 \midrule
-Infrastructure & 0.757 & 0.103 & 4.708 & 0.245 & 885 \\
-Digital & 0.253 & 0.587 & 2.453 & 0.408 & 885 \\
-Environmental / regulatory & 0.029 & 0.958 & -0.519 & 0.406 & 885 \\
+Infrastructure & 0.041 & 0.071 & 0 & Immediate fast-layer response remains positive but modest after replacing the earlier filled panel with observed OMI+S5P NO$_2$. \\
+Digital & 0.082 & $<0.001$ & 0 & The digital bucket retains the clearest positive fast-layer response in standardized units even after the observed-panel replacement. \\
+Environmental / regulatory & 0.020 & 0.431 & 0 & Environmental and regulatory interventions remain dominated by timing and anticipation geometry rather than a large contemporaneous fast-layer shift. \\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -93,7 +92,7 @@ We summarize the remaining model dependence with a signed effect envelope rather
 
 \begin{figure}[H]
   \centering
-  \includegraphics[width=0.85\textwidth]{submission_assets/Figure34_nonse_permutation_distribution.pdf}
+  \includegraphics[width=0.85\textwidth]{submission_assets/FigureS1_counterfactual_envelope.pdf}
   \caption{Supplementary Figure S1. Design-dependent estimators still produce interpretable effect envelopes once uncertainty is reported transparently. Dashed lines denote the observed post-pre gap statistics against their permutation distributions.}
 \end{figure}
 \FloatBarrier
@@ -158,7 +157,7 @@ South America & 0.226 & 0.122 & [0.058, 0.461] & 1.858 & 16 & 39 \\
 Variable & Resolution & City-observed & Coverage & Main pred. & Main causal & Notes \\
 \midrule
 $\log(\mathrm{VIIRS\ NTL})$ & city-year polygon satellite & yes & 1.000 & yes & yes & Primary slow outcome; full 2015--2025 panel coverage. \\
-NO$_2$ anomaly & city-year polygon satellite & yes & 0.727 & no & yes & Primary fast outcome; observed 2018--2025 only. Backcasted variant enters benchmark modules only. \\
+NO$_2$ anomaly & city-year polygon satellite & yes & 1.000 & no & yes & Primary fast outcome; directly observed 2015--2025 via merged OMI+S5P inputs. Policy-response estimates are reported in sample-standardized units. \\
 Physical built expansion & city-year polygon satellite & yes & 1.000 & no & no & Structural proxy used in mechanism decomposition and appendix proxy checks. \\
 Road growth intensity & city-year OSM-derived & yes & 1.000 & yes & no & Local transport/friction proxy used in dynamic features and supplementary mechanism checks. \\
 POI total growth & city-year OSM-derived & yes & 0.909 & yes & no & Middle-speed activity proxy; coverage begins after first within-city year. \\
@@ -185,7 +184,7 @@ Observed local-currency GDP & city/metro-year observed & partial & 0.090 & no & 
 \toprule
 Policy bucket & Proxy channel & Evidence type & Summary statistic & $p$-value & Interpretation \\
 \midrule
-Infrastructure & Fast activity pulse (observed NO$_2$) & Direct-core response grid & DML coef $=1.17\times10^{-6}$ & 0.085 & Consistent with an immediate activity/traffic pulse rather than instant structural catch-up. \\
+Infrastructure & Fast activity pulse (observed NO$_2$) & Direct-core response grid & DML coef $=0.041$ SD & 0.071 & Consistent with an immediate activity/traffic pulse rather than instant structural catch-up. \\
 Infrastructure & Local transport / friction proxy (road growth, z-score) & Two-way FE proxy DID & coef $=-0.327$ & 0.023 & Negative local road-adjustment response is more consistent with near-field disruption than with immediate capacity gain. \\
 Digital & Delayed slow response (VIIRS late-post window) & Event-study late window $(+2,+3)$ & mean coef $=0.108$ & 0.018--0.030 & Digital interventions load into slower visible activity with a two-to-three-year delay. \\
 Digital & Slow physical catch-up (GHSL built-surface yoy, z-score) & Two-way FE proxy DID & coef $=0.117$ & 0.058 & Weak but directionally aligned evidence that digital gains translate into slower physical adjustment rather than fast pulses. \\
@@ -216,5 +215,172 @@ Direct-core environmental / regulatory & -- & 263 & 24 & 72 & 792 & 139 / 1529 \
 }
 \end{table}
 \FloatBarrier
+
+\section{Supplementary Table S8: Non-OECD local-GDP sensitivity audit}
+
+\begin{table}[H]
+\centering
+\caption{Supplementary Table S8. Signal-to-output sensitivity remains directionally stable in a non-OECD local-GDP audit, although proxy elasticities vary by income level.}
+\small
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{p{0.18\textwidth}p{0.18\textwidth}rrrr}
+\toprule
+Subset & Signal & City-year diffs & Corr.\ with local GDP change & Slope & Interpretation \\
+\midrule
+Lower-income half & VIIRS log change & 99 & 0.267 & 0.093 & Stronger luminosity sensitivity in lower-income non-OECD cities \\
+Upper-income half & VIIRS log change & 97 & 0.042 & 0.041 & Positive but weaker luminosity sensitivity in upper-income non-OECD cities \\
+Lower-income half & NO$_2$ level change & 72 & 0.299 & 676.456 & Positive fast-signal elasticity in lower-income non-OECD cities \\
+Upper-income half & NO$_2$ level change & 58 & 0.220 & 2394.388 & Positive fast-signal elasticity in upper-income non-OECD cities \\
+Lower-income half & NO$_2$ anomaly change & 72 & 0.302 & 692.136 & Positive anomaly response in lower-income non-OECD cities \\
+Upper-income half & NO$_2$ anomaly change & 58 & 0.215 & 2462.654 & Positive anomaly response in upper-income non-OECD cities \\
+\bottomrule
+\end{tabular}
+\end{table}
+\FloatBarrier
+
+\noindent\textit{Notes:} This audit uses 228 city-years of observed local-currency GDP from 32 non-OECD cities in 13 countries, with 196 consecutive city-year pairs available for differenced comparisons. Income halves are defined by baseline GDP per capita within this non-OECD observed-GDP subset. Because local-currency GDP is not harmonized in the same way as the OECD PPP bridge, the goal is not to build a second directly comparable ranking exercise. The audit instead tests whether the sign and broad sensitivity of the proxy mapping change outside richer OECD metros. They do not: VIIRS and NO$_2$ remain positively aligned with local GDP changes in both income halves, although elasticity magnitudes differ.
+
+\section{Supplementary Table S9: Additional observed city-output sources beyond the OECD PPP bridge}
+
+\begin{table}[H]
+\centering
+\caption{Supplementary Table S9. Official observed city-output sources extend beyond the standardized OECD PPP bridge and broaden the empirical base for local-GDP sensitivity checks.}
+\small
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{p{0.36\textwidth}rrp{0.36\textwidth}}
+\toprule
+Observed source track & City-year rows & Cities & Note \\
+\midrule
+IBGE municipal GDP (Brazil) & 77 & 11 & Official municipal GDP used in observed local-output mapping. \\
+StatCan CMA GDP (Canada) & 64 & 8 & Official metropolitan GDP outside the OECD FUA harmonized bridge file. \\
+China city official GDP & 60 & 9 & Direct city statistical-yearbook observations. \\
+Kazakhstan statistical GRDP per capita & 20 & 4 & Regional output source linked to city-region observations. \\
+Kenya KNBS GCP & 15 & 3 & County/city-linked gross county product observations. \\
+Singapore data.gov GDP & 11 & 1 & National city-state output used as direct city observation. \\
+Dubai DSC GDP + Abu Dhabi SCAD GDP & 15 & 2 & Emirate-level GDP observations directly tied to sample cities. \\
+Hong Kong C\&SD GDP & 10 & 1 & Direct metropolitan-scale output series. \\
+Buenos Aires city GDP & 9 & 1 & Official city statistics source. \\
+Thailand NESDC GPP & 8 & 2 & Provincial output linked to city-province observations. \\
+Delhi state domestic product & 7 & 1 & State-scale output linked to the Delhi metro region. \\
+Jakarta BPS GRDP + Malaysia DOSM state GDP & 9 & 2 & State/province output linked to metropolitan observations. \\
+Mexico City INEGI GDP & 5 & 1 & Official city output source. \\
+Hanoi and Ho Chi Minh City GRDP & 2 & 2 & City statistical yearbook and GSO sources. \\
+\bottomrule
+\end{tabular}
+\end{table}
+\FloatBarrier
+
+\noindent\textit{Notes:} These source tracks contribute 312 additional observed city/metro-year output rows beyond the standardized OECD PPP bridge file, covering 42 cities. They are heterogeneous in currency, territorial definition, and temporal depth, so the paper uses them primarily for sensitivity and sign-stability checks rather than as a second fully harmonized ranking bridge.
+
+\section{Supplementary Table S10: Rollout-refinement coverage beyond the main country-year onset rule}
+
+\begin{table}[H]
+\centering
+\caption{Supplementary Table S10. Audited event-to-city mapping adds measurable rollout refinement beyond the headline country-year onset rule, including a geolocated project layer that sharpens within-country exposure assignment.}
+\small
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{p{0.30\textwidth}rrp{0.34\textwidth}}
+\toprule
+Coverage dimension & Count & Share / range & Interpretation \\
+\midrule
+Audited mapping rows & 1,255 & -- & Event-to-city audit rows retained for direct-core treatment refinement. \\
+Countries represented & 116 & -- & Coverage extends well beyond the headline treated-country count in the main table. \\
+Years represented & 9 & 2015--2023 & Rollout refinement is observed across most of the policy window. \\
+Explicit cohort-defining rows & 1,035 & 82.5\% of audited rows & Most audited rows are explicit onset records rather than inferred support rows. \\
+Regional-support rows & 220 & 17.5\% of audited rows & Supplementary rows refine exposure beyond the main country-level registry track. \\
+Projects with geolocation & 1,040 & -- & Direct-core projects with latitude/longitude support within-country rollout refinement. \\
+Matched in-sample cities & 132 & across 81 countries & Geolocated projects map to a substantial city subset rather than only to country labels. \\
+Mapped city-count median & 1 & IQR: 1--2 & Most events map to a concentrated set of cities rather than to diffuse national exposure. \\
+Mapped city-count maximum & 11 & -- & Some interventions plausibly extend across multiple in-sample cities within one country-year. \\
+Infrastructure-tagged rows & 624 & largest bucket & Strongest rollout detail is available for infrastructure-linked interventions. \\
+Environmental / regulatory rows & 356 & second-largest bucket & Regulatory timing detail remains substantial. \\
+Digital rows & 121 & third-largest bucket & Digital rollout evidence is smaller but still explicit and auditable. \\
+\bottomrule
+\end{tabular}
+\end{table}
+\FloatBarrier
+
+\noindent\textit{Notes:} These counts are summarized from the audited mapping detail file and the direct-core project geolocation audit. The purpose is not to claim full city-specific implementation intensity, but to show that the treatment layer already contains a meaningful amount of event-to-city refinement beyond a pure country-year label.
+
+\section{Supplementary Figure S2: Fragile-boom irreducibility and continuity checks}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.92\textwidth]{submission_assets/FigureS2_fragile_boom_validation.pdf}
+  \caption{Supplementary Figure S2. Fragile boom is supported by a continuous temporal-gap structure rather than by one arbitrary threshold. (A) Continuous temporal-gap scores rank future slowdown risk better than static size, volatility, raw VIIRS change, and GDP growth alone in top-decile enrichment. (B) Slowdown incidence rises across temporal-gap quintiles, indicating that the core relationship is continuous rather than purely threshold-defined. (C) Alternative threshold choices change the prevalence of the binary fragile-boom state, but the subgroup remains non-trivial and continues to display elevated slowdown incidence.}
+\end{figure}
+\FloatBarrier
+
+\section{Supplementary Table S11: Baseline comparison for fragile-boom irreducibility}
+
+\begin{table}[H]
+\centering
+\caption{Supplementary Table S11. A continuous temporal-gap proxy carries more slowdown information than simple static or single-signal baselines, while the discrete fragile-boom flag remains an interpretable summary of that richer gradient.}
+\small
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{p{0.24\textwidth}rrrp{0.14\textwidth}}
+\toprule
+Metric & AUC & Top-decile slowdown rate & Top-decile lift & Orientation \\
+\midrule
+Temporal gap proxy & 0.604 & 0.303 & 1.515 & Positive \\
+Temporal gap (product) & 0.601 & 0.288 & 1.439 & Positive \\
+Acceleration only & 0.602 & 0.273 & 1.364 & Positive \\
+Risk only & 0.506 & 0.242 & 1.212 & Negative \\
+VIIRS change & 0.562 & 0.259 & 1.172 & Positive \\
+Fragile-boom flag & 0.518 & 0.219 & 1.095 & Positive \\
+Volatility only & 0.586 & 0.212 & 1.061 & Positive \\
+Static size & 0.508 & 0.167 & 0.833 & Positive \\
+NO$_2$ anomaly & 0.562 & 0.152 & 0.758 & Positive \\
+GDP growth & 0.540 & 0.152 & 0.758 & Positive \\
+\bottomrule
+\end{tabular}
+\end{table}
+\FloatBarrier
+
+\noindent\textit{Notes:} The comparison uses the same observed-GDP future-slowdown panel as the main external validation exercise. Top-decile lift is the slowdown rate among the highest-risk tenth of observations divided by the sample-average slowdown rate. For each metric, the orientation is chosen so that higher values correspond to higher slowdown risk. The key result is not that every continuous score dominates every other score, but that the temporal-gap structure is not reducible to static size, volatility, raw luminosity change, or GDP growth alone.
+
+\section{Supplementary Table S12: Threshold stability of the binary fragile-boom state}
+
+\begin{table}[H]
+\centering
+\caption{Supplementary Table S12. The binary fragile-boom subgroup remains material across reasonable threshold variants, indicating that the state is not generated by one arbitrary cutoff.}
+\small
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{rrrrrr}
+\toprule
+Low quantile & High quantile & State share & Flagged rows & Slowdown rate in state & Binary-state AUC \\
+\midrule
+0.30 & 0.70 & 0.244 & 161 & 0.211 & 0.509 \\
+0.33 & 0.67 & 0.267 & 176 & 0.216 & 0.513 \\
+0.35 & 0.65 & 0.276 & 182 & 0.209 & 0.508 \\
+0.40 & 0.60 & 0.312 & 206 & 0.199 & 0.499 \\
+\bottomrule
+\end{tabular}
+\end{table}
+\FloatBarrier
+
+\noindent\textit{Notes:} These variants recompute the binary fragile-boom state by changing the year-specific upper thresholds used for acceleration and slowdown risk. The state share expands as thresholds are relaxed, but the subgroup remains non-trivial throughout and continues to display elevated slowdown incidence relative to the sample average.
+
+\section{Supplementary Table S13: Signal-family contributions to fragile-boom identification}
+
+\begin{table}[H]
+\centering
+\caption{Supplementary Table S13. Feature-importance groups indicate that short-run activity signals dominate near-horizon identification, while slow-adjustment and instability families remain part of the state architecture.}
+\small
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{p{0.24\textwidth}rrp{0.28\textwidth}r}
+\toprule
+Signal family & Total importance & Top feature & Top-feature importance & Feature count \\
+\midrule
+Fast activity & 0.143 & growth\_1 & 0.094 & 6 \\
+Slow adjustment & 0.038 & observed\_physical\_stress\_signal & 0.021 & 7 \\
+Risk / instability & 0.037 & regime\_transition\_entropy & 0.038 & 4 \\
+Other & 0.005 & accel\_1 & 0.013 & 5 \\
+\bottomrule
+\end{tabular}
+\end{table}
+\FloatBarrier
+
+\noindent\textit{Notes:} These grouped contributions are descriptive rather than structural. Their role is to show that the main classifier is not driven by one isolated proxy family. Instead, short-run activity variables load most heavily in near-horizon identification, while slower structural and instability variables contribute to persistence and regime separation.
 
 \end{document}

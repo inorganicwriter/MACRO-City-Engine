@@ -1,6 +1,0 @@
-policy_bucket,proxy_channel,evidence_type,summary_stat,p_value,sample,interpretation
-Infrastructure,Fast activity pulse (observed NO2),Direct-core response grid,DML coef = 1.17e-06,0.085,2360,Consistent with an immediate activity/traffic pulse rather than instant structural catch-up.
-Infrastructure,"Local transport/friction proxy (road growth, z-score)",Two-way FE proxy DID,coef = -0.327,0.023,3245,Negative local road-adjustment response is more consistent with near-field disruption than with immediate capacity gain.
-Digital,Delayed slow response (VIIRS late-post window),"Event-study late window (+2,+3)",mean coef = 0.108,0.018-0.030,3245,Digital interventions load into slower visible activity with a two-to-three-year delay.
-Digital,"Slow physical catch-up (GHSL built-surface yoy, z-score)",Two-way FE proxy DID,coef = 0.117,0.058,2950,Weak but directionally aligned evidence that digital gains translate into slower physical adjustment rather than fast pulses.
-Environmental / Regulatory,Fast anticipation channel (observed NO2),Event-study pretrend diagnostic,joint pretrend p = 0.032,,2360,"The clearest signal is anticipatory movement before implementation, consistent with compliance timing rather than immediate level effects."

@@ -42,9 +42,9 @@
 \author*[1]{\fnm{Fan} \sur{Zhang}}\email{fanzhanggis@pku.edu.cn}
 \affil[1]{\orgname{Peking University}, \orgaddress{\city{Beijing}, \country{China}}}
 
-\abstract{Urban growth is often interpreted as a sign of development. However, cities can expand visibly while adjustment lags, allowing risk to accumulate. Here we define this condition as a \emph{fragile boom}: a state in which short-run expansion outpaces slower structural adjustment. Using a panel of 295 cities from 2015 to 2025, we show that urban dynamics are temporally uneven. Fast-moving activity signals respond quickly to shocks, whereas slower indicators of structural change adjust with delay. This temporal mismatch systematically precedes urban slowdown. In cities with observed GDP, fragile-boom states provide forward-looking information about future declines in growth. Different policy interventions also exhibit distinct timing patterns that are obscured when effects are averaged across heterogeneous contexts. Visible growth can therefore overstate short-term success when expansion outpaces adjustment. Monitoring the timing between fast and slow urban processes provides a clearer view of resilience than static indicators alone.}
+\abstract{Urban growth is often interpreted as a sign of development. However, cities can expand visibly while adjustment lags, allowing risk to accumulate. Here we define this condition as a \emph{fragile boom}: a timing-mismatch state in which fast expansion signals persistently outpace slower structural adjustment, rather than a condition of high growth level alone. Using a panel of 295 cities from 2015 to 2025, we show that urban dynamics are temporally uneven. Fast-moving activity signals respond quickly to shocks, whereas slower indicators of structural change adjust with delay. This temporal mismatch consistently precedes urban slowdown. In cities with observed GDP, fragile-boom states strongly anticipate subsequent declines in growth. Different policy interventions also exhibit distinct timing patterns that are obscured when effects are averaged across heterogeneous contexts. Visible growth can therefore overstate short-term success when expansion outpaces adjustment. Monitoring the timing between fast and slow urban processes provides a sharper view of resilience than static indicators alone.}
 
-\keywords{fragile boom; temporal asymmetry; urban adjustment; urban policy; city dynamics; external validation}
+\keywords{fragile boom; timing mismatch; temporal asymmetry; urban adjustment; urban policy; city dynamics}
 
 \begin{document}
 \maketitle
@@ -55,36 +55,27 @@
 
 More than half of the world's population now lives in cities, and urban areas generate more than 80\% of global output \cite{glaeser2011triumph,duranton2015growing,moretti2012real,ciccone1996productivity,duranton2004microfoundations}. Yet urban growth is rarely smooth or self-sustaining. Periods of rapid expansion are often followed by abrupt slowdowns, and cities that appear successful can become vulnerable without clear warning signs \cite{hausmann2005growth,eichengreen2012slowdown,hidalgo2007product,martin2012regional,dellagostino2017world}.
 
-A central challenge is that growth and adjustment do not unfold on the same timescale. Indicators of activity---such as mobility, emissions, or energy use---can respond quickly, whereas changes in infrastructure, spatial structure, and productive capacity move more slowly.\cite{batty2013newscience,bettencourt2007growth,rozenfeld2011laws,west2017scale} Cities may therefore continue to expand even when underlying adjustment lags behind.
+A central challenge is that urban expansion and structural adaptation unfold on different timescales. We refer to quickly responding indicators---for example, mobility intensity, energy demand and short-run emissions---as \emph{fast signals}. These indicators capture near-term activity and visible expansion. By contrast, we refer to slower-moving changes in infrastructure capacity, land-use and network configuration, productive reallocation and network restructuring as \emph{slow adjustment}.\cite{batty2013newscience,bettencourt2007growth,rozenfeld2011laws,west2017scale} These slower layers capture whether urban systems are actually adapting to sustain growth rather than merely registering short-run activity gains.
 
-We define this condition as a \emph{fragile boom}: an urban state in which expansion persistently outpaces structural adjustment. In such cases, visible gains in activity arrive earlier than the slower processes that sustain long-run growth, allowing risk to accumulate in the interim. This concept differs from generic volatility or boom--bust language. A city may be volatile without being fragile if growth and adjustment move together. Conversely, a city can appear stable in levels while becoming fragile if expansion consistently leads adjustment. What matters is not the level of growth, but the timing between fast and slow processes.
+We define a \emph{fragile-boom state} as a state in which fast signals indicate continued expansion while slow adjustment lags persistently behind. The key object is therefore a \emph{timing mismatch}, not growth level alone. A boom--bust cycle describes a realized trajectory of rise and collapse, whereas a fragile-boom state captures the imbalance before that slowdown is fully visible. Volatility measures summarize dispersion or instability in levels, but they do not identify whether short-run expansion is consistently leading slower adjustment. Resilience decline is broader and longer-horizon, whereas the fragile-boom state focuses on a nearer-term disequilibrium in which expansion outpaces structural adaptation. In that sense, the concept is process-based and temporal: risk accumulates when fast signals systematically move ahead of slow adjustment.
 
-We study when and how such mismatches arise, and which observed signals reveal them. Using a global panel of 295 cities from 2015 to 2025, we ask whether differences in timing between fast and slow urban processes can be systematically measured, whether these differences contain information about subsequent slowdown, and whether policy interventions leave distinct timing signatures.
-
-This paper makes three contributions. First, it introduces \emph{fragile boom} as a measurable form of urban risk grounded in observable city-level signals. Second, it documents a consistent temporal ordering in which fast indicators respond earlier than slower structural adjustments. Third, it shows that these timing differences are associated with subsequent slowdown and vary systematically across policy types.
+Using a global panel of 295 cities from 2015 to 2025, we show that cities systematically exhibit temporal mismatches between fast expansion and slow adjustment. We further show that these mismatches carry forward-looking risk information, align with observed metropolitan output where external anchors exist, and vary systematically across policy domains. MACRO-City Engine makes this temporal mismatch observable at global city scale by harmonizing remotely sensed activity, network evolution, infrastructure dynamics, policy timing, and external output anchors into a comparable city-year monitoring framework. Figure~\ref{fig:evidence_chain} summarizes this observational logic before we turn to the measured state space and its empirical consequences.
 
 \begin{figure}[H]
   \centering
-  \IfFileExists{Figure1_conceptual_framework.png}{%
-    \includegraphics[width=0.85\textwidth]{Figure1_conceptual_framework.png}%
-  }{%
-    \fbox{%
-      \parbox[c][0.18\textheight][c]{0.92\textwidth}{%
-        \centering
-        \textbf{Conceptual overview placeholder}\\[4pt]
-        Add \texttt{Figure1_conceptual_framework.png} here.
-      }%
+  \fbox{%
+    \parbox[c][0.22\textheight][c]{0.88\textwidth}{%
+      \centering
+      \textbf{Figure 1 placeholder}\\[4pt]
+      Conceptual overview of the MACRO-City Engine framework and the paper's fragile-boom logic will be inserted here.
     }%
   }
-  \caption{Conceptual overview of the paper's empirical logic.}
+  \caption{Conceptual framework linking urban observation, temporal mismatch and fragile-boom states. The figure summarizes the logic of the paper in five linked steps. First, MACRO-City Engine organizes multi-source city observations into a common city-year framework that jointly captures fast-moving activity signals, slower structural adjustment, policy timing and external output anchors. Second, urban dynamics are represented as a temporal mismatch when fast signals of expansion rise more quickly than slower layers of adjustment. Third, this mismatch defines a fragile-boom state: a high-acceleration, high-risk configuration in which visible growth outpaces structural adaptation. Fourth, the state is evaluated against independent economic outcomes, including observed metropolitan GDP and subsequent slowdown risk, to test whether it captures real urban dynamics rather than proxy artifacts. Fifth, policy-timing profiles and spatial corroboration provide additional evidence that fragile boom is a distinct and empirically meaningful urban risk state rather than a static ranking or a purely model-driven label.}
   \label{fig:evidence_chain}
 \end{figure}
 \FloatBarrier
 
-Our interpretation follows the same logic. Forward-looking classification is read as state information rather than as long-range forecasting, while policy timing estimates are used to characterize ordered response patterns rather than one universal treatment effect. This tiered reading allows the paper to combine state measurement, bounded external validation, and policy-timing diagnostics without forcing them into a single coefficient.
-
-%==============================================================================
-This study draws on urban economics, critical-transition research, remotely sensed urban observation, and recent work on heterogeneous timing in panel designs \cite{combes2012productivity,moretti2012real,batty2013newscience,scheffer2009early,dakos2012methods,lenton2008tipping,henderson2018measuring,jean2016combining,naik2017streetscore,gebru2017using,goodmanbacon2021did,callaway2021did,borusyak2024revisiting,roth2023parallel}. Our contribution is narrower than any one of those literatures: we use directly observed city signals to define a temporally structured urban risk state and then examine whether policy timing and external output anchors are consistent with that state.
+This study draws on urban economics, critical-transition research, and remotely sensed urban observation \cite{combes2012productivity,moretti2012real,batty2013newscience,scheffer2009early,dakos2012methods,lenton2008tipping,henderson2018measuring,jean2016combining,naik2017streetscore,gebru2017using}. Our contribution is empirical and focused: we identify a temporally structured urban risk state directly from observed city signals and then test whether it remains consistent with external output anchors, policy timing patterns, and spatial corroboration.
 
 %==============================================================================
 \section{Results}
@@ -92,54 +83,47 @@ This study draws on urban economics, critical-transition research, remotely sens
 %==============================================================================
 
 \subsection{Fragile boom as a measurable risk state}
-Fragile boom emerges as a distinct and empirically observable state rather than a descriptive label. Cities in this state combine rapid expansion with elevated risk, placing them in a high-acceleration, high-risk regime that is not captured by static rankings.
+Fragile boom emerges as a distinct and empirically observable timing-mismatch state rather than a descriptive label. Cities in this state exhibit fast expansion signals that lead slow adjustment while risk is elevated, placing them in a high-acceleration, high-risk regime that is not captured by static rankings.
 
-Figure~\ref{fig:quadrant_scatter} shows that these cities cluster in a separate quadrant, where acceleration and risk are jointly high. This region forms a forward-looking risk zone: cities appear to be growing rapidly, yet their likelihood of subsequent slowdown is elevated.
+Figure~\ref{fig:quadrant_scatter} shows that these cities cluster in a separate quadrant, where acceleration and risk are jointly high. Cities do not only occupy positions in this space, but move through it over time. The upper-right quadrant reflects simultaneous acceleration and risk accumulation, indicating structural imbalance rather than stable growth.
 
-The classification is stable across alternative thresholds and is primarily driven by recent growth dynamics, indicators of physical stress, and signals of regime instability.
-
-Although predictive performance is moderate, the state contains meaningful forward-looking information. In held-out data, the classifier reaches $\mathrm{ROC}$-$\mathrm{AUC}=0.742$ with a Brier score of 0.203 and distinguishes more fragile trajectories from stable ones, indicating that fragile boom captures a systematic pattern rather than transient noise.
-This quadrant structure is not recoverable from static rankings, highlighting that fragile boom is inherently a dynamic phenomenon.
+The classification is stable across alternative thresholds and is primarily driven by recent growth dynamics, indicators of physical stress, and signals of regime instability. Fast activity indicators sharpen near-horizon identification, whereas slower network and built-form indicators contribute more strongly to persistence and state duration. Supplementary analyses show that the underlying continuous temporal-gap proxy carries more slowdown information than static size, volatility, raw luminosity change, or GDP growth alone, while the discrete fragile-boom state preserves an interpretable summary of that richer gradient. This quadrant structure is not recoverable from level-based or volatility-based metrics, highlighting that the fragile-boom state is inherently a dynamic phenomenon.
 
 \begin{figure}[H]
   \centering
-  \includegraphics[width=0.85\textwidth]{submission_assets/Figure2_pulse_quadrant_scatter.pdf}
-  \caption{Fragile-boom cities occupy a distinct high-risk, high-acceleration regime. Cities are mapped into an acceleration--risk space, where the upper-right quadrant identifies fragile-boom states. These cities combine rapid expansion with elevated risk and form a forward-looking risk zone that is not visible in static rankings. Bubble size reflects one-year movement, highlighting that fragile-boom states are both persistent and dynamically evolving.}
+  \includegraphics[width=0.92\textwidth]{submission_assets/Figure2_fragile_boom_state_space.pdf}
+  \caption{Fragile-boom cities occupy a distinct high-risk, high-acceleration regime. Cities are mapped into an acceleration--risk space, where the upper-right quadrant identifies fragile-boom states. These states reflect a timing mismatch in which fast expansion signals lead slower adjustment, forming a forward-looking risk zone that is not visible in static rankings. Bubble size reflects one-year movement, highlighting that fragile-boom states are both persistent and dynamically evolving.}
   \label{fig:quadrant_scatter}
 \end{figure}
 \FloatBarrier
 
 \begin{figure}[H]
   \centering
-  \includegraphics[width=0.85\textwidth]{submission_assets/Figure3_pulse_transition_heatmap.pdf}
-  \caption{Most cities persist in place from one year to the next, but transition flows into fragile and recovery states remain economically meaningful. Diagonal dominance indicates persistence, while off-diagonal mass identifies recurrent regime-switch pathways.}
+  \includegraphics[width=0.92\textwidth]{submission_assets/Figure3_transition_dynamics.pdf}
+  \caption{Urban risk states are persistent but reversible. Each cell reports the probability of moving from the state on the y-axis to the state on the x-axis in the following period. Cities can enter fragile boom from steady states, exit into recovery-window states, and return to steady conditions, indicating that fragile boom behaves as a dynamic state rather than a fixed city type.}
   \label{fig:transition_heatmap}
 \end{figure}
 \FloatBarrier
 
-Fragile-boom states are neither rare nor purely transitional. In the latest sample year, roughly one quarter of cities fall into this category, comparable in magnitude to recovery states and substantially larger than outright stalling states.
+Fragile-boom states are neither rare nor purely transitional. In the latest sample year, roughly one quarter of cities fall into this category, comparable in magnitude to recovery-window states and substantially larger than outright stalling states.
 
-Figure~\ref{fig:transition_heatmap} shows that most cities remain in the same state from one year to the next, indicating persistence. At the same time, transitions between steady, fragile, and recovery states occur regularly, suggesting that fragile boom captures a dynamic regime rather than a fixed city type.
+Figure~\ref{fig:transition_heatmap} shows that fragile boom is not an absorbing state: cities can enter it from steady conditions and also exit toward recovery-window or steady states. The transition structure therefore points to persistent but reversible urban risk states rather than fixed city types.
 
 \subsection{Observed city signals reveal temporal mismatch}
-The observed patterns are driven by directly measured city-level signals rather than by macroeconomic context alone. Incorporating high-frequency indicators of urban activity and infrastructure dynamics substantially improves the ability to distinguish between stable and fragile trajectories.
-
-This result highlights that fragile boom is not simply a reflection of national trends. Instead, it emerges from within-city dynamics that are only visible when fast-moving and slow-moving signals are jointly observed.
+The observed patterns are driven by directly measured city-level signals rather than by macroeconomic context alone. MACRO-City Engine makes this visible by combining fast-moving indicators of urban activity with slower layers of infrastructure, land-use and network change in one harmonized city-year panel. The fragile-boom state therefore emerges from within-city dynamics that are not recoverable from national context alone.
 
 \subsection{External validation with observed metropolitan GDP}
 To assess whether fragile-boom states correspond to real economic outcomes, we link the monitoring framework to observed metropolitan GDP in a standardized OECD subset.
 
-The theory-based vitality measure closely tracks observed GDP, substantially outperforming raw luminosity-based proxies (Fig.~\ref{fig:gdp_validation_bridge}).
+The theory-based vitality measure closely tracks observed GDP in the standardized OECD bridge, substantially outperforming raw luminosity-based proxies (Fig.~\ref{fig:gdp_validation_bridge}). Fragile-boom states also carry forward-looking risk information: cities classified in this state are more likely to experience subsequent slowdowns in GDP growth, and dynamic risk measures outperform static size and volatility-based benchmarks in ranking these outcomes. Supplementary Figure~S2 further shows that slowdown incidence rises across temporal-gap quintiles, indicating that the relationship is continuous rather than a threshold artifact. The consistency between observed city signals and metropolitan GDP therefore suggests that the fragile-boom state captures real economic dynamics rather than proxy artifacts.
 
-More importantly, fragile-boom states contain forward-looking information. Cities classified as fragile are more likely to experience subsequent slowdowns in GDP growth, and dynamic risk measures outperform static size and volatility-based benchmarks in ranking these outcomes.
-
-While predictive power is moderate, the results indicate that temporal mismatches between growth and adjustment are systematically associated with future economic deterioration. Because observed metropolitan GDP is available only for a subset, this bridge should be read as bounded external validation rather than as global output verification. Outside the OECD subset, the framework relies more heavily on directly observed urban signals than on official metropolitan output statistics.
+Observed metropolitan GDP therefore serves as a hard external anchor where official metro output series exist. The broader global coverage of the paper still comes from directly observed city signals spanning 295 cities across 136 countries, while Fig.~\ref{fig:gdp_validation_bridge}C and Supplementary Tables~S8--S9 show that the signal-to-output mapping remains directionally stable beyond the standardized OECD bridge.
 
 
 \begin{figure}[H]
   \centering
-  \includegraphics[width=0.85\textwidth]{submission_assets/Figure37_gdp_validation_bridge.pdf}
-  \caption{Fragile-boom states predict future economic slowdown. (A) A theory-based vitality measure closely tracks observed metropolitan GDP, outperforming raw night-time-light proxies. (B) Dynamic risk states, including fragile boom, outperform static size and volatility measures in predicting next-year GDP slowdowns.}
+  \includegraphics[width=0.92\textwidth]{submission_assets/Figure4_external_validation.pdf}
+  \caption{Fragile-boom states carry forward-looking risk information. (A) A theory-based vitality measure closely tracks observed metropolitan GDP in the standardized OECD bridge, outperforming raw night-time-light proxies. (B) Dynamic risk states, including fragile boom, outperform static size and volatility measures in ranking next-year GDP slowdown risk. (C) A non-OECD local-GDP audit shows that the signal-to-output mapping remains directionally consistent outside the standardized OECD subset.}
   \label{fig:gdp_validation_bridge}
 \end{figure}
 \FloatBarrier
@@ -148,15 +132,13 @@ While predictive power is moderate, the results indicate that temporal mismatche
 \subsection{Policy responses reveal distinct temporal adjustment patterns}
 \begin{figure}[H]
   \centering
-  \includegraphics[width=0.85\textwidth]{submission_assets/Figure4_event_study_dynamic_effects.pdf}
+  \includegraphics[width=0.92\textwidth]{submission_assets/Figure5_policy_timing_profiles.pdf}
   \caption{Policy responses differ in their temporal profiles. (A) Fast-moving indicators respond earlier than slower structural measures, creating a temporal gap during which fragility can accumulate. (B) Different policy types exhibit distinct timing patterns: infrastructure policies show immediate activity responses, digital policies display delayed effects, and environmental policies reflect anticipation dynamics. (C) Larger temporal gaps are associated with higher probabilities of subsequent economic slowdown.}
   \label{fig:event_study_dynamic}
 \end{figure}
 \FloatBarrier
 
-We next examine how different types of policy interventions align with the temporal structure of urban adjustment. Rather than estimating a single average policy effect, we focus on how observable responses unfold over time.
-
-Figure~\ref{fig:event_study_dynamic} summarizes these patterns. Across policy types, fast-moving indicators tend to respond earlier than slower structural measures, consistent with the temporal mismatch underlying fragile-boom states. For the fast outcome, the main specification uses observed NO$_2$ only (2018--2025), which we interpret as a fast-moving indicator of human activity and combustion intensity rather than as a sufficient summary of the urban economy.
+We next examine how different types of policy interventions align with the temporal structure of urban adjustment. Figure~\ref{fig:event_study_dynamic} summarizes these response patterns. Across policy types, fast-moving indicators tend to respond earlier than slower structural measures, consistent with the temporal mismatch underlying fragile-boom states. In the main fast-layer specification, directly observed NO$_2$ serves as an activity and combustion proxy, and coefficients are reported in sample-standardized units so that timing profiles remain comparable across policy buckets. In that scale, the direct-core timing contrasts are modestly positive for infrastructure ($\approx 0.04$ SD), stronger for digital policies ($\approx 0.08$ SD), and close to zero for environmental and regulatory interventions ($\approx 0.02$ SD), reinforcing the view that policy types differ more in timing geometry than in one common fast-channel magnitude.
 
 The timing profiles differ systematically across interventions. Infrastructure policies are associated with short-run increases in fast-moving activity signals, while slower adjustment indicators remain muted or negative in the near term. This pattern is consistent with immediate demand and construction effects preceding longer-term structural change.
 
@@ -164,63 +146,40 @@ Digital policies exhibit a delayed response. Fast-moving indicators show little 
 
 Environmental and regulatory policies follow a different trajectory. Fast-moving indicators display pre-policy movement, consistent with anticipation and compliance dynamics, while slower structural responses remain limited.
 
-Taken together, these results indicate that policy responses are temporally ordered and heterogeneous across intervention types. Averaging across these patterns obscures meaningful differences in how cities adjust over time. These findings are best interpreted as descriptive evidence on timing rather than as definitive causal estimates, given the aggregated nature of policy assignment and the remaining within-country heterogeneity.
-Supplementary Table~S6 adds proxy-consistency checks that are directionally consistent with the main timing interpretation.
+Cities in higher temporal-gap quartiles also exhibit higher probabilities of subsequent economic slowdown. Taken together, these results indicate that policy responses are temporally ordered and heterogeneous across intervention types. Averaging across them obscures meaningful differences in how cities adjust over time. Supplementary Tables~S6--S7 and S10 document the treatment audit, proxy checks, and event-to-city mapping that support this timing interpretation. These distinct temporal profiles suggest that policy interventions interact differently with fast and slow urban processes, reinforcing the role of adjustment frictions. The estimates are therefore best interpreted as descriptive timing evidence rather than as definitive causal magnitudes.
 
-\subsection{Estimator disclosure: pooled average effects are unstable}
-\textbf{Key finding:} pooled estimates remain design-sensitive even after the treatment definition is tightened, and they should be read as country-year timing contrasts rather than fully city-specific ATT estimates.
-Across estimators with complementary assumptions, some pooled specifications are mildly positive, some are near zero, and some remain negative.
-We therefore do not interpret any single pooled coefficient as definitive.
-Supplementary Table~S2 reports the full disclosure table.
-
-\subsection{Heterogeneity matters more than the pooled average}
-The practical implication of a narrowed but still design-sensitive pooled ATT is not ``no policy matters''; it is ``average effects remain a poor summary when treatment bundles and local conditions differ sharply.''
-In our data, treatment timing, intensity, and baseline resilience vary across continents and city archetypes, so positive and negative local responses can offset in the aggregate.
-We therefore treat pooled estimates as a first-pass diagnostic and then shift to geographic, regime, and policy-source heterogeneity.
-Because treatment timing is still assigned at the country-year level, these patterns are descriptive segmentation tools rather than standalone causal CATE claims.
+At the pooled level, average effects remain design-sensitive even after the treatment definition is tightened, and they are best read as country-year timing contrasts rather than fully city-specific ATT estimates. That design sensitivity is itself informative: average effects become a poor summary when treatment bundles, timing, and baseline resilience differ sharply across places. We therefore treat pooled coefficients as a first-pass diagnostic and shift the emphasis to timing profiles, state transitions, and geographic heterogeneity.
 
 \subsection{Spatial corroboration}
 Spatial analyses provide additional corroboration. Positive responses persist under both geographic and network-based definitions of connectivity, although magnitudes attenuate with broader exposure.\cite{redding2017quantitative} This pattern is consistent with scale-dependent diffusion, where local interactions generate stronger short-run responses while broader networks distribute impacts more diffusely. Geographic proximity concentrates labor, congestion, supplier, and infrastructure linkages, whereas flight-based exposure is broader and less intense, which helps explain why the latter attenuates without reversing sign. A supplementary road-structure accessibility proxy preserves the same positive global direction while remaining heterogeneous across continents. Read together with the policy-timing results, the spatial layer supports pattern consistency rather than a single spatial effect parameter.
 
 \begin{figure}[H]
   \centering
-  \includegraphics[width=0.85\textwidth]{submission_assets/Figure5_causal_st_dynamic_att.pdf}
+  \includegraphics[width=0.92\textwidth]{submission_assets/Figure6_spatial_corroboration.pdf}
   \caption{Spatially augmented effects remain positive under both geographic and flight-network topologies, even when local average effects are modest. The forest plot contrasts local and spillover-aware estimates under both network constructions.}
   \label{fig:causal_st_dynamic}
 \end{figure}
 \FloatBarrier
 
-\subsection{Auxiliary country-year endpoints}
-This section is intentionally separate from the observed-GDP bridge above.
-All nine series reported here are country-year endpoints, so they serve only as background consistency checks and not as city-level ranking or validation targets.
-Nine auxiliary external outcomes are evaluated on a country-year panel rather than a city-year panel: the average absolute TWFE statistic is $|t|=0.971$.
-The strongest signal appears in PM$_{2.5}$ exposure ($t=-3.290$, $p=0.001$, within-family BH $q=0.009$).
-Fixed broadband subscriptions are directionally positive at the raw-test level ($t=1.964$, $p=0.0495$) but do not survive within-family multiplicity correction, while the combined electricity--broadband activity proxy is statistically weak ($t=0.479$, $p=0.632$).
-These are background annual endpoint tests rather than decisive cross-domain confirmations.
-We therefore interpret the external layer as bounded country-year consistency evidence rather than as independent city-level validation.
-Observed metropolitan GDP remains the harder external anchor: panel-wide VIIRS coverage is now complete, but luminosity is still an indirect proxy for economic output.
-
 \subsection{Heterogeneity and mechanisms}
-Continent-level and regime-level segmentation continues to show pronounced heterogeneity rather than a single global treatment pattern. North America and Europe are more negative on average, Africa and South America are modestly positive, and Asia remains close to zero. This dispersion reinforces the paper's core claim that pooled effects are a poor summary when timing, baseline resilience, and spillover exposure differ sharply across places.
+Continent-level and regime-level segmentation continues to show pronounced heterogeneity rather than a single global treatment pattern. This dispersion reinforces the paper's core claim that pooled effects are a poor summary when timing, baseline resilience, and spillover exposure differ sharply across places.
+At a more minimal mechanism level, the observed timing patterns line up with structural-adjustment frictions rather than with arbitrary state switching. Fragile-boom cities systematically combine stronger fast-moving activity pressure with weaker near-term structural follow-through: NO$_2$ and congestion-sensitive channels move first, while road-network evolution, built-form consolidation, and broader slow-adjustment measures respond later. In the policy layer, infrastructure episodes show the clearest version of this sequence, with immediate fast-signal movement and muted or negative slow-adjustment response in the near term; digital interventions display the opposite pattern of delayed slow gains; and environmental or regulatory interventions exhibit anticipation-sensitive fast movement without commensurate short-run structural change. These are not identified causal mechanisms, but they are mechanism-consistent patterns that support an interpretation in terms of adjustment frictions, sequencing constraints, and lagged capacity formation.
+Auxiliary external endpoints remain background consistency checks rather than independent city-level validation, with the full endpoint detail reported in the Supplementary Information.
 
 %==============================================================================
 \section{Discussion}
 \label{sec:robustness}
 %==============================================================================
 
-This study shows that urban growth is not only uneven across space, but also across time. Fast-moving indicators of activity respond quickly to shocks, while slower processes of structural adjustment unfold with delay. The gap between these processes defines a distinct form of urban fragility.
+This study shows that urban growth is not only uneven across space, but also across time. Fast-moving indicators of activity respond quickly to shocks, whereas slower processes of structural adjustment unfold with delay. The gap between them defines a distinct form of urban fragility. This paper therefore identifies a risk state rather than a full structural model of urban dynamics.
 
-The concept of fragile boom shifts the interpretation of urban growth. Cities do not become vulnerable only when growth slows; they can become fragile while growth remains visibly strong. What appears as success in the short run may therefore mask the accumulation of longer-term risks.
+The fragile-boom state shifts the interpretation of urban growth. Cities do not become vulnerable only when growth slows; they become fragile when expansion repeatedly leads adjustment. What appears as short-run success can therefore mask the accumulation of longer-term risk. In this sense, the fragile-boom state is the urban expression of a more general development problem in which visible expansion runs ahead of deeper structural adaptation.\cite{hausmann2005growth,eichengreen2012slowdown}
 
-This temporal perspective connects urban dynamics to broader theories of economic development. Just as national economies can experience growth slowdowns when structural transformation lags behind early expansion, cities can exhibit similar patterns at a finer spatial scale \cite{hausmann2005growth,eichengreen2012slowdown}. Fragile boom can be understood as the urban analogue of these dynamics, where visible acceleration coexists with delayed adjustment.
+This perspective also changes how urban monitoring should be read. Timing provides more consistent insight than static levels or average policy effects because policies do not produce uniform responses; they unfold through distinct temporal sequences. Infrastructure, digital, and regulatory interventions each reshape fast and slow urban processes differently, and pooled averages can hide the ordering that determines whether a policy initially widens or narrows the fast--slow gap. For urban governance, the practical question is therefore not only whether a city is growing, but whether the structure supporting that growth is converging fast enough to keep pace.
 
-Our results further suggest that timing provides more consistent insight than static measures or average policy effects. Policies do not produce uniform responses; instead, they unfold through temporally ordered processes that differ across intervention types. Infrastructure, digital, and regulatory policies each generate distinct response sequences, reflecting differences in how quickly they affect activity and structural change.
+The policy value of the results lies less in recovering a transportable effect size than in clarifying when different forms of adjustment tend to appear. In that sense, the estimates provide timing information for risk prioritization rather than a formula for policy extrapolation. The current implementation is strongest where structural adjustment leaves observable traces in built form, network evolution, and fast activity signals, and it is correspondingly less sensitive to fragility driven primarily by institutional change, legal restructuring, or capital reallocation without contemporaneous physical manifestation.
 
-These findings have practical implications for urban governance. Monitoring systems that focus only on levels of activity or growth may misinterpret short-term expansion as resilience. Instead, tracking the divergence between fast and slow processes can provide earlier signals of emerging risks. This points away from static scorecards and toward dynamic monitoring of urban adjustment.
-
-Several limitations remain. External validation is constrained by the availability of observed metropolitan GDP, and policy assignment is measured at an aggregated level, which limits stronger causal interpretation. In addition, the mechanisms underlying fragile boom---including investment timing, structural frictions, and factor rigidity---are inferred rather than directly identified. Even so, the central result is stable across the paper's evidence tiers: urban fragility is not simply the absence of growth, but a temporally structured mismatch between expansion and adjustment.
-
-More broadly, these findings suggest that understanding cities requires attention not only to how much they grow, but to how growth unfolds over time. Urban resilience depends on whether structural adjustment keeps pace with visible expansion. When it does not, growth itself can become a source of fragility.
+External validation remains constrained by the availability of observed metropolitan GDP, and policy assignment is still measured at an aggregated level rather than at full city-specific rollout granularity. The mechanisms underlying the fragile-boom state---including investment timing, structural frictions, and factor rigidity---are therefore inferred rather than directly identified. Even so, the central result is stable across the paper's evidence tiers: urban fragility emerges not when growth stops, but when expansion persistently outpaces adjustment.
 
 \nocite{sun2021event,santanna2020dr,athey2021matrix,abadie2010synthetic}
 \bibliographystyle{sn-nature}
@@ -233,7 +192,7 @@ More broadly, these findings suggest that understanding cities requires attentio
 \begin{enumerate}[label=(\roman*)]
   \item \textbf{Macro context (country-year):} World Bank API---GDP per capita, population, unemployment, internet usage, capital formation, inflation, plus 8 extended indicators (patents, researchers, high-tech exports, employment rate, urbanization, electricity access, fixed broadband, PM$_{2.5}$). These variables enter as background context only and are not interpreted as direct city-level measurement.
   \item \textbf{Climate (city-year):} Open-Meteo with NASA POWER fallback---annual mean temperature, annual precipitation.
-  \item \textbf{Urban structure and remote-sensing channels (city-year):} OSM Overpass/API history features---amenity/shop/office/leisure/transport composition, road-network hierarchy and density, annualized road/building/POI change channels, full-panel annual VIIRS signals, and left-censored high-frequency NO$_2$ observations from 2018 onward.
+  \item \textbf{Urban structure and remote-sensing channels (city-year):} OSM Overpass/API history features---amenity/shop/office/leisure/transport composition, road-network hierarchy and density, annualized road/building/POI change channels, full-panel annual VIIRS signals, and a full-panel high-frequency NO$_2$ layer formed by merging early OMI observations with later S5P observations.
   \item \textbf{Observed GDP bridge (city/metro-year):} directly observed metropolitan PPP GDP and local-currency GDP are used in the external validation subset where official city/metro series exist.
   \item \textbf{Auxiliary external endpoints (country-year):} annual externally reported outcomes, including electricity access, fixed broadband subscriptions, and a combined electricity--broadband activity proxy, are used only as background consistency checks rather than as city-level validation targets.
 \end{enumerate}
@@ -241,33 +200,44 @@ More broadly, these findings suggest that understanding cities requires attentio
 City footprints are anchored to official polygon definitions recorded in \texttt{geometry\_wkt}, prioritizing GHSL Urban Centres and using documented fallback to GHSL FUA or OECD city polygons only when necessary. This prevents the spatial distortion that would arise from fixed-radius buffers around city centroids and keeps remote-sensing extraction on a stable unit of analysis.
 
 \subsection{Sample structure}
-The final strict sample contains 295 cities across 136 countries, 6 continents, and 3,245 city-year observations from 2015 to 2025. This panel enables the analysis by converting heterogeneous remote-sensing, infrastructure, policy, and macro-context sources into a single city-year dataset with stable polygon boundaries and explicit resolution control. The sample covers 295 cities across 136 countries and all six inhabited continents, with 3,245 city-year observations from 2015 to 2025. The geographic spread is global rather than regionally concentrated.
+The final strict sample contains 295 cities across 136 countries, six continents, and 3,245 city-year observations from 2015 to 2025. This panel enables the analysis by converting heterogeneous remote-sensing, infrastructure, policy, and macro-context sources into a single city-year dataset with stable polygon boundaries and explicit resolution control. The geographic spread is global rather than regionally concentrated. Crucially, the observational base of the paper is the full-panel city-observed layer rather than the observed-GDP subset: VIIRS, urban structure, climate, road-network dynamics, and the core policy-response panel span the global sample directly, while observed GDP enters as an external anchor wherever official metropolitan series exist.
 
 \subsection{Measurement strategy}
-The empirical design follows a simple principle: city outcomes should be read from city signals whenever possible, while broader macro series should remain contextual rather than masquerading as direct urban observations.\cite{oecd2007territorial} To make that distinction credible, city footprints are anchored to stable official polygons rather than point buffers, and directly observed urban signals remain separable from country-year controls.
+The empirical design follows one principle: city outcomes should be read from city signals whenever possible, while broader macro series remain contextual rather than masquerading as direct urban observations.\cite{oecd2007territorial} To make that distinction credible, city footprints are anchored to stable official polygons rather than point buffers, directly observed urban signals remain separable from country-year controls, and each variable is carried through the panel with explicit source and resolution tags.
+
+\subsection{MACRO-City Engine framework}
+MACRO-City Engine is the observational framework that supports the paper's empirical design. Its construction proceeds in four linked stages: assembling a polygon-anchored city-year observation layer; harmonizing heterogeneous inputs into a common schema with explicit source, resolution, and uncertainty tags; organizing the harmonized signals into fast layers that track short-run activity and slow layers that track structural adjustment; and converting those layers into interpretable state diagnostics, external output bridges, and policy-timing summaries. In that sense, MACRO-City Engine is not simply a repository of inputs but a monitoring architecture designed to observe whether urban expansion, adjustment, and subsequent risk move together or drift apart over time.
+
+This architecture matters because the paper's main claim depends on joint observation rather than on any one source. Night-time lights alone would overstate visible activity, road-network evolution alone would miss rapid short-run shifts, and macroeconomic context alone would blur within-country urban heterogeneity. MACRO-City Engine preserves these different temporal roles so that fragile-boom states can be identified as a mismatch between layers rather than as a high value in any single series.
 
 \subsection{Data quality and comparability}
-All sources pass through a common audit and harmonization step before entering the panel. In the final sample, the objective row ratio, complete-city objective ratio, and verified row ratio are all 1.000, and policy-event entries retain auditable source references across 136 ISO3 codes. The main limitation is that many macro indicators remain available only at the country-year level. In the main specification we therefore avoid mechanical downscaling and keep those variables in the role of background context rather than direct city measurement.
+All sources pass through a common audit and harmonization step before entering the panel. The main remaining comparability issue is that many macro indicators are only available at the country-year level, so the framework does not mechanically downscale them into pseudo-city observations.
 
 \subsection{External measurement bridge}
-To avoid relying only on internally constructed signals, we link the main transition diagnostics to independent external outcomes. This bridge is corroborative rather than definitional: it does not replace the city-level outcome layer, but it tests whether the monitored states remain aligned with independently reported activity and output measures. The bridge itself has two explicitly separate layers. First, the paper uses observed city/metro-year GDP where it exists as the main external validation anchor. Second, it reports a smaller set of country-year auxiliary endpoints as background consistency checks only. These two layers are not interchangeable and are not interpreted as the same type of evidence. Direct VIIRS signals now span the full panel and are incorporated as city-observed annual outcomes throughout. The left-censored high-frequency channel is instead NO$_2$, which is observed from 2018 onward and therefore used only where actual coverage exists. The nine auxiliary non-GDP endpoints are country-year World Bank series and are interpreted only as background consistency checks, not as independent city-year validation.
+To avoid relying only on internally constructed signals, we link the main state diagnostics to independent external outcomes. This bridge is corroborative rather than definitional. It has three layers: observed city/metro-year GDP as the main external anchor; a non-OECD local-GDP audit to test directional stability outside richer OECD metros; and a smaller set of country-year auxiliary endpoints used only as background consistency checks. Direct VIIRS signals now span the full panel, and the fast NO$_2$ channel spans 2015--2025 through a merged OMI+S5P observation layer.
 
 \subsection{Resolution hierarchy}
-The empirical design follows a strict resolution hierarchy. City-observed variables (urban structure, road-network dynamics, climate, and policy-event channels) are treated as the primary signal layer for transition-risk analysis. Country-level macro variables are treated as supporting controls and are never interpreted as direct evidence of within-country micro measurement. This separation prevents circular interpretation: transition claims rely on city-observed movement channels, while mixed-resolution variables absorb broad context rather than pretending to identify within-country city differences. Supplementary Table~S5 inventories the core variables by resolution, coverage, and analytical role so that city-observed outcomes, mixed-resolution controls, and external-validation anchors remain visibly separated.
+The empirical design therefore follows a strict resolution hierarchy. Full-panel city-observed variables (VIIRS, NO$_2$, urban structure, road-network dynamics, climate, and the core policy-response panel) form the primary signal layer for transition-risk analysis. Observed GDP serves as a subset external anchor, and country-level macro variables remain contextual support rather than direct evidence of within-country city differences. Supplementary Table~S5 inventories the core variables by resolution, coverage, and analytical role.
 
 \subsection{Harmonization and uncertainty}
-All sources are converted into a common annual city-year panel, tagged by source and resolution, and normalized within year where forward prediction would otherwise risk temporal leakage. Missingness is handled with source-aware rules: macro variables are interpolated conservatively within country-year blocks, while city-level features are only filled when objective-source coverage remains intact. The paper also separates measurement uncertainty from model uncertainty. The former is addressed through auditing and conservative aggregation; the latter through out-of-time validation, OOD tests, and bootstrap or permutation inference. This distinction matters because good fit does not guarantee clean interpretation, just as a significant coefficient does not guarantee transportable policy insight.
+All sources are converted into a common annual city-year panel, tagged by source and resolution, and normalized within year where forward prediction would otherwise risk temporal leakage. Missingness is handled with source-aware rules: macro variables are interpolated conservatively within country-year blocks, while city-level features are only filled when objective-source coverage remains intact. Measurement uncertainty is addressed through auditing and conservative aggregation, and model uncertainty through out-of-time validation, OOD checks, and bootstrap or permutation inference.
 
-\subsection{Dashboard composite outcome}
+\subsection{Composite monitoring outcome}
 For descriptive ranking and monitoring only, three sub-indices are constructed from normalized indicators:
 \begin{equation}
   \Composite_{i,t} = w_E \cdot E_{i,t} + w_L \cdot L_{i,t} + w_I \cdot I_{i,t}.
 \end{equation}
 
-The baseline weights are $(w_E, w_L, w_I) = (0.45, 0.35, 0.20)$. Following the OECD and composite-indicator literature,\cite{oecd2008handbook,nardo2005tools,greco2019composite} we conduct sensitivity analysis with four alternative schemes:\ PCA-derived weights, equal weights $(1/3, 1/3, 1/3)$, economic-heavy $(0.60, 0.25, 0.15)$, and innovation-heavy $(0.25, 0.30, 0.45)$. Spearman rank correlations between baseline and alternatives are reported in Section~\ref{sec:robustness}. This composite is used for composite ranking, transition visualization, and state benchmarking. It is not used as the dependent variable in the main policy-response analyses, where only interpretable observed indicators are allowed.
+The baseline weights are $(w_E, w_L, w_I) = (0.45, 0.35, 0.20)$. Following the OECD and composite-indicator literature,\cite{oecd2008handbook,nardo2005tools,greco2019composite} we conduct sensitivity analysis with four alternative schemes:\ PCA-derived weights, equal weights $(1/3, 1/3, 1/3)$, economic-heavy $(0.60, 0.25, 0.15)$, and innovation-heavy $(0.25, 0.30, 0.45)$. Spearman rank correlations between baseline and alternatives are reported in Section~\ref{sec:robustness}. This composite is used for monitoring, transition visualization, and state benchmarking. It is not used as the dependent variable in the main policy-response analyses, where only interpretable observed indicators are allowed.
 
 \subsection{Dynamic transition variables}
-Acceleration and stall-risk states are defined from one-period changes, short-run acceleration, and recent volatility in the monitored city signal set. In practice, cities are classified by combining recent expansion, predicted slowdown risk, and joint thresholds that separate accelerating, steady, fragile-boom, and recovery states. Threshold robustness is evaluated across a range of quantile cutoffs and reported in Section~\ref{sec:robustness}.
+As an interpretable baseline, the temporal gap can be summarized as
+\begin{equation}
+Mismatch_{i,t} = \Delta Fast_{i,t} - \Delta Slow_{i,t}.
+\end{equation}
+This interpretable baseline captures the core temporal gap before extending to the fuller classification framework.
+
+Acceleration and stall-risk states are defined from one-period changes, short-run acceleration, and recent volatility in the monitored city signal set. In practice, cities are classified by combining recent expansion, predicted slowdown risk, and joint thresholds that separate accelerating, steady, fragile-boom, stalling, and recovery-window states. A fragile-boom label is assigned when fast-signal expansion remains positive while slow-adjustment indicators lag over consecutive periods. In the baseline specification, this assignment is implemented with year-specific quantile thresholds on acceleration and slowdown risk. Threshold robustness is evaluated across a range of cutoffs and reported in Section~\ref{sec:robustness}.
 
 \subsection{Study design}
 The empirical design proceeds in three linked layers:
@@ -279,20 +249,20 @@ The empirical design proceeds in three linked layers:
 Across all three layers, the focus is on identifying consistent empirical patterns in the timing of urban adjustment rather than estimating one summary parameter.
 
 \subsection{Temporal classification}
-A set of statistical classification models is used to estimate the probability of subsequent slowdown from observed city-level signals.\cite{mullainathan2017machine,athey2019machine,guo2017calibration} Model selection is based on out-of-time discrimination and calibration, and the main patterns are stable across alternative specifications reported in the Supplementary Information. Cities are then mapped into interpretable states---\emph{accelerating}, \emph{steady}, \emph{fragile boom}, and \emph{recovery window}---using joint thresholds on acceleration and slowdown risk. Long-run trajectory clustering is used only to summarize recurring city archetypes rather than to define the core state space.
+A set of statistical classification models is used to estimate the probability of subsequent slowdown from observed city-level signals.\cite{mullainathan2017machine,athey2019machine,guo2017calibration} Model selection is based on out-of-time discrimination and calibration, and the main patterns are stable across alternative specifications reported in the Supplementary Information. Cities are then mapped into interpretable states---\emph{accelerating}, \emph{steady}, \emph{fragile-boom}, \emph{stalling}, and \emph{recovery window}---using joint thresholds on acceleration and slowdown risk. Long-run trajectory clustering is used only to summarize recurring city archetypes rather than to define the core state space.
 
-The classification design is structured to limit leakage. The main split places model training before 2023 and evaluation in 2023--2025, with additional leave-one-continent-out checks for spatial generalization. The primary signal set consists of city-observed time-varying channels, and mixed-resolution comparisons are used only to check whether observed city signals and country-context tracks diverge materially.
+The classification design is structured to limit leakage. The main split places model training before 2023 and evaluation in 2023--2025, with additional leave-one-continent-out checks for spatial generalization.
 
 \subsection{Policy-response framework}
-Policy analysis is conducted using event-time comparisons to examine how observable indicators respond around audited policy onset. Primary outcomes are restricted to interpretable observed indicators, and composite-based state indices are excluded from the main response analysis. Supplementary Table~S7 makes the treatment layer auditable: direct-core cohorts are defined from explicit country-level registry events and then mapped to in-sample cities through a transparent onset rule rather than through inferred within-country rollout dates.
+Policy analysis is conducted using event-time comparisons to examine how observable indicators respond around audited policy onset. Primary outcomes are restricted to interpretable observed indicators, and composite monitoring scores are excluded from the main response analysis. Supplementary Table~S7 documents the direct-core onset rule, and Supplementary Table~S10 summarizes the project-geolocation layer that refines exposure within that audited treatment frame.
 
-Given that policy timing is defined at an aggregated level, these results are interpreted as descriptive evidence on response timing rather than as definitive causal estimates. Multiple estimation approaches are used as robustness checks, but the main purpose is to identify consistent temporal patterns across policy types rather than to privilege any one estimator. Details on pooled panel estimators, counterfactual methods, and auxiliary robustness specifications are reported in the Supplementary Information.\cite{sun2021event,santanna2020dr,athey2021matrix,abadie2010synthetic}
+Because policy timing is defined at an aggregated level, these results are interpreted as evidence on robust timing regularities across policy domains rather than as definitive causal effect magnitudes. Multiple estimation approaches are used as robustness checks, but the main purpose is to identify consistent temporal patterns across policy types rather than to privilege any one estimator.\cite{sun2021event,santanna2020dr,athey2021matrix,abadie2010synthetic}
 
 \subsection{Spatial corroboration framework}
-The spatial layer evaluates whether the main descriptive patterns persist under alternative definitions of connectivity. Geographic proximity, flight links, and road-structure accessibility are treated as complementary exposure structures rather than as one uniquely correct network. The resulting comparisons are used to test pattern consistency under different topologies, with additional implementation detail and ablation output reported in the Supplementary Information.
+The spatial layer evaluates whether the main descriptive patterns persist under alternative definitions of connectivity. Geographic proximity, flight links, and road-structure accessibility are treated as complementary exposure structures rather than as one uniquely correct network. Additional implementation detail and ablation output are reported in the Supplementary Information.
 
 \subsection{Robustness checks}
-Robustness checks focus on support, timing coverage, pre-period behavior, estimator agreement, and cross-continent stability. The aim is to evaluate whether the main timing patterns remain interpretable across reasonable design variants, not to privilege one specification. The empirical approach is designed to prioritize interpretability and consistency of observed patterns, while avoiding reliance on any single estimator.
+Robustness checks focus on support, timing coverage, pre-period behavior, estimator agreement, and cross-continent stability. The aim is to evaluate whether the main timing patterns remain interpretable across reasonable design variants, not to privilege one specification.
 
 \section*{Data availability}
 Selected derived outputs, supplementary tables, and figure assets supporting this submission are available in the MACRO-City Engine repository at \url{https://github.com/inorganicwriter/MACRO-City-Engine}. The repository does not redistribute raw satellite imagery or other large third-party source files; these inputs must be obtained from their original public providers as described in the Methods section.

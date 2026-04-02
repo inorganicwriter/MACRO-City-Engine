@@ -1,4 +1,0 @@
-policy_bucket,sample_rule,policy_year,n_obs,treated_share,dml_status,dml_coef,dml_p_value,event_status,event_pretrend_joint_p_value,event_mean_post_coef,filled_rows_total
-infra,appendix_backcasted_no2_full_sample_2015_2025,2020,3245,0.5491525423728814,ok,7.571203303906713e-07,0.1032577731910831,ok,0.2448,4.708308008394554e-06,885
-digital,appendix_backcasted_no2_full_sample_2015_2025,2020,3245,0.2542372881355932,ok,2.529151155780781e-07,0.586737682049744,ok,0.4077,2.4534611912031937e-06,885
-eco_reg,appendix_backcasted_no2_full_sample_2015_2025,2019,3245,0.4711864406779661,ok,2.9115187572614644e-08,0.9582076237393508,ok,0.4061,-5.194061297742978e-07,885
